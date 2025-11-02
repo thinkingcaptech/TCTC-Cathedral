@@ -1,0 +1,20 @@
+[
+  {
+    "title": "The 3-Day 'Ignis' Audit",
+    "price": "Free",
+    "description": "A free 3-day 'alchemical' audit to diagnose your internal 'vessel' and find the 'Prima Materia' of your attention.",
+    "url": "/free-audit/"
+  },
+  {
+    "title": "The 30-Day 'Vessel' Transformation",
+    "price": "$99",
+    "description": "A 30-day guided course to rebuild your internal framework. The practical application of 'Ignis' (fire) and 'Aqua' (flow).",
+    "url": "/course-vessel/"
+  },
+  {
+    "title": "The 30-Day 'Architect's' Path",
+    "price": "$299",
+    "description": "The advanced 30-day system. Master 'Terra' (structure) and 'Aer' (systems) to architect your entire personal reality.",
+    "url": "/course-architect/"
+  }
+]
