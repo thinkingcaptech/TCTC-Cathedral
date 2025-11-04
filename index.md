@@ -4,7 +4,7 @@ title: The Forge of Strategy
 ---
 
 <div class="hero container">
-  <h2>Building Your "Alchemical Cathedral"</h2>
+  <h2>Building Your "Alchemical Citadel"</h2>
   <p>We transform foundational business principles into tangible, scalable success. This is where strategy becomes structure. The "Great Work" must be specific to the "Vessel."</p>
 </div>
 

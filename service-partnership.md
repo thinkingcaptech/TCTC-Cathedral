@@ -1,11 +1,11 @@
 ---
 layout: layout.njk
-title: The Partnership (The Cathedral)
+title: The Partnership (The Citadel)
 ---
 
 <div class="hero container">
-  <h2>The Partnership (The Cathedral)</h2>
-  <p>This is the "Fifth Element," the "Quinta Essentia." I do not "consult." I become the "Architect" of your "Cathedral."</p>
+  <h2>The Partnership (The Citadel)</h2>
+  <p>This is the "Fifth Element," the "Quinta Essentia." I do not "consult." I become the "Architect" of your "Citadel."</p>
 </div>
 
 <div class="course-vault container">
@@ -40,6 +40,10 @@ title: The Partnership (The Cathedral)
       <div class="form-group">
         <label for="email">Email (The Conduit)</label>
         <input type="email" id="email" name="email" class="form-input" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone (Mandatory for Partnership Review)</label>
+        <input type="tel" id="phone" name="phone" class="form-input" required>
       </div>
       <div class="form-group">
         <label for="prima-materia">Your "Prima Materia" (Your Business/Vision)</label>
