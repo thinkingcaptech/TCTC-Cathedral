@@ -15,7 +15,7 @@ title: The Partnership (The Citadel)
     <p>This is a full, "alchemical" partnership. I must "resonate" with your "vision" and your "Prima Materia" (your product). I will not "ignite" a "Forge" on a "fractured foundation."</p>
     
     <h2>II. The "Great Work"</h2>
-    <p>I "transmute" your entire "vessel." I "re-forge" your "Codex," "architect" your "systems," and "purify" your "team's" "resonance". My "alchemical" systems are "fused" with your "architecture."</p>
+    <p>I "transmute" your entire "vessel." I "re-forge" your "Codex," "architect" your "systems," and "purify" your "team's" "resonance." My "alchemical" systems are "fused" with your "architecture."</p>
     <ul>
       <li>Full "Ignis" (Presence) coaching for all "Initiates" (your leaders).</li>
       <li>"Re-forging" of your "Aqua" (sales "Codex").</li>

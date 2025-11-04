@@ -1,20 +1,16 @@
 [
   {
-    "title": "The Partnership (The Citadel)",
-    "price": "$100,000+ (Application Only)",
-    "description": "The Quinta Essentia: Full architecture partnership where I become the Architect of your Citadel. I must align with your vision. You will not utilize my methods on a fractured foundation.",
-    "url": "/service-partnership/"
-  },
-  {
     "title": "The Citadel System Installation",
-    "price": "$9,999",
-    "description": "The TERRA Blueprint: System installation of The HELM (HR/Culture) and The BRIDGE (Sales/Marketing) systems. You implement the Great Work with my direct training.",
-    "url": "/service-blueprint/"
+    "price_anchor": "$9,999",
+    "price_actual": "$4,999",
+    "description": "The TERRA Blueprint: Done-For-You installation of a franchise-ready operating system (HELM & BRIDGE) for your independent business.",
+    "url": "/service-blueprint-dfy/"
   },
   {
-    "title": "The Spark Diagnostic & Blueprint",
-    "price": "$499",
-    "description": "The AQUA Solvent: A mandatory diagnostic to identify your core operational fractures (Porta Doloris) and deliver your custom strategic blueprint.",
-    "url": "/service-spark/"
+    "title": "The 'Alchemy of Influence' Workbook",
+    "price_anchor": "$499",
+    "price_actual": "$49",
+    "description": "The AQUA Solvent: A 12-Session DIY Workbook for mastering the moral mechanics of influence and building systematic conviction.",
+    "url": "/product-workbook-diy/"
   }
 ]
