@@ -7,7 +7,6 @@ tags:
 ---
 
 <div class="class-container">
-  {# Existing content of ignis-post.md starts here #}
   <h2>The Transmutation of Self</h2>
   <p>For years, I operated as a "Hollow Performer." I collected the "scripts," I chased the "tactics,"
   and I mimicked the "charisma" of others. I asked, "What do I say to win?" My "vessel" was
