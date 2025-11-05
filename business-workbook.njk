@@ -1,0 +1,601 @@
+---
+permalink: /business-workbook/index.html
+layout: false
+title: Your 3-Day 'Ignis' Audit (Business)
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ignite Your Forge (Business)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* * ===============================================
+         * 1. ALCHEMICAL THEME & CSS VARIABLES
+         * ===============================================
+        */
+
+        :root {
+            /* Light "Lab Coat" Theme (Default) */
+            --bg-primary: #FFFEFA;       /* Light Parchment */
+            --bg-secondary: #ffffff;     /* Pure White (for boxes) */
+            --bg-input: #ffffff;         /* White text areas */
+            --text-primary: #3D1111;     /* Dark Maroon */
+            --text-secondary: #5C1A1A;   /* Medium Maroon */
+            --text-accent: #B89B3E;      /* Dark Gold (for print/light) */
+            --border-primary: #3D1111;   /* Dark Maroon */
+            --border-secondary: #c0c0c0; /* Ash */
+            --border-accent: #B89B3E;    /* Dark Gold */
+            --shadow-color: rgba(0,0,0,0.1);
+        }
+
+        [data-theme="dark"] {
+            /* Dark "Forge" Theme */
+            --bg-primary: #1a0a0a;       /* Darkest Maroon (Forge) */
+            --bg-secondary: #0f0606;     /* Near Black (for boxes) */
+            --bg-input: #1a0a0a;         /* Darkest Maroon */
+            --text-primary: #F0F0F0;     /* Parchment */
+            --text-secondary: #C0C0C0;   /* Ash */
+            --text-accent: #D4AF37;      /* Bright Gold (for dark) */
+            --border-primary: #3D1111;   /* Dark Maroon */
+            --border-secondary: #3D1111; /* Dark Maroon */
+            --border-accent: #D4AF37;    /* Bright Gold */
+            --shadow-color: rgba(0,0,0,0.5);
+        }
+
+        /* * ===============================================
+         * 2. BASE STYLES (Applies to both themes)
+         * ===============================================
+        */
+        
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: 'Lato', sans-serif;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .forge-page {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px 40px;
+            background-color: var(--bg-primary);
+            border: 1px solid var(--border-secondary);
+            box-shadow: 0 10px 30px var(--shadow-color);
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+        
+        .forge-h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--text-accent);
+            text-align: center;
+            line-height: 1.1;
+            margin-bottom: 1rem;
+            transition: color 0.3s ease;
+        }
+        .forge-h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--border-accent);
+            padding-bottom: 10px;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            transition: color 0.3s ease, border-color 0.3s ease;
+        }
+        .forge-h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            opacity: 0.8;
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+            transition: color 0.3s ease;
+        }
+        .forge-motto {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            text-align: center;
+            margin-top: 1rem;
+            margin-bottom: 3rem;
+            transition: color 0.3s ease;
+        }
+        .forge-p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+            transition: color 0.3s ease;
+        }
+        .forge-initiation {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
+            color: var(--text-secondary);
+            border-left: 3px solid var(--border-accent);
+            padding-left: 20px;
+            margin: 2rem 0;
+            font-style: italic;
+            transition: color 0.3s ease, border-color 0.3s ease;
+        }
+        .forge-strong {
+            font-weight: 700;
+            color: var(--text-primary);
+            transition: color 0.3s ease;
+        }
+        .forge-audit-box {
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border-secondary);
+            border-left: 4px solid var(--border-accent);
+            padding: 25px;
+            margin-top: 1.5rem;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+        .forge-audit-label {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text-accent);
+            display: block;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+        .forge-textarea {
+            width: 100%;
+            height: 150px;
+            background-color: var(--bg-input);
+            border: 1px dashed var(--border-primary);
+            color: var(--text-primary);
+            font-family: 'Lato', sans-serif;
+            font-size: 1rem;
+            padding: 15px;
+            box-sizing: border-box; 
+            border-radius: 4px;
+            transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+        }
+        .forge-textarea:focus {
+            outline: none;
+            border-style: solid;
+            border-color: var(--border-accent);
+        }
+        
+        .forge-cta {
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border-secondary);
+            padding: 30px;
+            text-align: center;
+            margin-top: 3rem;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+        .forge-cta-button {
+            display: inline-block;
+            background-color: var(--text-accent);
+            color: var(--bg-primary);
+            font-family: 'Lato', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            border: 2px solid var(--text-accent);
+        }
+        .forge-cta-button:hover {
+            background-color: transparent;
+            color: var(--text-accent);
+            transform: translateY(-3px);
+        }
+
+        /* * ===============================================
+         * 3. CONTROL BAR (Theme Toggle & Download)
+         * ===============================================
+        */
+        .control-bar {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+            z-index: 1000;
+        }
+        .control-button {
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border-secondary);
+            border-radius: 50px;
+            padding: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px var(--shadow-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .control-button svg {
+            width: 24px;
+            height: 24px;
+            stroke: var(--text-accent);
+            fill: none;
+            transition: all 0.3s ease;
+        }
+        #icon-sun { display: none; }
+        #icon-moon { display: block; }
+        
+        [data-theme="dark"] #icon-sun { display: block; }
+        [data-theme="dark"] #icon-moon { display: none; }
+        
+        /* NO PDF BUTTON FOR THIS VERSION */
+        #download-pdf { display: none; }
+
+
+        /* * ===============================================
+         * 4. PRINT STYLES (The "Printable Journal")
+         * ===============================================
+        */
+        @media print {
+            body {
+                background-color: #ffffff !important;
+                color: #000000 !important;
+            }
+            .forge-page {
+                border: none;
+                box-shadow: none;
+                margin: 0;
+                padding: 0;
+            }
+            .forge-h1 { color: #3D1111 !important; }
+            .forge-h2 { color: #3D1111 !important; }
+            .forge-h3 { color: #3D1111 !important; }
+            .forge-p { color: #000000 !important; }
+            .forge-strong { color: #000000 !important; }
+            .forge-initiation { color: #3D1111 !important; border-left-color: #B89B3E !important; }
+            .forge-audit-label { color: #B89B3E !important; }
+            .forge-textarea {
+                height: 200px;
+                background: #fdfdfd !important;
+                border: 1px dashed #999 !important;
+                color: #000000 !important;
+            }
+            .control-bar, .forge-cta {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+<body data-theme="dark">
+
+    <div class="control-bar">
+        <div id="theme-toggle" class="control-button" title="Toggle Theme">
+            <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </div>
+    </div>
+
+<div class="forge-body">
+    <div class="forge-page" style="text-align: center; padding: 60px 40px;">
+        <h1 class="forge-h1">Ignite Your (Business) Forge</h1>
+        <p class="forge-p" style="font-size: 1.5rem; color: var(--text-secondary); font-family: 'Cormorant Garamond', serif;">
+            A 3-Day Audit of Your Operational Architecture
+        </p>
+        <p class="forge-motto" style="margin-top: 4rem;">
+            By the Architect of Thinking Cap Trinity Consulting
+        </p>
+    </div>
+    
+    <div class="forge-page">
+        <h2 class="forge-h2">Day 1: The "Hollow" Process</h2>
+        <h3 class="forge-h3" style="margin-top: -10px; color: var(--text-secondary);">The Problem</h3>
+    
+        <p class="forge-p">
+            The "Hollow Performer" business lives in a state of fear. Fear of waste. Fear of missing targets. Fear of complexity. This fear manifests as <strong class="forge-strong">Operational Drag</strong>.
+        </p>
+        
+        <p class="forge-p">
+            You know this state. It’s the endless meeting to "circle back" on a simple problem. It’s the urge to fill a workflow gap with another tool rather than a clear process. It's the feeling of grasping for a quarterly "Yes" by cutting corners on quality.
+        </p>
+        
+        <p class="forge-p">
+            This is the "static" that pollutes your "signal"—your value delivery.
+        </p>
+        
+        <p class="forge-initiation">
+            The Alchemist knows this law: <strong class="forge-strong">A business cannot be trusted to scale until it is liberated from its own waste.</strong>
+        </p>
+        
+        <p class="forge-p">
+            When you need the process to work (but haven't built it correctly), the team (on a subconscious, "alchemical" level) senses this misalignment. They know they are serving a broken system, not the client's truth. This invites resistance, disengagement, and burnout.
+        </p>
+        
+        <p class="forge-p">
+            Your operational drag is the "Performer's" mask. Today, we identify it. An alchemist must first identify the "lead" (the waste) before it can be purified.
+        </p>
+    </div>
+    
+    <div class="forge-page">
+        <h2 class="forge-h2">The Day 1 Audit:</h2>
+        <h3 class="forge-h3" style="margin-top: -10px; color: var(--text-secondary);">Identifying the Contaminants</h3>
+        <p class="forge-p">Take 15 minutes. This is not for judgment; it is for <strong class="forge-strong">diagnosis</strong>.</p>
+        
+        <div class="forge-audit-box">
+            <label class="forge-audit-label" for="audit1">1. Recall Three Processes:</label>
+            <p class="forge-p" style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 10px;">List three specific workflows from the last month that felt "hollow" or "brittle" (a client onboarding, a reporting cycle, a marketing campaign, a team meeting).</p>
+            <textarea id="audit1" class="forge-textarea" placeholder="1. ...
+2. ...
+3. ..."></textarea>
+        </div>
+    
+        <div class="forge-audit-box">
+            <label class="forge-audit-label" for="audit2">2. Diagnose the Contaminant:</label>
+            <p class="forge-p" style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 10px;">For each workflow, identify the true driver of its failure. Be radically honest. Was it the "hunger for validation?" (e.g., creating reports that no one reads). Was it the "fear of rejection?" (e.g., over-servicing a bad-fit client). Was it the "attachment to the outcome?" (e.g., skipping quality checks to meet a deadline).</p>
+            <textarea id="audit2" class="forge-textarea" placeholder="1. (Process 1) The contaminant was...
+2. (Process 2) The contaminant was...
+3. (Process 3) The contaminant was..."></textarea>
+        </div>
+    
+        <div class="forge-audit-box">
+            <label class="forge-audit-label" for="audit3">3. Reflect on the "Static":</label>
+            <p class="forge-p" style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 10px;">How did this "static" pollute your "signal"? Endless meetings with no decisions? Committing resources you didn't have? Did the team become defensive or disengaged?</p>
+            <textarea id="audit3" class="forge-textarea" placeholder="The static caused us to..."></textarea>
+        </div>
+    </div>
+    
+    <div class="forge-page">
+        <h2 class="forge-h2">Day 2: The "Physics" of Coherent Systems</h2>
+        <h3 class="forge-h3" style="margin-top: -10px; color: var(--text-secondary);">The Diagnosis</h3>
+        
+        <p class="forge-p">
+            The "Performer" business <i style="color: var(--text-secondary);">acts</i> organized (it has meetings). The "Alchemist" business <i style="color: var(--text-secondary);">is</i> coherent (it has systems).
+        </p>
+        
+        <p class="forge-p">
+            The solution to the "Hollow Process" is not a better tactic; it is a purified <strong class="forge-strong">"Vessel"</strong>.
+        </p>
+        
+        <p class="forge-p">
+            This vessel is your <strong class="forge-strong">Operational Architecture</strong> (your SOPs, your tech stack, your team structure).
+        </p>
+        
+        <p class="forge-p">
+            Presence is the architecture of your awareness. A system is the architecture of your operation.
+        </p>
+    
+        <p class="forge-initiation">
+            A <strong class="forge-strong">"fractured operation"</strong>—one polluted by siloed knowledge, "hero" employees, and constant "rehearsing" (redundant data entry)—is a "cracked crucible". It cannot contain the pressure of real scale. It "leaks energy" (wasted time, duplicated work, team burnout).
+            <br><br>
+            A <strong class="forge-strong">"pure operation"</strong>—one that is stable, documented, and present—is a "pure, stable vessel". This vessel *radiates coherence*. It creates a "gravitational field" that calms the team and invites the client to trust you.
+        </p>
+        
+        <p class="forge-p">
+            You do not <i style="color: var(--text-secondary);">act</i> efficient. You <strong class="forge-strong">build the vessel</strong> that allows efficiency to be your natural state. This is the Inner Forge (Ignis). We begin by "tending the forge".
+        </p>
+    </div>
+    
+    <div class="forge-page">
+        <h2 class="forge-h2">The Day 2 Practicum:</h2>
+        <h3 class="forge-h3" style="margin-top: -10px; color: var(--text-secondary);">The Ritual of Ignition</h3>
+    
+        <p class="forge-p">
+            This is your first act of operational alchemy. This is not meditation; it is <strong class="forge-strong">diagnosis</strong>. You are "calibrating perception before productivity".
+        </p>
+        
+        <p class="forge-p">
+            <strong class="forge-strong">1. The Vessel:</strong> Tomorrow morning, before your day is polluted by the "world's noise" (inbound emails, new requests), find 15 minutes of total focus.
+        </p>
+        
+        <p class="forge-p">
+            <strong class="forge-strong">2. The Ignition:</strong> Pick one core workflow. Do not plan to fix it. Do not optimize it. Do not "try" to make it better. Simply <i style="color: var(--text-secondary);">observe it</i>. Map its actual steps, from start to finish.
+        </p>
+        
+        <p class="forge-p">
+            <strong class="forge-strong">3. The Diagnosis:</strong> Notice the "weather" of this process.
+        </p>
+    
+        <div class="forge-audit-box">
+            <label class="forge-audit-label" for="audit4">Audit Your Operational Weather:</label>
+            <p class="forge-p" style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 10px;">Is it "agitated?" (Full of constant exceptions and "what-ifs"). Is it "clear?" (Everyone knows the next step). Is it "chaotic?" (No one knows who owns the task). Is it "rehearsing?" (The same data is being entered in three different places). Do not judge it. Do not fight it. Just see it and describe it here.</p>
+            <textarea id="audit4" class="forge-textarea" placeholder="I observed that our process for... was..."></textarea>
+        </div>
+        
+        <p class="forge-p" style="margin-top: 1.5rem;">
+            This 15-minute ritual is the striking of the match. You have simply become *aware* of your own "Prima Materia" (your first matter) before you engage with the world.
+        </p>
+        
+        <p class="forge-p">You have now calibrated your perception. You have created the "vessel." Tomorrow, we learn to <i style="color: var(--text-secondary);">use</i> it.</p>
+    </div>
+    
+    <div class="forge-page">
+        <h2 class="forge-h2">Day 3: The Indifferent Strategy</h2>
+        <h3 class="forge-h3" style="margin-top: -10px; color: var(--text-secondary);">The Ignition</h3>
+        
+        <p class="forge-p">
+            You have built the "Forge" (your systems). You have lit the "Fire" of awareness (of waste). Now, you must learn to <strong class="forge-strong">control the heat</strong>.
+        </p>
+        
+        <p class="forge-p">
+            This is the <strong class="forge-strong">"Data-Driven Key."</strong> It is the engine of the Inner Forge. It is the secret to all true authority.
+        </p>
+        
+        <p class="forge-initiation">
+            The Alchemist's Resolve is a paradox:
+            <br>
+            You must have an <strong class="forge-strong">obsessive, tenacious commitment</strong> to the <strong class="forge-strong">process</strong> (executing the plan),
+            <br>
+            fused with a <strong class="forge-strong">profound, unshakable detachment</strong> from the <strong class="forge-strong">outcome</strong> (the initial hypothesis).
+        </p>
+        
+        <p class="forge-p">
+            The "Performer" business is a slave to its assumptions (the "Yes"). The "Alchemist" business is obsessed only with the <i style="color: var(--text-secondary);">process</i>:
+        </p>
+    
+        <ul style="margin-left: 20px; margin-bottom: 1.5rem; font-size: 1.1rem; list-style-type: '✧ ';">
+            <li>"Did we perceive the market clearly?"</li>
+            <li>"Did we diagnose the problem accurately?"</li>
+            <li>"Did we serve the data truthfully?"</li>
+            <li>"Did we maintain our operational coherence?"</li>
+        </ul>
+        
+        <p class="forge-p">
+            When you are truly detached from the outcome, you are <strong class="forge-strong">liberated</strong>. You are free to pivot. You are free to ask the hard questions (e.g., "Is this product actually working?"). You are free to walk away from a bad market.
+        </p>
+    
+        <p class="forge-p">
+            <strong class="forge-strong">This liberation is the source of all true strategic authority</strong>. Detachment is not coldness; it is <i style="color: var(--text-secondary);">clarity</i>.
+        </p>
+    </div>
+    
+    <div class="forge-page">
+        <h2 class="forge-h2">The Day 3 Practicum:</h2>
+        <h3 class="forge-h3" style="margin-top: -10px; color: var(--text-secondary);">The Strategic Rehearsal</h3>
+    
+        <p class="forge-p">
+            The novice business lives in fear of failure. The alchemist business <strong class="forge-strong">models</strong> it. This is your "inoculation against sunk costs".
+        </p>
+        
+        <p class="forge-p">
+            <strong class="forge-strong">1. The Crucible:</strong> This morning, identify your business's most important "transmutation"—a new product launch, a critical marketing campaign, a major operational change.
+        </p>
+        
+        <p class="forge-p">
+            <strong class="forge-strong">2. The Rehearsal:</strong> Visualize that interaction <i style="color: var(--text-secondary);">failing</i>. See the client saying "No." See the product launch get zero sales. Feel the "rejection" in your P&L. Do not run from it.
+        </p>
+    
+        <p class="forge-p">
+            <strong class="forge-strong">3. The Transmutation:</strong> Now, in that visualization, <i style="color: var(--text-secondary);">practice your strategic indifference</i>. Feel the "No," and mentally respond:
+            <br>
+            <i style="color: var(--text-secondary);">"This does not touch the vessel." (Our systems are strong).<br>
+            "This is data." (The market has given us an answer).<br>
+            "Our identity is not in the outcome." (The business is not this one product).<br>
+            "The process was served." (The test gave us the truth, which is what we wanted).</i>
+        </p>
+        
+        <div class="forge-audit-box">
+            <label class="forge-audit-label" for="audit5">Audit Your Rehearsal:</label>
+            <p class="forge-p" style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 10px;">What "crucible" (initiative) did you identify? How did it feel to visualize failure? What did you learn from practicing indifference?</p>
+            <textarea id="audit5" class="forge-textarea" placeholder="The crucible I identified was..."></textarea>
+        </div>
+    
+        <p class="forge-p" style="margin-top: 1.5rem;">
+            The forge is lit. The vessel is pure. The fire of your operational presence is stable.
+        </p>
+    </div>
+    
+    <div class="forge-page">
+        <h2 class="forge-h2">The Crucible Waits</h2>
+    
+        <p class="forge-p">
+            You have completed the first audit. You have separated the "Performer" business from the "Alchemist" business. You have forged the "Inner Vessel" of <strong class="forge-strong">IGNIS</strong>.
+        </p>
+        
+        <p class="forge-initiation">
+            But a forge is not the work. A forge is where the <strong class="forge-strong">tools</strong> are made.
+            <br><br>
+            The fire of awareness is not the <i style="color: var(--text-secondary);">goal</i>; it is the <i style="color: var(--text-secondary);">fuel</i>.
+        </p>
+        
+        <p class="forge-p">
+            Now, you must learn to <strong class="forge-strong">use</strong> that fire. How do you take this new operational coherence and apply it to the <i style="color: var(--text-secondary);">external</i> world? How do you use this "physics" to take massive, systematic, transformative <strong class="forge-strong">action</strong>?
+        </p>
+        
+        <p class="forge-p">
+            This 3-day audit was the <strong class="forge-strong">"Ignition."</strong>
+        </p>
+        
+        <p class="forge-p">
+            The **"Citadel System Installation"** is the <strong class="forge-strong">"Crucible."</strong>
+        </p>
+        
+        <p class="forge-p">
+            It is the systematic, day-by-day process of *using* your new-found fire. It is the bridge from "internal state" to "external reality." You have forged the vessel; now you will learn to build the **Citadel**.
+        </Signature>
+        
+        <p class="forge-p">
+            The Great Work begins. If you are ready to transmute this internal fire into external action, your crucible is waiting.
+        </p>
+        
+        <div class="forge-cta">
+            <a href="/service-blueprint-dfy/" class="forge-cta-button">
+                Begin the "Citadel" Installation
+            </a>
+        </div>
+    
+    </div>
+</div>
+
+<script>
+    /* * ===============================================
+     * ALCHEMICAL THEME SWITCHER SCRIPT
+     * ===============================================
+    */
+    (function() {
+        const toggleButton = document.getElementById('theme-toggle');
+        const htmlElement = document.documentElement;
+
+        // 1. The "Physics" (Automatic Detection)
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+        function applyTheme(theme) {
+            htmlElement.setAttribute('data-theme', theme);
+            localStorage.setItem('alchemistTheme', theme);
+        }
+
+        // 2. The "Agency" (Manual Toggle)
+        toggleButton.addEventListener('click', () => {
+            const currentTheme = htmlElement.getAttribute('data-theme');
+            const newTheme = (currentTheme === 'dark') ? 'light' : 'dark';
+            applyTheme(newTheme);
+        });
+
+        // 3. The "Ignition" (On Load)
+        const savedTheme = localStorage.getItem('alchemistTheme');
+        
+        if (savedTheme) {
+            applyTheme(savedTheme);
+        } else if (prefersDark.matches) {
+            applyTheme('dark');
+        } else {
+            applyTheme('light');
+        }
+
+        // 4. The "Living System" (Listen for OS Changes)
+        prefersDark.addEventListener('change', (e) => {
+            if (!localStorage.getItem('alchemistTheme')) {
+                applyTheme(e.matches ? 'dark' : 'light');
+            }
+        });
+        
+        // 5. Local Storage for Textareas (The "Vessel Memory")
+        const textareas = document.querySelectorAll('.forge-textarea');
+        textareas.forEach(textarea => {
+            const id = textarea.id;
+            
+            // Load saved work on init
+            const savedValue = localStorage.getItem(`forge-audit-${id}`);
+            if (savedValue) {
+                textarea.value = savedValue;
+            }
+            
+            // Save work on input
+            textarea.addEventListener('input', () => {
+                localStorage.setItem(`forge-audit-${id}`, textarea.value);
+            });
+        });
+        
+    })();
+</script>
+
+</body>
+</html>

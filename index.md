@@ -6,7 +6,6 @@ title: The Alchemical Citadel
 <div class="hero container">
   <h2>I Build 7-Day "Franchise-Ready" Blueprints</h2>
   <p>For independent Car Wash & Restaurant Owners. We transmute chaotic operations into a resilient, system-driven architecture.</p>
-  
   <a href="/contact/" class="form-button" style="margin: 2rem auto 0 auto; display: block; max-width: 350px;">Schedule Your Free Consultation</a>
 </div>
 
@@ -15,9 +14,9 @@ title: The Alchemical Citadel
   <p class="bifurcation-subtitle">The first step to building your Citadel is a diagnosis. Get the universal key now.</p>
 
   <div class="bifurcation-grid" style="grid-template-columns: 1fr;">
-    <a href="/free-audit/" class="bifurcation-button" style="background-color: var(--text-accent); color: var(--bg-secondary); border-color: var(--text-accent);">
-      <span class="button-title">Get Your Free 3-Day "Ignis" Audit</span>
-      <span class="button-desc">The essential diagnostic that reveals your business's core fractures.</span>
+    <a href="/business-audit/" class="bifurcation-button" style="background-color: var(--text-accent); color: var(--bg-secondary); border-color: var(--text-accent);">
+      <span class="button-title">Get My Free 3-Day "Business Audit"</span>
+      <span class="button-desc">The essential diagnostic that reveals your business's core operational fractures.</span>
     </a>
   </div>
 </section>

@@ -9,7 +9,7 @@ title: Business Transformation
 </div>
 
 <section id="products" class="container">
-  <h2>Products & Services Menu</h2>
+  <h2>Professional Transformation</h2>
 
   <div class="product-grid" style="grid-template-columns: 1fr;">
     
@@ -28,10 +28,12 @@ title: Business Transformation
   </div>
 </section>
 
+---
+
 <section id="business-hook" class="container">
   <div class="cta-hook">
     <h3>The "Ignis Audit" is the First Step</h3>
-    <p>All "Great Work" begins with a "diagnosis" of the "vessel." The 3-Day "Ignis" Audit is the **universal key** to this entire process.</p>
-    <a href="/free-audit/" class="buy-button" style="max-width: 400px; margin-left: auto; margin-right: auto;">Begin the Free "Ignis" Audit</a>
+    <p>All "Great Work" begins with a "diagnosis" of the "vessel." The 3-Day "Ignis" Audit (for Business) is the "universal key" to this process.</p>
+    <a href="/business-audit/" class="buy-button" style="max-width: 400px; margin-left: auto; margin-right: auto;">Begin the Free "Business Audit"</a>
   </div>
 </section>
