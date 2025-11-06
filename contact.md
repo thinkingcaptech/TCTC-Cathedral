@@ -21,7 +21,7 @@ title: The Covenant of Construction
     method="POST" 
     data-netlify="true"
     action="/thank-you/"
-    onsubmit="redirectToStripe(event)"
+    onsubmit="redirectToCalendar(event)"
     style="max-width: 600px; margin: 0 auto; text-align: left;"
   >
     <input type="hidden" name="form-name" value="covenant-form" />
@@ -99,7 +99,7 @@ title: The Covenant of Construction
       onmouseover="this.style.transform='scale(1.02)'"
       onmouseout="this.style.transform='scale(1)'"
     >
-      <span>Submit Findings & Purchase Blueprint</span>
+      <span>Submit Findings & Book Your Session</span>
       <span style="font-size: 1.4rem; color: #5C1A1A; margin-top: 0.25rem; font-weight: 800;">$499</span>
     </button>
   </form>
@@ -120,8 +120,8 @@ title: The Covenant of Construction
   `;
   document.head.appendChild(shimmer);
 
-  // After successful Netlify submission, redirect to Stripe
-  function redirectToStripe(event) {
+  // After successful Netlify submission, redirect to Google Calendar booking
+  function redirectToCalendar(event) {
     event.preventDefault();
     const form = event.target;
     const data = new FormData(form);
@@ -130,7 +130,8 @@ title: The Covenant of Construction
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(data).toString()
     }).then(() => {
-      window.location.href = "https://buy.stripe.com/test_7sY00c0ph3xq9We3DJ7Re00";
+      // your booking link here
+      window.location.href = "https://calendar.app.google/ScKvj638Qi81ABeP9";
     }).catch((error) => alert("Submission failed: " + error));
   }
 </script>
