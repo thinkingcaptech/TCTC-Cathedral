@@ -3,31 +3,32 @@ layout: layout.njk
 title: The Codex
 ---
 
-{% comment %} This container div will make the layout match your other pages {% endcomment %}
-<div class="class-container">
+<div class="container">
   <h1>The Codex</h1>
   <p>An archive of thoughts and explorations.</p>
 
   <hr>
 
-  <h2>All Posts</h2>
+  <h2 style="margin-top: 2rem;">All Posts</h2>
 
-  {% comment %} 
-    This is the corrected Liquid loop.
-    - "collections.post | reverse" sorts newest-to-oldest.
+  {% comment %}
+    This uses your "product-grid" classes to create the "bubble" card
+    style for every post in your collection.
   {% endcomment %}
-  <ul>
-    {%- for post in collections.post | reverse -%}
-      <li>
-        <a href="{{ post.url | url }}">
-          <strong>{{ post.data.title }}</strong>
-        </a>
-        - 
-        <time datetime="{{ post.date | date: '%Y-%m-%d' }}">
-          {{ post.date | date: "%B %d, %Y" }}
-        </time>
-      </li>
-    {%- endfor -%}
-  </ul>
+  
+  <div class="product-grid" style="grid-template-columns: repeat(2, 1fr);">
 
+    {% for post in collections.post | reverse %}
+      <div class="product-card">
+        <h3>{{ post.data.title }}</h3>
+        
+        {% if post.data.excerpt %}
+          <p>{{ post.data.excerpt }}</p>
+        {% endif %}
+        
+        <a href="{{ post.url | url }}" class="buy-button">Read Post</a>
+      </div>
+    {% endfor %}
+
+  </div>
 </div>

@@ -37,4 +37,19 @@ You do not move forward until you re-affirm the truth you *just* uncovered. You 
 Before you *ever* mention your product, you co-create the "Principles" of the new solution. You ask, "Given this truth, what must this new system do? What values must it honor?" If their pain was chaos, a principle must be **Clarity**. If it was stagnation, a principle must be **Scalability**. They now have ownership over the *philosophy* of the solution.
 
 ### 3. The Design (The Infrastructure)
-Now, and *only* now, do you introduce your solution. But you don't "pitch" it. You *
+Now, and *only* now, do you introduce your solution. But you don't "pitch" it. You *map* it. You show how your service is the *only logical infrastructure* capable of supporting the principles *they just defined*.
+
+The novice says, "Let me show you our dashboard feature."
+The alchemist says, "To honor *your* principle of Clarity, this dashboard is the material we will use to build the architecture of transparency."
+
+## The Result: Conviction, Not a "Close"
+
+With this method, "sales resistance" becomes obsolete. You cannot argue with a blueprint you helped draw.
+
+The client is no longer "convinced." They are **invested**. They have structural and emotional ownership of the outcome before a contract is ever signed. You haven't "closed a deal." You have *architected* their new reality, *with* them.
+
+The blueprint is signed. But a structure must be scaled and sustained. It must be given life.
+
+It is ready for [**AER (The Air)**](/codex/aer-post/).
+
+</div>
