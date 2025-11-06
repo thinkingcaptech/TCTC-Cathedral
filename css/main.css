@@ -828,3 +828,82 @@ main {
   background: none;
   animation: none;
 }
+/* --- Fibonacci Shimmer Button Effect --- */
+
+/* This targets your main buttons */
+.form-button,
+.bifurcation-button {
+  position: relative; /* Required for the pseudo-element */
+  overflow: hidden;   /* Hides the shimmer when it's off-screen */
+  z-index: 1;         /* Ensures the shimmer is "on" the button */
+}
+
+/* This creates the shimmer element itself */
+.form-button::before,
+.bifurcation-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%; /* Start off-screen to the left */
+  width: 75%;
+  height: 100%;
+  
+  /* The shimmer gradient (white light) */
+  background: linear-gradient(
+    90deg, 
+    transparent 0%, 
+    rgba(255, 255, 255, 0.4) 50%, 
+    transparent 100%
+  );
+  
+  z-index: 2;
+  transform: skewX(-25deg); /* Slants the shimmer */
+
+  /* This is the Fibonacci-inspired animation */
+  animation-name: fibonacci-shimmer;
+  animation-duration: 1.618s;  /* Golden Ratio */
+  animation-delay: 0.8s;       /* Fibonacci Number */
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+/* This is the animation that moves the shimmer */
+@keyframes fibonacci-shimmer {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 150%; /* Moves it all the way across and off-screen */
+  }
+}
+/* This is the new style you requested */
+.parchment-section {
+  background-color: #fdfbf5; /* A light, warm parchment color */
+  border: 1px solid var(--border-color, #ddd); /* Uses your site's border color */
+  border-radius: 8px; /* Matches your site's rounded corners */
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03); /* A very subtle lift */
+}
+
+/* This styles the list items inside the parchment sections */
+.parchment-section ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  line-height: 1.8;
+}
+
+/* This styles the h3 titles for each audit point */
+.parchment-section h3 {
+  font-size: 1.5rem;
+  font-family: 'Cormorant Garamond', serif;
+  margin-bottom: 0.5rem;
+}
+
+/* This styles the subtitle for each audit point */
+.parchment-section .audit-subtitle {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: #555;
+}
