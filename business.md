@@ -23,7 +23,7 @@ title: The Citadel System
   
   <p style="font-style: italic;">(This deliverable is a custom version of our <a href="/proof/">Sample System Blueprints</a>.)</p>
   
-  <a href="/contact/" class="form-button" style="max-width: 300px; margin-top: 1rem;">Purchase the $499 Blueprint</a>
+  <a href="https://calendar.app.google/ScKvj638Qi81ABeP9" class="form-button" style="max-width: 300px; margin-top: 1rem;">Purchase the $499 Blueprint</a>
 
   <hr style="margin: 2rem 0; border-color: var(--border-color);">
 
