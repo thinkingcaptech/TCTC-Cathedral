@@ -31,7 +31,7 @@ title: The Partnership (The Citadel)
     </div>
     <p style="text-align: center; color: var(--text-secondary);">This "Covenant" requires "resonance." You must apply.</p>
     
-    <form name="partnership-application" netlify data-netlify="true" action="/thank-you/">
+    <form name="partnership-application" netlify data-netlify="true" action="{{ '/thank-you/' | url }}">
       <input type="hidden" name="Form" value="Partnership Application">
       <div class="form-group">
         <label for="name">Name (The Architect)</label>

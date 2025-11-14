@@ -1,21 +1,18 @@
 <header>
   <div class="container">
     <h1>
-      <a href="/">
-        <img src="/img/logo.jpg" alt="TCTC Logo" class="header-logo">
+      <a href="{{ '/' | url }}">
+        <img src="{{ '/img/logo.jpg' | url }}" alt="TCTC Logo" class="header-logo">
         <span>Thinking Cap Trinity Consulting</span>
       </a>
     </h1>
     <nav>
-      <a href="/">Home</a>
-      <a href="/about/">About</a>
-      
-      <a href="/business/">The Citadel System</a>
-
-      <a href="/proof/">Proof</a>
-
-      <a href="/codex/">Codex</a>
-      <a href="/contact/">Contact</a>
+      <a href="{{ '/' | url }}">Home</a>
+      <a href="{{ '/about/' | url }}">About</a>
+      <a href="{{ '/business/' | url }}">The Citadel System</a>
+      <a href="{{ '/proof/' | url }}">Proof</a>
+      <a href="{{ '/codex/' | url }}">Codex</a>
+      <a href="https://calendar.app.google/ScKvj638Qi81ABeP9">Contact</a>
     </nav>
   </div>
 </header>

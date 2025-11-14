@@ -12,8 +12,8 @@ title: Get Your Free 5-Point Citadel Audit
   
   <p style="margin-bottom: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">Find the "lead" that contaminates your signal, so you can begin the work of transmutation.</p>
 
-  <form 
-    action="/audit-delivery/" 
+<form 
+  action="{{ '/audit-delivery/' | url }}" 
     method="GET" 
     style="max-width: 500px; margin: 0 auto; text-align: left;"
   >
@@ -139,9 +139,9 @@ title: Your 5-Point Citadel Audit
     
     <p style="margin-bottom: 1.5rem;">You have just completed the <strong>`AQUA` (Diagnostic)</strong> stage. You have felt the gravity of the truth.</p>
     
-    <p style="margin-bottom: 2.5rem;">The next step is the <strong>`TERRA` (Earth)</strong> stage. This is our <strong>$499 Diagnostic Blueprint</strong>—a paid, deep-dive engagement where we move from "problem" to "principle." Together, we will co-create the full architectural plans for your new, coherent system, like the <a href="/proof/">Sample System Blueprint</a> you've seen.</p>
+    <p style="margin-bottom: 2.5rem;">The next step is the <strong>`TERRA` (Earth)</strong> stage. This is our <strong>$499 Diagnostic Blueprint</strong>—a paid, deep-dive engagement where we move from "problem" to "principle." Together, we will co-create the full architectural plans for your new, coherent system, like the <a href="{{ '/proof/' | url }}">Sample System Blueprint</a> you've seen.</p>
 
-    <a href="/contact/" class="form-button" style="margin: 0 auto; display: block; max-width: 400px;">Begin the Great Work: Book Your $499 Blueprint</a>
+    <a href="https://calendar.app.google/ScKvj638Qi81ABeP9" class="form-button" style="margin: 0 auto; display: block; max-width: 400px;">Begin the Great Work: Book Your $499 Blueprint</a>
   </div>
 
 </div>

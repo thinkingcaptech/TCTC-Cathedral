@@ -1,72 +1,71 @@
 ---
 layout: layout.njk
-title: Get Your Free 5-Point Citadel Audit
+title: Begin the 5-Point Citadel Audit
 ---
 
-<div class="container" style="padding-top: 2rem; padding-bottom: 4rem; max-width: 800px; text-align: center;">
-
-  <h2 class="bifurcation-title" style="margin-bottom: 1rem;">The Great Work Begins with a Diagnosis</h2>
-  <p class="bifurcation-subtitle" style="margin-bottom: 2.5rem;">Enter your details to receive your complimentary 5-Point Citadel Audit.</p>
-
-  <p style="margin-bottom: 1.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">This is not a generic checklist. This is an alchemical diagnostic designed to find the specific fractures in your business's architecture—from your signal (Ignis) to your systems (Terra).</p>
-  
-  <p style="margin-bottom: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">Find the "lead" that contaminates your signal, so you can begin the work of transmutation.</p>
-
-  <!-- 
-    This form "simulates" the submission by redirecting to your audit page.
-    I've added Name (required) and Phone (optional).
-  -->
-  <form 
-    action="/audit-delivery/" 
-    method="GET" 
-    style="max-width: 500px; margin: 0 auto; text-align: left;"
-  >
-    
-    <!-- Name Field (Required) -->
-    <div style="margin-bottom: 1.5rem;">
-      <label for="name" style="display: block; margin-bottom: 0.5rem; font-family: 'Lato', sans-serif; font-weight: 600;">Your Name</label>
-      <input 
-        type="text" 
-        id="name" 
-        name="name" 
-        placeholder="e.g., Will Johnson" 
-        required
-        style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--border-color); background-color: #fff; border-radius: 8px; font-family: 'Lato', sans-serif;"
-      >
-    </div>
-
-    <!-- Email Field (Required) -->
-    <div style="margin-bottom: 1.5rem;">
-      <label for="email" style="display: block; margin-bottom: 0.5rem; font-family: 'Lato', sans-serif; font-weight: 600;">Your Email Address</label>
-      <input 
-        type="email" 
-        id="email" 
-        name="email" 
-        placeholder="you@yourcompany.com" 
-        required
-        style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--border-color); background-color: #fff; border-radius: 8px; font-family: 'Lato', sans-serif;"
-      >
-    </div>
-
-    <!-- Phone Field (Optional) -->
-    <div style="margin-bottom: 2rem;">
-      <label for="phone" style="display: block; margin-bottom: 0.5rem; font-family: 'Lato', sans-serif; font-weight: 600;">Phone Number (Optional)</label>
-      <input 
-        type="tel" 
-        id="phone" 
-        name="phone" 
-        placeholder="(555) 123-4567"
-        style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--border-color); background-color: #fff; border-radius: 8px; font-family: 'Lato', sans-serif;"
-      >
-    </div>
-    
-    <button 
-      type="submit" 
-      class="form-button" 
-      style="width: 100%;"
-    >
-      Download Your Free Audit
-    </button>
-  </form>
-
+<div class="container" style="padding-top: 2rem; padding-bottom: 3rem; max-width: 780px; text-align: center;">
+  <h2 class="bifurcation-title" style="margin-bottom: 1rem;">The Great Work Begins</h2>
+  <p class="bifurcation-subtitle" style="margin-bottom: 1.5rem;">Enter your details to unlock the 5-Point Citadel Audit.</p>
 </div>
+
+<div class="container" style="max-width: 520px;">
+  <form id="audit-gate" method="GET" action="{{ '/audit-delivery/' | url }}" style="background: var(--bg-secondary); padding: 2rem; border-radius: 16px; border: 1px solid var(--border-color);">
+    <div style="margin-bottom: 1.5rem;">
+      <label for="gate-name" style="display:block; margin-bottom:0.5rem; font-weight:600; font-family:'Lato',sans-serif;">Your Name</label>
+      <input type="text" id="gate-name" name="name" placeholder="e.g., Will Johnson" required style="width:100%; padding:0.75rem 1rem; border:1px solid var(--border-color); border-radius:8px; font-family:'Lato',sans-serif;">
+    </div>
+
+    <div style="margin-bottom: 1.5rem;">
+      <label for="gate-email" style="display:block; margin-bottom:0.5rem; font-weight:600; font-family:'Lato',sans-serif;">Your Email Address</label>
+      <input type="email" id="gate-email" name="email" placeholder="you@yourcompany.com" required style="width:100%; padding:0.75rem 1rem; border:1px solid var(--border-color); border-radius:8px; font-family:'Lato',sans-serif;">
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+      <label for="gate-phone" style="display:block; margin-bottom:0.5rem; font-weight:600; font-family:'Lato',sans-serif;">Phone Number</label>
+      <input type="tel" id="gate-phone" name="phone" placeholder="(555) 123-4567" required style="width:100%; padding:0.75rem 1rem; border:1px solid var(--border-color); border-radius:8px; font-family:'Lato',sans-serif;">
+    </div>
+
+    <button type="submit" class="form-button" style="width:100%;">Continue to the 5-Point Audit</button>
+  </form>
+</div>
+
+<script>
+  (function() {
+    const STORAGE_KEY = "citadelAudit";
+    const form = document.getElementById("audit-gate");
+    if (!form) return;
+    const fields = form.querySelectorAll("input[name]");
+
+    function readStored() {
+      try {
+        return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+      } catch (_) {
+        return {};
+      }
+    }
+
+    function writeStored(data) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+    }
+
+    const stored = readStored();
+    fields.forEach(field => {
+      if (stored[field.name]) {
+        field.value = stored[field.name];
+      }
+      field.addEventListener("input", () => {
+        const snapshot = readStored();
+        snapshot[field.name] = field.value;
+        writeStored(snapshot);
+      });
+    });
+
+    form.addEventListener("submit", () => {
+      const snapshot = readStored();
+      fields.forEach(field => {
+        snapshot[field.name] = field.value;
+      });
+      writeStored(snapshot);
+    });
+  })();
+</script>

@@ -12,7 +12,7 @@ title: Schedule Consultation
   <div class="waitlist-form-container">
     <h3 class="form-title">Schedule Your "Transmutation"</h3>
     
-    <form name="consultation-request" netlify data-netlify="true" action="/thank-you/">
+    <form name="consultation-request" netlify data-netlify="true" action="{{ '/thank-you/' | url }}">
       
       <input type="hidden" id="service-name-input" name="service" value="Service Request">
 
