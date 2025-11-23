@@ -4,8 +4,8 @@ title: Modern AiChemy | Where AI Meets Business Alchemy
 ---
 
 <div class="hero container" style="text-align: center; padding: 3rem 1rem; background: transparent;">
-  <h1 style="font-size: 2.5rem; margin-bottom: 1rem; color: #4a3a99; font-weight: 800; text-shadow: 0 2px 4px rgba(74, 58, 153, 0.2);">Welcome to the Digital Alchemist's Laboratory</h1>
-  <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 2rem; color: #5548a0;">Where AI Meets Alchemy - Transforming Business Problems Into Silver</h2>
+  <h1 style="font-size: 2.5rem; margin-bottom: 1rem; background: linear-gradient(135deg, #e8e8e8 0%, #c0c0c0 50%, #f5f5f5 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; text-shadow: 0 2px 8px rgba(192, 192, 192, 0.5), 0 0 20px rgba(255, 255, 255, 0.3); filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4));">Welcome to the Digital Alchemist's Laboratory</h1>
+  <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 2rem; background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; filter: drop-shadow(0 1px 3px rgba(192, 192, 192, 0.4));">Where AI Meets Alchemy - Transforming Business Problems Into Silver</h2>
   
   <div style="background: linear-gradient(135deg, #5548a0 0%, #4a3a99 100%); color: white; padding: 2rem; border-radius: 12px; max-width: 650px; margin: 2rem auto; box-shadow: 0 8px 32px rgba(74, 58, 153, 0.3); border: 2px solid rgba(192, 192, 192, 0.3);">
     <p style="font-size: 1.2rem; margin-bottom: 0.75rem; font-weight: 700; color: white;"><strong>Mission Progress</strong></p>
@@ -23,18 +23,18 @@ title: Modern AiChemy | Where AI Meets Business Alchemy
 </div>
 
 <section id="mission" class="container" style="padding: 4rem 1rem; max-width: 800px; margin: 0 auto;">
-  <h2 style="text-align: center; color: #1a1a2e; margin-bottom: 2rem; background: none; -webkit-text-fill-color: #1a1a2e; animation: none;">The Mission: Honest. Urgent. Real.</h2>
+  <h2 style="text-align: center; background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 2rem; font-weight: 800; font-size: 2.25rem; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4));">The Mission: Honest. Urgent. Real.</h2>
   
-  <div style="background: #f8f9fa; padding: 2rem; border-radius: 8px; border-left: 4px solid #6b4ce6;">
-    <p style="font-size: 1.1rem; line-height: 1.8;">I'm William Johnson, and my new bride and I find ourselves in a legal battle for her children. We need to raise $10,000 by January 1st, 2025 for legal expenses. But here's the thing - <strong>I'm not asking for charity.</strong></p>
+  <div style="background: #f8f9fa; padding: 2rem; border-radius: 8px; border-left: 4px solid #5548a0;">
+    <p style="font-size: 1.1rem; line-height: 1.8; color: #1a1a2e;">I'm William Johnson, and my new bride and I find ourselves in a legal battle for her children. We need to raise $10,000 by January 1st, 2025 for legal expenses. But here's the thing - <strong style="color: #0a0e27;">I'm not asking for charity.</strong></p>
     
-    <p style="font-size: 1.1rem; line-height: 1.8;">I'm a Business Systems Architect and Digital Alchemist. I've spent years building AI-powered tools that actually work and creating AI-generated music that sounds human. These aren't side projects - they're battle-tested systems I use in real businesses.</p>
+    <p style="font-size: 1.1rem; line-height: 1.8; color: #1a1a2e;">I'm a Business Systems Architect and Digital Alchemist. I've spent years building AI-powered tools that actually work and creating AI-generated music that sounds human. These aren't side projects - they're battle-tested systems I use in real businesses.</p>
     
-    <p style="font-size: 1.1rem; line-height: 1.8;"><strong>I'm offering real transformation.</strong> You get software tools that save you time and make you money. You get custom music that elevates your brand. You get systems that actually run your business.</p>
+    <p style="font-size: 1.1rem; line-height: 1.8; color: #1a1a2e;"><strong style="color: #0a0e27;">I'm offering real transformation.</strong> You get software tools that save you time and make you money. You get custom music that elevates your brand. You get systems that actually run your business.</p>
     
-    <p style="font-size: 1.1rem; line-height: 1.8;">And I get to support my new family.</p>
+    <p style="font-size: 1.1rem; line-height: 1.8; color: #1a1a2e;">And I get to support my new family.</p>
     
-    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 0;"><em>This isn't a sob story. It's alchemy - transforming a difficult situation into mutual value. You need solutions. I need support. Let's make magic happen.</em></p>
+    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 0; color: #1a1a2e;"><em>This isn't a sob story. It's alchemy - transforming a difficult situation into mutual value. You need solutions. I need support. Let's make magic happen.</em></p>
   </div>
   
   <div style="text-align: center; margin-top: 2rem;">
@@ -43,8 +43,8 @@ title: Modern AiChemy | Where AI Meets Business Alchemy
 </section>
 
 <section class="container" style="padding: 4rem 1rem; background: transparent;">
-  <h2 style="text-align: center; color: #1a1a2e; margin-bottom: 1rem; background: none; -webkit-text-fill-color: #1a1a2e; animation: none;">Three Paths to AiChemy</h2>
-  <p style="text-align: center; font-size: 1.1rem; color: #333; margin-bottom: 3rem;">Choose your transformation. Or combine them all.</p>
+  <h2 style="text-align: center; background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 1rem; font-weight: 800; font-size: 2.25rem; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4));">Three Paths to AiChemy</h2>
+  <p style="text-align: center; font-size: 1.1rem; color: #1a1a2e; margin-bottom: 3rem; font-weight: 500;">Choose your transformation. Or combine them all.</p>
 
   <div class="bifurcation-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
     <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-top: 4px solid #6b4ce6;">
