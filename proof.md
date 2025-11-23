@@ -96,30 +96,7 @@ title: The Transmutation Records | Proof of AiChemy
   </div>
 </section>
 
-<section class="container" style="padding: 3rem 1rem; background: #f8f9fa;">
-  <h2 style="text-align: center; background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin-bottom: 3rem;">Business Systems Library</h2>
-  
-  <div style="max-width: 900px; margin: 0 auto;">
-    <div style="background: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-      <h3 style="color: #1a1a2e; margin-bottom: 1.5rem;">📚 Sample System Blueprint</h3>
-      <p style="line-height: 1.7; margin-bottom: 1.5rem;">Below is the exact type of operational blueprint included in all bundle packages. This is what franchise-level systems look like—HELM, BRIDGE, and FORGE frameworks, 30-60-90 plans, hiring scripts, SOPs, and activation plans.</p>
-      
-      <div style="background: #f8f9fa; padding: 2rem; border-radius: 8px; border-left: 4px solid #5548a0; margin-bottom: 2rem;">
-        <p style="margin: 0 0 1rem 0; font-size: 1.1rem;"><strong>What's Inside:</strong></p>
-        <ul style="line-height: 1.8; color: #333; margin-bottom: 1rem;">
-          <li>Complete management frameworks</li>
-          <li>Revenue dashboards & tracking</li>
-          <li>Hiring and onboarding scripts</li>
-          <li>Standard operating procedures</li>
-          <li>30-60-90 day activation plans</li>
-        </ul>
-        <p style="margin: 0; font-style: italic; color: #666;">This is proof that your purchase unlocks a real operating system, not a slide deck.</p>
-      </div>
-      
-      <a href="{{ '/assets/TCTC-Management-System-Blueprint.pdf' | url }}" class="form-button" style="display: block; text-align: center; max-width: 400px; margin: 0 auto;">📥 Download Sample Blueprint (PDF)</a>
-    </div>
-  </div>
-</section>
+
 
 <section class="container" style="padding: 3rem 1rem;">
   <div style="max-width: 800px; margin: 0 auto; text-align: center;">

@@ -19,31 +19,31 @@ title: The Sound of AiChemy | AI-Generated Music That Sounds Human
   <div style="max-width: 900px; margin: 0 auto;">
     <div style="background: white; padding: 2.5rem; border-radius: 12px; margin-bottom: 2rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-left: 6px solid #5548a0;">
       <h3 style="color: #5548a0; margin: 0 0 1rem 0; font-size: 1.5rem;">"Tulsa Grateful"</h3>
-      <p style="font-size: 1.1rem; color: #666; margin-bottom: 1rem;"><strong>Oklahoma Thanksgiving Anthem</strong></p>
-      <p style="line-height: 1.7; margin-bottom: 1.5rem;">Created for 92.9 The River Morning Show (Tulsa, OK). A heartfelt tribute to Oklahoma Thanksgiving, produced in 48 hours using AI music generation.</p>
+      <p style="font-size: 1.1rem; color: #1a1a2e; margin-bottom: 1rem;"><strong style="color: #0a0e27;">Oklahoma Thanksgiving Anthem</strong></p>
+      <p style="line-height: 1.7; margin-bottom: 1.5rem; color: #1a1a2e;">Created for 92.9 The River Morning Show (Tulsa, OK). A heartfelt tribute to Oklahoma Thanksgiving, produced in 48 hours using AI music generation.</p>
       
       <div style="background: #f8f9fa; padding: 2rem; margin: 1.5rem 0; border-radius: 8px; text-align: center;">
         <p style="margin: 0; color: #5548a0; font-size: 1.1rem;"><strong>🎧 Audio player coming soon</strong></p>
         <p style="margin: 0.5rem 0 0 0; font-size: 0.9rem; color: #666;">Contact me to hear the full track</p>
       </div>
       
-      <div style="background: #faf5ff; padding: 1rem; border-radius: 6px; margin-top: 1rem;">
-        <p style="margin: 0; font-size: 0.9rem; color: #666;"><strong>The Process:</strong> Client vision → AI composition → 48-hour turnaround → Radio-ready</p>
+      <div style="background: #f0f0f0; padding: 1rem; border-radius: 6px; margin-top: 1rem; border-left: 3px solid #5548a0;">
+        <p style="margin: 0; font-size: 0.9rem; color: #1a1a2e;"><strong style="color: #0a0e27;">The Process:</strong> Client vision → AI composition → 48-hour turnaround → Radio-ready</p>
       </div>
     </div>
 
     <div style="background: white; padding: 2.5rem; border-radius: 12px; margin-bottom: 2rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-left: 6px solid #5548a0;">
       <h3 style="color: #5548a0; margin: 0 0 1rem 0; font-size: 1.5rem;">"Modern AiChemy"</h3>
-      <p style="font-size: 1.1rem; color: #666; margin-bottom: 1rem;"><strong>Original Brand Anthem</strong></p>
-      <p style="line-height: 1.7; margin-bottom: 1.5rem;">An exploration of AI-powered creativity and business transformation. This is the sound of lead turning into gold.</p>
+      <p style="font-size: 1.1rem; color: #1a1a2e; margin-bottom: 1rem;"><strong style="color: #0a0e27;">Original Brand Anthem</strong></p>
+      <p style="line-height: 1.7; margin-bottom: 1.5rem; color: #1a1a2e;">An exploration of AI-powered creativity and business transformation. This is the sound of lead turning into gold.</p>
       
       <div style="background: #f8f9fa; padding: 2rem; margin: 1.5rem 0; border-radius: 8px; text-align: center;">
         <p style="margin: 0; color: #5548a0; font-size: 1.1rem;"><strong>🎧 Audio player coming soon</strong></p>
         <p style="margin: 0.5rem 0 0 0; font-size: 0.9rem; color: #666;">Contact me to hear the full track</p>
       </div>
       
-      <div style="background: #f0f4ff; padding: 1rem; border-radius: 6px; margin-top: 1rem;">
-        <p style="margin: 0; font-size: 0.9rem; color: #666;"><strong>The Concept:</strong> Where AI meets alchemy, transformation meets sound</p>
+      <div style="background: #f0f0f0; padding: 1rem; border-radius: 6px; margin-top: 1rem; border-left: 3px solid #5548a0;">
+        <p style="margin: 0; font-size: 0.9rem; color: #1a1a2e;"><strong style="color: #0a0e27;">The Concept:</strong> Where AI meets alchemy, transformation meets sound</p>
       </div>
     </div>
 
