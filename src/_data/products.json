@@ -1,0 +1,107 @@
+[
+  {
+    "id": "local-seo-builder",
+    "name": "Local SEO Blog Builder",
+    "price": 97,
+    "compressed": "Generate local content that ranks",
+    "liveUrl": "https://local-keyword-blog-builder.web.app",
+    "category": "software",
+    "features": [
+      "Generate 10 blog posts in 10 minutes",
+      "Automatic local keyword optimization",
+      "Built-in content calendar",
+      "Export to markdown or HTML",
+      "Perfect for local businesses"
+    ]
+  },
+  {
+    "id": "offer-architect",
+    "name": "The Offer Architect",
+    "price": 197,
+    "compressed": "AI-powered offer creation",
+    "liveUrl": "",
+    "category": "software",
+    "features": [
+      "Value proposition builder",
+      "Pricing psychology calculator",
+      "Guarantee generator",
+      "Bundle formula creator",
+      "Conversion-optimized templates"
+    ]
+  },
+  {
+    "id": "business-health",
+    "name": "Business Health Diagnostic",
+    "price": 197,
+    "compressed": "Diagnose and improve your business",
+    "liveUrl": "",
+    "category": "software",
+    "features": [
+      "50+ business metrics analyzed",
+      "Bottleneck identification",
+      "Priority action roadmap",
+      "Benchmark against competitors",
+      "Monthly health tracking"
+    ]
+  },
+  {
+    "id": "sales-crm",
+    "name": "Sales Funnel Micro-CRM",
+    "price": 97,
+    "compressed": "Lightweight customer tracking",
+    "liveUrl": "",
+    "category": "software",
+    "features": [
+      "Simple pipeline management",
+      "Contact tracking (no bloat)",
+      "Follow-up reminders",
+      "Email integration",
+      "Mobile-friendly interface"
+    ]
+  },
+  {
+    "id": "citadel",
+    "name": "The Citadel",
+    "price": 197,
+    "compressed": "Gamified influence training",
+    "liveUrl": "https://book-learning-module.web.app",
+    "category": "software",
+    "features": [
+      "Architecture of Resonance framework",
+      "Interactive learning modules",
+      "Progress tracking & achievements",
+      "Practical business exercises",
+      "Lifetime access ($47-$197 tiers)"
+    ]
+  },
+  {
+    "id": "sprint-dashboard",
+    "name": "90-Day Sprint Dashboard",
+    "price": 147,
+    "compressed": "Visual goal tracking",
+    "liveUrl": "https://tctc90daysprint.netlify.app",
+    "category": "software",
+    "features": [
+      "Set quarterly objectives",
+      "Daily progress visualization",
+      "Milestone celebrations",
+      "Accountability metrics",
+      "Export progress reports"
+    ]
+  },
+  {
+    "id": "business-systems-pdf",
+    "name": "Business Systems PDF Bundle",
+    "price": 297,
+    "compressed": "Industry-specific operations",
+    "liveUrl": "",
+    "category": "software",
+    "features": [
+      "20+ business system templates",
+      "Industry-specific customization",
+      "Step-by-step implementation",
+      "Checklist and worksheets",
+      "Editable PDF format"
+    ]
+  }
+]

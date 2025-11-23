@@ -1,0 +1,27 @@
+{
+  "name": "modern-aichemy",
+  "version": "1.0.0",
+  "description": "The Digital Alchemist's Laboratory - Where AI Meets Alchemy. A resonance-based static website built on Eleventy following the Architecture of Resonance principles.",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "clean": "rimraf _site"
+  },
+  "keywords": [
+    "eleventy",
+    "11ty",
+    "static-site",
+    "ai-business-tools",
+    "custom-ai-music",
+    "digital-transformation",
+    "resonance-architecture"
+  ],
+  "author": "William - Modern AiChemy",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  },
+  "dependencies": {
+    "rimraf": "^5.0.5"
+  }
+}

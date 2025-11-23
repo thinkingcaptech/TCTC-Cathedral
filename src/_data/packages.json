@@ -1,0 +1,72 @@
+[
+  {
+    "id": "starter-kit",
+    "name": "Starter Kit",
+    "price": 497,
+    "regularPrice": 691,
+    "compressed": "Essential tools to begin transformation",
+    "category": "bundle",
+    "includes": [
+      "Local SEO Blog Builder ($97)",
+      "Sales Funnel Micro-CRM ($97)",
+      "1 Custom AI Song ($500 value)",
+      "Business Systems PDF Bundle ($297)"
+    ],
+    "savings": 194,
+    "savingsPercent": 28,
+    "features": [
+      "Everything to launch your presence",
+      "Custom brand anthem included",
+      "Full rights transfer",
+      "30-day money-back guarantee"
+    ],
+    "bestFor": "Businesses just starting with AI tools"
+  },
+  {
+    "id": "growth-formula",
+    "name": "Growth Formula",
+    "price": 997,
+    "regularPrice": 1389,
+    "compressed": "Complete software suite OR full music package",
+    "category": "bundle",
+    "includes": [
+      "Choose: All 7 Software Tools ($1,389 value)",
+      "OR: Complete Music Package (3 custom songs + revisions)",
+      "Priority email support",
+      "Quarterly strategy call"
+    ],
+    "savings": 392,
+    "savingsPercent": 28,
+    "features": [
+      "Maximum flexibility",
+      "Deep discount on everything",
+      "Ongoing support included",
+      "Scale as you grow"
+    ],
+    "bestFor": "Established businesses ready to scale"
+  },
+  {
+    "id": "complete-aichemy",
+    "name": "Complete AiChemy",
+    "price": 2497,
+    "regularPrice": 3889,
+    "compressed": "Everything + ongoing partnership",
+    "category": "bundle",
+    "includes": [
+      "All 7 Software Tools ($1,389)",
+      "Complete Music Package ($2,500)",
+      "3 months priority support",
+      "Monthly strategy calls",
+      "Future tool updates (free)"
+    ],
+    "savings": 1392,
+    "savingsPercent": 36,
+    "features": [
+      "The ultimate transformation",
+      "Massive savings (save $1,392)",
+      "Direct access to William",
+      "First priority for new releases"
+    ],
+    "bestFor": "Serious businesses committed to total transformation"
+  }
+]

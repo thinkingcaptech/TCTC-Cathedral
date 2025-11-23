@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  {# SEO & META - Pattern Recognition #}
+  <title>{{ title or site.title }}</title>
+  <meta name="description" content="{{ description or site.description }}">
+  
+  {# Open Graph #}
+  <meta property="og:title" content="{{ title or site.title }}">
+  <meta property="og:description" content="{{ description or site.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  
+  {# The Frequencies - Load CSS #}
+  <link rel="stylesheet" href="/css/style.css">
+  
+  {# Additional head content for specific pages #}
+  {% block head %}{% endblock %}
+</head>
+<body>
+  
+  {# NAVIGATION - The Pathways #}
+  {% include "nav.njk" %}
+  
+  {# PROGRESS BAR - The Pulse (on every page) #}
+  {% include "progress-bar.njk" %}
+  
+  {# MAIN CONTENT - The Resonance Chamber #}
+  <main>
+    {{ content | safe }}
+  </main>
+  
+  {# FOOTER - The Ground #}
+  {% include "footer.njk" %}
+  
+  {# Additional scripts for specific pages #}
+  {% block scripts %}{% endblock %}
+  
+</body>
+</html>

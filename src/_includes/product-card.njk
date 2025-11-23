@@ -1,0 +1,53 @@
+{# PRODUCT CARD - The Repeatable Vessel #}
+{# 
+  Usage: {% include "product-card.njk", product: productObject %}
+  
+  Expected product structure:
+  {
+    name: string,
+    price: number,
+    compressed: string (one-breath description),
+    liveUrl: string (optional),
+    features: array of strings,
+    category: "software" | "music" | "bundle"
+  }
+#}
+
+<div class="product-card">
+  
+  {# Card Header #}
+  <div class="card-header">
+    <h3 class="card-title">{{ product.name }}</h3>
+    <p class="card-price">{{ product.price | currency }}</p>
+  </div>
+  
+  {# Compressed Description - One Breath #}
+  <p class="card-compressed">{{ product.compressed }}</p>
+  
+  {# Features - Pattern Recognition #}
+  {% if product.features %}
+  <ul class="card-features">
+    {% for feature in product.features %}
+    <li>{{ feature }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  
+  {# CTAs - Transformation Points #}
+  <div class="card-actions">
+    
+    {# Live Demo Link (if available) #}
+    {% if product.liveUrl %}
+    <a href="{{ product.liveUrl }}" target="_blank" rel="noopener noreferrer" class="card-button-secondary">
+      Try Live Demo →
+    </a>
+    {% endif %}
+    
+    {# Primary CTA - Always Gold #}
+    <a href="/contact/?product={{ product.name | urlencode }}" class="card-button-primary">
+      Get {{ product.name }}
+    </a>
+    
+  </div>
+  
+</div>

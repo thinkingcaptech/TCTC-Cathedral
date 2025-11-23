@@ -1,0 +1,331 @@
+---
+layout: layout.njk
+title: "Bundle Formulas | Modern AiChemy"
+description: "Save up to 36% with package deals combining software, music, and support. The complete transformation at massive savings."
+permalink: /packages/
+---
+
+{# PACKAGES PAGE - Formula Frequency #}
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      
+      <h1>Bundle Formulas</h1>
+      
+      <p class="hero-subhead">
+        Why choose one when you can transform completely? Save up to 36% with bundle packages.
+      </p>
+      
+      <p>
+        Each bundle combines complementary tools and services at prices that make sense. 
+        Get more, save more, transform faster.
+      </p>
+      
+    </div>
+  </div>
+</section>
+
+{# The Bundles #}
+<section class="section section-primary">
+  <div class="container">
+    
+    <div class="text-center mb-4">
+      <h2>Choose Your Formula</h2>
+      <p class="text-muted">Three levels. One goal: Complete transformation.</p>
+    </div>
+    
+    <div class="grid grid-3">
+      
+      {# Loop through all packages #}
+      {% for package in packages %}
+      
+      <div class="product-card">
+        <div class="card-header">
+          <h3 class="card-title">{{ package.name }}</h3>
+          <p class="card-price">{{ package.price | currency }}</p>
+          <p class="text-muted mb-0" style="text-decoration: line-through;">
+            Regular: {{ package.regularPrice | currency }}
+          </p>
+        </div>
+        
+        <p class="card-compressed">{{ package.compressed }}</p>
+        
+        <div style="background: var(--mission); padding: var(--space-sm); border-radius: var(--radius-md); margin-bottom: var(--space-md);">
+          <p class="mb-0" style="color: var(--text-light); font-weight: 600;">
+            💰 Save {{ package.savings | currency }} ({{ package.savingsPercent }}% off)
+          </p>
+        </div>
+        
+        <h4 style="font-size: 1.125rem; margin-bottom: var(--space-sm);">What's Included:</h4>
+        <ul class="card-features">
+          {% for item in package.includes %}
+          <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+        
+        <h4 style="font-size: 1.125rem; margin-bottom: var(--space-sm); margin-top: var(--space-md);">Why This Formula:</h4>
+        <ul class="card-features" style="margin-bottom: var(--space-md);">
+          {% for feature in package.features %}
+          <li>{{ feature }}</li>
+          {% endfor %}
+        </ul>
+        
+        <p style="font-style: italic; color: var(--text-muted); margin-bottom: var(--space-md);">
+          <strong>Best for:</strong> {{ package.bestFor }}
+        </p>
+        
+        <div class="card-actions">
+          <a href="/contact/?package={{ package.name | urlencode }}" class="card-button-primary">
+            Get {{ package.name }}
+          </a>
+        </div>
+      </div>
+      
+      {% endfor %}
+      
+    </div>
+    
+  </div>
+</section>
+
+{# Comparison Table #}
+<section class="section section-secondary">
+  <div class="container">
+    
+    <div class="text-center mb-4">
+      <h2>Compare The Formulas</h2>
+      <p class="text-muted">See exactly what each bundle includes</p>
+    </div>
+    
+    <div style="overflow-x: auto;">
+      <table style="width: 100%; border-collapse: collapse; background: var(--bg-card); border-radius: var(--radius-lg); overflow: hidden;">
+        <thead>
+          <tr style="background: var(--primary); color: var(--text-light);">
+            <th style="padding: var(--space-md); text-align: left;">Feature</th>
+            <th style="padding: var(--space-md); text-align: center;">Starter Kit</th>
+            <th style="padding: var(--space-md); text-align: center;">Growth Formula</th>
+            <th style="padding: var(--space-md); text-align: center;">Complete AiChemy</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid var(--bg-medium);">
+            <td style="padding: var(--space-md);">Software Tools</td>
+            <td style="padding: var(--space-md); text-align: center;">2 tools</td>
+            <td style="padding: var(--space-md); text-align: center;">All 7 tools</td>
+            <td style="padding: var(--space-md); text-align: center;">All 7 tools</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--bg-medium);">
+            <td style="padding: var(--space-md);">Custom Music</td>
+            <td style="padding: var(--space-md); text-align: center;">1 song</td>
+            <td style="padding: var(--space-md); text-align: center;">3 songs</td>
+            <td style="padding: var(--space-md); text-align: center;">Full package</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--bg-medium);">
+            <td style="padding: var(--space-md);">Business Systems PDFs</td>
+            <td style="padding: var(--space-md); text-align: center;">✓</td>
+            <td style="padding: var(--space-md); text-align: center;">✓</td>
+            <td style="padding: var(--space-md); text-align: center;">✓</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--bg-medium);">
+            <td style="padding: var(--space-md);">Email Support</td>
+            <td style="padding: var(--space-md); text-align: center;">Standard</td>
+            <td style="padding: var(--space-md); text-align: center;">Priority</td>
+            <td style="padding: var(--space-md); text-align: center;">3 months priority</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--bg-medium);">
+            <td style="padding: var(--space-md);">Strategy Calls</td>
+            <td style="padding: var(--space-md); text-align: center;">—</td>
+            <td style="padding: var(--space-md); text-align: center;">Quarterly</td>
+            <td style="padding: var(--space-md); text-align: center;">Monthly</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--bg-medium);">
+            <td style="padding: var(--space-md);">Future Updates</td>
+            <td style="padding: var(--space-md); text-align: center;">✓</td>
+            <td style="padding: var(--space-md); text-align: center;">✓</td>
+            <td style="padding: var(--space-md); text-align: center;">✓ First priority</td>
+          </tr>
+          <tr>
+            <td style="padding: var(--space-md);"><strong>Savings</strong></td>
+            <td style="padding: var(--space-md); text-align: center; color: var(--gold); font-weight: 700;">$194 (28%)</td>
+            <td style="padding: var(--space-md); text-align: center; color: var(--gold); font-weight: 700;">$392 (28%)</td>
+            <td style="padding: var(--space-md); text-align: center; color: var(--gold); font-weight: 700;">$1,392 (36%)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+  </div>
+</section>
+
+{# Why Bundle? - Value Proposition #}
+<section class="section section-primary">
+  <div class="container">
+    
+    <div class="text-center mb-4">
+      <h2>Why Bundle?</h2>
+      <p class="text-muted">Because transformation requires more than one tool</p>
+    </div>
+    
+    <div class="grid grid-3">
+      
+      <div class="path-card">
+        <h3>💰 Massive Savings</h3>
+        <p>
+          Save up to $1,392 compared to buying individually. 
+          The more you bundle, the more you save.
+        </p>
+      </div>
+      
+      <div class="path-card">
+        <h3>⚡ Faster Results</h3>
+        <p>
+          Tools work better together. Content + tracking + branding + music = 
+          complete business transformation.
+        </p>
+      </div>
+      
+      <div class="path-card">
+        <h3>🎯 Strategic Alignment</h3>
+        <p>
+          Bundles are designed for specific business stages. Choose the formula 
+          that matches where you are right now.
+        </p>
+      </div>
+      
+      <div class="path-card">
+        <h3>✅ Everything You Need</h3>
+        <p>
+          No guessing. No gaps. Each bundle gives you a complete system, 
+          not just individual pieces.
+        </p>
+      </div>
+      
+      <div class="path-card">
+        <h3>📞 Enhanced Support</h3>
+        <p>
+          Bigger bundles = more support. Priority email, strategy calls, 
+          direct access to me.
+        </p>
+      </div>
+      
+      <div class="path-card">
+        <h3>🚀 Future-Proof</h3>
+        <p>
+          All bundles include lifetime updates. As the tools evolve, 
+          you get every improvement.
+        </p>
+      </div>
+      
+    </div>
+    
+  </div>
+</section>
+
+{# Custom Bundle Option #}
+<section class="section section-secondary">
+  <div class="container">
+    
+    <div class="path-card" style="max-width: 800px; margin: 0 auto;">
+      <h2 class="text-center mb-3">Need A Custom Formula?</h2>
+      
+      <p class="text-center" style="font-size: 1.125rem;">
+        These bundles cover most scenarios, but maybe you need something unique. 
+        Want 4 tools and 2 songs? Different combination? Let's talk.
+      </p>
+      
+      <div class="text-center mt-4">
+        <a href="/contact/?inquiry=custom-bundle" class="btn btn-primary btn-large">
+          Request Custom Bundle
+        </a>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+{# Trust Signals #}
+<section class="section section-primary">
+  <div class="container">
+    
+    <div class="text-center mb-4">
+      <h2>The Bundle Guarantee</h2>
+    </div>
+    
+    <div class="grid grid-2">
+      
+      <div class="path-card">
+        <h3>✅ 30-Day Money-Back</h3>
+        <p>
+          Try the entire bundle risk-free for 30 days. If you're not satisfied 
+          with any component, full refund.
+        </p>
+      </div>
+      
+      <div class="path-card">
+        <h3>✅ Instant Access</h3>
+        <p>
+          Get everything immediately. Software access within minutes, 
+          music project kicks off within 48 hours.
+        </p>
+      </div>
+      
+      <div class="path-card">
+        <h3>✅ Flexible Payment</h3>
+        <p>
+          Complete AiChemy available with payment plans. 
+          Reach out to discuss options.
+        </p>
+      </div>
+      
+      <div class="path-card">
+        <h3>✅ Stackable Promo Code</h3>
+        <p>
+          HOLIDAY25 works on bundles too. 25% off already-discounted prices. 
+          Ends January 1st.
+        </p>
+      </div>
+      
+    </div>
+    
+    <div class="text-center mt-4">
+      <p class="text-muted">
+        🏷️ Use code <strong>HOLIDAY25</strong> for 25% off all bundles • Expires January 1st, 2025
+      </p>
+    </div>
+    
+  </div>
+</section>
+
+{# Individual Options #}
+<section class="section section-secondary">
+  <div class="container text-center">
+    
+    <h2 class="mb-3">Prefer Individual Tools?</h2>
+    
+    <p class="hero-subhead mb-4">
+      Not ready for a bundle? Browse individual tools and services
+    </p>
+    
+    <div class="hero-ctas">
+      <a href="/software/" class="btn btn-secondary btn-large">Browse Software</a>
+      <a href="/music/" class="btn btn-secondary btn-large">Explore Music Services</a>
+    </div>
+    
+  </div>
+</section>
+
+{# Final CTA #}
+<section class="section section-primary">
+  <div class="container text-center">
+    
+    <h2 class="mb-3">Ready to Transform Completely?</h2>
+    
+    <p class="hero-subhead mb-4">
+      Choose your formula and start today
+    </p>
+    
+    <a href="/contact/" class="btn btn-primary btn-large">Let's Get Started</a>
+    
+  </div>
+</section>

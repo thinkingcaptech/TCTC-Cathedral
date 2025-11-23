@@ -1,0 +1,64 @@
+{# NAVIGATION - The Pathways Between Frequencies #}
+<nav class="main-nav">
+  <div class="nav-container">
+    
+    {# Logo / Brand - The Core Frequency #}
+    <a href="/" class="nav-logo">
+      <span class="logo-text">Modern <span class="logo-highlight">AiChemy</span></span>
+    </a>
+    
+    {# Navigation Links - The Harmonic Series #}
+    <ul class="nav-links">
+      <li><a href="/" class="nav-link {% if page.url == '/' %}active{% endif %}">Home</a></li>
+      <li><a href="/software/" class="nav-link {% if '/software/' in page.url %}active{% endif %}">Digital Tools</a></li>
+      <li><a href="/music/" class="nav-link {% if '/music/' in page.url %}active{% endif %}">Audio Alchemy</a></li>
+      <li><a href="/packages/" class="nav-link {% if '/packages/' in page.url %}active{% endif %}">Bundles</a></li>
+      <li><a href="/about/" class="nav-link {% if '/about/' in page.url %}active{% endif %}">About</a></li>
+      <li><a href="/proof/" class="nav-link {% if '/proof/' in page.url %}active{% endif %}">Proof</a></li>
+      <li><a href="/contact/" class="nav-link-cta {% if '/contact/' in page.url %}active{% endif %}">Let's Connect</a></li>
+    </ul>
+    
+    {# Mobile Menu Toggle #}
+    <button class="mobile-menu-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    
+  </div>
+</nav>
+
+{# Mobile Menu - Hidden by default #}
+<div class="mobile-menu">
+  <ul class="mobile-nav-links">
+    <li><a href="/" class="mobile-nav-link">Home</a></li>
+    <li><a href="/software/" class="mobile-nav-link">Digital Tools</a></li>
+    <li><a href="/music/" class="mobile-nav-link">Audio Alchemy</a></li>
+    <li><a href="/packages/" class="mobile-nav-link">Bundles</a></li>
+    <li><a href="/about/" class="mobile-nav-link">About</a></li>
+    <li><a href="/proof/" class="mobile-nav-link">Proof</a></li>
+    <li><a href="/contact/" class="mobile-nav-link-cta">Let's Connect</a></li>
+  </ul>
+</div>
+
+<script>
+  // Simple mobile menu toggle - zero dependencies
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggle = document.querySelector('.mobile-menu-toggle');
+    const menu = document.querySelector('.mobile-menu');
+    
+    toggle.addEventListener('click', function() {
+      menu.classList.toggle('active');
+      toggle.classList.toggle('active');
+    });
+    
+    // Close menu when link clicked
+    const mobileLinks = document.querySelectorAll('.mobile-nav-link, .mobile-nav-link-cta');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        menu.classList.remove('active');
+        toggle.classList.remove('active');
+      });
+    });
+  });
+</script>

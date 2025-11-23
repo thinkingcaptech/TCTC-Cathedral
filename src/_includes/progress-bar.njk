@@ -1,0 +1,21 @@
+{# PROGRESS BAR - The Pulse (Visible Momentum) #}
+<div class="progress-section">
+  <div class="progress-container">
+    
+    {# The Visual Frequency #}
+    <div class="progress-bar">
+      <div class="progress-fill" style="width: {{ site.currentAmount | progressPercent(site.goalAmount) }}%"></div>
+    </div>
+    
+    {# The Message #}
+    <div class="progress-text">
+      <span class="progress-amount">{{ site.currentAmount | currency }} / {{ site.goalAmount | currency }} Raised</span>
+      <span class="progress-separator">•</span>
+      <span class="progress-days">{{ site.goalDate | daysUntil }} Days Until Jan 1st</span>
+    </div>
+    
+    {# Optional: Show percentage #}
+    <p class="progress-percent">{{ site.currentAmount | progressPercent(site.goalAmount) }}% of goal reached</p>
+    
+  </div>
+</div>

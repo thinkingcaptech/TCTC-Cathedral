@@ -1,0 +1,199 @@
+---
+layout: layout.njk
+title: "AI-Powered Business Tools | Modern AiChemy"
+description: "Seven battle-tested software tools that automate, accelerate, and amplify your business. Built by a practitioner, not a theorist."
+permalink: /software/
+---
+
+{# SOFTWARE PAGE - Digital Frequency #}
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      
+      <h1>AI-Powered Business Tools</h1>
+      
+      <p class="hero-subhead">
+        Seven battle-tested tools built by someone who runs businesses, not just studies them
+      </p>
+      
+      <p>
+        Each tool solves a real problem I've faced. Generate content in minutes. Track customers without bloat. 
+        Diagnose business health. Build irresistible offers. Everything you need to automate, accelerate, and achieve.
+      </p>
+      
+    </div>
+  </div>
+</section>
+
+{# The Catalog - All Products #}
+<section class="section section-primary">
+  <div class="container">
+    
+    <div class="text-center mb-4">
+      <h2>The Complete Toolkit</h2>
+      <p class="text-muted">Each tool passes the Breath Test: One idea, one solution, zero bloat</p>
+    </div>
+    
+    <div class="grid grid-3">
+      
+      {# Loop through all software products #}
+      {% for product in products %}
+        {% if product.category == "software" %}
+          {% include "product-card.njk" %}
+        {% endif %}
+      {% endfor %}
+      
+    </div>
+    
+  </div>
+</section>
+
+{# Why These Tools? #}
+<section class="section section-secondary">
+  <div class="container">
+    
+    <div class="text-center mb-4">
+      <h2>Why Modern AiChemy Tools?</h2>
+    </div>
+    
+    <div class="grid grid-3">
+      
+      <div class="path-card">
+        <h3>🎯 Built For Real Problems</h3>
+        <p>
+          Not theoretical exercises. Each tool solves a specific bottleneck I've encountered 
+          running actual businesses.
+        </p>
+      </div>
+      
+      <div class="path-card">
+        <h3>⚡ Instant Results</h3>
+        <p>
+          No learning curve nightmares. Clean interfaces, clear workflows, 
+          results in hours not weeks.
+        </p>
+      </div>
+      
+      <div class="path-card">
+        <h3>✅ You Own It Forever</h3>
+        <p>
+          One-time payment. Lifetime access. No recurring fees. 
+          Future updates included.
+        </p>
+      </div>
+      
+      <div class="path-card">
+        <h3>🛠️ No Bloat, Just Tools</h3>
+        <p>
+          Every feature earns its place. If it doesn't reduce friction 
+          or increase results, it's not included.
+        </p>
+      </div>
+      
+      <div class="path-card">
+        <h3>📞 Direct Support</h3>
+        <p>
+          Questions? Email me directly. I respond personally, usually within 24 hours. 
+          No ticket systems, no runarounds.
+        </p>
+      </div>
+      
+      <div class="path-card">
+        <h3>🚀 Try Before You Commit</h3>
+        <p>
+          Many tools have live demos. See them work before you buy. 
+          30-day money-back guarantee on everything.
+        </p>
+      </div>
+      
+    </div>
+    
+  </div>
+</section>
+
+{# Bundle Opportunity #}
+<section class="section section-primary">
+  <div class="container text-center">
+    
+    <h2 class="mb-3">Want Everything?</h2>
+    
+    <p class="hero-subhead mb-4">
+      Save up to 36% with bundle packages that combine software, music, and support
+    </p>
+    
+    <a href="/packages/" class="btn btn-primary btn-large">See Bundle Formulas →</a>
+    
+  </div>
+</section>
+
+{# Trust Signals #}
+<section class="section section-secondary">
+  <div class="container">
+    
+    <div class="text-center mb-4">
+      <h2>The AiChemy Guarantee</h2>
+    </div>
+    
+    <div class="grid grid-2">
+      
+      <div class="path-card">
+        <h3>✅ 30-Day Money-Back</h3>
+        <p>
+          Try any tool risk-free. If it doesn't deliver results or you're not satisfied 
+          for any reason, full refund within 30 days.
+        </p>
+      </div>
+      
+      <div class="path-card">
+        <h3>✅ Instant Access</h3>
+        <p>
+          Get started immediately after purchase. Download links and credentials 
+          sent to your email within minutes.
+        </p>
+      </div>
+      
+      <div class="path-card">
+        <h3>✅ Lifetime Updates</h3>
+        <p>
+          When I improve a tool, you get the updates automatically. 
+          No upgrade fees, no version gating.
+        </p>
+      </div>
+      
+      <div class="path-card">
+        <h3>✅ Your Mission = My Mission</h3>
+        <p>
+          Every purchase helps me fight for my family. You're not just buying tools — 
+          you're supporting a father's fight for his children.
+        </p>
+      </div>
+      
+    </div>
+    
+    <div class="text-center mt-4">
+      <p class="text-muted">
+        🏷️ Use code <strong>HOLIDAY25</strong> for 25% off • Expires January 1st, 2025
+      </p>
+    </div>
+    
+  </div>
+</section>
+
+{# Final CTA #}
+<section class="section section-primary">
+  <div class="container text-center">
+    
+    <h2 class="mb-3">Ready to Transform Your Business?</h2>
+    
+    <p class="hero-subhead mb-4">
+      Choose your tools and start building today
+    </p>
+    
+    <div class="hero-ctas">
+      <a href="/contact/" class="btn btn-primary btn-large">Let's Connect</a>
+      <a href="/packages/" class="btn btn-secondary btn-large">See Bundle Savings</a>
+    </div>
+    
+  </div>
+</section>

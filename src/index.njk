@@ -1,0 +1,356 @@
+---
+layout: layout.njk
+title: "Modern AiChemy - Digital Alchemist | Where AI Meets Alchemy"
+description: "Transform business problems into gold with AI-powered tools and custom music. Help me fight for my family while I help transform your business."
+---
+
+{# 
+  HOMEPAGE - THE RESONANCE CHAMBER
+  Following the Hero's Journey (Inverted - Customer is Hero)
+  Three-Act Structure: Equilibrium → Turbulence → Integration
+#}
+
+{# ============================================
+   ACT I - EQUILIBRIUM & IGNITION (Setup)
+   ============================================ #}
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      
+      {# The Opening - Calm before transformation #}
+      <h1>Welcome to the Digital Alchemist's Laboratory</h1>
+      
+      <p class="hero-subhead">
+        Where AI Meets Alchemy — Transforming Business Problems Into Gold
+      </p>
+      
+      {# The Inciting Incident - Three paths appear #}
+      <div class="hero-ctas">
+        <a href="/software/" class="btn btn-primary btn-large">Browse Digital Tools</a>
+        <a href="/music/" class="btn btn-primary btn-large">Explore Audio Alchemy</a>
+        <a href="/packages/" class="btn btn-secondary btn-large">See Complete Formulas</a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+{# ============================================
+   ACT II - TURBULENCE & TRANSFORMATION (Conflict)
+   The Mission - Human Frequency
+   ============================================ #}
+
+<section class="mission-section">
+  <div class="container">
+    <div class="mission-content">
+      
+      <h2>Why This Mission Matters</h2>
+      
+      <p>
+        I'm William, a single father facing a legal battle for custody of my children. 
+        I need $3,000 by January 1st to afford representation in court.
+      </p>
+      
+      <p>
+        But I'm not asking for charity — I'm offering transformation.
+      </p>
+      
+      <p>
+        Every AI tool I've built solves real business problems I've faced. 
+        Every song I create tells a story that needs to be heard. 
+        This isn't about extraction — it's about exchange.
+      </p>
+      
+      <p class="countdown">
+        {{ site.goalDate | daysUntil }} days remaining
+      </p>
+      
+      <p>
+        <strong>Every purchase helps me fight for my family while I help transform your business.</strong>
+      </p>
+      
+    </div>
+  </div>
+</section>
+
+{# ============================================
+   THREE PATHS TO TRANSFORMATION
+   Pattern Recognition - Same Structure, Different Content
+   ============================================ #}
+
+<section class="paths-section">
+  <div class="container">
+    
+    <div class="text-center mb-4">
+      <h2>Three Paths. One Transformation.</h2>
+      <p class="text-muted">Choose the frequency that resonates with you</p>
+    </div>
+    
+    <div class="grid grid-3">
+      
+      {# Path 1: Digital Tools #}
+      <div class="path-card">
+        <div class="path-icon">🛠️</div>
+        <h3 class="path-headline">AI-Powered Business Tools</h3>
+        <p class="path-compressed">Automate, accelerate, achieve</p>
+        <p>
+          Seven battle-tested software tools built by someone who runs businesses, not just studies them. 
+          Generate content, track customers, diagnose problems, build offers.
+        </p>
+        <a href="/software/" class="btn btn-primary">Browse Tools</a>
+      </div>
+      
+      {# Path 2: Audio Alchemy #}
+      <div class="path-card">
+        <div class="path-icon">🎵</div>
+        <h3 class="path-headline">Custom AI-Generated Music</h3>
+        <p class="path-compressed">Sound like nobody else</p>
+        <p>
+          Your brand deserves its own frequency. Custom songs, brand anthems, and audio identities 
+          that make you unforgettable. You own everything — no royalties, no strings.
+        </p>
+        <a href="/music/" class="btn btn-primary">Hear Samples</a>
+      </div>
+      
+      {# Path 3: Complete System #}
+      <div class="path-card">
+        <div class="path-icon">⚡</div>
+        <h3 class="path-headline">The Full Transformation</h3>
+        <p class="path-compressed">Tools + Music + Support</p>
+        <p>
+          Why choose one when you can have everything? Bundle packages combine software, music, 
+          and ongoing support at massive savings. Transform completely.
+        </p>
+        <a href="/packages/" class="btn btn-primary">See Bundles</a>
+      </div>
+      
+    </div>
+    
+  </div>
+</section>
+
+{# ============================================
+   FEATURED TOOLS - Social Proof
+   Showcase tools with live demos
+   ============================================ #}
+
+<section class="section section-primary">
+  <div class="container">
+    
+    <div class="text-center mb-4">
+      <h2>Tools That Actually Work</h2>
+      <p class="text-muted">See them in action — try the live demos</p>
+    </div>
+    
+    <div class="grid grid-3">
+      
+      {# Loop through first 3 products #}
+      {% for product in products | slice(0, 3) %}
+        {% include "product-card.njk" %}
+      {% endfor %}
+      
+    </div>
+    
+    <div class="text-center mt-4">
+      <a href="/software/" class="btn btn-secondary btn-large">View All 7 Tools →</a>
+    </div>
+    
+  </div>
+</section>
+
+{# ============================================
+   MUSIC PORTFOLIO PREVIEW - Emotional Proof
+   ============================================ #}
+
+<section class="section section-secondary fade-in-up">
+  <div class="container">
+    
+    <div class="text-center mb-4">
+      <h2>🎵 Listen to My Work</h2>
+      <p class="text-muted">Four different styles. One systematic approach. Full versatility.</p>
+    </div>
+    
+    <div class="music-grid">
+      
+      {# Track 1: Tulsa Grateful #}
+      <div class="glass-card music-card hover-lift scale-in">
+        <div class="music-icon">🎸</div>
+        <h3>"Tulsa Grateful"</h3>
+        <p class="genre">Heartfelt Americana</p>
+        <div class="audio-player">
+          <audio controls>
+            <source src="/assets/music/tulsa-grateful.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <p class="track-note">Created for 92.9 The River Morning Show</p>
+      </div>
+
+      {# Track 2: Modern AiChemy #}
+      <div class="glass-card music-card hover-lift scale-in" style="animation-delay: 0.1s;">
+        <div class="music-icon">⚗️</div>
+        <h3>"Modern AiChemy"</h3>
+        <p class="genre">Brand Anthem</p>
+        <div class="audio-player">
+          <audio controls>
+            <source src="/assets/music/modern-aichemy.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <p class="track-note">The sound of transformation</p>
+      </div>
+
+      {# Track 3: Buzz #}
+      <div class="glass-card music-card hover-lift scale-in" style="animation-delay: 0.2s;">
+        <div class="music-icon">✨</div>
+        <h3>"Buzz"</h3>
+        <p class="genre">K-pop / Pop</p>
+        <div class="audio-player">
+          <audio controls>
+            <source src="/assets/music/buzz.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <p class="track-note">High-energy pop with female vocals</p>
+      </div>
+
+      {# Track 4: Highs and Lows #}
+      <div class="glass-card music-card hover-lift scale-in" style="animation-delay: 0.3s;">
+        <div class="music-icon">🎤</div>
+        <h3>"Highs and Lows"</h3>
+        <p class="genre">Country Rock / Grunge</p>
+        <div class="audio-player">
+          <audio controls>
+            <source src="/assets/music/highs-and-lows.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <p class="track-note">Raw emotion meets country grit</p>
+      </div>
+      
+    </div>
+    
+    <div class="text-center mt-4 fade-in-up">
+      <p style="font-size: 1.125rem; margin-bottom: 1.5rem;">From K-pop to country rock, AI music adapts to any style.</p>
+      <a href="/music/" class="btn btn-primary btn-large">Explore All Music Services →</a>
+    </div>
+    
+  </div>
+</section>
+
+{# ============================================
+   VALUE PROPOSITION - The Promise
+   ============================================ #}
+
+<section class="section section-primary">
+  <div class="container">
+    
+    <div class="text-center mb-4">
+      <h2>Why Modern AiChemy?</h2>
+    </div>
+    
+    <div class="grid grid-3">
+      
+      <div class="path-card">
+        <h3>🎯 Built By A Practitioner</h3>
+        <p>
+          Not a theorist. I run businesses, solve real problems, and build tools I actually use. 
+          Every solution comes from the trenches.
+        </p>
+      </div>
+      
+      <div class="path-card">
+        <h3>⚡ Results In Days, Not Months</h3>
+        <p>
+          Instant access after purchase. Start generating content, tracking customers, 
+          or building your brand identity within hours.
+        </p>
+      </div>
+      
+      <div class="path-card">
+        <h3>✅ You Own Everything</h3>
+        <p>
+          Full rights transfer. No royalties. No recurring fees for tools. 
+          No strings attached. What you buy is yours forever.
+        </p>
+      </div>
+      
+    </div>
+    
+  </div>
+</section>
+
+{# ============================================
+   ACT III - INTEGRATION & RETURN (Resolution)
+   Final CTA - The Invitation
+   ============================================ #}
+
+<section class="section section-secondary">
+  <div class="container">
+    
+    <div class="text-center mb-4">
+      <h2>Ready to Transform?</h2>
+      <p class="hero-subhead">Choose your path to business alchemy</p>
+    </div>
+    
+    <div class="hero-ctas">
+      <a href="/software/" class="btn btn-primary btn-large">Start With Software</a>
+      <a href="/music/" class="btn btn-primary btn-large">Begin With Music</a>
+      <a href="/packages/" class="btn btn-primary btn-large">Get Everything</a>
+    </div>
+    
+    {# Email Capture - Low friction alternative #}
+    <div class="email-capture mt-4">
+      <h3>Not Ready Yet?</h3>
+      <p>Get free transformation tips every week</p>
+      
+      <form class="email-form" action="#" method="post">
+        <input type="email" class="email-input" placeholder="your@email.com" required>
+        <button type="submit" class="email-submit">Send Me Tips</button>
+      </form>
+      
+      <p class="text-muted mt-2" style="font-size: 0.875rem;">
+        No spam. Unsubscribe anytime. Your email stays private.
+      </p>
+    </div>
+    
+  </div>
+</section>
+
+{# ============================================
+   TRUST SIGNALS - Reduce Friction
+   ============================================ #}
+
+<section class="section section-primary">
+  <div class="container text-center">
+    
+    <h2 class="mb-4">The Modern AiChemy Guarantee</h2>
+    
+    <div class="grid grid-3">
+      
+      <div>
+        <h3>✅ 30-Day Money-Back</h3>
+        <p>Try any tool or service risk-free. Not satisfied? Full refund, no questions asked.</p>
+      </div>
+      
+      <div>
+        <h3>✅ Instant Access</h3>
+        <p>Get started immediately after purchase. No waiting, no delays, no friction.</p>
+      </div>
+      
+      <div>
+        <h3>✅ Direct Support</h3>
+        <p>Questions? Email {{ site.email }} — I respond personally, usually within 24 hours.</p>
+      </div>
+      
+    </div>
+    
+    <div class="mt-4">
+      <p class="text-muted">
+        🏷️ Use code <strong>HOLIDAY25</strong> for 25% off all purchases • Expires January 1st, 2025
+      </p>
+    </div>
+    
+  </div>
+</section>
