@@ -121,7 +121,7 @@ title: Modern AiChemy | Where AI Meets Business Alchemy
 </section>
 
 <section class="container" style="padding: 4rem 1rem; text-align: center;">
-  <h2 style="color: #1a1a2e; margin-bottom: 2rem; background: none; -webkit-text-fill-color: #1a1a2e; animation: none;">Start Your Transformation</h2>
+  <h2 style="background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin-bottom: 2rem; background: none; -webkit-text-fill-color: #1a1a2e; animation: none;">Start Your Transformation</h2>
   
   <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; max-width: 800px; margin: 0 auto;">
     <a href="{{ '/software/' | url }}" class="form-button" style="flex: 1; min-width: 200px;">Browse Digital Tools</a>

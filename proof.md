@@ -4,12 +4,12 @@ title: The Transmutation Records | Proof of AiChemy
 ---
 
 <div class="container" style="padding: 2rem 1rem;">
-  <h1 style="text-align: center; color: #1a1a2e; margin-bottom: 1rem;">The Transmutation Records</h1>
+  <h1 style="text-align: center; background: linear-gradient(135deg, #e8e8e8 0%, #c0c0c0 50%, #f5f5f5 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; font-size: 2.5rem; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin-bottom: 1rem;">The Transmutation Records</h1>
   <p style="text-align: center; font-size: 1.3rem; color: #666; margin-bottom: 3rem;">Proof That This Isn't Vaporware</p>
 </div>
 
 <section class="container" style="padding: 2rem 1rem; background: #f8f9fa;">
-  <h2 style="text-align: center; color: #1a1a2e; margin-bottom: 3rem;">Live Software Applications</h2>
+  <h2 style="text-align: center; background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin-bottom: 3rem;">Live Software Applications</h2>
   
   <div style="max-width: 1000px; margin: 0 auto; display: grid; gap: 2rem;">
     <div style="background: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-left: 6px solid #5548a0;">
@@ -65,7 +65,7 @@ title: The Transmutation Records | Proof of AiChemy
 </section>
 
 <section class="container" style="padding: 3rem 1rem;">
-  <h2 style="text-align: center; color: #1a1a2e; margin-bottom: 3rem;">Audio Portfolio</h2>
+  <h2 style="text-align: center; background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin-bottom: 3rem;">Audio Portfolio</h2>
   
   <div style="max-width: 900px; margin: 0 auto;">
     <div style="background: linear-gradient(135deg, #5548a0 0%, #5548a0 100%); color: white; padding: 2.5rem; border-radius: 12px; margin-bottom: 2rem;">
@@ -97,7 +97,7 @@ title: The Transmutation Records | Proof of AiChemy
 </section>
 
 <section class="container" style="padding: 3rem 1rem; background: #f8f9fa;">
-  <h2 style="text-align: center; color: #1a1a2e; margin-bottom: 3rem;">Business Systems Library</h2>
+  <h2 style="text-align: center; background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin-bottom: 3rem;">Business Systems Library</h2>
   
   <div style="max-width: 900px; margin: 0 auto;">
     <div style="background: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
@@ -123,7 +123,7 @@ title: The Transmutation Records | Proof of AiChemy
 
 <section class="container" style="padding: 3rem 1rem;">
   <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-    <h2 style="color: #1a1a2e; margin-bottom: 1.5rem;">This Is Real. This Works. This Is AiChemy.</h2>
+    <h2 style="background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin-bottom: 1.5rem;">This Is Real. This Works. This Is AiChemy.</h2>
     
     <p style="font-size: 1.1rem; line-height: 1.8; color: #666; margin-bottom: 2rem;">These aren't coming soon. These aren't prototypes. These are production tools and real creative work deployed and working right now.</p>
     

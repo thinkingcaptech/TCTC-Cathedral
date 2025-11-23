@@ -4,7 +4,7 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
 ---
 
 <div class="container" style="padding: 2rem 1rem;">
-  <h1 style="text-align: center; color: #1a1a2e; margin-bottom: 1rem;">Alchemical Formulas: Pre-Mixed Solutions</h1>
+  <h1 style="text-align: center; background: linear-gradient(135deg, #e8e8e8 0%, #c0c0c0 50%, #f5f5f5 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; font-size: 2.5rem; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin-bottom: 1rem;">Alchemical Formulas: Pre-Mixed Solutions</h1>
   <p style="text-align: center; font-size: 1.3rem; color: #666; margin-bottom: 1rem;">Save Time & Money With These Proven Combinations</p>
   
   <div style="background: linear-gradient(135deg, #5548a0 0%, #5548a0 100%); color: white; padding: 1.5rem; border-radius: 8px; max-width: 600px; margin: 2rem auto; text-align: center;">
@@ -22,7 +22,7 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
         <strong>THE FOUNDATION</strong>
       </div>
       
-      <h2 style="color: #5548a0; margin: 1rem 0;">The Alchemist's Starter Kit</h2>
+      <h2 style="background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin: 1rem 0;">The Alchemist's Starter Kit</h2>
       
       <div style="margin: 1.5rem 0;">
         <p style="font-size: 2rem; font-weight: bold; color: #1a1a2e; margin: 0;">$497</p>
@@ -71,7 +71,7 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
         <strong>⭐ MOST POPULAR</strong>
       </div>
       
-      <h2 style="color: #5548a0; margin: 1rem 0;">The Growth Formula</h2>
+      <h2 style="background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin: 1rem 0;">The Growth Formula</h2>
       
       <div style="margin: 1.5rem 0;">
         <p style="font-size: 2rem; font-weight: bold; color: #1a1a2e; margin: 0;">$997</p>
@@ -122,7 +122,7 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
         <strong>🔮 ULTIMATE TRANSFORMATION</strong>
       </div>
       
-      <h2 style="color: #4a3a99; margin: 1rem 0; background: none; -webkit-text-fill-color: #4a3a99; animation: none;">The Complete AiChemy System</h2>
+      <h2 style="background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin: 1rem 0; background: none; -webkit-text-fill-color: #4a3a99; animation: none;">The Complete AiChemy System</h2>
       
       <div style="margin: 1.5rem 0;">
         <p style="font-size: 2rem; font-weight: bold; color: white; margin: 0;">$2,497</p>
@@ -176,9 +176,9 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
 
 <section class="container" style="padding: 3rem 1rem; background: #f8f9fa; margin-top: 3rem;">
   <div style="max-width: 1000px; margin: 0 auto;">
-    <h2 style="text-align: center; color: #1a1a2e; margin-bottom: 2rem;">Limited "Help Me Hit My Goal" Special</h2>
+    <h2 style="text-align: center; background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 2rem; font-weight: 800; font-size: 2.25rem; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4));">Limited "Help Me Hit My Goal" Special</h2>
     
-    <div style="background: linear-gradient(135deg, #5548a0 0%, #5548a0 100%); color: white; padding: 2.5rem; border-radius: 12px; text-align: center;">
+    <div style="background: linear-gradient(135deg, #5548a0 0%, #4a3a99 100%); color: white; padding: 2.5rem; border-radius: 12px; text-align: center;">
       <p style="font-size: 1.3rem; margin-bottom: 1rem;"><strong>Every Package Gets Extra Value</strong></p>
       
       <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 8px; margin: 1.5rem 0;">
@@ -202,16 +202,16 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
 </section>
 
 <section class="container" style="padding: 3rem 1rem;">
-  <h2 style="text-align: center; color: #1a1a2e; margin-bottom: 3rem;">Package Comparison</h2>
+  <h2 style="text-align: center; background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 3rem; font-weight: 800; font-size: 2.25rem; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4));">Package Comparison</h2>
   
   <div style="overflow-x: auto;">
     <table style="width: 100%; max-width: 1200px; margin: 0 auto; border-collapse: collapse; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
       <thead>
-        <tr style="background: #5548a0; color: white;">
-          <th style="padding: 1rem; text-align: left; border: 1px solid #e0e0e0;">Feature</th>
-          <th style="padding: 1rem; text-align: center; border: 1px solid #e0e0e0;">Starter Kit</th>
-          <th style="padding: 1rem; text-align: center; border: 1px solid #e0e0e0;">Growth Formula</th>
-          <th style="padding: 1rem; text-align: center; border: 1px solid #e0e0e0;">Complete AiChemy</th>
+        <tr style="background: linear-gradient(135deg, #5548a0 0%, #4a3a99 100%); color: white;">
+          <th style="padding: 1rem; text-align: left; border: 1px solid rgba(192, 192, 192, 0.3); color: white; font-weight: 700;">Feature</th>
+          <th style="padding: 1rem; text-align: center; border: 1px solid rgba(192, 192, 192, 0.3); color: white; font-weight: 700;">Starter Kit</th>
+          <th style="padding: 1rem; text-align: center; border: 1px solid rgba(192, 192, 192, 0.3); color: white; font-weight: 700;">Growth Formula</th>
+          <th style="padding: 1rem; text-align: center; border: 1px solid rgba(192, 192, 192, 0.3); color: white; font-weight: 700;">Complete AiChemy</th>
         </tr>
       </thead>
       <tbody>
@@ -274,7 +274,7 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
 </section>
 
 <section class="container" style="padding: 3rem 1rem; text-align: center;">
-  <h2 style="color: #1a1a2e; margin-bottom: 1rem;">Ready to Start Your Transformation?</h2>
+  <h2 style="background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin-bottom: 1rem;">Ready to Start Your Transformation?</h2>
   <p style="font-size: 1.1rem; color: #666; margin-bottom: 2rem;">Every package purchase helps me fight for my family while delivering real value to your business</p>
   
   <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; max-width: 700px; margin: 0 auto;">

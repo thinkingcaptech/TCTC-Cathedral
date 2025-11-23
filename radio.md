@@ -5,13 +5,13 @@ title: AiChemy for Audio | Custom Music for Broadcasters
 
 <div class="container">
   <div style="background: linear-gradient(135deg, #5548a0 0%, #4a3a99 100%); color: white; padding: 4rem 2rem; border-radius: 16px; margin-bottom: 4rem; text-align: center; box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3);">
-    <h1 style="color: white; margin-top: 0; font-size: 3rem; text-shadow: 0 2px 8px rgba(0,0,0,0.2);">AiChemy for Audio 🎵</h1>
+    <h1 style="background: linear-gradient(135deg, #e8e8e8 0%, #c0c0c0 50%, #f5f5f5 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-top: 0; font-size: 3rem; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4));">AiChemy for Audio 🎵</h1>
     <p style="font-size: 1.5rem; margin-bottom: 0.75rem; font-weight: 600; color: white;">Custom AI-Generated Music for Radio & Podcasts</p>
     <p style="font-size: 1.1rem; color: rgba(255,255,255,0.95); margin: 0;">Working with 92.9 The River Morning Show (Tulsa, OK)</p>
   </div>
 
   <section style="margin-bottom: 5rem;">
-    <h2 style="color: #0a0e27; margin-bottom: 1.5rem; font-size: 2.5rem;">Listen: "Modern AiChemy"</h2>
+    <h2 style="background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 1.5rem; font-size: 2.5rem; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4));">Listen: "Modern AiChemy"</h2>
     <p style="font-size: 1.2rem; margin-bottom: 2rem; line-height: 1.8; color: #2c3e50;">Experience the future of AI-generated music. From concept to radio-ready in 48 hours using cutting-edge AI music generation.</p>
     
     <div style="background: linear-gradient(to bottom, #f8f9fa 0%, #ffffff 100%); padding: 3rem; border-radius: 16px; text-align: center; border: 3px solid #5548a0; box-shadow: 0 8px 32px rgba(102, 126, 234, 0.15);">
@@ -29,7 +29,7 @@ title: AiChemy for Audio | Custom Music for Broadcasters
   </section>
 
   <section style="margin-bottom: 5rem;">
-    <h2 style="color: #0a0e27; margin-bottom: 1.5rem; font-size: 2.5rem;">Who's Behind the Music?</h2>
+    <h2 style="background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin-bottom: 1.5rem; font-size: 2.5rem;">Who's Behind the Music?</h2>
     
     <div style="background: linear-gradient(135deg, #0a0e27 0%, #5548a0 100%); color: white; padding: 3rem; border-radius: 16px; margin-bottom: 2rem; box-shadow: 0 10px 40px rgba(10, 14, 39, 0.3);">
       <p style="font-size: 1.3rem; font-style: italic; line-height: 1.9; margin-bottom: 2rem; color: white;">
@@ -58,7 +58,7 @@ title: AiChemy for Audio | Custom Music for Broadcasters
   </section>
 
   <section style="margin-bottom: 5rem;">
-    <h2 style="color: #0a0e27; margin-bottom: 3rem; text-align: center; font-size: 2.75rem;">Radio & Podcast Services</h2>
+    <h2 style="background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin-bottom: 3rem; text-align: center; font-size: 2.75rem;">Radio & Podcast Services</h2>
     
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 2.5rem;">
       
@@ -134,7 +134,7 @@ title: AiChemy for Audio | Custom Music for Broadcasters
   </section>
 
   <section style="margin-bottom: 5rem;">
-    <h2 style="color: #0a0e27; margin-bottom: 3rem; text-align: center; font-size: 2.75rem;">What You Can Create</h2>
+    <h2 style="background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin-bottom: 3rem; text-align: center; font-size: 2.75rem;">What You Can Create</h2>
     
     <div style="max-width: 1100px; margin: 0 auto;">
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem;">
@@ -176,7 +176,7 @@ title: AiChemy for Audio | Custom Music for Broadcasters
 
   <section style="background: linear-gradient(to bottom, #f8f9fa 0%, #ffffff 100%); padding: 4rem 2rem; margin-bottom: 5rem; border-radius: 16px; border: 2px solid rgba(102, 126, 234, 0.1); box-shadow: 0 8px 32px rgba(0,0,0,0.05);">
     <div style="max-width: 900px; margin: 0 auto;">
-      <h2 style="color: #0a0e27; margin-bottom: 3rem; text-align: center; font-size: 2.75rem;">Why Work With Me?</h2>
+      <h2 style="background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin-bottom: 3rem; text-align: center; font-size: 2.75rem;">Why Work With Me?</h2>
       
       <div style="display: grid; gap: 2rem;">
         <div style="background: white; padding: 2rem; border-radius: 12px; border-left: 6px solid #5548a0; box-shadow: 0 4px 16px rgba(0,0,0,0.06);">
@@ -234,7 +234,7 @@ title: AiChemy for Audio | Custom Music for Broadcasters
   </section>
 
   <section style="margin-bottom: 5rem; max-width: 900px; margin-left: auto; margin-right: auto;">
-    <h2 style="color: #0a0e27; font-size: 2.5rem; margin-bottom: 2rem;">The "From Polymath to Polymyth" Story</h2>
+    <h2 style="background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); font-size: 2.5rem; margin-bottom: 2rem;">The "From Polymath to Polymyth" Story</h2>
     
     <p style="font-size: 1.15rem; line-height: 1.9; color: #2c3e50; margin-bottom: 1.5rem;">
       I like to say I'm going from "polymath to polymyth" - someone who knows a lot about everything to someone who creates legends with it. As long as it's not "polymeth," we're good! 😄
@@ -254,7 +254,7 @@ title: AiChemy for Audio | Custom Music for Broadcasters
   </section>
 
   <section style="text-align: center; padding: 4rem 2.5rem; background: linear-gradient(to bottom, #f8f9fa 0%, #ffffff 100%); border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.08); border: 2px solid rgba(102, 126, 234, 0.1);">
-    <h2 style="color: #0a0e27; font-size: 2.75rem; margin-bottom: 1.5rem;">Ready to Create Something Amazing?</h2>
+    <h2 style="background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); font-size: 2.75rem; margin-bottom: 1.5rem;">Ready to Create Something Amazing?</h2>
     <p style="font-size: 1.3rem; margin-bottom: 3rem; color: #2c3e50; font-weight: 500;">Let's use AI to build your empire.</p>
     
     <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 3rem;">

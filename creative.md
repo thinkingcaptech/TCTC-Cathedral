@@ -4,7 +4,7 @@ title: The Sound of AiChemy | AI-Generated Music That Sounds Human
 ---
 
 <div class="container" style="padding: 2rem 1rem;">
-  <h1 style="text-align: center; color: #1a1a2e; margin-bottom: 1rem;">The Sound of AiChemy</h1>
+  <h1 style="text-align: center; background: linear-gradient(135deg, #e8e8e8 0%, #c0c0c0 50%, #f5f5f5 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; font-size: 2.5rem; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin-bottom: 1rem;">The Sound of AiChemy</h1>
   <p style="text-align: center; font-size: 1.3rem; color: #666; margin-bottom: 1rem;">AI-Generated Music That Sounds Human (Because It Takes One To Create It)</p>
   
   <div style="background: linear-gradient(135deg, #5548a0 0%, #5548a0 100%); color: white; padding: 1.5rem; border-radius: 8px; max-width: 600px; margin: 2rem auto; text-align: center;">
@@ -14,7 +14,7 @@ title: The Sound of AiChemy | AI-Generated Music That Sounds Human
 </div>
 
 <section class="container" style="padding: 2rem 1rem; background: #f8f9fa;">
-  <h2 style="text-align: center; color: #1a1a2e; margin-bottom: 3rem;">🎵 Portfolio: Listen to the Alchemy</h2>
+  <h2 style="text-align: center; background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin-bottom: 3rem;">🎵 Portfolio: Listen to the Alchemy</h2>
   
   <div style="max-width: 900px; margin: 0 auto;">
     <div style="background: white; padding: 2.5rem; border-radius: 12px; margin-bottom: 2rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-left: 6px solid #5548a0;">
@@ -57,7 +57,7 @@ title: The Sound of AiChemy | AI-Generated Music That Sounds Human
 
 
 <section class="container" style="padding: 3rem 1rem;">
-  <h2 style="text-align: center; color: #1a1a2e; margin-bottom: 3rem;">What I Create With AiChemy</h2>
+  <h2 style="text-align: center; background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin-bottom: 3rem;">What I Create With AiChemy</h2>
   
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
     <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-top: 4px solid #5548a0;">
@@ -101,7 +101,7 @@ title: The Sound of AiChemy | AI-Generated Music That Sounds Human
 
 <section class="container" style="padding: 3rem 1rem; background: #f8f9fa;">
   <div style="max-width: 900px; margin: 0 auto;">
-    <h2 style="text-align: center; color: #1a1a2e; margin-bottom: 3rem;">The AiChemy Process</h2>
+    <h2 style="text-align: center; background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin-bottom: 3rem;">The AiChemy Process</h2>
     
     <div style="display: grid; gap: 1.5rem;">
       <div style="background: white; padding: 2rem; border-radius: 8px; border-left: 4px solid #5548a0;">
@@ -132,7 +132,7 @@ title: The Sound of AiChemy | AI-Generated Music That Sounds Human
 </section>
 
 <section class="container" style="padding: 3rem 1rem;">
-  <h2 style="text-align: center; color: #1a1a2e; margin-bottom: 3rem;">Pricing & Packages</h2>
+  <h2 style="text-align: center; background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin-bottom: 3rem;">Pricing & Packages</h2>
   
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
     
@@ -206,7 +206,7 @@ title: The Sound of AiChemy | AI-Generated Music That Sounds Human
 
 <section class="container" style="padding: 3rem 1rem; background: #f8f9fa;">
   <div style="max-width: 800px; margin: 0 auto;">
-    <h2 style="text-align: center; color: #1a1a2e; margin-bottom: 2rem;">Why AI Music With This Digital Alchemist?</h2>
+    <h2 style="text-align: center; background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin-bottom: 2rem;">Why AI Music With This Digital Alchemist?</h2>
     
     <div style="background: linear-gradient(135deg, #5548a0 0%, #5548a0 100%); color: white; padding: 2.5rem; border-radius: 12px; margin-bottom: 2rem;">
       <p style="font-size: 1.2rem; font-style: italic; line-height: 1.8; margin: 0;">

@@ -5,7 +5,7 @@ title: The Alchemist's Story | William Johnson
 
 <div class="container" style="padding-top: 2rem; padding-bottom: 4rem; max-width: 900px;">
   
-  <h1 style="text-align: center; color: #1a1a2e; margin-bottom: 1rem;">The Alchemist's Story</h1>
+  <h1 style="text-align: center; background: linear-gradient(135deg, #e8e8e8 0%, #c0c0c0 50%, #f5f5f5 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; font-size: 2.5rem; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin-bottom: 1rem;">The Alchemist's Story</h1>
   <p style="text-align: center; font-size: 1.2rem; color: #666; margin-bottom: 3rem;">I'm not a traditional developer or musician. I'm a Business Systems Architect who discovered the formula.</p>
   
   <div style="background: linear-gradient(135deg, #5548a0 0%, #5548a0 100%); color: white; padding: 1.5rem; border-radius: 8px; max-width: 600px; margin: 0 auto 3rem auto; text-align: center;">
@@ -14,7 +14,7 @@ title: The Alchemist's Story | William Johnson
   </div>
 
   <section style="margin-bottom: 3rem;">
-    <h2 style="color: #5548a0; margin-bottom: 1rem;">Who I Am</h2>
+    <h2 style="background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin-bottom: 1rem;">Who I Am</h2>
     
     <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem;">My name is William Johnson. I'm a Business Systems Architect and Digital Alchemist based in Richmond, Kentucky.</p>
     
@@ -24,7 +24,7 @@ title: The Alchemist's Story | William Johnson
   </section>
 
   <section style="margin-bottom: 3rem;">
-    <h2 style="color: #5548a0; margin-bottom: 1rem;">The Journey: From Systems to AiChemy</h2>
+    <h2 style="background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin-bottom: 1rem;">The Journey: From Systems to AiChemy</h2>
     
     <div style="background: #f8f9fa; padding: 2rem; border-radius: 8px; border-left: 4px solid #5548a0; margin-bottom: 2rem;">
       <h3 style="color: #5548a0; margin-top: 0;">Phase 1: Reverse-Engineering Success</h3>
@@ -47,7 +47,7 @@ title: The Alchemist's Story | William Johnson
   </section>
 
   <section style="margin-bottom: 3rem;">
-    <h2 style="color: #1a1a2e; margin-bottom: 1rem;">The Philosophy: Modern AiChemy</h2>
+    <h2 style="background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin-bottom: 1rem;">The Philosophy: Modern AiChemy</h2>
     
     <div style="background: linear-gradient(135deg, #1a1a2e 0%, #5548a0 100%); color: white; padding: 2.5rem; border-radius: 12px; margin-bottom: 2rem;">
       <p style="font-size: 1.2rem; font-style: italic; line-height: 1.8; margin-bottom: 1.5rem;">
@@ -77,7 +77,7 @@ title: The Alchemist's Story | William Johnson
   </section>
 
   <section style="margin-bottom: 3rem;">
-    <h2 style="color: #1a1a2e; margin-bottom: 1rem;">What I Actually Do</h2>
+    <h2 style="background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin-bottom: 1rem;">What I Actually Do</h2>
     
     <div style="background: #f8f9fa; padding: 2rem; border-radius: 8px; margin-bottom: 2rem;">
       <ul style="font-size: 1.1rem; line-height: 2; list-style: none; padding: 0;">
@@ -95,7 +95,7 @@ title: The Alchemist's Story | William Johnson
   </section>
 
   <section style="margin-bottom: 3rem;">
-    <h2 style="color: #1a1a2e; margin-bottom: 1rem;">The Current Mission: Honest & Urgent</h2>
+    <h2 style="background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin-bottom: 1rem;">The Current Mission: Honest & Urgent</h2>
     
     <div style="background: linear-gradient(135deg, #5548a0 0%, #5548a0 100%); color: white; padding: 2.5rem; border-radius: 12px;">
       <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 1rem;">I'm a single parent fighting a legal custody case. I need to raise $10,000 by January 1st, 2025 for legal expenses.</p>
@@ -111,7 +111,7 @@ title: The Alchemist's Story | William Johnson
   </section>
 
   <section style="margin-bottom: 3rem;">
-    <h2 style="color: #1a1a2e; margin-bottom: 1rem;">The Personal Side</h2>
+    <h2 style="background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin-bottom: 1rem;">The Personal Side</h2>
     
     <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">I work from Richmond, Kentucky, usually late at night when the kids are asleep. I'm a father, someone who believes in second chances and radical transformations.</p>
     

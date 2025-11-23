@@ -4,8 +4,8 @@ title: The Digital Arsenal | AI-Powered Business Tools
 ---
 
 <div class="container" style="padding: 2rem 1rem;">
-  <h1 style="text-align: center; color: #1a1a2e; margin-bottom: 1rem;">The Digital Alchemist's Arsenal</h1>
-  <p style="text-align: center; font-size: 1.3rem; color: #666; margin-bottom: 1rem;">AI-Powered Tools That Actually Work</p>
+  <h1 style="text-align: center; background: linear-gradient(135deg, #e8e8e8 0%, #c0c0c0 50%, #f5f5f5 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; font-size: 2.5rem; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin-bottom: 1rem;">The Digital Alchemist's Arsenal</h1>
+  <p style="text-align: center; font-size: 1.3rem; color: #666; margin-bottom: 1rem;">AI-Powered Software Tools That Actually Work</p>
   
   <div style="background: linear-gradient(135deg, #5548a0 0%, #5548a0 100%); color: white; padding: 1.5rem; border-radius: 8px; max-width: 600px; margin: 2rem auto; text-align: center;">
     <p style="margin: 0; font-size: 1.1rem;">Use code <strong>HOLIDAY25</strong> for 25% off all tools</p>
@@ -22,7 +22,7 @@ title: The Digital Arsenal | AI-Powered Business Tools
         <strong>LIVE & WORKING</strong>
       </div>
       
-      <h2 style="color: #1a1a2e; margin: 1rem 0 0.5rem 0;">📝 Local SEO Blog Builder</h2>
+      <h2 style="background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin: 1rem 0 0.5rem 0;">📝 Local SEO Blog Builder</h2>
       <p style="color: #666; font-size: 0.95rem; margin-bottom: 1rem;"><em>"Rank locally while you sleep"</em></p>
       
       <div style="margin: 1.5rem 0;">
@@ -60,7 +60,7 @@ title: The Digital Arsenal | AI-Powered Business Tools
         <strong>AVAILABLE NOW</strong>
       </div>
       
-      <h2 style="color: #1a1a2e; margin: 1rem 0 0.5rem 0;">🎯 Sales Funnel Micro-CRM</h2>
+      <h2 style="background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin: 1rem 0 0.5rem 0;">🎯 Sales Funnel Micro-CRM</h2>
       <p style="color: #666; font-size: 0.95rem; margin-bottom: 1rem;"><em>"Track leads without the complexity"</em></p>
       
       <div style="margin: 1.5rem 0;">
@@ -94,7 +94,7 @@ title: The Digital Arsenal | AI-Powered Business Tools
         <strong>AVAILABLE NOW</strong>
       </div>
       
-      <h2 style="color: #1a1a2e; margin: 1rem 0 0.5rem 0;">💰 The Offer Architect</h2>
+      <h2 style="background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin: 1rem 0 0.5rem 0;">💰 The Offer Architect</h2>
       <p style="color: #666; font-size: 0.95rem; margin-bottom: 1rem;"><em>"Build offers that convert at 10x"</em></p>
       
       <div style="margin: 1.5rem 0;">
@@ -128,7 +128,7 @@ title: The Digital Arsenal | AI-Powered Business Tools
         <strong>AVAILABLE NOW</strong>
       </div>
       
-      <h2 style="color: #1a1a2e; margin: 1rem 0 0.5rem 0;">📊 Business Health Diagnostic</h2>
+      <h2 style="background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin: 1rem 0 0.5rem 0;">📊 Business Health Diagnostic</h2>
       <p style="color: #666; font-size: 0.95rem; margin-bottom: 1rem;"><em>"Find what's broken before it breaks you"</em></p>
       
       <div style="margin: 1.5rem 0;">
@@ -162,7 +162,7 @@ title: The Digital Arsenal | AI-Powered Business Tools
         <strong>LIVE & WORKING</strong>
       </div>
       
-      <h2 style="color: #1a1a2e; margin: 1rem 0 0.5rem 0;">🏰 The Citadel - 30 Day Art of Influence</h2>
+      <h2 style="background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin: 1rem 0 0.5rem 0;">🏰 The Citadel - 30 Day Art of Influence</h2>
       <p style="color: #666; font-size: 0.95rem; margin-bottom: 1rem;"><em>"Master influence through gamification"</em></p>
       
       <div style="margin: 1.5rem 0;">
@@ -200,7 +200,7 @@ title: The Digital Arsenal | AI-Powered Business Tools
         <strong>BUNDLE ONLY</strong>
       </div>
       
-      <h2 style="color: #1a1a2e; margin: 1rem 0 0.5rem 0;">🚀 90-Day Sprint Dashboard</h2>
+      <h2 style="background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin: 1rem 0 0.5rem 0;">🚀 90-Day Sprint Dashboard</h2>
       <p style="color: #666; font-size: 0.95rem; margin-bottom: 1rem;"><em>"Ship major projects in 90 days"</em></p>
       
       <div style="margin: 1.5rem 0;">
@@ -237,7 +237,7 @@ title: The Digital Arsenal | AI-Powered Business Tools
         <strong>BUNDLE BONUS</strong>
       </div>
       
-      <h2 style="color: #1a1a2e; margin: 1rem 0 0.5rem 0;">📚 Business Systems PDF Bundle</h2>
+      <h2 style="background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin: 1rem 0 0.5rem 0;">📚 Business Systems PDF Bundle</h2>
       <p style="color: #666; font-size: 0.95rem; margin-bottom: 1rem;"><em>"Battle-tested operational blueprints"</em></p>
       
       <div style="margin: 1.5rem 0;">
@@ -270,7 +270,7 @@ title: The Digital Arsenal | AI-Powered Business Tools
 
 <section class="container" style="padding: 3rem 1rem; background: #f8f9fa; margin-top: 3rem;">
   <div style="max-width: 900px; margin: 0 auto; text-align: center;">
-    <h2 style="color: #1a1a2e; margin-bottom: 2rem;">Trust Elements</h2>
+    <h2 style="background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin-bottom: 2rem;">Trust Elements</h2>
     
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
       <div style="background: white; padding: 1.5rem; border-radius: 8px;">
@@ -306,7 +306,7 @@ title: The Digital Arsenal | AI-Powered Business Tools
 </section>
 
 <section class="container" style="padding: 3rem 1rem; text-align: center;">
-  <h2 style="color: #1a1a2e; margin-bottom: 1rem;">Want Everything?</h2>
+  <h2 style="background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin-bottom: 1rem;">Want Everything?</h2>
   <p style="font-size: 1.1rem; color: #666; margin-bottom: 2rem;">Save big with pre-mixed bundle packages</p>
   
   <a href="{{ '/packages/' | url }}" class="form-button" style="display: inline-block; padding: 1.5rem 3rem; font-size: 1.2rem; background: linear-gradient(135deg, #5548a0 0%, #5548a0 100%);">See Bundle Deals</a>
