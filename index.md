@@ -4,21 +4,21 @@ title: Modern AiChemy | Where AI Meets Business Alchemy
 ---
 
 <div class="hero container" style="text-align: center; padding: 3rem 1rem; background: transparent;">
-  <h1 style="font-size: 2.5rem; margin-bottom: 1rem; color: #1a1a2e; background: none; -webkit-text-fill-color: #1a1a2e; animation: none;">Welcome to the Digital Alchemist's Laboratory</h1>
-  <h2 style="font-size: 1.5rem; font-weight: normal; margin-bottom: 2rem; color: #6b4ce6; background: none; -webkit-text-fill-color: #6b4ce6; animation: none;">Where AI Meets Alchemy - Transforming Business Problems Into Gold</h2>
+  <h1 style="font-size: 2.5rem; margin-bottom: 1rem; color: #4a3a99; font-weight: 800; text-shadow: 0 2px 4px rgba(74, 58, 153, 0.2);">Welcome to the Digital Alchemist's Laboratory</h1>
+  <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 2rem; color: #5548a0;">Where AI Meets Alchemy - Transforming Business Problems Into Silver</h2>
   
-  <div style="background: linear-gradient(135deg, #6b4ce6 0%, #a855f7 100%); color: white; padding: 1.5rem; border-radius: 8px; max-width: 600px; margin: 2rem auto;">
-    <p style="font-size: 1.1rem; margin-bottom: 0.5rem;"><strong>Mission Progress</strong></p>
-    <div style="background: rgba(255,255,255,0.2); height: 30px; border-radius: 15px; overflow: hidden; margin: 1rem 0;">
-      <div style="background: #ffd700; height: 100%; width: 15%; transition: width 0.3s ease;"></div>
+  <div style="background: linear-gradient(135deg, #5548a0 0%, #4a3a99 100%); color: white; padding: 2rem; border-radius: 12px; max-width: 650px; margin: 2rem auto; box-shadow: 0 8px 32px rgba(74, 58, 153, 0.3); border: 2px solid rgba(192, 192, 192, 0.3);">
+    <p style="font-size: 1.2rem; margin-bottom: 0.75rem; font-weight: 700; color: white;"><strong>Mission Progress</strong></p>
+    <div style="background: rgba(255,255,255,0.25); height: 35px; border-radius: 18px; overflow: hidden; margin: 1rem 0; box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);">
+      <div style="background: linear-gradient(135deg, #c0c0c0 0%, #a8a8a8 100%); height: 100%; width: 15%; transition: width 0.3s ease; box-shadow: 0 2px 8px rgba(192, 192, 192, 0.6);"></div>
     </div>
-    <p style="font-size: 1.3rem; margin: 0;"><strong>$450 / $10,000 raised</strong></p>
-    <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.9;">Help me hit my goal by January 1st, 2025</p>
+    <p style="font-size: 1.4rem; margin: 0; font-weight: 800; color: white; text-shadow: 0 2px 4px rgba(0,0,0,0.2);"><strong>$450 / $10,000 raised</strong></p>
+    <p style="font-size: 1rem; margin-top: 0.75rem; color: white; font-weight: 500;">Help me hit my goal by January 1st, 2025</p>
   </div>
   
   <div style="margin-top: 2rem;">
-    <a href="{{ '/packages/' | url }}" class="form-button" style="display: inline-block; margin: 0.5rem; padding: 1rem 2rem; font-size: 1.1rem;">Browse the AiChemy Arsenal</a>
-    <a href="#mission" style="display: inline-block; margin: 0.5rem; padding: 1rem 2rem; font-size: 1.1rem; background: transparent; border: 2px solid #6b4ce6; color: #6b4ce6; text-decoration: none; border-radius: 4px;">Read My Story</a>
+    <a href="{{ '/packages/' | url }}" class="form-button" style="display: inline-block; margin: 0.5rem; padding: 1.25rem 2.5rem; font-size: 1.15rem; background: linear-gradient(135deg, #c0c0c0 0%, #a8a8a8 100%); color: #1a1a2e; font-weight: 800; box-shadow: 0 4px 16px rgba(192, 192, 192, 0.4);">Browse the AiChemy Arsenal</a>
+    <a href="#mission" style="display: inline-block; margin: 0.5rem; padding: 1.25rem 2.5rem; font-size: 1.15rem; background: transparent; border: 3px solid #5548a0; color: #4a3a99; text-decoration: none; border-radius: 50px; font-weight: 700;">Read My Story</a>
   </div>
 </div>
 

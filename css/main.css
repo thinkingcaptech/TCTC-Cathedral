@@ -7,16 +7,16 @@ Digital Alchemist Brand Identity
 
 /* === 1. MODERN AICHEMISTRY: CSS VARIABLES === */
 :root {
-  /* PRIMARY BRAND COLOR - Purplish Blue (The Digital Alchemist) */
-  --primary-color: #667eea;
-  --primary-dark: #5568d3;
-  --primary-light: #7c94ff;
-  --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  /* PRIMARY BRAND COLOR - Darker Purplish Blue (The Digital Alchemist) */
+  --primary-color: #5548a0;
+  --primary-dark: #4a3a99;
+  --primary-light: #6858b8;
+  --primary-gradient: linear-gradient(135deg, #5548a0 0%, #4a3a99 100%);
   
-  /* ACCENT COLOR - Gold (The Transmutation/Result) */
-  --accent-color: #f6c042;
-  --accent-dark: #e4a628;
-  --accent-light: #ffd666;
+  /* ACCENT COLOR - Silver (The Transmutation/Result) */
+  --accent-color: #c0c0c0;
+  --accent-dark: #a8a8a8;
+  --accent-light: #d8d8d8;
   
   /* SECONDARY COLOR - Maroon (Mission/Urgency ONLY) */
   --mission-color: #8b1538;
@@ -35,8 +35,8 @@ Digital Alchemist Brand Identity
   
   /* UTILITY */
   --text-accent: var(--primary-color);
-  --border-color: rgba(102, 126, 234, 0.2);
-  --border-gold: rgba(246, 192, 66, 0.3);
+  --border-color: rgba(85, 72, 160, 0.2);
+  --border-silver: rgba(192, 192, 192, 0.3);
   
   /* LEGACY COMPATIBILITY */
   --bg-primary: var(--bg-dark);
@@ -92,25 +92,25 @@ a:hover {
 /* Purple Glow Animation for Logo */
 @keyframes pulseGlowPurple {
   0%, 100% {
-    box-shadow: 0 0 8px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 0 8px rgba(85, 72, 160, 0.4);
     opacity: 0.9;
   }
   50% {
-    box-shadow: 0 0 16px rgba(102, 126, 234, 0.7);
+    box-shadow: 0 0 16px rgba(85, 72, 160, 0.7);
     opacity: 1;
   }
 }
 
-/* Gold Glow Animation for Buttons */
-@keyframes pulseGlowGold {
+/* Silver Glow Animation for Buttons */
+@keyframes pulseGlowSilver {
   0% {
-    box-shadow: 0 0 10px rgba(246, 192, 66, 0.5);
+    box-shadow: 0 0 10px rgba(192, 192, 192, 0.5);
   }
   60% {
-    box-shadow: 0 0 22px rgba(246, 192, 66, 0.9);
+    box-shadow: 0 0 22px rgba(192, 192, 192, 0.9);
   }
   100% {
-    box-shadow: 0 0 10px rgba(246, 192, 66, 0.5);
+    box-shadow: 0 0 10px rgba(192, 192, 192, 0.5);
   }
 }
 
@@ -211,7 +211,7 @@ footer {
   color: var(--accent-color);
 }
 
-/* === 7. BUTTONS & CTAs (GOLD - THE TRANSFORMATION) === */
+/* === 7. BUTTONS & CTAs (SILVER - THE TRANSFORMATION) === */
 .form-button,
 .buy-button,
 .cta-button,
@@ -230,20 +230,20 @@ a.button {
   overflow: hidden;
   z-index: 1;
   
-  /* GOLD BUTTONS - The Result/Transformation */
-  background: var(--accent-color);
-  color: var(--bg-dark);
+  /* SILVER BUTTONS - The Result/Transformation */
+  background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-dark) 100%);
+  color: #1a1a2e;
   border: 2px solid var(--accent-color);
-  animation: pulseGlowGold 3s ease-in-out infinite;
+  animation: pulseGlowSilver 3s ease-in-out infinite;
 }
 
 .form-button:hover,
 .buy-button:hover,
 .cta-button:hover,
 button:hover {
-  background: var(--accent-dark);
-  color: var(--bg-dark);
-  box-shadow: 0 4px 12px rgba(246, 192, 66, 0.4);
+  background: linear-gradient(135deg, var(--accent-dark) 0%, #909090 100%);
+  color: #0a0e27;
+  box-shadow: 0 4px 12px rgba(192, 192, 192, 0.5);
   transform: translateY(-2px);
 }
 
@@ -372,9 +372,10 @@ main {
 }
 
 .progress-bar-fill {
-  background: var(--accent-color);
+  background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-dark) 100%);
   height: 100%;
   transition: width 0.3s ease;
+  box-shadow: 0 2px 8px rgba(192, 192, 192, 0.6);
 }
 
 /* === 12. MUSIC/CREATIVE SECTIONS === */
@@ -456,7 +457,7 @@ main {
 
 .pricing-card.featured {
   border: 3px solid var(--accent-color);
-  box-shadow: 0 12px 32px rgba(246, 192, 66, 0.3);
+  box-shadow: 0 12px 32px rgba(192, 192, 192, 0.3);
   transform: scale(1.05);
 }
 
@@ -1004,12 +1005,12 @@ blockquote {
 
 /* === 26. UTILITY CLASSES === */
 .text-purple { color: var(--primary-color); }
-.text-gold { color: var(--accent-color); }
+.text-silver { color: var(--accent-color); }
 .text-maroon { color: var(--mission-color); }
 
 .bg-purple { background: var(--primary-gradient); }
-.bg-gold { background: var(--accent-color); color: var(--bg-dark); }
+.bg-silver { background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-dark) 100%); color: #1a1a2e; }
 .bg-maroon { background: var(--mission-color); }
 
 .border-purple { border-color: var(--primary-color); }
-.border-gold { border-color: var(--accent-color); }
+.border-silver { border-color: var(--accent-color); }
