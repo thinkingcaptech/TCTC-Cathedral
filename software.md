@@ -9,7 +9,7 @@ title: The Digital Arsenal | AI-Powered Business Tools
   
   <div style="background: linear-gradient(135deg, #6b4ce6 0%, #a855f7 100%); color: white; padding: 1.5rem; border-radius: 8px; max-width: 600px; margin: 2rem auto; text-align: center;">
     <p style="margin: 0; font-size: 1.1rem;">Use code <strong>HOLIDAY25</strong> for 25% off all tools</p>
-    <p style="margin: 0.5rem 0 0 0; font-size: 0.9rem; opacity: 0.9;">Every purchase helps me reach $3,000 by January 1st</p>
+    <p style="margin: 0.5rem 0 0 0; font-size: 0.9rem; opacity: 0.9;">Every purchase helps me reach $10,000 by January 1st</p>
   </div>
 </div>
 

@@ -9,7 +9,7 @@ title: The Sound of AiChemy | AI-Generated Music That Sounds Human
   
   <div style="background: linear-gradient(135deg, #a855f7 0%, #6b4ce6 100%); color: white; padding: 1.5rem; border-radius: 8px; max-width: 600px; margin: 2rem auto; text-align: center;">
     <p style="margin: 0; font-size: 1.1rem;">Use code <strong>HOLIDAY25</strong> for 25% off all music services</p>
-    <p style="margin: 0.5rem 0 0 0; font-size: 0.9rem; opacity: 0.9;">Every project helps me reach $3,000 by January 1st</p>
+    <p style="margin: 0.5rem 0 0 0; font-size: 0.9rem; opacity: 0.9;">Every project helps me reach $10,000 by January 1st</p>
   </div>
 </div>
 
@@ -86,7 +86,7 @@ title: The Sound of AiChemy | AI-Generated Music That Sounds Human
     </div>
 
     <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-top: 4px solid #d4af37;">
-      <h3 style="color: #d4af37; margin-bottom: 1rem;">🎥 Content Creators</h3>
+      <h3 style="color: #8b7500; margin-bottom: 1rem; background: none; -webkit-text-fill-color: #8b7500; animation: none;">🎥 Content Creators</h3>
       <ul style="line-height: 1.8; color: #333;">
         <li>YouTube channel music</li>
         <li>TikTok sound branding</li>
@@ -115,7 +115,7 @@ title: The Sound of AiChemy | AI-Generated Music That Sounds Human
       </div>
       
       <div style="background: white; padding: 2rem; border-radius: 8px; border-left: 4px solid #d4af37;">
-        <h3 style="color: #d4af37; margin: 0 0 0.5rem 0;">3. Rapid Iteration</h3>
+        <h3 style="color: #8b7500; margin: 0 0 0.5rem 0; background: none; -webkit-text-fill-color: #8b7500; animation: none;">3. Rapid Iteration</h3>
         <p style="margin: 0; color: #666;">Choose your favorite, request changes, iterate until it's perfect. Usually 2-3 rounds.</p>
       </div>
       
@@ -178,7 +178,7 @@ title: The Sound of AiChemy | AI-Generated Music That Sounds Human
     </div>
     
     <div style="background: linear-gradient(135deg, #1a1a2e 0%, #6b4ce6 100%); border: 2px solid #ffd700; border-radius: 12px; padding: 2.5rem; color: white; box-shadow: 0 6px 24px rgba(255,215,0,0.3);">
-      <h3 style="color: #ffd700; margin: 0 0 1rem 0;">Monthly Retainer</h3>
+      <h3 style="color: #8b7500; margin: 0 0 1rem 0; background: none; -webkit-text-fill-color: #8b7500; animation: none;">Monthly Retainer</h3>
       <p style="font-size: 2rem; font-weight: bold; color: white; margin: 0;">$2,000-5,000/mo</p>
       <p style="color: rgba(255,255,255,0.8); margin: 0.5rem 0 1.5rem 0;"><strong>With HOLIDAY25:</strong> $1,500-3,750/mo</p>
       
@@ -226,7 +226,7 @@ title: The Sound of AiChemy | AI-Generated Music That Sounds Human
       </div>
       
       <div style="background: white; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #d4af37;">
-        <p style="margin: 0;"><strong style="color: #d4af37;">Iteration:</strong> Unlimited styles and variations until it's perfect</p>
+        <p style="margin: 0;"><strong style="color: #8b7500;">Iteration:</strong> Unlimited styles and variations until it's perfect</p>
       </div>
       
       <div style="background: white; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #1a1a2e;">

@@ -8,7 +8,7 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
   <p style="text-align: center; font-size: 1.3rem; color: #666; margin-bottom: 1rem;">Save Time & Money With These Proven Combinations</p>
   
   <div style="background: linear-gradient(135deg, #6b4ce6 0%, #a855f7 100%); color: white; padding: 1.5rem; border-radius: 8px; max-width: 600px; margin: 2rem auto; text-align: center;">
-    <p style="margin: 0; font-size: 1.1rem;"><strong>Every purchase helps me reach my $3,000 goal by January 1st</strong></p>
+    <p style="margin: 0; font-size: 1.1rem;"><strong>Every purchase helps me reach my $10,000 goal by January 1st</strong></p>
     <p style="margin: 0.5rem 0 0 0; font-size: 0.9rem; opacity: 0.9;">Use code <strong>HOLIDAY25</strong> for 25% off</p>
   </div>
 </div>
@@ -50,7 +50,7 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
         </div>
         
         <div style="margin-bottom: 1.5rem;">
-          <p style="font-weight: bold; color: #d4af37; margin-bottom: 0.5rem;">📚 Business Systems:</p>
+          <p style="font-weight: bold; color: #8b7500; margin-bottom: 0.5rem;">📚 Business Systems:</p>
           <ul style="line-height: 1.8; color: #333;">
             <li>Business Systems PDF Bundle ($297)</li>
             <li>Operational blueprints & templates</li>
@@ -122,19 +122,19 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
         <strong>🔮 ULTIMATE TRANSFORMATION</strong>
       </div>
       
-      <h2 style="color: #ffd700; margin: 1rem 0;">The Complete AiChemy System</h2>
+      <h2 style="color: #8b7500; margin: 1rem 0; background: none; -webkit-text-fill-color: #8b7500; animation: none;">The Complete AiChemy System</h2>
       
       <div style="margin: 1.5rem 0;">
         <p style="font-size: 2rem; font-weight: bold; color: white; margin: 0;">$2,497</p>
         <p style="color: rgba(255,255,255,0.8); margin: 0.5rem 0 0 0;"><s>$4,000+ value</s> - Save $1,500+</p>
-        <p style="color: #ffd700; font-weight: bold; margin: 0.5rem 0;">With HOLIDAY25: <span style="font-size: 1.3rem;">$1,873</span></p>
+        <p style="color: #8b7500; font-weight: bold; margin: 0.5rem 0;">With HOLIDAY25: <span style="font-size: 1.3rem;">$1,873</span></p>
       </div>
       
       <div style="border-top: 1px solid rgba(255,255,255,0.2); padding-top: 1.5rem; margin-top: 1.5rem;">
         <h3 style="color: white; font-size: 1.1rem; margin-bottom: 1rem;">Everything. No Compromises:</h3>
         
         <div style="margin-bottom: 1.5rem;">
-          <p style="font-weight: bold; color: #ffd700; margin-bottom: 0.5rem;">⚡ ALL Digital Tools:</p>
+          <p style="font-weight: bold; color: #8b7500; margin-bottom: 0.5rem;">⚡ ALL Digital Tools:</p>
           <ul style="line-height: 1.8; color: rgba(255,255,255,0.9);">
             <li>Every software application we offer</li>
             <li>90-Day Sprint Dashboard</li>
@@ -144,7 +144,7 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
         </div>
         
         <div style="margin-bottom: 1.5rem;">
-          <p style="font-weight: bold; color: #ffd700; margin-bottom: 0.5rem;">🎵 Complete Audio Branding:</p>
+          <p style="font-weight: bold; color: #8b7500; margin-bottom: 0.5rem;">🎵 Complete Audio Branding:</p>
           <ul style="line-height: 1.8; color: rgba(255,255,255,0.9);">
             <li>Brand Music Package (3-5 songs)</li>
             <li>Multiple versions & formats</li>
@@ -154,7 +154,7 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
         </div>
         
         <div style="margin-bottom: 1.5rem;">
-          <p style="font-weight: bold; color: #ffd700; margin-bottom: 0.5rem;">🚀 Exclusive Bonuses:</p>
+          <p style="font-weight: bold; color: #8b7500; margin-bottom: 0.5rem;">🚀 Exclusive Bonuses:</p>
           <ul style="line-height: 1.8; color: rgba(255,255,255,0.9);">
             <li>Monthly support included (1st month)</li>
             <li>50% off retainer services (1st month)</li>
@@ -194,7 +194,7 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
       </div>
       
       <div style="margin-top: 2rem; padding: 1.5rem; background: rgba(255,215,0,0.2); border-radius: 8px;">
-        <p style="font-size: 1.2rem; margin: 0;"><strong>Progress: $450 / $3,000 raised</strong></p>
+        <p style="font-size: 1.2rem; margin: 0;"><strong>Progress: $450 / $10,000 raised</strong></p>
         <p style="font-size: 0.95rem; margin-top: 0.5rem; opacity: 0.9;">Your investment helps me fight for my family while transforming your business</p>
       </div>
     </div>
@@ -285,6 +285,7 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
   <div style="margin-top: 3rem; padding: 2rem; background: #f8f9fa; border-radius: 8px; max-width: 600px; margin-left: auto; margin-right: auto;">
     <p style="font-size: 1rem; color: #666; margin: 0;"><strong>Questions about which package is right for you?</strong></p>
     <p style="margin-top: 0.5rem;"><a href="mailto:will@tctcusa.com" style="color: #6b4ce6; font-size: 1.1rem;">will@tctcusa.com</a></p>
+    <p style="margin-top: 0.5rem; font-size: 1.1rem; color: #6b4ce6;">📞 <a href="tel:8592678383" style="color: #6b4ce6;">(859) 267-8383</a></p>
   </div>
 </section>
             <li>Website setup guidance</li>

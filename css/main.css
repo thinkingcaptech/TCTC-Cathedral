@@ -57,8 +57,8 @@ a {
   100% { background-position: -200% center; }
 }
 
-/* Shimmer Applied to all main gold text */
-h1, h2, h3, .product-price {
+/* Shimmer Applied to all main gold text - DISABLED FOR READABILITY */
+/* h1, h2, h3, .product-price {
   color: var(--text-accent);
   background: linear-gradient(
     to right,
@@ -71,6 +71,11 @@ h1, h2, h3, .product-price {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textShimmer 5s ease-in-out infinite;
+} */
+
+/* Solid readable text for better clarity */
+h1, h2, h3 {
+  color: var(--text-accent);
 }
 
 /* Logo Pulse Animation */

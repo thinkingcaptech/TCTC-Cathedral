@@ -45,10 +45,10 @@ title: The Transmutation Records | Proof of AiChemy
     <div style="background: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-left: 6px solid #d4af37;">
       <div style="display: flex; justify-content: space-between; align-items: start; flex-wrap: wrap; gap: 1rem;">
         <div style="flex: 1; min-width: 250px;">
-          <h3 style="color: #d4af37; margin: 0 0 0.5rem 0;">🚀 90-Day Sprint Dashboard</h3>
+          <h3 style="color: #8b7500; margin: 0 0 0.5rem 0; background: none; -webkit-text-fill-color: #8b7500; animation: none;">🚀 90-Day Sprint Dashboard</h3>
           <p style="color: #666; margin-bottom: 1rem;">Project management platform deployed</p>
           <p style="line-height: 1.7; margin-bottom: 1rem;">Goal tracking and project management system built for focused execution. Available for bundle packages.</p>
-          <a href="https://tctc90daysprint.netlify.app" target="_blank" style="color: #d4af37; font-weight: bold; text-decoration: none;">🔗 View Live Application →</a>
+          <a href="https://tctc90daysprint.netlify.app" target="_blank" style="color: #8b7500; font-weight: bold; text-decoration: none;">🔗 View Live Application →</a>
         </div>
         <div style="background: #fffdf0; padding: 1rem; border-radius: 6px; min-width: 150px;">
           <p style="margin: 0; font-size: 0.9rem; color: #666;"><strong>Status:</strong> ✅ Live & Active</p>

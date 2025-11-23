@@ -46,7 +46,7 @@ title: AiChemy for Audio | Custom Music for Broadcasters
     <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 8px; margin: 1.5rem 0;">
       <p style="font-size: 2rem; font-weight: bold; margin: 0;">25% OFF ALL SERVICES</p>
       <p style="font-size: 1.3rem; margin: 0.5rem 0;">Use code: <strong style="background: #ffd700; color: #1a1a2e; padding: 0.3rem 0.8rem; border-radius: 4px;">HOLIDAY25</strong></p>
-      <p style="font-size: 0.95rem; margin: 1rem 0 0 0; opacity: 0.9;">Raising $3,000 by January 1st, 2025 for legal expenses</p>
+      <p style="font-size: 0.95rem; margin: 1rem 0 0 0; opacity: 0.9;">Raising $10,000 by January 1st, 2025 for legal expenses</p>
     </div>
     
     <p style="margin: 0; opacity: 0.9;">Every project helps me fight for my family while delivering professional music to your show</p>
@@ -107,7 +107,7 @@ title: AiChemy for Audio | Custom Music for Broadcasters
           <strong>ONGOING SHOWS</strong>
         </div>
         
-        <h3 style="color: #ffd700; margin-bottom: 1rem;">Monthly Retainer</h3>
+        <h3 style="color: #8b7500; margin-bottom: 1rem; background: none; -webkit-text-fill-color: #8b7500; animation: none;">Monthly Retainer</h3>
         <p style="font-size: 2rem; font-weight: bold; color: white; margin: 0;">$2,000-5,000/mo</p>
         <p style="color: rgba(255,255,255,0.8); margin: 0.5rem 0 1.5rem 0;"><strong>With HOLIDAY25:</strong> $1,500-3,750/mo</p>
         
@@ -156,7 +156,7 @@ title: AiChemy for Audio | Custom Music for Broadcasters
         </div>
         
         <div style="background: white; padding: 2rem; border-radius: 12px; border: 2px solid #d4af37;">
-          <h3 style="color: #d4af37; margin-bottom: 1rem;">💼 Sponsor Content</h3>
+          <h3 style="color: #8b7500; margin-bottom: 1rem; background: none; -webkit-text-fill-color: #8b7500; animation: none;">💼 Sponsor Content</h3>
           <ul style="line-height: 1.8; color: #333;">
             <li>Sponsor message music</li>
             <li>Advertiser jingles</li>
@@ -183,7 +183,7 @@ title: AiChemy for Audio | Custom Music for Broadcasters
         </div>
         
         <div style="background: white; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #d4af37;">
-          <p style="margin: 0;"><strong style="color: #d4af37;">Budget Friendly:</strong> 10-20% of traditional music production costs</p>
+          <p style="margin: 0;"><strong style="color: #8b7500;">Budget Friendly:</strong> 10-20% of traditional music production costs</p>
         </div>
         
         <div style="background: white; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #1a1a2e;">
@@ -264,7 +264,7 @@ title: AiChemy for Audio | Custom Music for Broadcasters
     <p style="margin-top: 2rem;">
       Or reach out directly:<br>
       <strong>Email:</strong> will@tctcusa.com<br>
-      <strong>Phone/Text:</strong> (918) 555-0123
+      <strong>Phone/Text:</strong> <a href="tel:8592678383" style="color: #6b4ce6; text-decoration: none;">(859) 267-8383</a>
     </p>
     
     <p style="margin-top: 2rem; font-size: 1.3rem; color: var(--text-accent);">

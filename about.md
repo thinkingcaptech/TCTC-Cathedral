@@ -9,7 +9,7 @@ title: The Alchemist's Story | William Johnson
   <p style="text-align: center; font-size: 1.2rem; color: #666; margin-bottom: 3rem;">I'm not a traditional developer or musician. I'm a Business Systems Architect who discovered the formula.</p>
   
   <div style="background: linear-gradient(135deg, #6b4ce6 0%, #a855f7 100%); color: white; padding: 1.5rem; border-radius: 8px; max-width: 600px; margin: 0 auto 3rem auto; text-align: center;">
-    <p style="margin: 0; font-size: 1.1rem;"><strong>Current Mission:</strong> Raise $3,000 by January 1st, 2025</p>
+    <p style="margin: 0; font-size: 1.1rem;"><strong>Current Mission:</strong> Raise $10,000 by January 1st, 2025</p>
     <p style="margin: 0.5rem 0 0 0; font-size: 0.9rem; opacity: 0.9;">Every purchase helps me fight for my family while delivering real transformation</p>
   </div>
 
@@ -40,7 +40,7 @@ title: The Alchemist's Story | William Johnson
     </div>
     
     <div style="background: #f8f9fa; padding: 2rem; border-radius: 8px; border-left: 4px solid #d4af37;">
-      <h3 style="color: #d4af37; margin-top: 0;">Phase 3: Modern AiChemy is Born</h3>
+      <h3 style="color: #8b7500; margin-top: 0; background: none; -webkit-text-fill-color: #8b7500; animation: none;">Phase 3: Modern AiChemy is Born</h3>
       <p style="line-height: 1.8;">AI that powers business automation can also power creative services. The same attention to detail that fixes broken businesses can craft perfect brand identities.</p>
       <p style="line-height: 1.8; margin-bottom: 0;">I realized I wasn't just a developer or a systems guy. I was a <strong>Digital Alchemist</strong>—someone who transforms business problems into gold using AI.</p>
     </div>
@@ -70,7 +70,7 @@ title: The Alchemist's Story | William Johnson
       </div>
       
       <div style="background: white; padding: 1.5rem; border-radius: 8px; border: 2px solid #d4af37;">
-        <h3 style="color: #d4af37; margin: 0 0 0.5rem 0; font-size: 1.1rem;">🔮 Transformation Over Tactics</h3>
+        <h3 style="color: #8b7500; margin: 0 0 0.5rem 0; font-size: 1.1rem; background: none; -webkit-text-fill-color: #8b7500; animation: none;">🔮 Transformation Over Tactics</h3>
         <p style="margin: 0; line-height: 1.6;">I don't just fix symptoms. I transform the entire system. That's alchemy.</p>
       </div>
     </div>
@@ -98,7 +98,7 @@ title: The Alchemist's Story | William Johnson
     <h2 style="color: #1a1a2e; margin-bottom: 1rem;">The Current Mission: Honest & Urgent</h2>
     
     <div style="background: linear-gradient(135deg, #6b4ce6 0%, #a855f7 100%); color: white; padding: 2.5rem; border-radius: 12px;">
-      <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 1rem;">I'm a single parent fighting a legal custody case. I need to raise $3,000 by January 1st, 2025 for legal expenses.</p>
+      <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 1rem;">I'm a single parent fighting a legal custody case. I need to raise $10,000 by January 1st, 2025 for legal expenses.</p>
       
       <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem;"><strong>But I'm not asking for charity.</strong></p>
       
@@ -136,7 +136,7 @@ title: The Alchemist's Story | William Johnson
     </p>
     <p style="margin-top: 0.5rem;"><strong>William Johnson</strong><br>Digital Alchemist & Business Systems Architect</p>
     <p style="margin-top: 1rem;"><a href="mailto:will@tctcusa.com" style="color: #6b4ce6;">will@tctcusa.com</a></p>
-    <p>will@tctcusa.com | (918) 555-0123</p>
+    <p>📞 <a href="tel:8592678383" style="color: #6b4ce6; text-decoration: none;">(859) 267-8383</a></p>
   </div>
 
 </div>
