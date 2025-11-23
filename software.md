@@ -7,7 +7,7 @@ title: The Digital Arsenal | AI-Powered Business Tools
   <h1 style="text-align: center; color: #1a1a2e; margin-bottom: 1rem;">The Digital Alchemist's Arsenal</h1>
   <p style="text-align: center; font-size: 1.3rem; color: #666; margin-bottom: 1rem;">AI-Powered Tools That Actually Work</p>
   
-  <div style="background: linear-gradient(135deg, #6b4ce6 0%, #a855f7 100%); color: white; padding: 1.5rem; border-radius: 8px; max-width: 600px; margin: 2rem auto; text-align: center;">
+  <div style="background: linear-gradient(135deg, #5548a0 0%, #5548a0 100%); color: white; padding: 1.5rem; border-radius: 8px; max-width: 600px; margin: 2rem auto; text-align: center;">
     <p style="margin: 0; font-size: 1.1rem;">Use code <strong>HOLIDAY25</strong> for 25% off all tools</p>
     <p style="margin: 0.5rem 0 0 0; font-size: 0.9rem; opacity: 0.9;">Every purchase helps me reach $10,000 by January 1st</p>
   </div>
@@ -18,7 +18,7 @@ title: The Digital Arsenal | AI-Powered Business Tools
     
     <!-- LOCAL SEO BLOG BUILDER -->
     <div style="background: white; border: 2px solid #e0e0e0; border-radius: 12px; padding: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-      <div style="background: #6b4ce6; color: white; padding: 0.5rem 1rem; border-radius: 4px; display: inline-block; margin-bottom: 1rem;">
+      <div style="background: #5548a0; color: white; padding: 0.5rem 1rem; border-radius: 4px; display: inline-block; margin-bottom: 1rem;">
         <strong>LIVE & WORKING</strong>
       </div>
       
@@ -26,8 +26,8 @@ title: The Digital Arsenal | AI-Powered Business Tools
       <p style="color: #666; font-size: 0.95rem; margin-bottom: 1rem;"><em>"Rank locally while you sleep"</em></p>
       
       <div style="margin: 1.5rem 0;">
-        <p style="font-size: 1.8rem; font-weight: bold; color: #6b4ce6; margin: 0;">$97</p>
-        <p style="color: #a855f7; font-weight: bold; margin: 0.5rem 0;">With HOLIDAY25: <span style="font-size: 1.2rem;">$73</span></p>
+        <p style="font-size: 1.8rem; font-weight: bold; color: #5548a0; margin: 0;">$97</p>
+        <p style="color: #5548a0; font-weight: bold; margin: 0.5rem 0;">With HOLIDAY25: <span style="font-size: 1.2rem;">$73</span></p>
       </div>
       
       <p style="line-height: 1.7; margin-bottom: 1.5rem; color: #333;">Generate hyper-local, SEO-optimized blog content in minutes. Designed for local businesses that need to rank in their city without hiring a content team.</p>
@@ -48,7 +48,7 @@ title: The Digital Arsenal | AI-Powered Business Tools
       </div>
       
       <div style="margin-bottom: 1rem;">
-        <a href="https://local-keyword-blog-builder.web.app" target="_blank" style="color: #6b4ce6; text-decoration: none; font-weight: bold;">🔗 View Live Demo →</a>
+        <a href="https://local-keyword-blog-builder.web.app" target="_blank" style="color: #5548a0; text-decoration: none; font-weight: bold;">🔗 View Live Demo →</a>
       </div>
       
       <a href="mailto:will@tctcusa.com?subject=Local SEO Blog Builder Purchase" class="form-button" style="display: block; text-align: center;">Get Instant Access</a>
@@ -56,7 +56,7 @@ title: The Digital Arsenal | AI-Powered Business Tools
     
     <!-- SALES FUNNEL MICRO-CRM -->
     <div style="background: white; border: 2px solid #e0e0e0; border-radius: 12px; padding: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-      <div style="background: #6b4ce6; color: white; padding: 0.5rem 1rem; border-radius: 4px; display: inline-block; margin-bottom: 1rem;">
+      <div style="background: #5548a0; color: white; padding: 0.5rem 1rem; border-radius: 4px; display: inline-block; margin-bottom: 1rem;">
         <strong>AVAILABLE NOW</strong>
       </div>
       
@@ -64,8 +64,8 @@ title: The Digital Arsenal | AI-Powered Business Tools
       <p style="color: #666; font-size: 0.95rem; margin-bottom: 1rem;"><em>"Track leads without the complexity"</em></p>
       
       <div style="margin: 1.5rem 0;">
-        <p style="font-size: 1.8rem; font-weight: bold; color: #6b4ce6; margin: 0;">$197</p>
-        <p style="color: #a855f7; font-weight: bold; margin: 0.5rem 0;">With HOLIDAY25: <span style="font-size: 1.2rem;">$148</span></p>
+        <p style="font-size: 1.8rem; font-weight: bold; color: #5548a0; margin: 0;">$197</p>
+        <p style="color: #5548a0; font-weight: bold; margin: 0.5rem 0;">With HOLIDAY25: <span style="font-size: 1.2rem;">$148</span></p>
       </div>
       
       <p style="line-height: 1.7; margin-bottom: 1.5rem; color: #333;">Lightweight CRM for small businesses that hate bloated software. Track your pipeline, automate follow-ups, close more deals. No monthly fees.</p>
@@ -90,7 +90,7 @@ title: The Digital Arsenal | AI-Powered Business Tools
     
     <!-- THE OFFER ARCHITECT -->
     <div style="background: white; border: 2px solid #e0e0e0; border-radius: 12px; padding: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-      <div style="background: #6b4ce6; color: white; padding: 0.5rem 1rem; border-radius: 4px; display: inline-block; margin-bottom: 1rem;">
+      <div style="background: #5548a0; color: white; padding: 0.5rem 1rem; border-radius: 4px; display: inline-block; margin-bottom: 1rem;">
         <strong>AVAILABLE NOW</strong>
       </div>
       
@@ -98,8 +98,8 @@ title: The Digital Arsenal | AI-Powered Business Tools
       <p style="color: #666; font-size: 0.95rem; margin-bottom: 1rem;"><em>"Build offers that convert at 10x"</em></p>
       
       <div style="margin: 1.5rem 0;">
-        <p style="font-size: 1.8rem; font-weight: bold; color: #6b4ce6; margin: 0;">$197</p>
-        <p style="color: #a855f7; font-weight: bold; margin: 0.5rem 0;">With HOLIDAY25: <span style="font-size: 1.2rem;">$148</span></p>
+        <p style="font-size: 1.8rem; font-weight: bold; color: #5548a0; margin: 0;">$197</p>
+        <p style="color: #5548a0; font-weight: bold; margin: 0.5rem 0;">With HOLIDAY25: <span style="font-size: 1.2rem;">$148</span></p>
       </div>
       
       <p style="line-height: 1.7; margin-bottom: 1.5rem; color: #333;">Stop guessing at pricing and positioning. Build irresistible offers using proven frameworks and AI-powered optimization.</p>
@@ -124,7 +124,7 @@ title: The Digital Arsenal | AI-Powered Business Tools
     
     <!-- BUSINESS HEALTH DIAGNOSTIC -->
     <div style="background: white; border: 2px solid #e0e0e0; border-radius: 12px; padding: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-      <div style="background: #6b4ce6; color: white; padding: 0.5rem 1rem; border-radius: 4px; display: inline-block; margin-bottom: 1rem;">
+      <div style="background: #5548a0; color: white; padding: 0.5rem 1rem; border-radius: 4px; display: inline-block; margin-bottom: 1rem;">
         <strong>AVAILABLE NOW</strong>
       </div>
       
@@ -132,8 +132,8 @@ title: The Digital Arsenal | AI-Powered Business Tools
       <p style="color: #666; font-size: 0.95rem; margin-bottom: 1rem;"><em>"Find what's broken before it breaks you"</em></p>
       
       <div style="margin: 1.5rem 0;">
-        <p style="font-size: 1.8rem; font-weight: bold; color: #6b4ce6; margin: 0;">$197</p>
-        <p style="color: #a855f7; font-weight: bold; margin: 0.5rem 0;">With HOLIDAY25: <span style="font-size: 1.2rem;">$148</span></p>
+        <p style="font-size: 1.8rem; font-weight: bold; color: #5548a0; margin: 0;">$197</p>
+        <p style="color: #5548a0; font-weight: bold; margin: 0.5rem 0;">With HOLIDAY25: <span style="font-size: 1.2rem;">$148</span></p>
       </div>
       
       <p style="line-height: 1.7; margin-bottom: 1.5rem; color: #333;">AI-powered business analysis that reveals hidden problems and opportunities. Get actionable recommendations in minutes, not weeks.</p>
@@ -158,7 +158,7 @@ title: The Digital Arsenal | AI-Powered Business Tools
     
     <!-- THE CITADEL -->
     <div style="background: white; border: 2px solid #e0e0e0; border-radius: 12px; padding: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-      <div style="background: #6b4ce6; color: white; padding: 0.5rem 1rem; border-radius: 4px; display: inline-block; margin-bottom: 1rem;">
+      <div style="background: #5548a0; color: white; padding: 0.5rem 1rem; border-radius: 4px; display: inline-block; margin-bottom: 1rem;">
         <strong>LIVE & WORKING</strong>
       </div>
       
@@ -166,8 +166,8 @@ title: The Digital Arsenal | AI-Powered Business Tools
       <p style="color: #666; font-size: 0.95rem; margin-bottom: 1rem;"><em>"Master influence through gamification"</em></p>
       
       <div style="margin: 1.5rem 0;">
-        <p style="font-size: 1.8rem; font-weight: bold; color: #6b4ce6; margin: 0;">$47 - $197</p>
-        <p style="color: #a855f7; font-weight: bold; margin: 0.5rem 0;">Tiered access levels</p>
+        <p style="font-size: 1.8rem; font-weight: bold; color: #5548a0; margin: 0;">$47 - $197</p>
+        <p style="color: #5548a0; font-weight: bold; margin: 0.5rem 0;">Tiered access levels</p>
       </div>
       
       <p style="line-height: 1.7; margin-bottom: 1.5rem; color: #333;">Gamified learning platform teaching persuasion, influence, and strategic thinking. 30-day journey with daily challenges and rewards.</p>
@@ -188,7 +188,7 @@ title: The Digital Arsenal | AI-Powered Business Tools
       </div>
       
       <div style="margin-bottom: 1rem;">
-        <a href="https://book-learning-module.web.app" target="_blank" style="color: #6b4ce6; text-decoration: none; font-weight: bold;">🔗 View Live Demo →</a>
+        <a href="https://book-learning-module.web.app" target="_blank" style="color: #5548a0; text-decoration: none; font-weight: bold;">🔗 View Live Demo →</a>
       </div>
       
       <a href="mailto:will@tctcusa.com?subject=The Citadel Purchase" class="form-button" style="display: block; text-align: center;">Get Instant Access</a>
@@ -196,7 +196,7 @@ title: The Digital Arsenal | AI-Powered Business Tools
     
     <!-- 90-DAY SPRINT DASHBOARD -->
     <div style="background: white; border: 2px solid #e0e0e0; border-radius: 12px; padding: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-      <div style="background: #a855f7; color: white; padding: 0.5rem 1rem; border-radius: 4px; display: inline-block; margin-bottom: 1rem;">
+      <div style="background: #5548a0; color: white; padding: 0.5rem 1rem; border-radius: 4px; display: inline-block; margin-bottom: 1rem;">
         <strong>BUNDLE ONLY</strong>
       </div>
       
@@ -204,7 +204,7 @@ title: The Digital Arsenal | AI-Powered Business Tools
       <p style="color: #666; font-size: 0.95rem; margin-bottom: 1rem;"><em>"Ship major projects in 90 days"</em></p>
       
       <div style="margin: 1.5rem 0;">
-        <p style="font-size: 1.5rem; font-weight: bold; color: #a855f7; margin: 0;">Included in Growth & Complete packages</p>
+        <p style="font-size: 1.5rem; font-weight: bold; color: #5548a0; margin: 0;">Included in Growth & Complete packages</p>
       </div>
       
       <p style="line-height: 1.7; margin-bottom: 1.5rem; color: #333;">Project management built for speed. Track goals, milestones, and daily progress. Perfect for focused execution.</p>
@@ -225,15 +225,15 @@ title: The Digital Arsenal | AI-Powered Business Tools
       </div>
       
       <div style="margin-bottom: 1rem;">
-        <a href="https://tctc90daysprint.netlify.app" target="_blank" style="color: #a855f7; text-decoration: none; font-weight: bold;">🔗 View Live Demo →</a>
+        <a href="https://tctc90daysprint.netlify.app" target="_blank" style="color: #5548a0; text-decoration: none; font-weight: bold;">🔗 View Live Demo →</a>
       </div>
       
-      <a href="{{ '/packages/' | url }}" class="form-button" style="display: block; text-align: center; background: #a855f7;">See Bundle Packages</a>
+      <a href="{{ '/packages/' | url }}" class="form-button" style="display: block; text-align: center; background: #5548a0;">See Bundle Packages</a>
     </div>
     
     <!-- BUSINESS SYSTEMS PDF BUNDLE -->
     <div style="background: white; border: 2px solid #e0e0e0; border-radius: 12px; padding: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-      <div style="background: #d4af37; color: white; padding: 0.5rem 1rem; border-radius: 4px; display: inline-block; margin-bottom: 1rem;">
+      <div style="background: #c0c0c0; color: white; padding: 0.5rem 1rem; border-radius: 4px; display: inline-block; margin-bottom: 1rem;">
         <strong>BUNDLE BONUS</strong>
       </div>
       
@@ -241,7 +241,7 @@ title: The Digital Arsenal | AI-Powered Business Tools
       <p style="color: #666; font-size: 0.95rem; margin-bottom: 1rem;"><em>"Battle-tested operational blueprints"</em></p>
       
       <div style="margin: 1.5rem 0;">
-        <p style="font-size: 1.8rem; font-weight: bold; color: #6b4ce6; margin: 0;">$297</p>
+        <p style="font-size: 1.8rem; font-weight: bold; color: #5548a0; margin: 0;">$297</p>
         <p style="color: #666; margin: 0.5rem 0;">Included in ALL packages</p>
       </div>
       
@@ -298,7 +298,7 @@ title: The Digital Arsenal | AI-Powered Business Tools
       </div>
     </div>
     
-    <div style="background: linear-gradient(135deg, #6b4ce6 0%, #a855f7 100%); color: white; padding: 2rem; border-radius: 8px;">
+    <div style="background: linear-gradient(135deg, #5548a0 0%, #5548a0 100%); color: white; padding: 2rem; border-radius: 8px;">
       <p style="font-size: 1.2rem; margin-bottom: 1rem;"><strong>Built by someone who actually runs businesses</strong></p>
       <p style="margin: 0; opacity: 0.9;">These aren't theoretical tools. They're systems I use every day in real companies solving real problems.</p>
     </div>
@@ -309,10 +309,10 @@ title: The Digital Arsenal | AI-Powered Business Tools
   <h2 style="color: #1a1a2e; margin-bottom: 1rem;">Want Everything?</h2>
   <p style="font-size: 1.1rem; color: #666; margin-bottom: 2rem;">Save big with pre-mixed bundle packages</p>
   
-  <a href="{{ '/packages/' | url }}" class="form-button" style="display: inline-block; padding: 1.5rem 3rem; font-size: 1.2rem; background: linear-gradient(135deg, #6b4ce6 0%, #a855f7 100%);">See Bundle Deals</a>
+  <a href="{{ '/packages/' | url }}" class="form-button" style="display: inline-block; padding: 1.5rem 3rem; font-size: 1.2rem; background: linear-gradient(135deg, #5548a0 0%, #5548a0 100%);">See Bundle Deals</a>
   
   <div style="margin-top: 3rem; padding: 2rem; background: #f8f9fa; border-radius: 8px; max-width: 600px; margin-left: auto; margin-right: auto;">
     <p style="font-size: 1rem; color: #666; margin-bottom: 0.5rem;"><strong>Questions about which tools you need?</strong></p>
-    <p style="margin: 0;"><a href="mailto:will@tctcusa.com" style="color: #6b4ce6; font-size: 1.1rem;">will@tctcusa.com</a></p>
+    <p style="margin: 0;"><a href="mailto:will@tctcusa.com" style="color: #5548a0; font-size: 1.1rem;">will@tctcusa.com</a></p>
   </div>
 </section>

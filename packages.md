@@ -7,7 +7,7 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
   <h1 style="text-align: center; color: #1a1a2e; margin-bottom: 1rem;">Alchemical Formulas: Pre-Mixed Solutions</h1>
   <p style="text-align: center; font-size: 1.3rem; color: #666; margin-bottom: 1rem;">Save Time & Money With These Proven Combinations</p>
   
-  <div style="background: linear-gradient(135deg, #6b4ce6 0%, #a855f7 100%); color: white; padding: 1.5rem; border-radius: 8px; max-width: 600px; margin: 2rem auto; text-align: center;">
+  <div style="background: linear-gradient(135deg, #5548a0 0%, #5548a0 100%); color: white; padding: 1.5rem; border-radius: 8px; max-width: 600px; margin: 2rem auto; text-align: center;">
     <p style="margin: 0; font-size: 1.1rem;"><strong>Every purchase helps me reach my $10,000 goal by January 1st</strong></p>
     <p style="margin: 0.5rem 0 0 0; font-size: 0.9rem; opacity: 0.9;">Use code <strong>HOLIDAY25</strong> for 25% off</p>
   </div>
@@ -17,24 +17,24 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; max-width: 1400px; margin: 0 auto;">
     
     <!-- STARTER KIT -->
-    <div style="background: white; border: 2px solid #6b4ce6; border-radius: 12px; padding: 2.5rem; position: relative; box-shadow: 0 4px 12px rgba(107, 76, 230, 0.15);">
-      <div style="background: #6b4ce6; color: white; padding: 0.5rem 1rem; border-radius: 4px; display: inline-block; margin-bottom: 1rem;">
+    <div style="background: white; border: 2px solid #5548a0; border-radius: 12px; padding: 2.5rem; position: relative; box-shadow: 0 4px 12px rgba(107, 76, 230, 0.15);">
+      <div style="background: #5548a0; color: white; padding: 0.5rem 1rem; border-radius: 4px; display: inline-block; margin-bottom: 1rem;">
         <strong>THE FOUNDATION</strong>
       </div>
       
-      <h2 style="color: #6b4ce6; margin: 1rem 0;">The Alchemist's Starter Kit</h2>
+      <h2 style="color: #5548a0; margin: 1rem 0;">The Alchemist's Starter Kit</h2>
       
       <div style="margin: 1.5rem 0;">
         <p style="font-size: 2rem; font-weight: bold; color: #1a1a2e; margin: 0;">$497</p>
         <p style="color: #666; margin: 0.5rem 0 0 0;"><s>$697 value</s> - Save $200</p>
-        <p style="color: #6b4ce6; font-weight: bold; margin: 0.5rem 0;">With HOLIDAY25: <span style="font-size: 1.3rem;">$373</span></p>
+        <p style="color: #5548a0; font-weight: bold; margin: 0.5rem 0;">With HOLIDAY25: <span style="font-size: 1.3rem;">$373</span></p>
       </div>
       
       <div style="border-top: 1px solid #e0e0e0; padding-top: 1.5rem; margin-top: 1.5rem;">
         <h3 style="color: #1a1a2e; font-size: 1.1rem; margin-bottom: 1rem;">What's Included:</h3>
         
         <div style="margin-bottom: 1.5rem;">
-          <p style="font-weight: bold; color: #6b4ce6; margin-bottom: 0.5rem;">⚡ Digital Tools:</p>
+          <p style="font-weight: bold; color: #5548a0; margin-bottom: 0.5rem;">⚡ Digital Tools:</p>
           <ul style="line-height: 1.8; color: #333;">
             <li>Local SEO Blog Builder ($97)</li>
             <li>Sales Funnel Micro-CRM ($197)</li>
@@ -42,7 +42,7 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
         </div>
         
         <div style="margin-bottom: 1.5rem;">
-          <p style="font-weight: bold; color: #a855f7; margin-bottom: 0.5rem;">🎵 Audio Branding:</p>
+          <p style="font-weight: bold; color: #5548a0; margin-bottom: 0.5rem;">🎵 Audio Branding:</p>
           <ul style="line-height: 1.8; color: #333;">
             <li>1 Custom AI-Generated Song ($500)</li>
             <li>Full commercial rights included</li>
@@ -50,7 +50,7 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
         </div>
         
         <div style="margin-bottom: 1.5rem;">
-          <p style="font-weight: bold; color: #8b7500; margin-bottom: 0.5rem;">📚 Business Systems:</p>
+          <p style="font-weight: bold; color: #4a3a99; margin-bottom: 0.5rem;">📚 Business Systems:</p>
           <ul style="line-height: 1.8; color: #333;">
             <li>Business Systems PDF Bundle ($297)</li>
             <li>Operational blueprints & templates</li>
@@ -66,24 +66,24 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
     </div>
     
     <!-- GROWTH FORMULA -->
-    <div style="background: white; border: 3px solid #a855f7; border-radius: 12px; padding: 2.5rem; position: relative; box-shadow: 0 6px 20px rgba(168, 85, 247, 0.25); transform: scale(1.05);">
-      <div style="background: linear-gradient(135deg, #6b4ce6 0%, #a855f7 100%); color: white; padding: 0.5rem 1rem; border-radius: 4px; display: inline-block; margin-bottom: 1rem;">
+    <div style="background: white; border: 3px solid #5548a0; border-radius: 12px; padding: 2.5rem; position: relative; box-shadow: 0 6px 20px rgba(168, 85, 247, 0.25); transform: scale(1.05);">
+      <div style="background: linear-gradient(135deg, #5548a0 0%, #5548a0 100%); color: white; padding: 0.5rem 1rem; border-radius: 4px; display: inline-block; margin-bottom: 1rem;">
         <strong>⭐ MOST POPULAR</strong>
       </div>
       
-      <h2 style="color: #a855f7; margin: 1rem 0;">The Growth Formula</h2>
+      <h2 style="color: #5548a0; margin: 1rem 0;">The Growth Formula</h2>
       
       <div style="margin: 1.5rem 0;">
         <p style="font-size: 2rem; font-weight: bold; color: #1a1a2e; margin: 0;">$997</p>
         <p style="color: #666; margin: 0.5rem 0 0 0;"><s>$1,479+ value</s> - Save $500+</p>
-        <p style="color: #a855f7; font-weight: bold; margin: 0.5rem 0;">With HOLIDAY25: <span style="font-size: 1.3rem;">$748</span></p>
+        <p style="color: #5548a0; font-weight: bold; margin: 0.5rem 0;">With HOLIDAY25: <span style="font-size: 1.3rem;">$748</span></p>
       </div>
       
       <div style="border-top: 1px solid #e0e0e0; padding-top: 1.5rem; margin-top: 1.5rem;">
         <h3 style="color: #1a1a2e; font-size: 1.1rem; margin-bottom: 1rem;">Choose Your Path:</h3>
         
-        <div style="background: #f0f4ff; border-left: 4px solid #6b4ce6; padding: 1rem; margin-bottom: 1rem;">
-          <p style="font-weight: bold; color: #6b4ce6; margin-bottom: 0.5rem;">🔧 OPTION A: Complete Digital Toolkit</p>
+        <div style="background: #f0f4ff; border-left: 4px solid #5548a0; padding: 1rem; margin-bottom: 1rem;">
+          <p style="font-weight: bold; color: #5548a0; margin-bottom: 0.5rem;">🔧 OPTION A: Complete Digital Toolkit</p>
           <ul style="line-height: 1.8; color: #333; margin: 0;">
             <li>Local SEO Blog Builder ($97)</li>
             <li>The Offer Architect ($197)</li>
@@ -96,8 +96,8 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
           <p style="margin: 0.5rem 0 0 0; font-style: italic; color: #666; font-size: 0.9rem;">Total Value: $1,479</p>
         </div>
         
-        <div style="background: #faf5ff; border-left: 4px solid #a855f7; padding: 1rem;">
-          <p style="font-weight: bold; color: #a855f7; margin-bottom: 0.5rem;">🎵 OPTION B: Complete Audio Branding</p>
+        <div style="background: #faf5ff; border-left: 4px solid #5548a0; padding: 1rem;">
+          <p style="font-weight: bold; color: #5548a0; margin-bottom: 0.5rem;">🎵 OPTION B: Complete Audio Branding</p>
           <ul style="line-height: 1.8; color: #333; margin: 0;">
             <li>Brand Music Package (3-5 songs)</li>
             <li>Multiple versions per song</li>
@@ -113,28 +113,28 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
         </div>
       </div>
       
-      <a href="mailto:will@tctcusa.com?subject=Growth Formula Package Inquiry" class="form-button" style="display: block; text-align: center; margin-top: 1.5rem; background: linear-gradient(135deg, #6b4ce6 0%, #a855f7 100%);">Choose Your Path</a>
+      <a href="mailto:will@tctcusa.com?subject=Growth Formula Package Inquiry" class="form-button" style="display: block; text-align: center; margin-top: 1.5rem; background: linear-gradient(135deg, #5548a0 0%, #5548a0 100%);">Choose Your Path</a>
     </div>
     
     <!-- COMPLETE AIALCHEMY -->
-    <div style="background: linear-gradient(135deg, #1a1a2e 0%, #6b4ce6 100%); border: 2px solid #ffd700; border-radius: 12px; padding: 2.5rem; position: relative; box-shadow: 0 6px 24px rgba(255, 215, 0, 0.3); color: white;">
-      <div style="background: #ffd700; color: #1a1a2e; padding: 0.5rem 1rem; border-radius: 4px; display: inline-block; margin-bottom: 1rem;">
+    <div style="background: linear-gradient(135deg, #1a1a2e 0%, #5548a0 100%); border: 2px solid #c0c0c0; border-radius: 12px; padding: 2.5rem; position: relative; box-shadow: 0 6px 24px rgba(255, 215, 0, 0.3); color: white;">
+      <div style="background: #c0c0c0; color: #1a1a2e; padding: 0.5rem 1rem; border-radius: 4px; display: inline-block; margin-bottom: 1rem;">
         <strong>🔮 ULTIMATE TRANSFORMATION</strong>
       </div>
       
-      <h2 style="color: #8b7500; margin: 1rem 0; background: none; -webkit-text-fill-color: #8b7500; animation: none;">The Complete AiChemy System</h2>
+      <h2 style="color: #4a3a99; margin: 1rem 0; background: none; -webkit-text-fill-color: #4a3a99; animation: none;">The Complete AiChemy System</h2>
       
       <div style="margin: 1.5rem 0;">
         <p style="font-size: 2rem; font-weight: bold; color: white; margin: 0;">$2,497</p>
         <p style="color: rgba(255,255,255,0.8); margin: 0.5rem 0 0 0;"><s>$4,000+ value</s> - Save $1,500+</p>
-        <p style="color: #8b7500; font-weight: bold; margin: 0.5rem 0;">With HOLIDAY25: <span style="font-size: 1.3rem;">$1,873</span></p>
+        <p style="color: #4a3a99; font-weight: bold; margin: 0.5rem 0;">With HOLIDAY25: <span style="font-size: 1.3rem;">$1,873</span></p>
       </div>
       
       <div style="border-top: 1px solid rgba(255,255,255,0.2); padding-top: 1.5rem; margin-top: 1.5rem;">
         <h3 style="color: white; font-size: 1.1rem; margin-bottom: 1rem;">Everything. No Compromises:</h3>
         
         <div style="margin-bottom: 1.5rem;">
-          <p style="font-weight: bold; color: #8b7500; margin-bottom: 0.5rem;">⚡ ALL Digital Tools:</p>
+          <p style="font-weight: bold; color: #4a3a99; margin-bottom: 0.5rem;">⚡ ALL Digital Tools:</p>
           <ul style="line-height: 1.8; color: rgba(255,255,255,0.9);">
             <li>Every software application we offer</li>
             <li>90-Day Sprint Dashboard</li>
@@ -144,7 +144,7 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
         </div>
         
         <div style="margin-bottom: 1.5rem;">
-          <p style="font-weight: bold; color: #8b7500; margin-bottom: 0.5rem;">🎵 Complete Audio Branding:</p>
+          <p style="font-weight: bold; color: #4a3a99; margin-bottom: 0.5rem;">🎵 Complete Audio Branding:</p>
           <ul style="line-height: 1.8; color: rgba(255,255,255,0.9);">
             <li>Brand Music Package (3-5 songs)</li>
             <li>Multiple versions & formats</li>
@@ -154,7 +154,7 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
         </div>
         
         <div style="margin-bottom: 1.5rem;">
-          <p style="font-weight: bold; color: #8b7500; margin-bottom: 0.5rem;">🚀 Exclusive Bonuses:</p>
+          <p style="font-weight: bold; color: #4a3a99; margin-bottom: 0.5rem;">🚀 Exclusive Bonuses:</p>
           <ul style="line-height: 1.8; color: rgba(255,255,255,0.9);">
             <li>Monthly support included (1st month)</li>
             <li>50% off retainer services (1st month)</li>
@@ -168,7 +168,7 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
         </div>
       </div>
       
-      <a href="mailto:will@tctcusa.com?subject=Complete AiChemy System Inquiry" class="form-button" style="display: block; text-align: center; margin-top: 1.5rem; background: #ffd700; color: #1a1a2e; font-weight: bold;">Transform Everything</a>
+      <a href="mailto:will@tctcusa.com?subject=Complete AiChemy System Inquiry" class="form-button" style="display: block; text-align: center; margin-top: 1.5rem; background: #c0c0c0; color: #1a1a2e; font-weight: bold;">Transform Everything</a>
     </div>
     
   </div>
@@ -178,7 +178,7 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
   <div style="max-width: 1000px; margin: 0 auto;">
     <h2 style="text-align: center; color: #1a1a2e; margin-bottom: 2rem;">Limited "Help Me Hit My Goal" Special</h2>
     
-    <div style="background: linear-gradient(135deg, #6b4ce6 0%, #a855f7 100%); color: white; padding: 2.5rem; border-radius: 12px; text-align: center;">
+    <div style="background: linear-gradient(135deg, #5548a0 0%, #5548a0 100%); color: white; padding: 2.5rem; border-radius: 12px; text-align: center;">
       <p style="font-size: 1.3rem; margin-bottom: 1rem;"><strong>Every Package Gets Extra Value</strong></p>
       
       <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 8px; margin: 1.5rem 0;">
@@ -207,7 +207,7 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
   <div style="overflow-x: auto;">
     <table style="width: 100%; max-width: 1200px; margin: 0 auto; border-collapse: collapse; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
       <thead>
-        <tr style="background: #6b4ce6; color: white;">
+        <tr style="background: #5548a0; color: white;">
           <th style="padding: 1rem; text-align: left; border: 1px solid #e0e0e0;">Feature</th>
           <th style="padding: 1rem; text-align: center; border: 1px solid #e0e0e0;">Starter Kit</th>
           <th style="padding: 1rem; text-align: center; border: 1px solid #e0e0e0;">Growth Formula</th>
@@ -257,11 +257,11 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
           <td style="padding: 1rem; text-align: center; border: 1px solid #e0e0e0;">$997</td>
           <td style="padding: 1rem; text-align: center; border: 1px solid #e0e0e0;">$2,497</td>
         </tr>
-        <tr style="background: #6b4ce6; color: white; font-weight: bold;">
+        <tr style="background: #5548a0; color: white; font-weight: bold;">
           <td style="padding: 1rem; border: 1px solid #e0e0e0;">With HOLIDAY25</td>
           <td style="padding: 1rem; text-align: center; border: 1px solid #e0e0e0;">$373</td>
           <td style="padding: 1rem; text-align: center; border: 1px solid #e0e0e0;">$748</td>
-          <td style="padding: 1rem; text-align: center; border: 1px solid #e0e0e0; background: #ffd700; color: #1a1a2e;">$1,873</td>
+          <td style="padding: 1rem; text-align: center; border: 1px solid #e0e0e0; background: #c0c0c0; color: #1a1a2e;">$1,873</td>
         </tr>
       </tbody>
     </table>
@@ -269,7 +269,7 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
   
   <div style="text-align: center; margin-top: 3rem;">
     <p style="font-size: 1.1rem; color: #666; margin-bottom: 1rem;">All packages include:</p>
-    <p style="color: #6b4ce6;">✅ Instant access | ✅ 30-day money-back guarantee | ✅ Full commercial rights | ✅ Lifetime updates</p>
+    <p style="color: #5548a0;">✅ Instant access | ✅ 30-day money-back guarantee | ✅ Full commercial rights | ✅ Lifetime updates</p>
   </div>
 </section>
 
@@ -279,13 +279,13 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
   
   <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; max-width: 700px; margin: 0 auto;">
     <a href="mailto:will@tctcusa.com?subject=Package Inquiry" class="form-button" style="flex: 1; min-width: 200px;">Email Me</a>
-    <a href="{{ '/software/' | url }}" style="flex: 1; min-width: 200px; display: inline-block; padding: 1rem 2rem; background: transparent; border: 2px solid #6b4ce6; color: #6b4ce6; text-decoration: none; border-radius: 4px; font-weight: bold;">See Individual Tools</a>
+    <a href="{{ '/software/' | url }}" style="flex: 1; min-width: 200px; display: inline-block; padding: 1rem 2rem; background: transparent; border: 2px solid #5548a0; color: #5548a0; text-decoration: none; border-radius: 4px; font-weight: bold;">See Individual Tools</a>
   </div>
   
   <div style="margin-top: 3rem; padding: 2rem; background: #f8f9fa; border-radius: 8px; max-width: 600px; margin-left: auto; margin-right: auto;">
     <p style="font-size: 1rem; color: #666; margin: 0;"><strong>Questions about which package is right for you?</strong></p>
-    <p style="margin-top: 0.5rem;"><a href="mailto:will@tctcusa.com" style="color: #6b4ce6; font-size: 1.1rem;">will@tctcusa.com</a></p>
-    <p style="margin-top: 0.5rem; font-size: 1.1rem; color: #6b4ce6;">📞 <a href="tel:8592678383" style="color: #6b4ce6;">(859) 267-8383</a></p>
+    <p style="margin-top: 0.5rem;"><a href="mailto:will@tctcusa.com" style="color: #5548a0; font-size: 1.1rem;">will@tctcusa.com</a></p>
+    <p style="margin-top: 0.5rem; font-size: 1.1rem; color: #5548a0;">📞 <a href="tel:8592678383" style="color: #5548a0;">(859) 267-8383</a></p>
   </div>
 </section>
             <li>Website setup guidance</li>
@@ -302,7 +302,7 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
       </div>
       
       <div style="text-align: center; margin-top: 2rem;">
-        <a href="https://buy.stripe.com/YOUR_STARTUP_PACKAGE" class="form-button" style="background: white; color: #667eea; font-weight: bold; padding: 1rem 2rem;">Get Startup Package - $2,997</a>
+        <a href="https://buy.stripe.com/YOUR_STARTUP_PACKAGE" class="form-button" style="background: white; color: #5548a0; font-weight: bold; padding: 1rem 2rem;">Get Startup Package - $2,997</a>
       </div>
     </div>
   </section>

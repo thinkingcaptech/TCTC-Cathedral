@@ -47,25 +47,25 @@ title: Modern AiChemy | Where AI Meets Business Alchemy
   <p style="text-align: center; font-size: 1.1rem; color: #1a1a2e; margin-bottom: 3rem; font-weight: 500;">Choose your transformation. Or combine them all.</p>
 
   <div class="bifurcation-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
-    <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-top: 4px solid #6b4ce6;">
-      <h3 style="color: #6b4ce6; margin-bottom: 1rem; background: none; -webkit-text-fill-color: #6b4ce6; animation: none;">⚡ The Digital Arsenal</h3>
+    <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-top: 4px solid #5548a0;">
+      <h3 style="color: #5548a0; margin-bottom: 1rem; background: none; -webkit-text-fill-color: #5548a0; animation: none;">⚡ The Digital Arsenal</h3>
       <p style="margin-bottom: 1.5rem; line-height: 1.6; color: #333;">AI-powered software tools that run your business while you sleep. SEO generators, CRM systems, diagnostic platforms, and more.</p>
       <p style="font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem; color: #1a1a2e;">$97 - $997</p>
       <a href="{{ '/software/' | url }}" class="form-button" style="display: block; text-align: center;">Explore Digital Tools</a>
     </div>
 
-    <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-top: 4px solid #a855f7;">
-      <h3 style="color: #a855f7; margin-bottom: 1rem; background: none; -webkit-text-fill-color: #a855f7; animation: none;">🎵 The Sound of AiChemy</h3>
+    <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-top: 4px solid #5548a0;">
+      <h3 style="color: #5548a0; margin-bottom: 1rem; background: none; -webkit-text-fill-color: #5548a0; animation: none;">🎵 The Sound of AiChemy</h3>
       <p style="margin-bottom: 1.5rem; line-height: 1.6; color: #333;">Custom AI-generated music that sounds human (because it takes one to create it). Brand anthems, jingles, radio production.</p>
       <p style="font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem; color: #1a1a2e;">$500 - $5,000</p>
       <a href="{{ '/creative/' | url }}" class="form-button" style="display: block; text-align: center;">Get Custom Music</a>
     </div>
 
-    <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-top: 4px solid #ffd700;">
-      <h3 style="color: #8b7500; margin-bottom: 1rem; background: none; -webkit-text-fill-color: #8b7500; animation: none;">🔮 Complete Transformation</h3>
+    <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-top: 4px solid #c0c0c0;">
+      <h3 style="color: #4a3a99; margin-bottom: 1rem; background: none; -webkit-text-fill-color: #4a3a99; animation: none;">🔮 Complete Transformation</h3>
       <p style="margin-bottom: 1.5rem; line-height: 1.6; color: #333;">Software + Music + Systems in pre-mixed bundles. The complete AiChemy experience that transforms your entire business.</p>
       <p style="font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem; color: #1a1a2e;">$497 - $2,497</p>
-      <a href="{{ '/packages/' | url }}" class="form-button" style="display: block; text-align: center; background: linear-gradient(135deg, #6b4ce6 0%, #a855f7 100%);">See Bundle Formulas</a>
+      <a href="{{ '/packages/' | url }}" class="form-button" style="display: block; text-align: center; background: linear-gradient(135deg, #5548a0 0%, #5548a0 100%);">See Bundle Formulas</a>
     </div>
   </div>
 </section>
@@ -98,12 +98,12 @@ title: Modern AiChemy | Where AI Meets Business Alchemy
   </div>
   
   <div style="text-align: center; margin-top: 3rem;">
-    <a href="{{ '/proof/' | url }}" style="color: #6b4ce6; font-size: 1.1rem; text-decoration: none; border-bottom: 2px solid #6b4ce6;">See Full Portfolio & Case Studies →</a>
+    <a href="{{ '/proof/' | url }}" style="color: #5548a0; font-size: 1.1rem; text-decoration: none; border-bottom: 2px solid #5548a0;">See Full Portfolio & Case Studies →</a>
   </div>
 </section>
 
 <section class="container" style="padding: 4rem 1rem; text-align: center;">
-  <div style="background: linear-gradient(135deg, #1a1a2e 0%, #6b4ce6 100%); color: white; padding: 3rem 2rem; border-radius: 8px; max-width: 800px; margin: 0 auto;">
+  <div style="background: linear-gradient(135deg, #1a1a2e 0%, #5548a0 100%); color: white; padding: 3rem 2rem; border-radius: 8px; max-width: 800px; margin: 0 auto;">
     <h2 style="color: white; margin-bottom: 1rem; background: none; -webkit-text-fill-color: white; animation: none;">Time is Running Out</h2>
     <p style="font-size: 1.3rem; margin-bottom: 1rem;"><strong>January 1st, 2025 Deadline</strong></p>
     
@@ -126,14 +126,14 @@ title: Modern AiChemy | Where AI Meets Business Alchemy
   <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; max-width: 800px; margin: 0 auto;">
     <a href="{{ '/software/' | url }}" class="form-button" style="flex: 1; min-width: 200px;">Browse Digital Tools</a>
     <a href="{{ '/creative/' | url }}" class="form-button" style="flex: 1; min-width: 200px;">Get Custom Music</a>
-    <a href="{{ '/packages/' | url }}" class="form-button" style="flex: 1; min-width: 200px; background: linear-gradient(135deg, #6b4ce6 0%, #a855f7 100%);">See Bundle Deals</a>
+    <a href="{{ '/packages/' | url }}" class="form-button" style="flex: 1; min-width: 200px; background: linear-gradient(135deg, #5548a0 0%, #5548a0 100%);">See Bundle Deals</a>
   </div>
   
   <div style="margin-top: 3rem; padding: 2rem; background: #f8f9fa; border-radius: 8px; max-width: 600px; margin-left: auto; margin-right: auto;">
     <p style="font-size: 1.1rem; margin-bottom: 1rem;"><strong>Not ready to buy?</strong></p>
     <p style="margin-bottom: 1.5rem;">Schedule a free consultation or send me an email.</p>
-    <p style="margin: 0;"><a href="mailto:will@tctcusa.com" style="color: #6b4ce6; font-size: 1.1rem;">will@tctcusa.com</a></p>
-    <p style="margin-top: 0.5rem; font-size: 1.1rem; color: #6b4ce6;">📞 <a href="tel:8592678383" style="color: #6b4ce6;">(859) 267-8383</a></p>
+    <p style="margin: 0;"><a href="mailto:will@tctcusa.com" style="color: #5548a0; font-size: 1.1rem;">will@tctcusa.com</a></p>
+    <p style="margin-top: 0.5rem; font-size: 1.1rem; color: #5548a0;">📞 <a href="tel:8592678383" style="color: #5548a0;">(859) 267-8383</a></p>
   </div>
 </section>
 
@@ -141,5 +141,5 @@ title: Modern AiChemy | Where AI Meets Business Alchemy
   <p style="font-size: 0.95rem; color: #666; line-height: 1.8; max-width: 800px; margin: 0 auto;">
     <strong>What is Modern AiChemy?</strong> It's the art and science of transforming business problems into gold using AI. I don't just build tools - I create complete solutions that amplify human creativity. AI doesn't replace us. It amplifies what we can do. That's the formula. That's the alchemy.
   </p>
-  <p style="margin-top: 1.5rem; font-style: italic; color: #6b4ce6;">Transforming lead into gold since 2024</p>
+  <p style="margin-top: 1.5rem; font-style: italic; color: #5548a0;">Transforming lead into gold since 2024</p>
 </section>
