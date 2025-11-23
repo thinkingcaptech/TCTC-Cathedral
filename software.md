@@ -30,7 +30,7 @@ title: The Digital Arsenal | AI-Powered Business Tools
         <p style="color: #a855f7; font-weight: bold; margin: 0.5rem 0;">With HOLIDAY25: <span style="font-size: 1.2rem;">$73</span></p>
       </div>
       
-      <p style="line-height: 1.7; margin-bottom: 1.5rem;">Generate hyper-local, SEO-optimized blog content in minutes. Designed for local businesses that need to rank in their city without hiring a content team.</p>
+      <p style="line-height: 1.7; margin-bottom: 1.5rem; color: #333;">Generate hyper-local, SEO-optimized blog content in minutes. Designed for local businesses that need to rank in their city without hiring a content team.</p>
       
       <div style="margin-bottom: 1.5rem;">
         <p style="font-weight: bold; color: #1a1a2e; margin-bottom: 0.5rem;">Key Features:</p>
@@ -44,7 +44,7 @@ title: The Digital Arsenal | AI-Powered Business Tools
       </div>
       
       <div style="background: #f8f9fa; padding: 1rem; border-radius: 6px; margin-bottom: 1rem;">
-        <p style="margin: 0; font-size: 0.9rem; color: #666;"><strong>Perfect for:</strong> Local service businesses, multi-location companies, agencies</p>
+        <p style="margin: 0; font-size: 0.9rem; color: #333;"><strong>Perfect for:</strong> Local service businesses, multi-location companies, agencies</p>
       </div>
       
       <div style="margin-bottom: 1rem;">
@@ -68,7 +68,7 @@ title: The Digital Arsenal | AI-Powered Business Tools
         <p style="color: #a855f7; font-weight: bold; margin: 0.5rem 0;">With HOLIDAY25: <span style="font-size: 1.2rem;">$148</span></p>
       </div>
       
-      <p style="line-height: 1.7; margin-bottom: 1.5rem;">Lightweight CRM for small businesses that hate bloated software. Track your pipeline, automate follow-ups, close more deals. No monthly fees.</p>
+      <p style="line-height: 1.7; margin-bottom: 1.5rem; color: #333;">Lightweight CRM for small businesses that hate bloated software. Track your pipeline, automate follow-ups, close more deals. No monthly fees.</p>
       
       <div style="margin-bottom: 1.5rem;">
         <p style="font-weight: bold; color: #1a1a2e; margin-bottom: 0.5rem;">Key Features:</p>
@@ -82,7 +82,7 @@ title: The Digital Arsenal | AI-Powered Business Tools
       </div>
       
       <div style="background: #f8f9fa; padding: 1rem; border-radius: 6px; margin-bottom: 1rem;">
-        <p style="margin: 0; font-size: 0.9rem; color: #666;"><strong>Perfect for:</strong> Solopreneurs, sales teams under 10, service businesses</p>
+        <p style="margin: 0; font-size: 0.9rem; color: #333;"><strong>Perfect for:</strong> Solopreneurs, sales teams under 10, service businesses</p>
       </div>
       
       <a href="mailto:will@tctcusa.com?subject=Sales Funnel Micro-CRM Purchase" class="form-button" style="display: block; text-align: center;">Get Instant Access</a>
@@ -102,7 +102,7 @@ title: The Digital Arsenal | AI-Powered Business Tools
         <p style="color: #a855f7; font-weight: bold; margin: 0.5rem 0;">With HOLIDAY25: <span style="font-size: 1.2rem;">$148</span></p>
       </div>
       
-      <p style="line-height: 1.7; margin-bottom: 1.5rem;">Stop guessing at pricing and positioning. Build irresistible offers using proven frameworks and AI-powered optimization.</p>
+      <p style="line-height: 1.7; margin-bottom: 1.5rem; color: #333;">Stop guessing at pricing and positioning. Build irresistible offers using proven frameworks and AI-powered optimization.</p>
       
       <div style="margin-bottom: 1.5rem;">
         <p style="font-weight: bold; color: #1a1a2e; margin-bottom: 0.5rem;">Key Features:</p>
@@ -136,7 +136,7 @@ title: The Digital Arsenal | AI-Powered Business Tools
         <p style="color: #a855f7; font-weight: bold; margin: 0.5rem 0;">With HOLIDAY25: <span style="font-size: 1.2rem;">$148</span></p>
       </div>
       
-      <p style="line-height: 1.7; margin-bottom: 1.5rem;">AI-powered business analysis that reveals hidden problems and opportunities. Get actionable recommendations in minutes, not weeks.</p>
+      <p style="line-height: 1.7; margin-bottom: 1.5rem; color: #333;">AI-powered business analysis that reveals hidden problems and opportunities. Get actionable recommendations in minutes, not weeks.</p>
       
       <div style="margin-bottom: 1.5rem;">
         <p style="font-weight: bold; color: #1a1a2e; margin-bottom: 0.5rem;">Key Features:</p>
@@ -170,7 +170,7 @@ title: The Digital Arsenal | AI-Powered Business Tools
         <p style="color: #a855f7; font-weight: bold; margin: 0.5rem 0;">Tiered access levels</p>
       </div>
       
-      <p style="line-height: 1.7; margin-bottom: 1.5rem;">Gamified learning platform teaching persuasion, influence, and strategic thinking. 30-day journey with daily challenges and rewards.</p>
+      <p style="line-height: 1.7; margin-bottom: 1.5rem; color: #333;">Gamified learning platform teaching persuasion, influence, and strategic thinking. 30-day journey with daily challenges and rewards.</p>
       
       <div style="margin-bottom: 1.5rem;">
         <p style="font-weight: bold; color: #1a1a2e; margin-bottom: 0.5rem;">Key Features:</p>
@@ -184,7 +184,7 @@ title: The Digital Arsenal | AI-Powered Business Tools
       </div>
       
       <div style="background: #f8f9fa; padding: 1rem; border-radius: 6px; margin-bottom: 1rem;">
-        <p style="margin: 0; font-size: 0.9rem; color: #666;"><strong>Perfect for:</strong> Sales professionals, entrepreneurs, leaders, marketers</p>
+        <p style="margin: 0; font-size: 0.9rem; color: #333;"><strong>Perfect for:</strong> Sales professionals, entrepreneurs, leaders, marketers</p>
       </div>
       
       <div style="margin-bottom: 1rem;">
@@ -207,7 +207,7 @@ title: The Digital Arsenal | AI-Powered Business Tools
         <p style="font-size: 1.5rem; font-weight: bold; color: #a855f7; margin: 0;">Included in Growth & Complete packages</p>
       </div>
       
-      <p style="line-height: 1.7; margin-bottom: 1.5rem;">Project management built for speed. Track goals, milestones, and daily progress. Perfect for focused execution.</p>
+      <p style="line-height: 1.7; margin-bottom: 1.5rem; color: #333;">Project management built for speed. Track goals, milestones, and daily progress. Perfect for focused execution.</p>
       
       <div style="margin-bottom: 1.5rem;">
         <p style="font-weight: bold; color: #1a1a2e; margin-bottom: 0.5rem;">Key Features:</p>
@@ -221,7 +221,7 @@ title: The Digital Arsenal | AI-Powered Business Tools
       </div>
       
       <div style="background: #f8f9fa; padding: 1rem; border-radius: 6px; margin-bottom: 1rem;">
-        <p style="margin: 0; font-size: 0.9rem; color: #666;"><strong>Perfect for:</strong> Project teams, product launches, focused execution</p>
+        <p style="margin: 0; font-size: 0.9rem; color: #333;"><strong>Perfect for:</strong> Project teams, product launches, focused execution</p>
       </div>
       
       <div style="margin-bottom: 1rem;">
@@ -245,7 +245,7 @@ title: The Digital Arsenal | AI-Powered Business Tools
         <p style="color: #666; margin: 0.5rem 0;">Included in ALL packages</p>
       </div>
       
-      <p style="line-height: 1.7; margin-bottom: 1.5rem;">Complete operational systems built from running actual businesses. Ready-to-use templates, SOPs, and frameworks.</p>
+      <p style="line-height: 1.7; margin-bottom: 1.5rem; color: #333;">Complete operational systems built from running actual businesses. Ready-to-use templates, SOPs, and frameworks.</p>
       
       <div style="margin-bottom: 1.5rem;">
         <p style="font-weight: bold; color: #1a1a2e; margin-bottom: 0.5rem;">What's Included:</p>
@@ -276,25 +276,25 @@ title: The Digital Arsenal | AI-Powered Business Tools
       <div style="background: white; padding: 1.5rem; border-radius: 8px;">
         <p style="font-size: 2rem; margin: 0 0 0.5rem 0;">✅</p>
         <p style="font-weight: bold; color: #1a1a2e; margin: 0 0 0.5rem 0;">30-Day Money-Back Guarantee</p>
-        <p style="color: #666; margin: 0; font-size: 0.9rem;">Not happy? Full refund, no questions</p>
+        <p style="color: #333; margin: 0; font-size: 0.9rem;">Not happy? Full refund, no questions</p>
       </div>
       
       <div style="background: white; padding: 1.5rem; border-radius: 8px;">
         <p style="font-size: 2rem; margin: 0 0 0.5rem 0;">⚡</p>
         <p style="font-weight: bold; color: #1a1a2e; margin: 0 0 0.5rem 0;">Instant Access</p>
-        <p style="color: #666; margin: 0; font-size: 0.9rem;">Start using tools immediately</p>
+        <p style="color: #333; margin: 0; font-size: 0.9rem;">Start using tools immediately</p>
       </div>
       
       <div style="background: white; padding: 1.5rem; border-radius: 8px;">
         <p style="font-size: 2rem; margin: 0 0 0.5rem 0;">💬</p>
         <p style="font-weight: bold; color: #1a1a2e; margin: 0 0 0.5rem 0;">Full Support Included</p>
-        <p style="color: #666; margin: 0; font-size: 0.9rem;">Email support & implementation help</p>
+        <p style="color: #333; margin: 0; font-size: 0.9rem;">Email support & implementation help</p>
       </div>
       
       <div style="background: white; padding: 1.5rem; border-radius: 8px;">
         <p style="font-size: 2rem; margin: 0 0 0.5rem 0;">🔄</p>
         <p style="font-weight: bold; color: #1a1a2e; margin: 0 0 0.5rem 0;">Lifetime Updates</p>
-        <p style="color: #666; margin: 0; font-size: 0.9rem;">All future improvements included</p>
+        <p style="color: #333; margin: 0; font-size: 0.9rem;">All future improvements included</p>
       </div>
     </div>
     
