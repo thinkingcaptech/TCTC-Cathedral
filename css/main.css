@@ -1,17 +1,46 @@
 /*
 ==================================================
-TCTC CITADEL: MASTER ALCHEMICAL STYLESHEET
+MODERN AICHEMYMASTER STYLESHEET
+Digital Alchemist Brand Identity
 ==================================================
 */
 
-/* === 1. CORE THEME & CSS VARIABLES === */
+/* === 1. MODERN AICHEMISTRY: CSS VARIABLES === */
 :root {
-  --bg-primary: #1a0a0a;       /* Darkest Maroon (Forge) */
-  --bg-secondary: #0f0606;     /* Near Black (for boxes) */
-  --text-primary: #F0F0F0;     /* Parchment White */
-  --text-secondary: #C0C0C0;   /* Ash Grey */
-  --text-accent: #D4AF37;      /* Bright Gold */
-  --border-color: #3D1111;     /* Dark Maroon */
+  /* PRIMARY BRAND COLOR - Purplish Blue (The Digital Alchemist) */
+  --primary-color: #667eea;
+  --primary-dark: #5568d3;
+  --primary-light: #7c94ff;
+  --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  
+  /* ACCENT COLOR - Gold (The Transmutation/Result) */
+  --accent-color: #f6c042;
+  --accent-dark: #e4a628;
+  --accent-light: #ffd666;
+  
+  /* SECONDARY COLOR - Maroon (Mission/Urgency ONLY) */
+  --mission-color: #8b1538;
+  --mission-dark: #6d1028;
+  --mission-light: #a31d45;
+  
+  /* BACKGROUNDS */
+  --bg-dark: #0a0e27;        /* Deep navy, almost black */
+  --bg-medium: #1a1f3a;      /* Medium dark for cards */
+  --bg-accent: #f8f9fa;      /* Light sections */
+  
+  /* TEXT COLORS */
+  --text-primary: #f8f9fa;   /* Light text on dark */
+  --text-secondary: #a0a0a0; /* Muted text */
+  --text-dark: #2c3e50;      /* Dark text on light backgrounds */
+  
+  /* UTILITY */
+  --text-accent: var(--primary-color);
+  --border-color: rgba(102, 126, 234, 0.2);
+  --border-gold: rgba(246, 192, 66, 0.3);
+  
+  /* LEGACY COMPATIBILITY */
+  --bg-primary: var(--bg-dark);
+  --bg-secondary: var(--bg-medium);
 }
 
 /* === 2. BASE STYLES & LAYOUT RESET === */
@@ -23,7 +52,7 @@ TCTC CITADEL: MASTER ALCHEMICAL STYLESHEET
 
 body {
   font-family: 'Lato', sans-serif;
-  background-color: var(--bg-primary);
+  background-color: var(--bg-dark);
   color: var(--text-primary);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -35,80 +64,72 @@ body {
   padding: 0 20px;
 }
 
-/* Headings and Gold Text Base */
+/* === 3. TYPOGRAPHY === */
 h1, h2, h3 {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 700;
-  color: var(--text-accent);
+  color: var(--text-primary);
   margin-bottom: 1rem;
+  transition: text-shadow 0.3s ease;
+}
+
+h1:hover, h2:hover, h3:hover {
+  text-shadow: 0 0 20px rgba(102, 126, 234, 0.5);
 }
 
 a {
-  color: var(--text-accent);
+  color: var(--primary-color);
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-/* === 3. TEXT SHIMMER & ANIMATIONS === */
-
-/* "Fibonacci" Shimmer for Headers */
-@keyframes textShimmer {
-  0%   { background-position: -200% center; }
-  50%  { background-position: 200% center; }
-  100% { background-position: -200% center; }
+a:hover {
+  color: var(--accent-color);
 }
 
-/* Shimmer Applied to all main gold text - DISABLED FOR READABILITY */
-/* h1, h2, h3, .product-price {
-  color: var(--text-accent);
-  background: linear-gradient(
-    to right,
-    var(--text-accent) 20%,
-    #FFFFFF 50%, 
-    var(--text-accent) 80%
-  );
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textShimmer 5s ease-in-out infinite;
-} */
+/* === 4. ANIMATIONS === */
 
-/* Solid readable text for better clarity */
-h1, h2, h3 {
-  color: var(--text-accent);
-}
-
-/* Logo Pulse Animation */
-@keyframes pulseGlowLogo {
+/* Purple Glow Animation for Logo */
+@keyframes pulseGlowPurple {
   0%, 100% {
-    box-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+    box-shadow: 0 0 8px rgba(102, 126, 234, 0.4);
     opacity: 0.9;
   }
   50% {
-    box-shadow: 0 0 16px rgba(212, 175, 55, 0.7);
+    box-shadow: 0 0 16px rgba(102, 126, 234, 0.7);
     opacity: 1;
   }
 }
 
-/* Button Shimmering Glow Animation */
-@keyframes pulseGlowButton {
+/* Gold Glow Animation for Buttons */
+@keyframes pulseGlowGold {
   0% {
-    box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+    box-shadow: 0 0 10px rgba(246, 192, 66, 0.5);
   }
   60% {
-    box-shadow: 0 0 22px rgba(212, 175, 55, 0.9);
+    box-shadow: 0 0 22px rgba(246, 192, 66, 0.9);
   }
   100% {
-    box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+    box-shadow: 0 0 10px rgba(246, 192, 66, 0.5);
   }
 }
 
+/* Fibonacci Shimmer Effect */
+@keyframes fibonacci-shimmer {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 150%;
+  }
+}
 
-/* === 4. HEADER & FOOTER STYLING === */
-header, footer {
-  background-color: var(--bg-secondary);
+/* === 5. HEADER & NAVIGATION === */
+header {
+  background: var(--primary-gradient);
   padding: 1.5rem 0;
   border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
 }
 
 header .container {
@@ -121,10 +142,6 @@ header h1 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: 700;
-  /* Reset Shimmer on Name */
-  background: none;
-  -webkit-text-fill-color: inherit;
-  animation: none;
 }
 
 header h1 a {
@@ -133,45 +150,45 @@ header h1 a {
   display: flex;
   align-items: center;
   gap: 1rem;
-  /* Reset Shimmer on Link */
-  background: none;
-  -webkit-text-fill-color: var(--text-primary);
-  animation: none;
 }
 
 header h1 a:hover {
-  -webkit-text-fill-color: var(--text-accent);
+  color: var(--accent-color);
 }
 
 .header-logo {
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  border: 1px solid var(--text-accent);
-  animation: pulseGlowLogo 3s ease-in-out infinite;
+  border: 2px solid var(--accent-color);
+  animation: pulseGlowPurple 3s ease-in-out infinite;
 }
 
 header nav a {
-  color: var(--text-secondary);
+  color: var(--text-primary);
   margin-left: 1.5rem;
   font-weight: 700;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
 }
 
 header nav a:hover {
-  color: var(--text-accent);
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
 }
 
+/* === 6. FOOTER === */
 footer {
+  background-color: var(--bg-medium);
   text-align: center;
   margin-top: 3rem;
-  padding-top: 1.5rem;
+  padding: 1.5rem 0;
   border-top: 1px solid var(--border-color);
-  border-bottom: none;
 }
 
 .footer-nav-list {
-  list-style: none; /* Remove bullet points */
+  list-style: none;
   margin-bottom: 1rem;
   padding: 0;
   display: flex;
@@ -191,11 +208,70 @@ footer {
 }
 
 .footer-nav-list a:hover {
-  color: var(--text-accent);
+  color: var(--accent-color);
 }
 
+/* === 7. BUTTONS & CTAs (GOLD - THE TRANSFORMATION) === */
+.form-button,
+.buy-button,
+.cta-button,
+button,
+a.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  
+  /* GOLD BUTTONS - The Result/Transformation */
+  background: var(--accent-color);
+  color: var(--bg-dark);
+  border: 2px solid var(--accent-color);
+  animation: pulseGlowGold 3s ease-in-out infinite;
+}
 
-/* === 5. CONTENT SECTIONS & HERO === */
+.form-button:hover,
+.buy-button:hover,
+.cta-button:hover,
+button:hover {
+  background: var(--accent-dark);
+  color: var(--bg-dark);
+  box-shadow: 0 4px 12px rgba(246, 192, 66, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Fibonacci Shimmer on Buttons */
+.form-button::before,
+.buy-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 75%;
+  height: 100%;
+  background: linear-gradient(
+    90deg, 
+    transparent 0%, 
+    rgba(255, 255, 255, 0.6) 50%, 
+    transparent 100%
+  );
+  z-index: 2;
+  transform: skewX(-25deg);
+  animation-name: fibonacci-shimmer;
+  animation-duration: 1.618s;
+  animation-delay: 0.8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+/* === 8. CONTENT SECTIONS === */
 main {
   padding: 2rem 0;
 }
@@ -204,26 +280,123 @@ main {
   text-align: center;
   padding: 4rem 2rem;
   margin-bottom: 3rem;
-  background-color: var(--bg-secondary);
-  border: 1px solid var(--border-color);
+  background: var(--primary-gradient);
   border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3);
 }
 
 .hero h2 {
   font-size: 3rem;
   line-height: 1.1;
-  /* Ensures shimmer works on hero text */
-  -webkit-text-fill-color: transparent; 
+  color: var(--text-primary);
 }
 
 .hero p {
   font-size: 1.2rem;
   max-width: 600px;
   margin: 0 auto;
-  color: var(--text-secondary);
+  color: var(--text-primary);
+  opacity: 0.9;
 }
 
-/* === 6. PRODUCT GRID & CARDS === */
+/* === 9. CARDS & CONTAINERS (PURPLISH BLUE THEME) === */
+.product-card,
+.tool-card,
+.service-card,
+.card {
+  background-color: var(--bg-medium);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card:hover,
+.tool-card:hover,
+.service-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-color);
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3);
+}
+
+.product-card h3,
+.tool-card h3,
+.service-card h3 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-light);
+}
+
+.product-card p,
+.tool-card p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: var(--text-secondary);
+  flex-grow: 1;
+}
+
+/* === 10. SOFTWARE/TECH SECTIONS (PURPLISH BLUE) === */
+.software-section,
+.tech-content {
+  border-left: 4px solid var(--primary-color);
+  padding-left: 1.5rem;
+}
+
+.tech-content:hover {
+  border-left-color: var(--accent-color);
+}
+
+/* === 11. MISSION/URGENCY SECTIONS (MAROON - USE SPARINGLY) === */
+.mission-section,
+.urgency-banner,
+.countdown-section,
+.help-goal-section {
+  background: linear-gradient(135deg, var(--mission-color) 0%, var(--mission-dark) 100%);
+  border-left: 4px solid var(--mission-light);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(139, 21, 56, 0.3);
+}
+
+.progress-bar {
+  background: var(--mission-dark);
+  height: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  background: var(--accent-color);
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+/* === 12. MUSIC/CREATIVE SECTIONS === */
+.music-section,
+.creative-card {
+  background: var(--primary-gradient);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3);
+}
+
+/* === 13. GRADIENT BACKGROUNDS === */
+.hero-gradient,
+.primary-gradient-bg {
+  background: var(--primary-gradient);
+}
+
+.secondary-gradient-bg {
+  background: linear-gradient(135deg, #667eea 0%, #f6c042 50%, #764ba2 100%);
+}
+
+/* === 14. PRODUCT GRID === */
 #products, #courses {
   padding-top: 2rem;
 }
@@ -231,6 +404,7 @@ main {
 #products h2, #courses h2 {
   text-align: center;
   font-size: 2.5rem;
+  color: var(--primary-light);
 }
 
 .product-grid {
@@ -250,41 +424,9 @@ main {
   }
 }
 
-.product-card {
-  background-color: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  padding: 1.5rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-align: center; 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.product-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.1);
-}
-
-.product-card h3 {
-  font-size: 1.5rem;
-  border-bottom: 1px solid var(--border-color);
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-.product-card p {
-  margin-top: 1rem;
-  font-size: 1rem;
-  color: var(--text-secondary);
-  flex-grow: 1; /* Pushes button to bottom */
-}
-
-/* === 7. PRICING & BUTTON STYLING === */
-
+/* === 15. PRICING === */
 .product-price {
-  font-family: var(--font-heading);
+  font-family: 'Cormorant Garamond', serif;
   font-weight: 700;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
@@ -292,6 +434,7 @@ main {
   align-items: center;
   justify-content: center;
   font-size: 2rem;
+  color: var(--accent-color);
 }
 
 .slashed-price {
@@ -301,70 +444,28 @@ main {
   font-weight: 500;
   margin-right: 15px;
   opacity: 0.7;
-  /* Reset shimmer */
-  -webkit-text-fill-color: #CC0000 !important;
-  background: none;
-  animation: none;
 }
 
-.form-button,
-.buy-button {
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  padding: 0.75rem 1.5rem;
-  font-family: var(--font-heading);
-  font-size: 1.1rem;
-  font-weight: 700;
-  text-decoration: none;
-  border-radius: 50px;
+.pricing-card {
+  border: 2px solid var(--primary-color);
+  background: var(--bg-medium);
+  padding: 2rem;
+  border-radius: 8px;
   transition: all 0.3s ease;
-  cursor: pointer;
-  margin-top: 1rem;
-  animation: pulseGlowButton 3s ease-in-out infinite;
 }
 
-.buy-button {
-  background: linear-gradient(
-    to right,
-    var(--text-accent) 20%,
-    #FFFFFF 50%,
-    var(--text-accent) 80%
-  );
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: var(--text-accent); 
-  border: 2px solid var(--text-accent);
-  animation: pulseGlowButton 3s ease-in-out infinite, textShimmer 5s ease-in-out infinite;
+.pricing-card.featured {
+  border: 3px solid var(--accent-color);
+  box-shadow: 0 12px 32px rgba(246, 192, 66, 0.3);
+  transform: scale(1.05);
 }
 
-.buy-button:hover {
-  background: var(--text-accent);
-  -webkit-text-fill-color: var(--bg-secondary);
-  color: var(--bg-secondary);
-  animation-play-state: paused;
-}
-
-.form-button {
-  background-color: var(--text-accent);
-  color: var(--bg-secondary);
-  border: 2px solid var(--text-accent);
-}
-
-.form-button:hover {
-  background-color: transparent;
-  color: var(--text-accent);
-}
-
-
-/* === 8. FORM ARCHITECTURE STYLING === */
+/* === 16. FORMS === */
 .data-form {
   max-width: 768px;
   margin: 2rem auto 4rem auto;
   padding: 2rem;
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-medium);
   border: 1px solid var(--border-color);
   border-radius: 8px;
 }
@@ -375,7 +476,7 @@ main {
 
 .form-group label {
   display: block;
-  font-family: var(--font-heading);
+  font-family: 'Cormorant Garamond', serif;
   font-weight: 700;
   color: var(--text-secondary);
   margin-bottom: 0.25rem;
@@ -386,7 +487,7 @@ main {
 .form-textarea {
   width: 100%;
   padding: 0.75rem;
-  background-color: var(--bg-primary);
+  background-color: var(--bg-dark);
   border: 1px solid var(--border-color);
   border-radius: 4px;
   color: var(--text-primary);
@@ -398,17 +499,16 @@ main {
 .form-input:focus,
 .form-textarea:focus {
   outline: none;
-  border-color: var(--text-accent);
-  box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+  border-color: var(--primary-color);
+  box-shadow: 0 0 10px rgba(102, 126, 234, 0.3);
 }
 
-/* === 9. BIFURCATION & CTA HOOK STYLES === */
-
+/* === 17. BIFURCATION & CTA SECTIONS === */
 .bifurcation-container {
   text-align: center;
   margin: 3rem auto 4rem auto;
   padding: 3rem 2rem;
-  background-color: var(--bg-secondary);
+  background: var(--bg-medium);
   border: 1px solid var(--border-color);
   border-radius: 8px;
 }
@@ -416,6 +516,7 @@ main {
 .bifurcation-title {
   font-size: 2.5rem;
   text-align: center;
+  color: var(--primary-light);
 }
 
 .bifurcation-subtitle {
@@ -440,61 +541,60 @@ main {
 .bifurcation-button {
   display: block;
   padding: 2.5rem 2rem;
-  border: 2px solid var(--text-accent);
+  border: 2px solid var(--primary-color);
   border-radius: 8px;
   text-decoration: none;
-  background: linear-gradient(
-    to right,
-    var(--text-accent) 20%,
-    #FFFFFF 50%,
-    var(--text-accent) 80%
-  );
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: pulseGlowButton 3s ease-in-out infinite, textShimmer 5s ease-in-out infinite;
+  background: var(--bg-medium);
   transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .bifurcation-button:hover {
-  background: var(--text-accent);
-  -webkit-background-clip: border-box; 
-  background-clip: border-box;
-  animation-play-state: paused;
+  background: var(--primary-gradient);
+  border-color: var(--accent-color);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4);
 }
 
 .bifurcation-button .button-title {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 700;
   font-size: 1.75rem;
-  -webkit-text-fill-color: var(--text-accent); 
+  color: var(--primary-light);
+  transition: color 0.3s ease;
 }
 
 .bifurcation-button .button-desc {
   display: block;
   font-family: 'Lato', sans-serif;
   font-size: 1rem;
-  -webkit-text-fill-color: var(--text-secondary); 
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
 }
 
-.bifurcation-button:hover .button-title,
+.bifurcation-button:hover .button-title {
+  color: var(--accent-color);
+}
+
 .bifurcation-button:hover .button-desc {
-  -webkit-text-fill-color: var(--bg-secondary); 
-  color: var(--bg-secondary);
+  color: var(--text-primary);
 }
 
 .cta-hook {
   margin-top: 3rem;
   text-align: center;
   padding: 2.5rem;
-  background-color: var(--bg-secondary);
+  background: var(--bg-medium);
   border: 1px solid var(--border-color);
   border-radius: 8px;
 }
+
 .cta-hook h3 {
   font-size: 2rem;
+  color: var(--primary-light);
 }
+
 .cta-hook p {
   color: var(--text-secondary);
   font-size: 1.1rem;
@@ -502,57 +602,64 @@ main {
   margin: 0 auto 1.5rem auto;
 }
 
-/* === 10. "GATE" PAGE (FREE AUDIT) STYLES === */
+/* === 18. GATE PAGE (FREE AUDIT) STYLES === */
 .initiation-text {
   max-width: 768px;
   margin: 2rem auto 0 auto;
   padding: 2rem;
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-medium);
   border: 1px solid var(--border-color);
   border-radius: 8px;
   color: var(--text-secondary);
 }
+
 .initiation-text h2,
 .initiation-text h3 {
-  color: var(--text-accent);
+  color: var(--primary-light);
   border-bottom: 1px solid var(--border-color);
   padding-bottom: 0.5rem;
 }
+
 .initiation-text h3 {
   text-align: center;
   border: none;
   font-size: 2rem;
 }
+
 .initiation-text p {
   font-size: 1.1rem;
   line-height: 1.7;
   margin-bottom: 1.5rem;
 }
+
 .initiation-text strong {
   color: var(--text-primary);
   font-weight: 700;
 }
+
 .initiation-text em,
 .initiation-text i {
   color: var(--text-primary);
   font-style: italic;
 }
+
 .initiation-quote {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.3rem;
   color: var(--text-primary);
-  border-left: 3px solid var(--text-accent);
+  border-left: 3px solid var(--primary-color);
   padding-left: 1.5rem;
   margin: 2rem 0;
   font-style: italic;
 }
+
 .initiation-divider {
   border: 0;
   border-top: 1px solid var(--border-color);
   margin: 2.5rem 0;
 }
 
-/* === 11. "GATED VAULT" (COURSE PAGE) STYLES === */
+/* === 19. COURSE VAULT (GATED CONTENT) === */
 .course-vault {
   max-width: 960px;
   margin: 3rem auto 5rem auto;
@@ -572,6 +679,7 @@ main {
 .course-details h2 {
   font-size: 2rem;
   margin-top: 2rem;
+  color: var(--primary-light);
 }
 
 .course-details p {
@@ -581,20 +689,20 @@ main {
 }
 
 .course-details ul {
-    list-style-type: '✧ ';
-    padding-left: 1.5rem;
-    margin: 1.5rem 0;
+  list-style-type: '✧ ';
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
 }
 
 .course-details li {
-    color: var(--text-primary);
-    font-size: 1.1rem;
-    padding-left: 0.5rem;
-    margin-bottom: 0.75rem;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  padding-left: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .waitlist-form-container {
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-medium);
   border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 2rem;
@@ -606,12 +714,12 @@ main {
   text-align: center;
   margin-top: 0;
   margin-bottom: 2rem;
-  color: var(--text-accent);
+  color: var(--primary-light);
 }
 
 .price-box {
-  background-color: var(--bg-secondary);
-  border: 1px solid var(--border-color);
+  background-color: var(--bg-dark);
+  border: 1px solid var(--border-gold);
   border-radius: 8px;
   padding: 1.5rem;
   text-align: center;
@@ -623,6 +731,7 @@ main {
   margin: 0;
   padding: 0;
   border-bottom: none;
+  color: var(--accent-color);
 }
 
 .waitlist-note {
@@ -632,7 +741,7 @@ main {
   margin-top: 1rem;
 }
 
-/* === 12. "CODEX" (BLOG) STYLES === */
+/* === 20. CODEX (BLOG) STYLES === */
 #codex-posts {
   padding-bottom: 5rem;
 }
@@ -645,18 +754,19 @@ main {
 
 .post-card {
   display: block;
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-medium);
   border: 1px solid var(--border-color);
-  border-left: 4px solid var(--text-accent);
+  border-left: 4px solid var(--primary-color);
   border-radius: 8px;
   padding: 1.5rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s ease;
   text-decoration: none;
 }
 
 .post-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.2);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+  border-left-color: var(--accent-color);
 }
 
 .post-card .post-title {
@@ -665,6 +775,7 @@ main {
   margin-bottom: 0.5rem;
   border-bottom: none;
   padding-bottom: 0;
+  color: var(--primary-light);
 }
 
 .post-card .post-excerpt {
@@ -683,6 +794,7 @@ main {
 .post-header-title {
   font-size: 3rem;
   margin-bottom: 0.5rem;
+  color: var(--primary-light);
 }
 
 .post-header-meta {
@@ -698,6 +810,7 @@ main {
   margin-top: 2.5rem;
   border-bottom: 1px solid var(--border-color);
   padding-bottom: 0.5rem;
+  color: var(--primary-light);
 }
 
 .post-content p {
@@ -708,14 +821,14 @@ main {
 }
 
 .post-content strong {
-  color: var(--text-accent);
+  color: var(--accent-color);
 }
 
 .post-content .post-quote {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.3rem;
   color: var(--text-primary);
-  border-left: 4px solid var(--text-accent);
+  border-left: 4px solid var(--primary-color);
   padding-left: 1.5rem;
   margin: 2rem 0;
   font-style: italic;
@@ -725,12 +838,12 @@ main {
   margin-top: 3rem;
 }
 
-/* === 13. ARCHITECT'S CHAMBER (ABOUT) STYLES === */
+/* === 21. ARCHITECT'S CHAMBER (ABOUT) === */
 .architect-chamber {
   max-width: 768px;
   margin: 2rem auto 4rem auto;
   padding: 2rem;
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-medium);
   border: 1px solid var(--border-color);
   border-radius: 8px;
   color: var(--text-secondary);
@@ -741,14 +854,14 @@ main {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 2px solid var(--text-accent);
+  border: 2px solid var(--accent-color);
   margin: 0 auto 2rem auto;
-  animation: pulseGlowLogo 3s ease-in-out infinite;
+  animation: pulseGlowPurple 3s ease-in-out infinite;
 }
 
 .architect-chamber h2 {
   font-size: 2rem;
-  color: var(--text-accent);
+  color: var(--primary-light);
   border-bottom: 1px solid var(--border-color);
   padding-bottom: 0.5rem;
   margin-top: 1.5rem;
@@ -774,6 +887,7 @@ main {
 
 .architect-chamber .initiation-quote {
   font-size: 1.2rem;
+  border-left-color: var(--primary-color);
 }
 
 .architect-chamber ul {
@@ -789,9 +903,9 @@ main {
   line-height: 1.6;
 }
 
-/* === 14. PAGE-SPECIFIC HERO BACKGROUNDS === */
+/* === 22. PAGE-SPECIFIC HERO BACKGROUNDS === */
 .about-hero {
-  background-color: var(--border-color) !important; 
+  background: var(--primary-gradient) !important;
   color: var(--text-primary) !important;
   padding-top: 6rem !important;
   padding-bottom: 6rem !important;
@@ -807,13 +921,10 @@ main {
 .about-hero h2,
 .about-hero p {
   color: var(--text-primary) !important;
-  -webkit-text-fill-color: var(--text-primary) !important;
-  background: none;
-  animation: none;
 }
 
 .free-audit-hero {
-  background-color: var(--border-color) !important; 
+  background: var(--primary-gradient) !important;
   color: var(--text-primary) !important;
   padding-top: 5rem !important;
   padding-bottom: 5rem !important;
@@ -829,86 +940,76 @@ main {
 .free-audit-hero h2,
 .free-audit-hero p {
   color: var(--text-primary) !important;
-  -webkit-text-fill-color: var(--text-primary) !important;
-  background: none;
-  animation: none;
-}
-/* --- Fibonacci Shimmer Button Effect --- */
-
-/* This targets your main buttons */
-.form-button,
-.bifurcation-button {
-  position: relative; /* Required for the pseudo-element */
-  overflow: hidden;   /* Hides the shimmer when it's off-screen */
-  z-index: 1;         /* Ensures the shimmer is "on" the button */
 }
 
-/* This creates the shimmer element itself */
-.form-button::before,
-.bifurcation-button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%; /* Start off-screen to the left */
-  width: 75%;
-  height: 100%;
-  
-  /* The shimmer gradient (white light) */
-  background: linear-gradient(
-    90deg, 
-    transparent 0%, 
-    rgba(255, 255, 255, 0.4) 50%, 
-    transparent 100%
-  );
-  
-  z-index: 2;
-  transform: skewX(-25deg); /* Slants the shimmer */
-
-  /* This is the Fibonacci-inspired animation */
-  animation-name: fibonacci-shimmer;
-  animation-duration: 1.618s;  /* Golden Ratio */
-  animation-delay: 0.8s;       /* Fibonacci Number */
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-
-/* This is the animation that moves the shimmer */
-@keyframes fibonacci-shimmer {
-  0% {
-    left: -100%;
-  }
-  100% {
-    left: 150%; /* Moves it all the way across and off-screen */
-  }
-}
-/* This is the new style you requested */
+/* === 23. PARCHMENT SECTIONS (Light Backgrounds) === */
 .parchment-section {
-  background-color: #fdfbf5; /* A light, warm parchment color */
-  border: 1px solid var(--border-color, #ddd); /* Uses your site's border color */
-  border-radius: 8px; /* Matches your site's rounded corners */
+  background-color: var(--bg-accent);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
   padding: 2rem;
   margin-bottom: 2rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03); /* A very subtle lift */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
 }
 
-/* This styles the list items inside the parchment sections */
+.parchment-section h3 {
+  font-size: 1.5rem;
+  font-family: 'Cormorant Garamond', serif;
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+}
+
+.parchment-section p,
+.parchment-section li {
+  color: var(--text-dark);
+}
+
 .parchment-section ul {
   list-style-type: disc;
   margin-left: 1.5rem;
   line-height: 1.8;
 }
 
-/* This styles the h3 titles for each audit point */
-.parchment-section h3 {
-  font-size: 1.5rem;
-  font-family: 'Cormorant Garamond', serif;
-  margin-bottom: 0.5rem;
-}
-
-/* This styles the subtitle for each audit point */
 .parchment-section .audit-subtitle {
   font-size: 0.9rem;
   font-style: italic;
   margin-bottom: 1rem;
   color: #555;
 }
+
+/* === 24. BLOCKQUOTES & TESTIMONIALS === */
+blockquote {
+  border-left: 4px solid var(--primary-color);
+  background: var(--bg-medium);
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 4px;
+  font-style: italic;
+}
+
+/* === 25. ACCESSIBILITY & RESPONSIVE === */
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.75rem; }
+  h3 { font-size: 1.5rem; }
+  
+  .hero h2 { font-size: 2rem; }
+  .bifurcation-title { font-size: 1.75rem; }
+  
+  header nav a {
+    margin-left: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* === 26. UTILITY CLASSES === */
+.text-purple { color: var(--primary-color); }
+.text-gold { color: var(--accent-color); }
+.text-maroon { color: var(--mission-color); }
+
+.bg-purple { background: var(--primary-gradient); }
+.bg-gold { background: var(--accent-color); color: var(--bg-dark); }
+.bg-maroon { background: var(--mission-color); }
+
+.border-purple { border-color: var(--primary-color); }
+.border-gold { border-color: var(--accent-color); }
