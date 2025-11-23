@@ -11,12 +11,17 @@ title: AiChemy for Audio | Custom Music for Broadcasters
   </div>
 
   <section style="margin-bottom: 4rem;">
-    <h2 style="color: #1a1a2e; margin-bottom: 1.5rem;">Listen: "Tulsa Grateful"</h2>
-    <p style="font-size: 1.1rem; margin-bottom: 2rem; line-height: 1.7;">An Oklahoma Thanksgiving song created for 92.9 The River Morning Show. From concept to radio-ready in 48 hours using AI music generation.</p>
+    <h2 style="color: #1a1a2e; margin-bottom: 1.5rem;">Listen: "Modern AiChemy"</h2>
+    <p style="font-size: 1.1rem; margin-bottom: 2rem; line-height: 1.7;">Experience the future of AI-generated music. From concept to radio-ready in 48 hours using cutting-edge AI music generation.</p>
     
     <div style="background: #f8f9fa; padding: 2.5rem; border-radius: 12px; text-align: center; border: 2px solid #a855f7;">
-      <p style="font-size: 1.2rem; color: #a855f7; margin: 0 0 1rem 0;"><strong>🎧 Audio player coming soon</strong></p>
-      <p style="margin: 0; color: #666;">Email me to hear the full track</p>
+      <p style="font-size: 1.2rem; color: #a855f7; margin: 0 0 1.5rem 0;"><strong>🎧 Listen Now</strong></p>
+      
+      <audio controls style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border-radius: 50px;">
+        <source src="/assets/modern-aichemy.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      
       <div style="margin-top: 2rem; padding: 1.5rem; background: white; border-radius: 8px;">
         <p style="margin: 0; font-size: 0.95rem; color: #333;"><strong>The Stats:</strong> 48-hour turnaround | Radio-ready quality | Full commercial rights</p>
       </div>
