@@ -38,7 +38,7 @@ title: Modern AiChemy | Where AI Meets Business Alchemy
   </div>
   
   <div style="text-align: center; margin-top: 2rem;">
-    <p style="font-size: 0.9rem; color: #666;"><strong>Use code HOLIDAY25 for 25% off everything through January 1st</strong></p>
+    <p style="font-size: 0.9rem; color: #1a1a2e;"><strong>Use code HOLIDAY25 for 25% off everything through January 1st</strong></p>
   </div>
 </section>
 
@@ -129,16 +129,16 @@ title: Modern AiChemy | Where AI Meets Business Alchemy
     <a href="{{ '/packages/' | url }}" class="form-button" style="flex: 1; min-width: 200px; background: linear-gradient(135deg, #5548a0 0%, #5548a0 100%);">See Bundle Deals</a>
   </div>
   
-  <div style="margin-top: 3rem; padding: 2rem; background: #f8f9fa; border-radius: 8px; max-width: 600px; margin-left: auto; margin-right: auto;">
-    <p style="font-size: 1.1rem; margin-bottom: 1rem;"><strong>Not ready to buy?</strong></p>
-    <p style="margin-bottom: 1.5rem;">Schedule a free consultation or send me an email.</p>
-    <p style="margin: 0;"><a href="mailto:will@tctcusa.com" style="color: #5548a0; font-size: 1.1rem;">will@tctcusa.com</a></p>
-    <p style="margin-top: 0.5rem; font-size: 1.1rem; color: #5548a0;">📞 <a href="tel:8592678383" style="color: #5548a0;">(859) 267-8383</a></p>
+  <div style="margin-top: 3rem; padding: 2rem; background: white; border-radius: 8px; max-width: 600px; margin-left: auto; margin-right: auto; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border: 2px solid #5548a0;">
+    <p style="font-size: 1.1rem; margin-bottom: 1rem; color: #1a1a2e; font-weight: 700;"><strong style="color: #0a0e27;">Not ready to buy?</strong></p>
+    <p style="margin-bottom: 1.5rem; color: #1a1a2e; font-weight: 600;">Schedule a free consultation or send me an email.</p>
+    <p style="margin: 0;"><a href="mailto:will@tctcusa.com" style="color: #5548a0; font-size: 1.1rem; font-weight: 600; text-decoration: none;">📧 will@tctcusa.com</a></p>
+    <p style="margin-top: 0.5rem; font-size: 1.1rem; color: #1a1a2e;"><a href="tel:8592678383" style="color: #5548a0; font-weight: 600; text-decoration: none;">📞 (859) 267-8383</a></p>
   </div>
 </section>
 
 <section class="container" style="padding: 2rem 1rem; text-align: center; border-top: 1px solid #e0e0e0;">
-  <p style="font-size: 0.95rem; color: #666; line-height: 1.8; max-width: 800px; margin: 0 auto;">
+  <p style="font-size: 0.95rem; color: #1a1a2e; line-height: 1.8; max-width: 800px; margin: 0 auto;">
     <strong>What is Modern AiChemy?</strong> It's the art and science of transforming business problems into gold using AI. I don't just build tools - I create complete solutions that amplify human creativity. AI doesn't replace us. It amplifies what we can do. That's the formula. That's the alchemy.
   </p>
   <p style="margin-top: 1.5rem; font-style: italic; color: #5548a0;">Transforming lead into gold since 2024</p>

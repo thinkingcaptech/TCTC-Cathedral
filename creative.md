@@ -5,7 +5,7 @@ title: The Sound of AiChemy | AI-Generated Music That Sounds Human
 
 <div class="container" style="padding: 2rem 1rem;">
   <h1 style="text-align: center; background: linear-gradient(135deg, #e8e8e8 0%, #c0c0c0 50%, #f5f5f5 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; font-size: 2.5rem; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin-bottom: 1rem;">The Sound of AiChemy</h1>
-  <p style="text-align: center; font-size: 1.3rem; color: #666; margin-bottom: 1rem;">AI-Generated Music That Sounds Human (Because It Takes One To Create It)</p>
+  <p style="text-align: center; font-size: 1.3rem; color: #1a1a2e; margin-bottom: 1rem;">AI-Generated Music That Sounds Human (Because It Takes One To Create It)</p>
   
   <div style="background: linear-gradient(135deg, #5548a0 0%, #5548a0 100%); color: white; padding: 1.5rem; border-radius: 8px; max-width: 600px; margin: 2rem auto; text-align: center;">
     <p style="margin: 0; font-size: 1.1rem;">Use code <strong>HOLIDAY25</strong> for 25% off all music services</p>
@@ -24,7 +24,7 @@ title: The Sound of AiChemy | AI-Generated Music That Sounds Human
       
       <div style="background: #f8f9fa; padding: 2rem; margin: 1.5rem 0; border-radius: 8px; text-align: center;">
         <p style="margin: 0; color: #5548a0; font-size: 1.1rem;"><strong>🎧 Audio player coming soon</strong></p>
-        <p style="margin: 0.5rem 0 0 0; font-size: 0.9rem; color: #666;">Contact me to hear the full track</p>
+        <p style="margin: 0.5rem 0 0 0; font-size: 0.9rem; color: #1a1a2e;">Contact me to hear the full track</p>
       </div>
       
       <div style="background: #f0f0f0; padding: 1rem; border-radius: 6px; margin-top: 1rem; border-left: 3px solid #5548a0;">
@@ -39,7 +39,7 @@ title: The Sound of AiChemy | AI-Generated Music That Sounds Human
       
       <div style="background: #f8f9fa; padding: 2rem; margin: 1.5rem 0; border-radius: 8px; text-align: center;">
         <p style="margin: 0; color: #5548a0; font-size: 1.1rem;"><strong>🎧 Audio player coming soon</strong></p>
-        <p style="margin: 0.5rem 0 0 0; font-size: 0.9rem; color: #666;">Contact me to hear the full track</p>
+        <p style="margin: 0.5rem 0 0 0; font-size: 0.9rem; color: #1a1a2e;">Contact me to hear the full track</p>
       </div>
       
       <div style="background: #f0f0f0; padding: 1rem; border-radius: 6px; margin-top: 1rem; border-left: 3px solid #5548a0;">
@@ -70,7 +70,7 @@ title: The Sound of AiChemy | AI-Generated Music That Sounds Human
         <li>Sponsor message music</li>
         <li>Seasonal/holiday specials</li>
       </ul>
-      <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;"><a href="{{ '/radio/' | url }}" style="color: #5548a0;">See radio-specific packages →</a></p>
+      <p style="margin-top: 1rem; font-size: 0.9rem; color: #1a1a2e;"><a href="{{ '/radio/' | url }}" style="color: #5548a0;">See radio-specific packages →</a></p>
     </div>
 
     <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-top: 4px solid #5548a0;">
@@ -106,22 +106,22 @@ title: The Sound of AiChemy | AI-Generated Music That Sounds Human
     <div style="display: grid; gap: 1.5rem;">
       <div style="background: white; padding: 2rem; border-radius: 8px; border-left: 4px solid #5548a0;">
         <h3 style="color: #5548a0; margin: 0 0 0.5rem 0;">1. Discovery Call</h3>
-        <p style="margin: 0; color: #666;">I understand your brand, audience, and goals. What feeling do you want? What's the message?</p>
+        <p style="margin: 0; color: #1a1a2e;">I understand your brand, audience, and goals. What feeling do you want? What's the message?</p>
       </div>
       
       <div style="background: white; padding: 2rem; border-radius: 8px; border-left: 4px solid #5548a0;">
         <h3 style="color: #5548a0; margin: 0 0 0.5rem 0;">2. AI Composition</h3>
-        <p style="margin: 0; color: #666;">Using Suno AI and custom prompts, I compose multiple variations based on your vision.</p>
+        <p style="margin: 0; color: #1a1a2e;">Using Suno AI and custom prompts, I compose multiple variations based on your vision.</p>
       </div>
       
       <div style="background: white; padding: 2rem; border-radius: 8px; border-left: 4px solid #c0c0c0;">
         <h3 style="color: #4a3a99; margin: 0 0 0.5rem 0; background: none; -webkit-text-fill-color: #4a3a99; animation: none;">3. Rapid Iteration</h3>
-        <p style="margin: 0; color: #666;">Choose your favorite, request changes, iterate until it's perfect. Usually 2-3 rounds.</p>
+        <p style="margin: 0; color: #1a1a2e;">Choose your favorite, request changes, iterate until it's perfect. Usually 2-3 rounds.</p>
       </div>
       
       <div style="background: white; padding: 2rem; border-radius: 8px; border-left: 4px solid #1a1a2e;">
         <h3 style="color: #1a1a2e; margin: 0 0 0.5rem 0;">4. Delivery & Rights</h3>
-        <p style="margin: 0; color: #666;">You get MP3, WAV, and any format you need. Full commercial rights. No royalties. Ever.</p>
+        <p style="margin: 0; color: #1a1a2e;">You get MP3, WAV, and any format you need. Full commercial rights. No royalties. Ever.</p>
       </div>
     </div>
     
@@ -139,7 +139,7 @@ title: The Sound of AiChemy | AI-Generated Music That Sounds Human
     <div style="background: white; border: 2px solid #5548a0; border-radius: 12px; padding: 2.5rem; box-shadow: 0 4px 12px rgba(168,85,247,0.15);">
       <h3 style="color: #5548a0; margin: 0 0 1rem 0;">Single Custom Song</h3>
       <p style="font-size: 2rem; font-weight: bold; color: #1a1a2e; margin: 0;">$500-1,000</p>
-      <p style="color: #666; margin: 0.5rem 0 1.5rem 0;"><strong>With HOLIDAY25:</strong> $375-750</p>
+      <p style="color: #1a1a2e; margin: 0.5rem 0 1.5rem 0;"><strong>With HOLIDAY25:</strong> $375-750</p>
       
       <p style="margin-bottom: 1.5rem; line-height: 1.7;">Perfect for one-off needs: event themes, product launches, special campaigns.</p>
       
@@ -161,7 +161,7 @@ title: The Sound of AiChemy | AI-Generated Music That Sounds Human
       
       <h3 style="color: #5548a0; margin: 0 0 1rem 0;">Brand Music Package</h3>
       <p style="font-size: 2rem; font-weight: bold; color: #1a1a2e; margin: 0;">$2,000-3,000</p>
-      <p style="color: #666; margin: 0.5rem 0 1.5rem 0;"><strong>With HOLIDAY25:</strong> $1,500-2,250</p>
+      <p style="color: #1a1a2e; margin: 0.5rem 0 1.5rem 0;"><strong>With HOLIDAY25:</strong> $1,500-2,250</p>
       
       <p style="margin-bottom: 1.5rem; line-height: 1.7;">Complete audio branding suite for your business or show.</p>
       
@@ -258,7 +258,7 @@ title: The Sound of AiChemy | AI-Generated Music That Sounds Human
 </section>
 
 <section class="container" style="padding: 2rem 1rem; text-align: center;">
-  <p style="font-style: italic; color: #666; font-size: 1rem; margin: 0;">
+  <p style="font-style: italic; color: #1a1a2e; font-size: 1rem; margin: 0;">
     <strong>Modern AiChemy:</strong> Where AI meets alchemy, transforming sound into brand gold
   </p>
 </section>

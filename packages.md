@@ -5,7 +5,7 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
 
 <div class="container" style="padding: 2rem 1rem;">
   <h1 style="text-align: center; background: linear-gradient(135deg, #e8e8e8 0%, #c0c0c0 50%, #f5f5f5 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; font-size: 2.5rem; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin-bottom: 1rem;">Alchemical Formulas: Pre-Mixed Solutions</h1>
-  <p style="text-align: center; font-size: 1.3rem; color: #666; margin-bottom: 1rem;">Save Time & Money With These Proven Combinations</p>
+  <p style="text-align: center; font-size: 1.3rem; color: #1a1a2e; margin-bottom: 1rem;">Save Time & Money With These Proven Combinations</p>
   
   <div style="background: linear-gradient(135deg, #5548a0 0%, #5548a0 100%); color: white; padding: 1.5rem; border-radius: 8px; max-width: 600px; margin: 2rem auto; text-align: center;">
     <p style="margin: 0; font-size: 1.1rem;"><strong>Every purchase helps me reach my $10,000 goal by January 1st</strong></p>
@@ -26,7 +26,7 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
       
       <div style="margin: 1.5rem 0;">
         <p style="font-size: 2rem; font-weight: bold; color: #1a1a2e; margin: 0;">$497</p>
-        <p style="color: #666; margin: 0.5rem 0 0 0;"><s>$697 value</s> - Save $200</p>
+        <p style="color: #1a1a2e; margin: 0.5rem 0 0 0;"><s>$697 value</s> - Save $200</p>
         <p style="color: #5548a0; font-weight: bold; margin: 0.5rem 0;">With HOLIDAY25: <span style="font-size: 1.3rem;">$373</span></p>
       </div>
       
@@ -58,7 +58,7 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
         </div>
         
         <div style="background: #f8f9fa; padding: 1rem; border-radius: 6px; margin: 1.5rem 0;">
-          <p style="margin: 0; font-size: 0.95rem; color: #666;"><strong>Perfect for:</strong> Solopreneurs and small businesses starting their digital transformation</p>
+          <p style="margin: 0; font-size: 0.95rem; color: #1a1a2e;"><strong>Perfect for:</strong> Solopreneurs and small businesses starting their digital transformation</p>
         </div>
       </div>
       
@@ -75,7 +75,7 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
       
       <div style="margin: 1.5rem 0;">
         <p style="font-size: 2rem; font-weight: bold; color: #1a1a2e; margin: 0;">$997</p>
-        <p style="color: #666; margin: 0.5rem 0 0 0;"><s>$1,479+ value</s> - Save $500+</p>
+        <p style="color: #1a1a2e; margin: 0.5rem 0 0 0;"><s>$1,479+ value</s> - Save $500+</p>
         <p style="color: #5548a0; font-weight: bold; margin: 0.5rem 0;">With HOLIDAY25: <span style="font-size: 1.3rem;">$748</span></p>
       </div>
       
@@ -93,7 +93,7 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
             <li>90-Day Sprint Dashboard (Bundle Only)</li>
             <li>Business Systems PDF Bundle ($297)</li>
           </ul>
-          <p style="margin: 0.5rem 0 0 0; font-style: italic; color: #666; font-size: 0.9rem;">Total Value: $1,479</p>
+          <p style="margin: 0.5rem 0 0 0; font-style: italic; color: #1a1a2e; font-size: 0.9rem;">Total Value: $1,479</p>
         </div>
         
         <div style="background: #faf5ff; border-left: 4px solid #5548a0; padding: 1rem;">
@@ -105,11 +105,11 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
             <li>Unlimited revisions included</li>
             <li>Business Systems PDF Bundle ($297)</li>
           </ul>
-          <p style="margin: 0.5rem 0 0 0; font-style: italic; color: #666; font-size: 0.9rem;">Total Value: $2,000+</p>
+          <p style="margin: 0.5rem 0 0 0; font-style: italic; color: #1a1a2e; font-size: 0.9rem;">Total Value: $2,000+</p>
         </div>
         
         <div style="background: #f8f9fa; padding: 1rem; border-radius: 6px; margin: 1.5rem 0;">
-          <p style="margin: 0; font-size: 0.95rem; color: #666;"><strong>Perfect for:</strong> Growing businesses ready to scale with either complete digital infrastructure OR professional audio branding</p>
+          <p style="margin: 0; font-size: 0.95rem; color: #1a1a2e;"><strong>Perfect for:</strong> Growing businesses ready to scale with either complete digital infrastructure OR professional audio branding</p>
         </div>
       </div>
       
@@ -268,14 +268,14 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
   </div>
   
   <div style="text-align: center; margin-top: 3rem;">
-    <p style="font-size: 1.1rem; color: #666; margin-bottom: 1rem;">All packages include:</p>
+    <p style="font-size: 1.1rem; color: #1a1a2e; margin-bottom: 1rem;">All packages include:</p>
     <p style="color: #5548a0;">✅ Instant access | ✅ 30-day money-back guarantee | ✅ Full commercial rights | ✅ Lifetime updates</p>
   </div>
 </section>
 
 <section class="container" style="padding: 3rem 1rem; text-align: center;">
   <h2 style="background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin-bottom: 1rem;">Ready to Start Your Transformation?</h2>
-  <p style="font-size: 1.1rem; color: #666; margin-bottom: 2rem;">Every package purchase helps me fight for my family while delivering real value to your business</p>
+  <p style="font-size: 1.1rem; color: #1a1a2e; margin-bottom: 2rem;">Every package purchase helps me fight for my family while delivering real value to your business</p>
   
   <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; max-width: 700px; margin: 0 auto;">
     <a href="mailto:will@tctcusa.com?subject=Package Inquiry" class="form-button" style="flex: 1; min-width: 200px;">Email Me</a>
@@ -414,7 +414,7 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
   </section>
 
   <div style="text-align: center; margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #ddd;">
-    <p style="font-style: italic; color: #666;">
+    <p style="font-style: italic; color: #1a1a2e;">
       "We don't just build tools. We build empires."<br>
       - TCTC Digital
     </p>

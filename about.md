@@ -6,7 +6,7 @@ title: The Alchemist's Story | William Johnson
 <div class="container" style="padding-top: 2rem; padding-bottom: 4rem; max-width: 900px;">
   
   <h1 style="text-align: center; background: linear-gradient(135deg, #e8e8e8 0%, #c0c0c0 50%, #f5f5f5 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; font-size: 2.5rem; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4)); margin-bottom: 1rem;">The Alchemist's Story</h1>
-  <p style="text-align: center; font-size: 1.2rem; color: #666; margin-bottom: 3rem;">I'm not a traditional developer or musician. I'm a Business Systems Architect who discovered the formula.</p>
+  <p style="text-align: center; font-size: 1.2rem; color: #1a1a2e; margin-bottom: 3rem;">I'm not a traditional developer or musician. I'm a Business Systems Architect who discovered the formula.</p>
   
   <div style="background: linear-gradient(135deg, #5548a0 0%, #5548a0 100%); color: white; padding: 1.5rem; border-radius: 8px; max-width: 600px; margin: 0 auto 3rem auto; text-align: center;">
     <p style="margin: 0; font-size: 1.1rem;"><strong>Current Mission:</strong> Raise $10,000 by January 1st, 2025 for family legal expenses</p>
@@ -131,7 +131,7 @@ title: The Alchemist's Story | William Johnson
   </div>
 
   <div style="text-align: center; margin-top: 4rem;">
-    <p style="font-style: italic; color: #666; font-size: 1rem;">
+    <p style="font-style: italic; color: #1a1a2e; font-size: 1rem;">
       <strong>Modern AiChemy:</strong> Transforming lead into gold since 2024
     </p>
     <p style="margin-top: 0.5rem;"><strong>William Johnson</strong><br>Digital Alchemist & Business Systems Architect</p>
