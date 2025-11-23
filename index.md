@@ -71,29 +71,29 @@ title: Modern AiChemy | Where AI Meets Business Alchemy
 </section>
 
 <section class="container" style="padding: 4rem 1rem; background: #f8f9fa;">
-  <h2 style="text-align: center; color: #1a1a2e; margin-bottom: 3rem; background: none; -webkit-text-fill-color: #1a1a2e; animation: none;">The Proof: This Isn't Vaporware</h2>
+  <h2 style="text-align: center; background: linear-gradient(135deg, #d8d8d8 0%, #c0c0c0 50%, #e8e8e8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 3rem; font-weight: 800; font-size: 2.25rem; filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.4));">The Proof: This Isn't Vaporware</h2>
   
   <div style="max-width: 900px; margin: 0 auto;">
-    <div style="background: white; padding: 2rem; margin-bottom: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-      <h3 style="color: #6b4ce6; margin-bottom: 1rem; background: none; -webkit-text-fill-color: #6b4ce6; animation: none;">✅ Live Software Applications</h3>
-      <ul style="line-height: 2; list-style: none; padding-left: 0; color: #333;">
-        <li>🔗 <a href="https://local-keyword-blog-builder.web.app" target="_blank" style="color: #6b4ce6;">Local SEO Blog Builder</a> - Generating content right now</li>
-        <li>🔗 <a href="https://book-learning-module.web.app" target="_blank" style="color: #6b4ce6;">The Citadel</a> - Gamified learning platform live</li>
-        <li>🔗 <a href="https://tctc90daysprint.netlify.app" target="_blank" style="color: #6b4ce6;">90-Day Sprint Dashboard</a> - Project management in action</li>
+    <div style="background: linear-gradient(135deg, #5548a0 0%, #4a3a99 100%); padding: 2.5rem; margin-bottom: 2rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(85, 72, 160, 0.3); border: 2px solid rgba(192, 192, 192, 0.2);">
+      <h3 style="background: linear-gradient(135deg, #e8e8e8 0%, #c0c0c0 50%, #f5f5f5 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 1.5rem; font-size: 1.5rem; font-weight: 700; filter: drop-shadow(0 1px 3px rgba(192, 192, 192, 0.4));">✅ Live Software Applications</h3>
+      <ul style="line-height: 2; list-style: none; padding-left: 0; color: white;">
+        <li>🔗 <a href="https://local-keyword-blog-builder.web.app" target="_blank" style="color: #c0c0c0; text-decoration: none; font-weight: 600;">Local SEO Blog Builder</a> - Generating content right now</li>
+        <li>🔗 <a href="https://book-learning-module.web.app" target="_blank" style="color: #c0c0c0; text-decoration: none; font-weight: 600;">The Citadel</a> - Gamified learning platform live</li>
+        <li>🔗 <a href="https://tctc90daysprint.netlify.app" target="_blank" style="color: #c0c0c0; text-decoration: none; font-weight: 600;">90-Day Sprint Dashboard</a> - Project management in action</li>
         <li>📦 Sales Funnel CRM, Offer Architect, Business Diagnostic - Available for purchase</li>
       </ul>
     </div>
     
-    <div style="background: white; padding: 2rem; margin-bottom: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-      <h3 style="color: #a855f7; margin-bottom: 1rem; background: none; -webkit-text-fill-color: #a855f7; animation: none;">🎵 Actual Music Portfolio</h3>
-      <p style="margin-bottom: 1rem; color: #333;"><strong>"Tulsa Grateful"</strong> - Created for 92.9 The River Morning Show (Tulsa, OK)</p>
-      <p style="margin-bottom: 1rem; color: #333;"><strong>"Modern AiChemy"</strong> - Original brand anthem</p>
-      <p style="font-style: italic; color: #666;">Audio samples available on the <a href="{{ '/creative/' | url }}" style="color: #a855f7;">Creative Services page</a></p>
+    <div style="background: linear-gradient(to bottom, #f0f0f0 0%, #e8e8e8 100%); padding: 2.5rem; margin-bottom: 2rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(192, 192, 192, 0.25); border: 2px solid #c0c0c0;">
+      <h3 style="color: #5548a0; margin-bottom: 1.5rem; font-size: 1.5rem; font-weight: 700;">🎵 Actual Music Portfolio</h3>
+      <p style="margin-bottom: 1rem; color: #1a1a2e; font-size: 1.05rem;"><strong style="color: #0a0e27;">"Tulsa Grateful"</strong> - Created for 92.9 The River Morning Show (Tulsa, OK)</p>
+      <p style="margin-bottom: 1rem; color: #1a1a2e; font-size: 1.05rem;"><strong style="color: #0a0e27;">"Modern AiChemy"</strong> - Original brand anthem</p>
+      <p style="font-style: italic; color: #4a3a99; font-weight: 500;">Audio samples available on the <a href="{{ '/creative/' | url }}" style="color: #5548a0; text-decoration: none; border-bottom: 2px solid #5548a0; font-weight: 600;">Creative Services page</a></p>
     </div>
     
-    <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-      <h3 style="color: #8b7500; margin-bottom: 1rem; background: none; -webkit-text-fill-color: #8b7500; animation: none;">📚 Business Systems Library</h3>
-      <p style="color: #333;">Ready-to-use operational blueprints: Pizzeria Systems, HR Processes, Sales Frameworks, and more. Built from running actual businesses.</p>
+    <div style="background: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.08); border: 2px solid rgba(85, 72, 160, 0.15);">
+      <h3 style="color: #5548a0; margin-bottom: 1.5rem; font-size: 1.5rem; font-weight: 700;">📚 Business Systems Library</h3>
+      <p style="color: #1a1a2e; font-size: 1.05rem; line-height: 1.7;">Ready-to-use operational blueprints: Pizzeria Systems, HR Processes, Sales Frameworks, and more. Built from running actual businesses.</p>
     </div>
   </div>
   
