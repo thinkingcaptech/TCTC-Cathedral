@@ -311,8 +311,8 @@ title: The Digital Arsenal | AI-Powered Business Tools
   
   <a href="{{ '/packages/' | url }}" class="form-button" style="display: inline-block; padding: 1.5rem 3rem; font-size: 1.2rem; background: linear-gradient(135deg, #5548a0 0%, #5548a0 100%);">See Bundle Deals</a>
   
-  <div style="margin-top: 3rem; padding: 2rem; background: #f8f9fa; border-radius: 8px; max-width: 600px; margin-left: auto; margin-right: auto;">
-    <p style="font-size: 1rem; color: #666; margin-bottom: 0.5rem;"><strong>Questions about which tools you need?</strong></p>
-    <p style="margin: 0;"><a href="mailto:will@tctcusa.com" style="color: #5548a0; font-size: 1.1rem;">will@tctcusa.com</a></p>
+  <div style="margin-top: 3rem; padding: 2rem; background: white; border-radius: 8px; max-width: 600px; margin-left: auto; margin-right: auto; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border: 2px solid #5548a0;">
+    <p style="font-size: 1rem; color: #1a1a2e; margin-bottom: 0.5rem; font-weight: 600;"><strong style="color: #0a0e27;">Questions about which tools you need?</strong></p>
+    <p style="margin: 0;"><a href="mailto:will@tctcusa.com" style="color: #5548a0; font-size: 1.1rem; font-weight: 600; text-decoration: none;">📧 will@tctcusa.com</a> | <a href="tel:8592678383" style="color: #5548a0; font-size: 1.1rem; font-weight: 600; text-decoration: none;">📞 (859) 267-8383</a></p>
   </div>
 </section>

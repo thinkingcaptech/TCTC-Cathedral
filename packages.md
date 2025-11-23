@@ -282,10 +282,10 @@ title: Alchemical Formulas | Pre-Mixed AiChemy Solutions
     <a href="{{ '/software/' | url }}" style="flex: 1; min-width: 200px; display: inline-block; padding: 1rem 2rem; background: transparent; border: 2px solid #5548a0; color: #5548a0; text-decoration: none; border-radius: 4px; font-weight: bold;">See Individual Tools</a>
   </div>
   
-  <div style="margin-top: 3rem; padding: 2rem; background: #f8f9fa; border-radius: 8px; max-width: 600px; margin-left: auto; margin-right: auto;">
-    <p style="font-size: 1rem; color: #666; margin: 0;"><strong>Questions about which package is right for you?</strong></p>
-    <p style="margin-top: 0.5rem;"><a href="mailto:will@tctcusa.com" style="color: #5548a0; font-size: 1.1rem;">will@tctcusa.com</a></p>
-    <p style="margin-top: 0.5rem; font-size: 1.1rem; color: #5548a0;">📞 <a href="tel:8592678383" style="color: #5548a0;">(859) 267-8383</a></p>
+  <div style="margin-top: 3rem; padding: 2rem; background: white; border-radius: 8px; max-width: 600px; margin-left: auto; margin-right: auto; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border: 2px solid #5548a0;">
+    <p style="font-size: 1rem; color: #1a1a2e; margin: 0; font-weight: 600;"><strong style="color: #0a0e27;">Questions about which package is right for you?</strong></p>
+    <p style="margin-top: 0.5rem;"><a href="mailto:will@tctcusa.com" style="color: #5548a0; font-size: 1.1rem; font-weight: 600; text-decoration: none;">📧 will@tctcusa.com</a></p>
+    <p style="margin-top: 0.5rem; font-size: 1.1rem; color: #1a1a2e;"><a href="tel:8592678383" style="color: #5548a0; font-weight: 600; text-decoration: none;">📞 (859) 267-8383</a></p>
   </div>
 </section>
             <li>Website setup guidance</li>
