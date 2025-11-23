@@ -135,8 +135,8 @@ Edit `src/_data/site.json`:
 
 ```json
 {
-  "currentAmount": 500,
-  "goalAmount": 3000,
+  "currentAmount": 0,
+  "goalAmount": 10000,
   "goalDate": "2025-01-01"
 }
 ```

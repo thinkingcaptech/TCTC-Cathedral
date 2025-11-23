@@ -22,7 +22,7 @@ All music files should be placed in `/assets/music/`:
 
 1. **tulsa-grateful.mp3**
    - Genre: Heartfelt Americana
-   - Created for 92.9 The River Morning Show
+   - Commissioned Thanksgiving song
 
 2. **modern-aichemy.mp3**
    - Genre: Brand Anthem
