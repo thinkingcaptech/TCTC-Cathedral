@@ -46,7 +46,7 @@ title: AiChemy for Audio | Custom Music for Broadcasters
     <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 8px; margin: 1.5rem 0;">
       <p style="font-size: 2rem; font-weight: bold; margin: 0;">25% OFF ALL SERVICES</p>
       <p style="font-size: 1.3rem; margin: 0.5rem 0;">Use code: <strong style="background: #ffd700; color: #1a1a2e; padding: 0.3rem 0.8rem; border-radius: 4px;">HOLIDAY25</strong></p>
-      <p style="font-size: 0.95rem; margin: 1rem 0 0 0; opacity: 0.9;">Raising $10,000 by January 1st, 2025 for legal expenses</p>
+      <p style="font-size: 0.95rem; margin: 1rem 0 0 0; opacity: 0.9;">Raising $10,000 by January 1st, 2025 for family legal expenses</p>
     </div>
     
     <p style="margin: 0; opacity: 0.9;">Every project helps me fight for my family while delivering professional music to your show</p>

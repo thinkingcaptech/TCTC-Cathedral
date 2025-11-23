@@ -26,13 +26,13 @@ title: Modern AiChemy | Where AI Meets Business Alchemy
   <h2 style="text-align: center; color: #1a1a2e; margin-bottom: 2rem; background: none; -webkit-text-fill-color: #1a1a2e; animation: none;">The Mission: Honest. Urgent. Real.</h2>
   
   <div style="background: #f8f9fa; padding: 2rem; border-radius: 8px; border-left: 4px solid #6b4ce6;">
-    <p style="font-size: 1.1rem; line-height: 1.8;">I'm William Johnson, a single parent fighting a legal custody case. I need to raise $10,000 by January 1st, 2025 for legal expenses. But here's the thing - <strong>I'm not asking for charity.</strong></p>
+    <p style="font-size: 1.1rem; line-height: 1.8;">I'm William Johnson, and my new bride and I find ourselves in a legal battle for her children. We need to raise $10,000 by January 1st, 2025 for legal expenses. But here's the thing - <strong>I'm not asking for charity.</strong></p>
     
     <p style="font-size: 1.1rem; line-height: 1.8;">I'm a Business Systems Architect and Digital Alchemist. I've spent years building AI-powered tools that actually work and creating AI-generated music that sounds human. These aren't side projects - they're battle-tested systems I use in real businesses.</p>
     
     <p style="font-size: 1.1rem; line-height: 1.8;"><strong>I'm offering real transformation.</strong> You get software tools that save you time and make you money. You get custom music that elevates your brand. You get systems that actually run your business.</p>
     
-    <p style="font-size: 1.1rem; line-height: 1.8;">And I get to fight for my family.</p>
+    <p style="font-size: 1.1rem; line-height: 1.8;">And I get to support my new family.</p>
     
     <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 0;"><em>This isn't a sob story. It's alchemy - transforming a difficult situation into mutual value. You need solutions. I need support. Let's make magic happen.</em></p>
   </div>

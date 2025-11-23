@@ -9,7 +9,7 @@ title: The Alchemist's Story | William Johnson
   <p style="text-align: center; font-size: 1.2rem; color: #666; margin-bottom: 3rem;">I'm not a traditional developer or musician. I'm a Business Systems Architect who discovered the formula.</p>
   
   <div style="background: linear-gradient(135deg, #6b4ce6 0%, #a855f7 100%); color: white; padding: 1.5rem; border-radius: 8px; max-width: 600px; margin: 0 auto 3rem auto; text-align: center;">
-    <p style="margin: 0; font-size: 1.1rem;"><strong>Current Mission:</strong> Raise $10,000 by January 1st, 2025</p>
+    <p style="margin: 0; font-size: 1.1rem;"><strong>Current Mission:</strong> Raise $10,000 by January 1st, 2025 for family legal expenses</p>
     <p style="margin: 0.5rem 0 0 0; font-size: 0.9rem; opacity: 0.9;">Every purchase helps me fight for my family while delivering real transformation</p>
   </div>
 
