@@ -6,7 +6,39 @@
   "currentYear": 2025,
   "currentAmount": 0,
   "goalAmount": 10000,
-  "goalDate": "2025-01-01",
+  "goalDate": "2026-01-01",
   "promoCode": "HOLIDAY25",
-  "promoDiscount": 0.25
+  "promoDiscount": 0.25,
+  "commissionedWorks": [
+    {
+      "title": "Tulsa Grateful",
+      "client": "Tulsa radio market client",
+      "location": "Tulsa, OK",
+      "genre": "Heartfelt Americana",
+      "purpose": "Oklahoma Thanksgiving tribute",
+      "turnaround": "48 hours",
+      "file": "/assets/music/tulsa-grateful.mp3",
+      "public": true
+    },
+    {
+      "title": "Fat Cat's Pizzeria Theme",
+      "client": "Fat Cat's Pizzeria",
+      "location": "Georgetown, Kentucky",
+      "genre": "Upbeat Commercial",
+      "purpose": "Brand identity and atmosphere",
+      "turnaround": "72 hours",
+      "file": "/assets/music/fat-cats-pizzeria.mp3",
+      "public": true
+    },
+    {
+      "title": "Brand Anthem",
+      "client": "Anonymous Client - NDA Protected",
+      "location": "Confidential",
+      "genre": "Corporate Contemporary",
+      "purpose": "Company rebranding campaign",
+      "turnaround": "5 days",
+      "file": null,
+      "public": false
+    }
+  ]
 }

@@ -1723,3 +1723,203 @@ h3.shine-effect::before {
     animation: none !important;
   }
 }
+
+/* ============================================
+   PROOF PAGE - COMMISSIONED WORK & LICENSING
+   ============================================ */
+
+/* Proof Stats */
+.proof-stat {
+  text-align: center;
+  padding: 3rem;
+  margin: 2rem auto;
+  max-width: 500px;
+}
+
+.stat-number {
+  font-size: 5rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, #667eea, #f6c042);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stat-label {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-light);
+  margin: 1rem 0;
+}
+
+.stat-note {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* Commission Cards */
+.commission-samples {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.commission-card {
+  padding: 2rem;
+}
+
+.commission-header h3 {
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+
+.commission-client {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.commission-details {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(102, 126, 234, 0.2);
+}
+
+.commission-details p {
+  margin: 0.5rem 0;
+  color: var(--text-light);
+}
+
+.nda-note {
+  margin-top: 1rem;
+  font-style: italic;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+/* Licensing Cards */
+.licensing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 3rem;
+  margin: 3rem 0;
+}
+
+.license-card {
+  padding: 2rem;
+}
+
+.ownership-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  margin: 1rem 0;
+}
+
+.ownership-badge.full-rights {
+  background: linear-gradient(135deg, #f6c042, #ffd666);
+  color: #0a0e27;
+}
+
+.ownership-badge.license-only {
+  background: rgba(102, 126, 234, 0.2);
+  color: var(--primary);
+  border: 2px solid rgba(102, 126, 234, 0.5);
+}
+
+.ownership-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.ownership-list li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.license-note {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(102, 126, 234, 0.2);
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+/* Guarantee Section */
+.guarantee-card {
+  padding: 3rem;
+  text-align: center;
+}
+
+.guarantee-statement {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin: 2rem 0;
+}
+
+.guarantee-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+  text-align: left;
+}
+
+.guarantee-item {
+  padding: 1.5rem;
+  background: rgba(26, 31, 58, 0.5);
+  border-radius: 12px;
+  border-left: 4px solid var(--gold);
+}
+
+.guarantee-item .icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.guarantee-item h4 {
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+}
+
+.guarantee-note {
+  margin-top: 2rem;
+  font-style: italic;
+  color: var(--text-light);
+  font-size: 1.1rem;
+}
+
+.why-this-matters {
+  margin-top: 3rem;
+  padding: 2rem;
+  text-align: left;
+}
+
+.why-this-matters h3 {
+  color: var(--gold);
+  margin-bottom: 1.5rem;
+}
+
+.why-this-matters p {
+  margin: 1rem 0;
+  line-height: 1.8;
+}
+
+/* Portfolio CTA */
+.portfolio-cta {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.portfolio-cta p {
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+}
