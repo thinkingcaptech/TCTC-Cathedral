@@ -706,6 +706,19 @@ audio::-webkit-media-controls-panel {
   background: var(--bg-dark);
 }
 
+/* Hide download button */
+audio::-webkit-media-controls-download-button {
+  display: none;
+}
+
+audio::-webkit-media-controls-enclosure {
+  overflow: hidden;
+}
+
+audio::-internal-media-controls-download-button {
+  display: none;
+}
+
 /* ============================================
    LIVE DEMO BUTTON
    ============================================ */
