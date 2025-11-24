@@ -1521,47 +1521,32 @@ button *,
 }
 
 /* ============================================
-   FIBONACCI SHINE EFFECT - 33 SECOND CYCLE
+   SHINE EFFECT - 5 SECOND CYCLE
    ============================================ */
 
-/* Fibonacci timing: 1, 1, 2, 3, 5, 8, 13 = 33 seconds */
+/* Simple 5 second shine cycle */
 @keyframes fibonacci-shine {
   0% {
     left: -150%;
     opacity: 0;
   }
   
-  3.03% { /* 1 second */
+  20% {
     left: -50%;
     opacity: 1;
   }
   
-  6.06% { /* 2 seconds (1+1) */
+  50% {
     left: 50%;
     opacity: 1;
   }
   
-  12.12% { /* 4 seconds (1+1+2) */
+  80% {
     left: 150%;
     opacity: 0;
   }
   
-  21.21% { /* 7 seconds (1+1+2+3) */
-    left: -150%;
-    opacity: 0;
-  }
-  
-  36.36% { /* 12 seconds (1+1+2+3+5) */
-    left: -50%;
-    opacity: 1;
-  }
-  
-  60.61% { /* 20 seconds (1+1+2+3+5+8) */
-    left: 50%;
-    opacity: 1;
-  }
-  
-  100% { /* 33 seconds - full cycle */
+  100% {
     left: 150%;
     opacity: 0;
   }
@@ -1587,7 +1572,7 @@ button *,
     rgba(255, 255, 255, 0) 100%
   );
   transform: skewX(-25deg);
-  animation: fibonacci-shine 33s ease-in-out infinite;
+  animation: fibonacci-shine 5s ease-in-out infinite;
   pointer-events: none;
   z-index: 10;
   will-change: left, opacity;
@@ -1669,8 +1654,8 @@ h3.shine-effect::before {
     rgba(255, 255, 255, 0) 100%
   );
   transform: skewX(-25deg);
-  animation: fibonacci-shine 33s ease-in-out infinite;
-  animation-delay: 5s;
+  animation: fibonacci-shine 5s ease-in-out infinite;
+  animation-delay: 1s;
   pointer-events: none;
   z-index: 5;
 }
@@ -1690,8 +1675,8 @@ h3.shine-effect::before {
     rgba(255, 255, 255, 0) 100%
   );
   transform: skewX(-25deg);
-  animation: fibonacci-shine 33s ease-in-out infinite;
-  animation-delay: 8s;
+  animation: fibonacci-shine 5s ease-in-out infinite;
+  animation-delay: 2s;
   pointer-events: none;
   z-index: 10;
 }
@@ -1707,19 +1692,7 @@ h3.shine-effect::before {
   animation-delay: 1s;
 }
 
-/* Hover interaction - speed up shine */
-.btn-primary:hover.shine-effect::before,
-.cta-button:hover.shine-effect::before {
-  animation: fibonacci-shine 8s ease-in-out infinite;
-}
-
-.glass-card:hover.shine-effect::after {
-  animation: fibonacci-shine 13s ease-in-out infinite;
-}
-
-h1:hover.shine-effect::before {
-  animation: fibonacci-shine 5s ease-in-out infinite;
-}
+/* Hover maintains same animation speed */
 
 /* Progress bar shine */
 .progress-bar.shine-effect {
@@ -1741,8 +1714,8 @@ h1:hover.shine-effect::before {
     rgba(255, 255, 255, 0) 100%
   );
   transform: skewX(-25deg);
-  animation: fibonacci-shine 33s ease-in-out infinite;
-  animation-delay: 3s;
+  animation: fibonacci-shine 5s ease-in-out infinite;
+  animation-delay: 1.5s;
   pointer-events: none;
   z-index: 10;
 }
