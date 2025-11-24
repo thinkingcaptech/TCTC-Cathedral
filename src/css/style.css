@@ -1935,25 +1935,26 @@ h3.shine-effect::before {
    ============================================ */
 
 @media (max-width: 768px) {
-  /* Reduce animation intensity on mobile to prevent jumps */
+  /* DISABLE shine effect on mobile - causes jumps */
+  .shine-effect::before {
+    display: none !important;
+  }
+  
+  /* Disable shimmer animations on mobile */
   .shimmer::before,
-  .shimmer::after,
+  .shimmer::after {
+    animation: none !important;
+  }
+  
+  /* Reduce other animation intensity on mobile */
   [class*="gradient-"],
   .progress-bar,
   .countdown-timer {
-    animation-duration: 5s !important; /* Slower = less CPU */
+    animation-duration: 5s !important;
   }
   
   /* Prevent layout shifts */
   .progress-section {
     contain: layout style paint;
-  }
-  
-  /* Optimize transforms for mobile GPU */
-  * {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
   }
 }
