@@ -1937,16 +1937,25 @@ h3.shine-effect::before {
 @media (max-width: 768px) {
   /* DISABLE HEADER/NAV ANIMATIONS ONLY - Keep animations everywhere else! */
   
-  /* Stop the flash in the header nav */
-  .main-nav .nav-link-cta {
+  /* Stop ALL animations in the entire header - the shine sweep causes repaints! */
+  .main-nav,
+  .main-nav *,
+  .main-nav *::before,
+  .main-nav *::after {
     animation: none !important;
+  }
+  
+  /* Stop the flash in the header nav button */
+  .main-nav .nav-link-cta {
     background: linear-gradient(135deg, #f6c042 0%, #ffd666 50%, #f6c042 100%) !important;
     background-size: 100% 100% !important;
   }
   
-  /* Disable shine effect on header elements only */
-  .main-nav .shine-effect::before {
-    display: none !important;
+  /* Prevent overflow from causing layout shifts */
+  .main-nav,
+  .nav-container,
+  .main-nav * {
+    overflow: visible !important;
   }
   
   /* Optimize backdrop-filter on mobile - causes repaints */
@@ -1956,6 +1965,7 @@ h3.shine-effect::before {
     background: rgba(10, 14, 39, 0.98) !important;
     transform: translateZ(0);
     will-change: transform;
+    contain: layout style paint;
   }
   
   /* Prevent layout shifts on progress bar */
