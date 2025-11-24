@@ -48,6 +48,38 @@
     ]
   },
   {
+    "id": "sales-funnel-crm",
+    "name": "Sales Funnel Micro-CRM",
+    "price": 97,
+    "compressed": "Lightweight CRM for tracking leads",
+    "liveUrl": "",
+    "stripeUrl": "https://buy.stripe.com/aFabITavfc443ak0Ia",
+    "category": "software",
+    "features": [
+      "Simple pipeline tracking",
+      "AI lead scoring",
+      "Email integration",
+      "No complexity, just results",
+      "Lifetime access"
+    ]
+  },
+  {
+    "id": "sprint-dashboard",
+    "name": "90-Day Sprint Dashboard",
+    "price": 147,
+    "compressed": "Visual project management for execution",
+    "liveUrl": "https://tctc90daysprint.netlify.app",
+    "stripeUrl": "https://buy.stripe.com/aFa00b0UF7NO5is9eG",
+    "category": "software",
+    "features": [
+      "Sprint planning tools",
+      "Progress visualization",
+      "Team collaboration features",
+      "Turn goals into action",
+      "Lifetime access"
+    ]
+  },
+  {
     "id": "citadel",
     "name": "The Citadel 30-Day Platform",
     "price": 197,

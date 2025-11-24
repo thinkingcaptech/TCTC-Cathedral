@@ -31,27 +31,31 @@ permalink: /packages/
   <div class="container">
     
     <div class="text-center mb-4">
-      <h2>The Complete Bundle</h2>
-      <p class="text-muted">All 5 professional business tools at 38% off</p>
+      <h2>Bundle Packages - Save Up To 68%</h2>
+      <p class="text-muted">Get more, pay less, transform faster</p>
     </div>
     
-    <div class="grid grid-1" style="max-width: 600px; margin: 0 auto;">
+    <div class="grid grid-2" style="gap: var(--space-xl);">
       
       {# Loop through all packages #}
       {% for package in packages %}
       
       <div class="product-card">
+        {% if package.badge %}
+        <div style="background: {% if 'VIP' in package.badge %}var(--mission){% elif 'POPULAR' in package.badge %}linear-gradient(135deg, var(--primary), var(--secondary)){% else %}var(--gold){% endif %}; color: {% if 'BEGINNERS' in package.badge %}var(--dark){% else %}white{% endif %}; padding: 0.25rem 0.75rem; border-radius: var(--radius-sm); font-size: 0.75rem; font-weight: 700; margin-bottom: 0.5rem; display: inline-block;">
+          {{ package.badge }}
+        </div>
+        {% endif %}
+        
         <div class="card-header">
           <h3 class="card-title">{{ package.name }}</h3>
           <p class="card-price">{{ package.price | currency }}</p>
-          <p class="text-muted mb-0" style="text-decoration: line-through;">
-            Regular: {{ package.regularPrice | currency }}
+          <p class="text-muted mb-0" style="text-decoration: line-through; font-size: 0.95rem;">
+            Value: {{ package.regularPrice | currency }}
           </p>
         </div>
         
-        <p class="card-compressed">{{ package.compressed }}</p>
-        
-        <div style="background: var(--mission); padding: var(--space-sm); border-radius: var(--radius-md); margin-bottom: var(--space-md);">
+        <div style="background: var(--mission); padding: var(--space-sm); border-radius: var(--radius-md); margin: var(--space-md) 0;">
           <p class="mb-0" style="color: var(--text-light); font-weight: 600;">
             💰 Save {{ package.savings | currency }} ({{ package.savingsPercent }}% off)
           </p>
@@ -64,32 +68,67 @@ permalink: /packages/
           {% endfor %}
         </ul>
         
-        <h4 style="font-size: 1.125rem; margin-bottom: var(--space-sm); margin-top: var(--space-md);">Why This Formula:</h4>
-        <ul class="card-features" style="margin-bottom: var(--space-md);">
-          {% for feature in package.features %}
-          <li>{{ feature }}</li>
+        {% if package.pathA %}
+        <h4 style="font-size: 1.125rem; margin-top: var(--space-md); margin-bottom: var(--space-sm);">Choose Your Path:</h4>
+        <div style="background: var(--surface); padding: var(--space-sm); border-radius: var(--radius-md); margin-bottom: var(--space-sm);">
+          <p style="font-weight: 600; margin-bottom: 0.5rem;">PATH A: {{ package.pathA.name }}</p>
+          <ul class="card-features" style="font-size: 0.9rem;">
+            {% for item in package.pathA.includes %}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div style="background: var(--surface); padding: var(--space-sm); border-radius: var(--radius-md); margin-bottom: var(--space-sm);">
+          <p style="font-weight: 600; margin-bottom: 0.5rem;">PATH B: {{ package.pathB.name }}</p>
+          <ul class="card-features" style="font-size: 0.9rem;">
+            {% for item in package.pathB.includes %}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        <p style="font-weight: 600; margin-top: var(--space-sm);">BOTH PATHS INCLUDE:</p>
+        <ul class="card-features" style="font-size: 0.9rem; margin-bottom: var(--space-md);">
+          {% for item in package.bothInclude %}
+          <li>{{ item }}</li>
           {% endfor %}
         </ul>
+        {% endif %}
         
-        <p style="font-style: italic; color: var(--text-muted); margin-bottom: var(--space-md);">
-          <strong>Best for:</strong> {{ package.bestFor }}
+        {% if package.vipBenefits %}
+        <div style="background: var(--mission); padding: var(--space-md); border-radius: var(--radius-md); margin: var(--space-md) 0;">
+          <p style="font-weight: 600; margin-bottom: 0.5rem;">White-Glove Onboarding:</p>
+          <ul class="card-features" style="font-size: 0.9rem;">
+            {% for benefit in package.vipBenefits %}
+            <li>{{ benefit }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+        
+        <p style="font-style: italic; color: var(--text-muted); margin: var(--space-md) 0;">
+          <strong>Perfect for:</strong> {{ package.bestFor }}
         </p>
         
         <div class="card-actions">
-          {% if package.stripeUrl %}
-          <a href="{{ package.stripeUrl }}" class="cta-button gold-shimmer shine-effect">
-            Buy Now – {{ package.price | currency }}
+          <a href="{{ package.stripeUrl }}" class="cta-button gold-shimmer shine-effect ripple">
+            Get {{ package.name }} – {{ package.price | currency }}
           </a>
-          {% else %}
-          <a href="/contact/?package={{ package.name | urlencode }}" class="card-button-primary">
-            Get {{ package.name }}
-          </a>
-          {% endif %}
+          <p style="margin-top: var(--space-sm); font-size: 0.875rem; color: var(--gold);">
+            Use code <strong>HOLIDAY25</strong> for extra 25% off!
+          </p>
         </div>
       </div>
       
       {% endfor %}
       
+    </div>
+    
+    {# Promo Code Callout #}
+    <div style="background: var(--mission); padding: var(--space-lg); border-radius: var(--radius-lg); margin-top: var(--space-2xl); text-align: center; max-width: 600px; margin-left: auto; margin-right: auto;">
+      <h3 style="margin-bottom: var(--space-sm);">🎁 Limited Time Offer</h3>
+      <p style="font-size: 1.25rem; margin-bottom: var(--space-xs);">Use code: <strong style="color: var(--gold); font-size: 1.5rem;">HOLIDAY25</strong></p>
+      <p style="margin-bottom: 0;">Get an additional 25% off any bundle!</p>
+      <p style="font-size: 0.875rem; color: var(--text-muted); margin-top: var(--space-xs);">Expires: January 1st, 2026</p>
     </div>
     
   </div>
@@ -275,26 +314,27 @@ permalink: /packages/
     
     <div class="text-center mt-4">
       <p class="text-muted">
-        🏷️ Use code <strong>HOLIDAY25</strong> for 25% off all bundles • Expires January 1st, 2025
+        🏷️ Use code <strong>HOLIDAY25</strong> for 25% off all bundles • Expires January 1st, 2026
       </p>
     </div>
     
   </div>
 </section>
 
-{# Individual Options #}
+{# Can't Decide Section #}
 <section class="section section-secondary">
   <div class="container text-center">
     
-    <h2 class="mb-3">Prefer Individual Tools?</h2>
+    <h2 class="mb-3">Can't Decide?</h2>
     
     <p class="hero-subhead mb-4">
-      Not ready for a bundle? Browse individual tools and services
+      Start with individual products and upgrade to a bundle later
     </p>
     
     <div class="hero-ctas">
       <a href="/software/" class="btn btn-secondary btn-large">Browse Software</a>
-      <a href="/music/" class="btn btn-secondary btn-large">Explore Music Services</a>
+      <a href="/music/" class="btn btn-secondary btn-large">Explore Music</a>
+      <a href="/contact/" class="btn btn-secondary btn-large">Ask Questions</a>
     </div>
     
   </div>

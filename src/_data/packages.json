@@ -1,27 +1,123 @@
 [
   {
-    "id": "professional-bundle",
-    "name": "All 4 Professional Business Apps",
+    "id": "starter-kit",
+    "name": "Starter Kit",
     "price": 497,
-    "regularPrice": 888,
-    "compressed": "Complete professional software suite",
+    "regularPrice": 1538,
+    "compressed": "Essential tools to launch and grow",
+    "category": "bundle",
+    "stripeUrl": "https://buy.stripe.com/7sYeV5gTDc44dOY76y",
+    "badge": "BEST FOR BEGINNERS",
+    "includes": [
+      "Local SEO Blog Builder ($97)",
+      "Sales Funnel Micro-CRM ($97)",
+      "One Custom Song ($997)",
+      "Business Systems PDF Bundle ($297)",
+      "Both Books ($47) - FREE BONUS!"
+    ],
+    "savings": 1041,
+    "savingsPercent": 68,
+    "features": [
+      "Save $1,041 vs buying separately",
+      "Everything you need to start",
+      "Lifetime access to all tools",
+      "Full commercial rights to music"
+    ],
+    "bestFor": "Solo entrepreneurs, coaches, consultants starting out"
+  },
+  {
+    "id": "growth-formula",
+    "name": "Growth Formula",
+    "price": 997,
+    "regularPrice": 1500,
+    "compressed": "Complete software suite OR music package",
+    "category": "bundle",
+    "stripeUrl": "https://buy.stripe.com/5kQ7sDdHr1pq3ak9eG",
+    "badge": "MOST POPULAR",
+    "description": "Choose your path: All software tools OR complete music package. Both include the books.",
+    "pathA": {
+      "name": "All Software Tools",
+      "includes": [
+        "All 7 Software Tools",
+        "Lifetime access to everything",
+        "All future updates included"
+      ]
+    },
+    "pathB": {
+      "name": "Complete Music Package",
+      "includes": [
+        "5 Custom Songs (any genre)",
+        "Full commercial rights",
+        "Unlimited revisions"
+      ]
+    },
+    "bothInclude": [
+      "Both Books (FREE)",
+      "Priority support"
+    ],
+    "savings": 500,
+    "features": [
+      "Save $500+ vs buying separately",
+      "Choose software OR music path",
+      "Both books included free",
+      "Priority support access"
+    ],
+    "bestFor": "Growing businesses, agencies, established entrepreneurs"
+  },
+  {
+    "id": "complete-aichemy",
+    "name": "Complete AiChemy",
+    "price": 2497,
+    "regularPrice": 4000,
+    "compressed": "Everything + VIP white-glove experience",
+    "category": "bundle",
+    "stripeUrl": "https://buy.stripe.com/dRmcMXdHr3xyfX60Ia",
+    "badge": "VIP EXPERIENCE",
+    "includes": [
+      "All 7 Software Tools (lifetime)",
+      "5 Custom Songs (full rights)",
+      "Both Books (digital + published)",
+      "Business Systems PDF Bundle",
+      "VIP Priority Support",
+      "Direct line to William",
+      "Monthly strategy calls (3 months)",
+      "First access to new products"
+    ],
+    "vipBenefits": [
+      "Personal kickoff call",
+      "Custom implementation roadmap",
+      "Hands-on setup assistance",
+      "90-day success plan"
+    ],
+    "savings": 1500,
+    "features": [
+      "Save $1,500+ vs buying separately",
+      "Everything included",
+      "White-glove onboarding",
+      "3 months of strategy calls"
+    ],
+    "bestFor": "Serious entrepreneurs ready for complete transformation"
+  },
+  {
+    "id": "professional-bundle",
+    "name": "All 4 Apps Bundle",
+    "price": 497,
+    "regularPrice": 588,
+    "compressed": "Software-only legacy bundle",
     "category": "bundle",
     "stripeUrl": "https://buy.stripe.com/6oUbITdHr0lmbGQ3Um",
     "includes": [
-      "Local SEO Content Generator ($97)",
-      "The Offer Architect ($197)",
       "Business Health Diagnostic ($197)",
-      "The Citadel 30-Day Platform ($197)",
-      "Business Operations Manual Collection ($297)"
+      "Local SEO Builder ($97)",
+      "The Offer Architect ($197)",
+      "The Citadel 30-Day ($97)"
     ],
-    "savings": 391,
-    "savingsPercent": 44,
+    "savings": 91,
     "features": [
-      "Save $391 vs buying separately",
+      "Save $91 vs buying separately",
       "Lifetime access to all tools",
-      "All updates included",
-      "Direct support from William"
+      "All updates included"
     ],
-    "bestFor": "Serious entrepreneurs ready to transform their business"
+    "bestFor": "Software-focused entrepreneurs"
   }
 ]

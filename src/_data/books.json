@@ -1,0 +1,56 @@
+[
+  {
+    "id": "alchemy-of-influence",
+    "name": "The Alchemy of Influence",
+    "price": 27,
+    "compressed": "Master ethical persuasion and lasting impact",
+    "stripeUrl": "https://buy.stripe.com/7sYdR1gTD0lmh1afD4",
+    "category": "book",
+    "coverImage": "/assets/art-of-influence.png",
+    "description": "Discover the systematic approach to building influence through pattern coherence, emotional resonance, and standing waves of trust.",
+    "features": [
+      "Digital Pre-Release Edition",
+      "Instant Download",
+      "Lifetime Updates Included",
+      "Final published version free when released"
+    ]
+  },
+  {
+    "id": "architecture-of-resonance",
+    "name": "The Architecture of Resonance",
+    "price": 27,
+    "compressed": "Build communication systems that endure",
+    "stripeUrl": "https://buy.stripe.com/bJefZ9bzj1pq7qA3Um",
+    "category": "book",
+    "coverImage": "/assets/art-of-resonance.png",
+    "description": "Learn the principles of signal over noise, story as carrier wave, and invisible design that creates lasting impact.",
+    "features": [
+      "Digital Pre-Release Edition",
+      "Instant Download",
+      "Lifetime Updates Included",
+      "Final published version free when released"
+    ]
+  },
+  {
+    "id": "books-bundle",
+    "name": "Both Books Bundle",
+    "price": 47,
+    "regularPrice": 54,
+    "compressed": "Complete Alchemy Series",
+    "stripeUrl": "https://buy.stripe.com/aFaeV5cDn9VW12cbmO",
+    "category": "book-bundle",
+    "savings": 7,
+    "includes": [
+      "The Alchemy of Influence",
+      "The Architecture of Resonance",
+      "Lifetime updates to both",
+      "Final published versions free when released"
+    ],
+    "features": [
+      "Save $7 vs buying separately",
+      "Both complete frameworks",
+      "Digital Pre-Release Editions",
+      "All future updates included"
+    ]
+  }
+]
