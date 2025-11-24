@@ -33,18 +33,20 @@
   },
   {
     "id": "business-health",
-    "name": "Business Health Diagnostic",
+    "name": "AI-Powered Business Assessment Tool",
     "price": 197,
-    "compressed": "Diagnose and improve your business",
+    "compressed": "Automate client intake with 4-pillar diagnostic system",
     "liveUrl": "",
     "stripeUrl": "https://buy.stripe.com/8x200bdHr0lmaCM0IadAk08",
     "category": "software",
     "features": [
-      "50+ business metrics analyzed",
-      "Bottleneck identification",
-      "Priority action roadmap",
-      "Benchmark against competitors",
-      "Monthly health tracking"
+      "Multi-step questionnaire system",
+      "AI-generated recommendations via Gemini",
+      "Automated scoring engine",
+      "Professional results dashboard",
+      "Firebase backend included",
+      "White-label ready",
+      "Replaces $2K+ manual assessments"
     ]
   },
   {
