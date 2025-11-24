@@ -369,12 +369,16 @@ strong {
   background: var(--mission);
   padding: var(--space-md) 0;
   border-bottom: 2px solid var(--mission-dark);
+  min-height: 120px; /* Prevent layout shift */
+  display: flex;
+  align-items: center;
 }
 
 .progress-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 var(--space-lg);
+  width: 100%;
 }
 
 .progress-bar {
@@ -398,6 +402,8 @@ strong {
   font-weight: 700;
   font-size: 0.875rem;
   color: var(--bg-dark);
+  will-change: width; /* Optimize for GPU */
+  transform: translateZ(0); /* Force GPU acceleration */
 }
 
 .progress-text {
@@ -1922,4 +1928,32 @@ h3.shine-effect::before {
 .portfolio-cta p {
   font-size: 1.125rem;
   margin-bottom: 1.5rem;
+}
+
+/* ============================================
+   MOBILE PERFORMANCE OPTIMIZATIONS
+   ============================================ */
+
+@media (max-width: 768px) {
+  /* Reduce animation intensity on mobile to prevent jumps */
+  .shimmer::before,
+  .shimmer::after,
+  [class*="gradient-"],
+  .progress-bar,
+  .countdown-timer {
+    animation-duration: 5s !important; /* Slower = less CPU */
+  }
+  
+  /* Prevent layout shifts */
+  .progress-section {
+    contain: layout style paint;
+  }
+  
+  /* Optimize transforms for mobile GPU */
+  * {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
 }
