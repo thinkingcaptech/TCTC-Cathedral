@@ -1935,25 +1935,27 @@ h3.shine-effect::before {
    ============================================ */
 
 @media (max-width: 768px) {
-  /* DISABLE shine effect on mobile - causes jumps */
+  /* DISABLE ALL ANIMATIONS ON MOBILE */
+  
+  /* Disable shine effects */
   .shine-effect::before {
     display: none !important;
   }
   
-  /* Disable shimmer animations on mobile */
+  /* Disable shimmer animations */
   .shimmer::before,
   .shimmer::after {
     animation: none !important;
   }
   
-  /* DISABLE progress bar shine animation */
+  /* DISABLE progress bar shine */
   .progress-fill {
     animation: none !important;
     background: linear-gradient(90deg, #f6c042 0%, #ffd666 50%, #f6c042 100%) !important;
     background-size: 100% 100% !important;
   }
   
-  /* DISABLE nav button shimmer - the flash in the header! */
+  /* DISABLE button shimmer */
   .nav-link-cta,
   .btn-primary,
   .card-button-primary,
@@ -1963,14 +1965,35 @@ h3.shine-effect::before {
     background-size: 100% 100% !important;
   }
   
-  /* Reduce other animation intensity on mobile */
-  [class*="gradient-"],
+  /* DISABLE gradient animations - THIS CAUSES THE FLASH! */
+  .section-primary,
+  .hero,
+  .gradient-border,
+  [class*="gradient-"] {
+    animation: none !important;
+    background-size: 100% 100% !important;
+  }
+  
+  /* Disable countdown pulse */
   .countdown-timer {
-    animation-duration: 5s !important;
+    animation: none !important;
+  }
+  
+  /* Optimize backdrop-filter on mobile */
+  .main-nav {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    background: rgba(10, 14, 39, 0.98) !important;
   }
   
   /* Prevent layout shifts */
   .progress-section {
     contain: layout style paint;
+  }
+  
+  /* Force GPU acceleration for smooth scrolling */
+  .main-nav {
+    transform: translateZ(0);
+    will-change: transform;
   }
 }
