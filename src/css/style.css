@@ -1438,3 +1438,320 @@ audio::-webkit-media-controls-pause-button {
     text-align: left;
   }
 }
+
+/* ============================================
+   BUTTON HOVER FIX - TEXT VISIBILITY GUARANTEE
+   ============================================ */
+
+/* Force text visibility on ALL buttons */
+button,
+.btn,
+.btn-primary,
+.btn-secondary,
+.cta-button,
+.card-button-primary,
+.nav-link-cta,
+.email-submit,
+.form-button {
+  color: inherit;
+}
+
+button *,
+.btn *,
+.btn-primary *,
+.btn-secondary *,
+.cta-button *,
+.card-button-primary *,
+.nav-link-cta *,
+.email-submit *,
+.form-button * {
+  color: inherit !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Gold buttons ALWAYS have dark text */
+.btn-primary,
+.cta-button,
+.card-button-primary,
+.nav-link-cta,
+.email-submit {
+  color: #0a0e27 !important;
+  font-weight: 700;
+  text-shadow: none;
+}
+
+.btn-primary:hover,
+.cta-button:hover,
+.card-button-primary:hover,
+.nav-link-cta:hover,
+.email-submit:hover {
+  color: #0a0e27 !important;
+  font-weight: 800;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;
+  transform: translateY(-2px) scale(1.02);
+}
+
+.btn-primary:active,
+.cta-button:active,
+.card-button-primary:active,
+.nav-link-cta:active,
+.email-submit:active {
+  color: #0a0e27 !important;
+  font-weight: 800;
+  transform: translateY(0) scale(0.98);
+}
+
+/* Glass buttons ALWAYS have light text */
+.btn-secondary,
+.glass-button {
+  color: #f8f9fa !important;
+  font-weight: 600;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.btn-secondary:hover,
+.glass-button:hover {
+  color: #ffffff !important;
+  font-weight: 700;
+  text-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.4),
+    0 0 20px rgba(102, 126, 234, 0.8);
+}
+
+/* ============================================
+   FIBONACCI SHINE EFFECT - 33 SECOND CYCLE
+   ============================================ */
+
+/* Fibonacci timing: 1, 1, 2, 3, 5, 8, 13 = 33 seconds */
+@keyframes fibonacci-shine {
+  0% {
+    left: -150%;
+    opacity: 0;
+  }
+  
+  3.03% { /* 1 second */
+    left: -50%;
+    opacity: 1;
+  }
+  
+  6.06% { /* 2 seconds (1+1) */
+    left: 50%;
+    opacity: 1;
+  }
+  
+  12.12% { /* 4 seconds (1+1+2) */
+    left: 150%;
+    opacity: 0;
+  }
+  
+  21.21% { /* 7 seconds (1+1+2+3) */
+    left: -150%;
+    opacity: 0;
+  }
+  
+  36.36% { /* 12 seconds (1+1+2+3+5) */
+    left: -50%;
+    opacity: 1;
+  }
+  
+  60.61% { /* 20 seconds (1+1+2+3+5+8) */
+    left: 50%;
+    opacity: 1;
+  }
+  
+  100% { /* 33 seconds - full cycle */
+    left: 150%;
+    opacity: 0;
+  }
+}
+
+/* Base shine effect class */
+.shine-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine-effect::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  animation: fibonacci-shine 33s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 10;
+  will-change: left, opacity;
+  transform: translateZ(0) skewX(-25deg);
+  backface-visibility: hidden;
+}
+
+/* Gold button shine (brighter) */
+.btn-primary.shine-effect::before,
+.cta-button.shine-effect::before,
+.card-button-primary.shine-effect::before,
+.nav-link-cta.shine-effect::before {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+/* Purple element shine */
+.purple-shine.shine-effect::before {
+  background: linear-gradient(
+    90deg,
+    rgba(102, 126, 234, 0) 0%,
+    rgba(102, 126, 234, 0.6) 50%,
+    rgba(102, 126, 234, 0) 100%
+  );
+}
+
+/* Heading shines with different intensities */
+h1.shine-effect::before {
+  background: linear-gradient(
+    90deg,
+    rgba(246, 192, 66, 0) 0%,
+    rgba(246, 192, 66, 0.5) 50%,
+    rgba(246, 192, 66, 0) 100%
+  );
+  mix-blend-mode: overlay;
+  animation-delay: 2s;
+}
+
+h2.shine-effect::before {
+  width: 40%;
+  background: linear-gradient(
+    90deg,
+    rgba(102, 126, 234, 0) 0%,
+    rgba(102, 126, 234, 0.4) 50%,
+    rgba(102, 126, 234, 0) 100%
+  );
+  mix-blend-mode: overlay;
+  animation-delay: 3s;
+}
+
+h3.shine-effect::before {
+  width: 30%;
+  background: linear-gradient(
+    90deg,
+    rgba(246, 192, 66, 0) 0%,
+    rgba(246, 192, 66, 0.3) 50%,
+    rgba(246, 192, 66, 0) 100%
+  );
+  mix-blend-mode: overlay;
+  animation-delay: 5s;
+}
+
+/* Card shine effect */
+.glass-card.shine-effect::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  animation: fibonacci-shine 33s ease-in-out infinite;
+  animation-delay: 5s;
+  pointer-events: none;
+  z-index: 5;
+}
+
+/* Logo shine */
+.nav-logo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 200px;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  animation: fibonacci-shine 33s ease-in-out infinite;
+  animation-delay: 8s;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Staggered Fibonacci cascade */
+.btn-primary.shine-effect::before,
+.cta-button.shine-effect::before {
+  animation-delay: 0s;
+}
+
+.btn-secondary.shine-effect::before,
+.glass-button.shine-effect::before {
+  animation-delay: 1s;
+}
+
+/* Hover interaction - speed up shine */
+.btn-primary:hover.shine-effect::before,
+.cta-button:hover.shine-effect::before {
+  animation: fibonacci-shine 8s ease-in-out infinite;
+}
+
+.glass-card:hover.shine-effect::after {
+  animation: fibonacci-shine 13s ease-in-out infinite;
+}
+
+h1:hover.shine-effect::before {
+  animation: fibonacci-shine 5s ease-in-out infinite;
+}
+
+/* Progress bar shine */
+.progress-bar.shine-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-bar.shine-effect::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  animation: fibonacci-shine 33s ease-in-out infinite;
+  animation-delay: 3s;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .shine-effect::before,
+  .shine-effect::after,
+  .nav-logo::before {
+    animation: none !important;
+  }
+}
