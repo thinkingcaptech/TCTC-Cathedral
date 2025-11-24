@@ -1524,26 +1524,21 @@ button *,
    SHINE EFFECT - 5 SECOND CYCLE
    ============================================ */
 
-/* Simple 5 second shine cycle */
+/* Fast 1.32 second shine flash */
 @keyframes fibonacci-shine {
   0% {
     left: -150%;
     opacity: 0;
   }
   
-  20% {
-    left: -50%;
+  30% {
+    left: 0%;
     opacity: 1;
   }
   
-  50% {
-    left: 50%;
+  70% {
+    left: 100%;
     opacity: 1;
-  }
-  
-  80% {
-    left: 150%;
-    opacity: 0;
   }
   
   100% {
@@ -1572,7 +1567,7 @@ button *,
     rgba(255, 255, 255, 0) 100%
   );
   transform: skewX(-25deg);
-  animation: fibonacci-shine 5s ease-in-out infinite;
+  animation: fibonacci-shine 1.32s ease-in-out infinite;
   pointer-events: none;
   z-index: 10;
   will-change: left, opacity;
@@ -1654,8 +1649,8 @@ h3.shine-effect::before {
     rgba(255, 255, 255, 0) 100%
   );
   transform: skewX(-25deg);
-  animation: fibonacci-shine 5s ease-in-out infinite;
-  animation-delay: 1s;
+  animation: fibonacci-shine 1.32s ease-in-out infinite;
+  animation-delay: 0.2s;
   pointer-events: none;
   z-index: 5;
 }
@@ -1675,8 +1670,8 @@ h3.shine-effect::before {
     rgba(255, 255, 255, 0) 100%
   );
   transform: skewX(-25deg);
-  animation: fibonacci-shine 5s ease-in-out infinite;
-  animation-delay: 2s;
+  animation: fibonacci-shine 1.32s ease-in-out infinite;
+  animation-delay: 0.4s;
   pointer-events: none;
   z-index: 10;
 }
@@ -1714,8 +1709,8 @@ h3.shine-effect::before {
     rgba(255, 255, 255, 0) 100%
   );
   transform: skewX(-25deg);
-  animation: fibonacci-shine 5s ease-in-out infinite;
-  animation-delay: 1.5s;
+  animation: fibonacci-shine 1.32s ease-in-out infinite;
+  animation-delay: 0.3s;
   pointer-events: none;
   z-index: 10;
 }
