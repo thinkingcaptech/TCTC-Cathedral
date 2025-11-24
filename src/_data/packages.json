@@ -6,7 +6,7 @@
     "regularPrice": 1535,
     "compressed": "Essential tools to launch and grow",
     "category": "bundle",
-    "stripeUrl": "https://buy.stripe.com/7sYeV5gTDc44dOY76y",
+    "stripeUrl": "https://buy.stripe.com/7sYeV5gTDc44dOY76ydAk0k",
     "badge": "BEST FOR BEGINNERS",
     "includes": [
       "Local SEO Blog Builder ($97)",
@@ -32,7 +32,7 @@
     "regularPrice": 1500,
     "compressed": "Complete software suite OR music package",
     "category": "bundle",
-    "stripeUrl": "https://buy.stripe.com/5kQ7sDdHr1pq3ak9eG",
+    "stripeUrl": "https://buy.stripe.com/5kQ7sDdHr1pq3ak9eGdAk0m",
     "badge": "MOST POPULAR",
     "description": "Choose your path: All software tools OR complete music package. Both include the books.",
     "pathA": {
@@ -71,7 +71,7 @@
     "regularPrice": 6000,
     "compressed": "Everything + VIP white-glove experience",
     "category": "bundle",
-    "stripeUrl": "https://buy.stripe.com/dRmcMXdHr3xyfX60Ia",
+    "stripeUrl": "https://buy.stripe.com/dRmcMXdHr3xyfX60IadAk0n",
     "badge": "VIP EXPERIENCE",
     "includes": [
       "All 7 Software Tools (lifetime)",
