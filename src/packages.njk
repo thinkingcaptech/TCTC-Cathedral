@@ -31,11 +31,11 @@ permalink: /packages/
   <div class="container">
     
     <div class="text-center mb-4">
-      <h2>Choose Your Formula</h2>
-      <p class="text-muted">Three levels. One goal: Complete transformation.</p>
+      <h2>The Complete Bundle</h2>
+      <p class="text-muted">All 5 professional business tools at 38% off</p>
     </div>
     
-    <div class="grid grid-3">
+    <div class="grid grid-1" style="max-width: 600px; margin: 0 auto;">
       
       {# Loop through all packages #}
       {% for package in packages %}
@@ -76,9 +76,15 @@ permalink: /packages/
         </p>
         
         <div class="card-actions">
+          {% if package.stripeUrl %}
+          <a href="{{ package.stripeUrl }}" class="cta-button gold-shimmer shine-effect">
+            Buy Now – {{ package.price | currency }}
+          </a>
+          {% else %}
           <a href="/contact/?package={{ package.name | urlencode }}" class="card-button-primary">
             Get {{ package.name }}
           </a>
+          {% endif %}
         </div>
       </div>
       
@@ -89,70 +95,49 @@ permalink: /packages/
   </div>
 </section>
 
-{# Comparison Table #}
+{# Build Your Own Bundle #}
 <section class="section section-secondary">
   <div class="container">
     
     <div class="text-center mb-4">
-      <h2>Compare The Formulas</h2>
-      <p class="text-muted">See exactly what each bundle includes</p>
+      <h2>Or Build Your Own Bundle</h2>
+      <p class="text-muted">Mix and match individual tools for a custom solution</p>
     </div>
     
-    <div style="overflow-x: auto;">
-      <table style="width: 100%; border-collapse: collapse; background: var(--bg-card); border-radius: var(--radius-lg); overflow: hidden;">
-        <thead>
-          <tr style="background: var(--primary); color: var(--text-light);">
-            <th style="padding: var(--space-md); text-align: left;">Feature</th>
-            <th style="padding: var(--space-md); text-align: center;">Starter Kit</th>
-            <th style="padding: var(--space-md); text-align: center;">Growth Formula</th>
-            <th style="padding: var(--space-md); text-align: center;">Complete AiChemy</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr style="border-bottom: 1px solid var(--bg-medium);">
-            <td style="padding: var(--space-md);">Software Tools</td>
-            <td style="padding: var(--space-md); text-align: center;">2 tools</td>
-            <td style="padding: var(--space-md); text-align: center;">All 7 tools</td>
-            <td style="padding: var(--space-md); text-align: center;">All 7 tools</td>
-          </tr>
-          <tr style="border-bottom: 1px solid var(--bg-medium);">
-            <td style="padding: var(--space-md);">Custom Music</td>
-            <td style="padding: var(--space-md); text-align: center;">1 song</td>
-            <td style="padding: var(--space-md); text-align: center;">3 songs</td>
-            <td style="padding: var(--space-md); text-align: center;">Full package</td>
-          </tr>
-          <tr style="border-bottom: 1px solid var(--bg-medium);">
-            <td style="padding: var(--space-md);">Business Systems PDFs</td>
-            <td style="padding: var(--space-md); text-align: center;">✓</td>
-            <td style="padding: var(--space-md); text-align: center;">✓</td>
-            <td style="padding: var(--space-md); text-align: center;">✓</td>
-          </tr>
-          <tr style="border-bottom: 1px solid var(--bg-medium);">
-            <td style="padding: var(--space-md);">Email Support</td>
-            <td style="padding: var(--space-md); text-align: center;">Standard</td>
-            <td style="padding: var(--space-md); text-align: center;">Priority</td>
-            <td style="padding: var(--space-md); text-align: center;">3 months priority</td>
-          </tr>
-          <tr style="border-bottom: 1px solid var(--bg-medium);">
-            <td style="padding: var(--space-md);">Strategy Calls</td>
-            <td style="padding: var(--space-md); text-align: center;">—</td>
-            <td style="padding: var(--space-md); text-align: center;">Quarterly</td>
-            <td style="padding: var(--space-md); text-align: center;">Monthly</td>
-          </tr>
-          <tr style="border-bottom: 1px solid var(--bg-medium);">
-            <td style="padding: var(--space-md);">Future Updates</td>
-            <td style="padding: var(--space-md); text-align: center;">✓</td>
-            <td style="padding: var(--space-md); text-align: center;">✓</td>
-            <td style="padding: var(--space-md); text-align: center;">✓ First priority</td>
-          </tr>
-          <tr>
-            <td style="padding: var(--space-md);"><strong>Savings</strong></td>
-            <td style="padding: var(--space-md); text-align: center; color: var(--gold); font-weight: 700;">$194 (28%)</td>
-            <td style="padding: var(--space-md); text-align: center; color: var(--gold); font-weight: 700;">$392 (28%)</td>
-            <td style="padding: var(--space-md); text-align: center; color: var(--gold); font-weight: 700;">$1,392 (36%)</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="grid grid-3">
+      
+      {# Loop through all products #}
+      {% for product in products %}
+      
+      <div class="product-card">
+        <div class="card-header">
+          <h3 class="card-title" style="font-size: 1.25rem;">{{ product.name }}</h3>
+          <p class="card-price">{{ product.price | currency }}</p>
+        </div>
+        
+        <p class="card-compressed" style="font-size: 0.95rem;">{{ product.compressed }}</p>
+        
+        <div class="card-actions">
+          {% if product.stripeUrl %}
+          <a href="{{ product.stripeUrl }}" class="cta-button gold-shimmer shine-effect">
+            Buy Now – {{ product.price | currency }}
+          </a>
+          {% else %}
+          <a href="/contact/?product={{ product.name | urlencode }}" class="glass-button shine-effect">
+            Learn More
+          </a>
+          {% endif %}
+        </div>
+      </div>
+      
+      {% endfor %}
+      
+    </div>
+    
+    <div class="text-center mt-4">
+      <p style="font-size: 1.125rem; color: var(--gold); font-weight: 600;">
+        💡 Save {{ packages[0].savings | currency }} when you buy the bundle instead!
+      </p>
     </div>
     
   </div>

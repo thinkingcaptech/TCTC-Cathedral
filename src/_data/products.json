@@ -1,10 +1,11 @@
 [
   {
     "id": "local-seo-builder",
-    "name": "Local SEO Blog Builder",
+    "name": "Local SEO Content Generator",
     "price": 97,
     "compressed": "Generate local content that ranks",
     "liveUrl": "https://local-keyword-blog-builder.web.app",
+    "stripeUrl": "https://buy.stripe.com/8x29AL32NgkkeT2ez0",
     "category": "software",
     "features": [
       "Generate 10 blog posts in 10 minutes",
@@ -20,6 +21,7 @@
     "price": 197,
     "compressed": "AI-powered offer creation",
     "liveUrl": "",
+    "stripeUrl": "https://buy.stripe.com/28EaEP32N2tuaCM8aC",
     "category": "software",
     "features": [
       "Value proposition builder",
@@ -35,6 +37,7 @@
     "price": 197,
     "compressed": "Diagnose and improve your business",
     "liveUrl": "",
+    "stripeUrl": "https://buy.stripe.com/8x200bdHr0lmaCM0Ia",
     "category": "software",
     "features": [
       "50+ business metrics analyzed",
@@ -45,63 +48,35 @@
     ]
   },
   {
-    "id": "sales-crm",
-    "name": "Sales Funnel Micro-CRM",
-    "price": 97,
-    "compressed": "Lightweight customer tracking",
-    "liveUrl": "",
-    "category": "software",
-    "features": [
-      "Simple pipeline management",
-      "Contact tracking (no bloat)",
-      "Follow-up reminders",
-      "Email integration",
-      "Mobile-friendly interface"
-    ]
-  },
-  {
     "id": "citadel",
-    "name": "The Citadel",
+    "name": "The Citadel 30-Day Platform",
     "price": 197,
     "compressed": "Gamified influence training",
     "liveUrl": "https://book-learning-module.web.app",
+    "stripeUrl": "https://buy.stripe.com/dRmfZ95aV9VWbGQ9eG",
     "category": "software",
     "features": [
       "Architecture of Resonance framework",
       "Interactive learning modules",
       "Progress tracking & achievements",
       "Practical business exercises",
-      "Lifetime access ($47-$197 tiers)"
+      "30-day gamified experience"
     ]
   },
   {
-    "id": "sprint-dashboard",
-    "name": "90-Day Sprint Dashboard",
-    "price": 147,
-    "compressed": "Visual goal tracking",
-    "liveUrl": "https://tctc90daysprint.netlify.app",
-    "category": "software",
-    "features": [
-      "Set quarterly objectives",
-      "Daily progress visualization",
-      "Milestone celebrations",
-      "Accountability metrics",
-      "Export progress reports"
-    ]
-  },
-  {
-    "id": "business-systems-pdf",
-    "name": "Business Systems PDF Bundle",
+    "id": "business-manuals",
+    "name": "Business Operations Manual Collection",
     "price": 297,
-    "compressed": "Industry-specific operations",
+    "compressed": "Complete system documentation PDFs",
     "liveUrl": "",
+    "stripeUrl": "https://buy.stripe.com/28E4gravfecc26g76y",
     "category": "software",
     "features": [
-      "20+ business system templates",
-      "Industry-specific customization",
-      "Step-by-step implementation",
-      "Checklist and worksheets",
-      "Editable PDF format"
+      "Complete business systems documentation",
+      "Ready-to-implement processes",
+      "Customizable templates",
+      "PDF format for easy sharing",
+      "Covers all core operations"
     ]
   }
 ]
