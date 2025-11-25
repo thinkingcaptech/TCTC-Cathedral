@@ -4,7 +4,8 @@
     "name": "Local SEO Content Generator",
     "price": 97,
     "compressed": "Generate local content that ranks",
-    "liveUrl": "https://local-keyword-blog-builder.web.app",
+    "liveUrl": "",
+    "videoUrl": "https://youtu.be/2d6u_bFwIdA",
     "stripeUrl": "https://buy.stripe.com/8x29AL32NgkkeT2ez0dAk07",
     "category": "software",
     "features": [
@@ -21,6 +22,7 @@
     "price": 197,
     "compressed": "AI-powered offer creation",
     "liveUrl": "",
+    "videoUrl": "https://youtu.be/vkh8puWMiYc",
     "stripeUrl": "https://buy.stripe.com/28EaEP32N2tuaCM8aCdAk06",
     "category": "software",
     "features": [
@@ -37,6 +39,7 @@
     "price": 197,
     "compressed": "Automate client intake with 4-pillar diagnostic system",
     "liveUrl": "",
+    "videoUrl": "https://youtu.be/67nFPAPfFYs",
     "stripeUrl": "https://buy.stripe.com/8x200bdHr0lmaCM0IadAk08",
     "category": "software",
     "features": [
@@ -55,6 +58,7 @@
     "price": 97,
     "compressed": "Lightweight CRM for tracking leads",
     "liveUrl": "",
+    "videoUrl": "https://youtu.be/4ooIqhoNKrY",
     "stripeUrl": "https://buy.stripe.com/aFabITavfc443ak0IadAk0o",
     "category": "software",
     "features": [
@@ -70,7 +74,7 @@
     "name": "90-Day Sprint Dashboard",
     "price": 147,
     "compressed": "Visual project management for execution",
-    "liveUrl": "https://tctc90daysprint.netlify.app",
+    "liveUrl": "",
     "stripeUrl": "https://buy.stripe.com/aFa00b0UF7NO5is9eGdAk0l",
     "category": "software",
     "features": [
@@ -86,7 +90,8 @@
     "name": "The Citadel 30-Day Platform",
     "price": 197,
     "compressed": "Gamified influence training",
-    "liveUrl": "https://book-learning-module.web.app",
+    "liveUrl": "",
+    "videoUrl": "https://youtu.be/2d6u_bFwIdA",
     "stripeUrl": "https://buy.stripe.com/eVq4gr8n7c448uEduWdAk0r",
     "category": "software",
     "features": [

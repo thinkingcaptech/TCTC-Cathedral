@@ -36,6 +36,13 @@
   {# CTAs - Transformation Points #}
   <div class="card-actions">
     
+    {# Video Walkthrough Link (if available) #}
+    {% if product.videoUrl %}
+    <a href="{{ product.videoUrl }}" target="_blank" rel="noopener noreferrer" class="card-button-secondary">
+      Watch Demo Video →
+    </a>
+    {% endif %}
+    
     {# Live Demo Link (if available) #}
     {% if product.liveUrl %}
     <a href="{{ product.liveUrl }}" target="_blank" rel="noopener noreferrer" class="card-button-secondary">
