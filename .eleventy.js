@@ -15,6 +15,7 @@ module.exports = function(eleventyConfig) {
   // Preserve the original frequencies (CSS, images, fonts)
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy("src/js");
   
   // WATCH FOR CHANGES: Live reload during development
   // Standing waves require continuous observation
