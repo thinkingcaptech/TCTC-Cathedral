@@ -1,7 +1,7 @@
 /**
  * MODERN AICHEMY - HARMONIC CSS SYSTEM
  * 
- * Following the Architecture of Resonance:
+ * Formerly referenced 'Architecture of Resonance' – now simplified working CSS system.
  * Design Invisibility = 1 / Cognitive Friction
  * 
  * Color as Frequency - Three-Layer System:
@@ -85,6 +85,9 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
+   MOBILE PERFORMANCE OPTIMIZATIONS
+   ============================================ */
+
 }
 
 body {

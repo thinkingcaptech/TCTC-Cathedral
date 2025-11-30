@@ -17,13 +17,13 @@
   },
   {
     "id": "architecture-of-resonance",
-    "name": "The Architecture of Resonance",
+    "name": "Systems Resonance Draft (Working Title)",
     "price": 27,
     "compressed": "Build communication systems that endure",
     "stripeUrl": "https://buy.stripe.com/bJefZ9bzj1pq7qA3UmdAk0h",
     "category": "book",
     "coverImage": "/assets/art-of-resonance.png",
-    "description": "Learn the principles of signal over noise, story as carrier wave, and invisible design that creates lasting impact.",
+    "description": "Working draft exploring signal vs noise, narrative structure, and durable communication design. Pre-release manuscript still evolving.",
     "features": [
       "Digital Pre-Release Edition",
       "Instant Download",
@@ -42,7 +42,7 @@
     "savings": 7,
     "includes": [
       "The Alchemy of Influence",
-      "The Architecture of Resonance",
+      "Systems Resonance Draft (Working Title)",
       "Lifetime updates to both",
       "Final published versions free when released"
     ],
