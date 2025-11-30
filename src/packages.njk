@@ -159,7 +159,7 @@ permalink: /packages/
         <div class="card-actions">
           {% if product.stripeUrl %}
           <a href="{{ product.stripeUrl }}" class="cta-button gold-shimmer shine-effect">
-            Buy Now – {{ product.price | currency }}
+            Pre-Order – {{ product.price | currency }}
           </a>
           {% else %}
           <a href="/contact/?product={{ product.name | urlencode }}" class="glass-button shine-effect">
@@ -175,7 +175,7 @@ permalink: /packages/
     
     <div class="text-center mt-4">
       <p style="font-size: 1.125rem; color: var(--gold); font-weight: 600;">
-        💡 Save {{ packages[0].savings | currency }} when you buy the bundle instead!
+        💡 Pre-Sale: Best value when bundling tools and music.
       </p>
     </div>
     

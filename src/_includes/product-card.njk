@@ -58,10 +58,10 @@
     </a>
     {% endif %}
     
-    {# Primary CTA - Stripe Purchase or Contact #}
+    {# Primary CTA - Pre-Sale or Contact #}
     {% if product.stripeUrl %}
     <a href="{{ product.stripeUrl }}" class="cta-button gold-shimmer shine-effect">
-      Buy Now – {{ product.price | currency }}
+      Pre-Order – {{ product.price | currency }}
     </a>
     {% else %}
     <a href="/contact/?product={{ product.name | urlencode }}" class="card-button-primary">
