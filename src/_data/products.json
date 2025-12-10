@@ -52,8 +52,8 @@
     ]
   },
   {
-    "id": "sales-funnel-crm",
-    "name": "Sales Funnel Micro-CRM",
+    "id": "sales-practice-tool",
+    "name": "Sales Practice Tool",
     "price": 97,
     "compressed": "Lightweight CRM for tracking leads",
     "liveUrl": "",
@@ -85,8 +85,8 @@
     ]
   },
   {
-    "id": "citadel",
-    "name": "The Citadel 30-Day Platform",
+    "id": "content-generator",
+    "name": "Content Generator",
     "price": 197,
     "compressed": "Gamified influence training",
     "liveUrl": "",
@@ -94,7 +94,7 @@
     "stripeUrl": "https://buy.stripe.com/eVq4gr8n7c448uEduWdAk0r",
     "category": "software",
     "features": [
-      "Core systems resonance framework (working draft)",
+      "AI customer avatar creation",
       "Interactive learning modules",
       "Progress tracking & achievements",
       "Practical business exercises",

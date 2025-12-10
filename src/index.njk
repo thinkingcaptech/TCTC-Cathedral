@@ -5,98 +5,198 @@ description: "Raising $10,000 to launch Modern AiChemy — AI-powered tools and 
 ---
 
 {# 
-  HOMEPAGE - THE RESONANCE CHAMBER
-  Following the Hero's Journey (Inverted - Customer is Hero)
-  Three-Act Structure: Equilibrium → Turbulence → Integration
-#}
 
-{# ============================================
-   ACT I - EQUILIBRIUM & IGNITION (Setup)
-   ============================================ #}
+  ---
+  layout: layout.njk
+  title: "TCTC Business Suite | AI-Powered Tools for Small Businesses"
+  description: "Six tools. One dashboard. Your API keys. No per-word pricing. Built by a developer who actually runs businesses."
+  ---
 
-<section class="hero">
-  <div class="container">
-    <div class="hero-content">
-      
-      {# The Opening - Calm before transformation #}
-      <h1 class="shine-effect">Welcome to the Digital Alchemist's Laboratory</h1>
-      
-      <p class="hero-subhead">
-        Where AI Meets Alchemy — Transforming Business Problems Into Gold
-      </p>
-      <p class="company-name" style="font-weight: bold; font-size: 1.1rem; margin-top: 0.5rem; color: var(--primary);">
-        Powered by Thinking Cap Trinity Consulting LLC
-      </p>
-      
-      {# The Inciting Incident - Three paths appear #}
-      <div class="hero-ctas">
-        <a href="/software/" class="btn btn-primary btn-large shine-effect">Browse Digital Tools</a>
-        <a href="/music/" class="btn btn-primary btn-large shine-effect">Explore Audio Alchemy</a>
-        <a href="/packages/" class="btn btn-secondary btn-large shine-effect">See Complete Formulas</a>
-      </div>
-      
+  <!-- SECTION 1: HERO -->
+  <section style="background: #0F172A; color: #F8FAFC; padding: 5rem 2rem; text-align: center; font-family: 'Inter', sans-serif;">
+    <nav style="display: flex; justify-content: center; gap: 2rem; margin-bottom: 2rem;">
+      <img src="/assets/logo.svg" alt="TCTC Logo" style="height: 48px;">
+      <a href="#tools" style="color: #F8FAFC; font-weight: 600; text-decoration: none;">Tools</a>
+      <a href="#pricing" style="color: #F8FAFC; font-weight: 600; text-decoration: none;">Pricing</a>
+      <a href="#about" style="color: #F8FAFC; font-weight: 600; text-decoration: none;">About</a>
+      <a href="#login" style="color: #F8FAFC; font-weight: 600; text-decoration: none;">Login</a>
+    </nav>
+    <h1 style="font-size: 3rem; font-weight: 800; margin-bottom: 1rem;">TCTC Business Suite</h1>
+    <h2 style="font-size: 1.5rem; font-weight: 500; margin-bottom: 2rem; color: #94A3B8;">AI-Powered Tools for Small Businesses</h2>
+    <p style="font-size: 1.15rem; margin-bottom: 2rem;">Six tools. One dashboard. Your API keys. No per-word pricing.<br>Built by a developer who actually runs businesses.</p>
+    <div style="display: flex; gap: 1rem; justify-content: center; margin-bottom: 2rem; flex-wrap: wrap;">
+      <a href="#pricing" style="background: #F59E0B; color: #0F172A; padding: 1rem 2rem; border-radius: 8px; font-weight: 700; text-decoration: none; font-size: 1.1rem;">Get Started - $297</a>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="background: transparent; color: #F59E0B; border: 2px solid #F59E0B; padding: 1rem 2rem; border-radius: 8px; font-weight: 700; text-decoration: none; font-size: 1.1rem;">Watch Demo (2 min)</a>
     </div>
-  </div>
-</section>
+    <blockquote style="color: #94A3B8; font-size: 1.1rem; margin-top: 2rem;">"Stop paying per-word for AI tools. Use your own keys and pay pennies."</blockquote>
+  </section>
 
-{# ============================================
-   ACT II - TURBULENCE & TRANSFORMATION (Conflict)
-   The Mission - Human Frequency
-   ============================================ #}
-
-<section class="mission-section">
-  <div class="container">
-    <div class="mission-content">
-      
-      <h2 class="shine-effect">Building a Business in Public</h2>
-      
-      <p>
-        I'm William Johnson, a systems architect building Modern AiChemy — launching a platform of AI tools and custom audio. I need to raise <strong>$10,000 by January 1st, 2026</strong> to launch this properly:
-      </p>
-      
-      <div style="text-align: left; max-width: 600px; margin: 1.5rem auto;">
-        <p><strong>🧪 Product Development ($3,000):</strong> Finalize core features, polish UX, integrate stable APIs</p>
-        <p><strong>🏢 Operational Foundation ($3,000):</strong> Incorporation, hosting, monitoring, security, and support systems</p>
-        <p><strong>⚡ Scaling Capacity ($4,000):</strong> Infrastructure, tooling, and automation to reliably serve early adopters</p>
+  <!-- SECTION 2: THE PROBLEM (Social Proof) -->
+  <section style="background: #1E293B; color: #F8FAFC; padding: 4rem 2rem;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 3rem; max-width: 900px; margin: 0 auto;">
+      <div style="flex: 1; min-width: 280px;">
+        <h2 style="color: #F59E0B; font-size: 1.5rem; margin-bottom: 1rem;">Most AI Tools Are Expensive and Limited</h2>
+        <p style="color: #F8FAFC; margin-bottom: 0.5rem;">❌ Jasper: $49/mo + word limits</p>
+        <p style="color: #F8FAFC; margin-bottom: 0.5rem;">❌ Copy.ai: $36/mo + usage caps</p>
+        <p style="color: #F8FAFC; margin-bottom: 0.5rem;">❌ ChatGPT Pro: $20/mo, one interface</p>
       </div>
-      
-      <p>
-        <strong>This isn't charity — it's pre-orders and early adoption.</strong> You get real value. I get runway to build something lasting.
-      </p>
-      
-      <p>
-        Every AI tool I've built solves real business problems I've faced. Every song I create tells a story that needs to be heard. This isn't about extraction — it's about exchange.
-      </p>
-      
-      <p class="countdown">
-        {{ site.goalDate | daysUntil }} days remaining
-      </p>
-      
-      <p>
-        <strong>Your early support makes you a founding customer. You're helping a new platform launch with momentum.</strong>
-      </p>
-      
-      <div class="hero-ctas" style="margin-top: var(--space-lg);">
-        <a href="https://buy.stripe.com/6oU3cn5aV8RS8uEaiKdAk0j" class="btn btn-primary btn-large cta-button mission-glow shine-effect ripple">
-          Support The Mission
-        </a>
-        <a href="https://buy.stripe.com/bJe8wH7j3eccaCM1MedAk0p" class="btn btn-secondary btn-large glass-button shine-effect">
-          Launch The Startup 🚀
-        </a>
+      <div style="flex: 1; min-width: 280px;">
+        <h2 style="color: #22C55E; font-size: 1.5rem; margin-bottom: 1rem;">TCTC: $297 once + your own API ($2-20/mo)</h2>
+        <p style="color: #F8FAFC; margin-bottom: 0.5rem;">✅ You own the tools</p>
+        <p style="color: #F8FAFC; margin-bottom: 0.5rem;">✅ You control the costs</p>
+        <p style="color: #F8FAFC; margin-bottom: 0.5rem;">✅ No limits</p>
       </div>
-      
     </div>
-  </div>
-</section>
+  </section>
 
-{# ============================================
-   THREE PATHS TO TRANSFORMATION
-   Pattern Recognition - Same Structure, Different Content
-   ============================================ #}
+  <!-- SECTION 3: THE TOOLS (6 Cards) -->
+  <section id="tools" style="background: #0F172A; color: #F8FAFC; padding: 5rem 2rem;">
+    <h2 style="text-align: center; font-size: 2rem; font-weight: 800; margin-bottom: 2rem;">Six Tools. One Dashboard.</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
+      <div style="background: #1E293B; border-radius: 12px; padding: 2rem; box-shadow: 0 2px 12px #33415522;">
+        <h3 style="color: #F59E0B; font-size: 1.25rem;">📊 Business Diagnostic</h3>
+        <p>Identify bottlenecks in 5 minutes<br>Get AI-powered recommendations for your specific problems. No consultants required.</p>
+      </div>
+      <div style="background: #1E293B; border-radius: 12px; padding: 2rem; box-shadow: 0 2px 12px #33415522;">
+        <h3 style="color: #F59E0B; font-size: 1.25rem;">📝 Blog Builder</h3>
+        <p>Generate 1-200 local SEO posts at once<br>Create geo-targeted blog content for local service businesses. Dominate local search.</p>
+      </div>
+      <div style="background: #1E293B; border-radius: 12px; padding: 2rem; box-shadow: 0 2px 12px #33415522;">
+        <h3 style="color: #F59E0B; font-size: 1.25rem;">💼 Offer Builder</h3>
+        <p>Create complete offers with pricing & positioning<br>Build professional service offers with pricing tiers, copy, and positioning. Done in 10 minutes.</p>
+      </div>
+      <div style="background: #1E293B; border-radius: 12px; padding: 2rem; box-shadow: 0 2px 12px #33415522;">
+        <h3 style="color: #F59E0B; font-size: 1.25rem;">🎯 Content Generator</h3>
+        <p>Test marketing messages against AI customer avatars<br>Validate your messaging before spending ad budget. Get instant feedback from AI prospects.</p>
+      </div>
+      <div style="background: #1E293B; border-radius: 12px; padding: 2rem; box-shadow: 0 2px 12px #33415522;">
+        <h3 style="color: #F59E0B; font-size: 1.25rem;">💬 Sales Practice Tool</h3>
+        <p>Sharpen your pitch with AI objection handlers<br>Role-play with AI prospects. Master objections. Get better at sales without burning leads.</p>
+      </div>
+      <div style="background: #1E293B; border-radius: 12px; padding: 2rem; box-shadow: 0 2px 12px #33415522;">
+        <h3 style="color: #F59E0B; font-size: 1.25rem;">🏥 Business Health Check</h3>
+        <p>Get strategic recommendations instantly<br>Annual planning made simple. AI analyzes your business and suggests next moves.</p>
+      </div>
+    </div>
+  </section>
 
-<section class="paths-section">
-  <div class="container">
-    
+  <!-- SECTION 4: HOW IT WORKS (BYOK Explanation) -->
+  <section style="background: #1E293B; color: #F8FAFC; padding: 4rem 2rem; text-align: center;">
+    <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 2rem;">How TCTC is Different: Bring Your Own Keys</h2>
+    <p style="font-size: 1.15rem; margin-bottom: 2rem;">Unlike traditional SaaS tools, TCTC uses YOUR API keys from:</p>
+    <div style="display: flex; justify-content: center; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap;">
+      <img src="/assets/openai.png" alt="OpenAI" style="height: 40px;">
+      <img src="/assets/anthropic.png" alt="Anthropic" style="height: 40px;">
+      <img src="/assets/google.png" alt="Google" style="height: 40px;">
+      <img src="/assets/xai.png" alt="xAI" style="height: 40px;">
+    </div>
+    <div style="max-width: 700px; margin: 0 auto; text-align: left;">
+      <p style="color: #22C55E;">✅ Pay only what AI providers charge (~$0.01 per 1,000 words)</p>
+      <p style="color: #22C55E;">✅ No usage limits or word caps</p>
+      <p style="color: #22C55E;">✅ Full privacy - your data never touches our servers</p>
+      <p style="color: #22C55E;">✅ One-time payment - no recurring fees to us</p>
+      <p style="margin-top: 2rem; color: #F59E0B; font-weight: 700;">Example: Most users spend $2-20/month on API costs vs. $50-200/month for traditional tools.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 5: PRICING -->
+  <section id="pricing" style="background: #0F172A; color: #F8FAFC; padding: 5rem 2rem; text-align: center;">
+    <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 2rem;">Simple Pricing. Lifetime Access.</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; max-width: 1000px; margin: 0 auto;">
+      <div style="background: #1E293B; border-radius: 12px; padding: 2rem; min-width: 280px; flex: 1;">
+        <h3 style="color: #F59E0B; font-size: 1.25rem;">TCTC Business Suite</h3>
+        <div style="font-size: 2.5rem; font-weight: 800; color: #F8FAFC; margin-bottom: 1rem;">$297 one-time<br><span style="font-size: 1rem; color: #94A3B8;">or $97/month x 3</span></div>
+        <ul style="text-align: left; color: #F8FAFC; margin-bottom: 1.5rem;">
+          <li>All 6 tools</li>
+          <li>Lifetime updates</li>
+          <li>Setup walkthrough included</li>
+          <li>Direct email support</li>
+        </ul>
+        <a href="#" style="background: #F59E0B; color: #0F172A; padding: 1rem 2rem; border-radius: 8px; font-weight: 700; text-decoration: none;">Get Started</a>
+      </div>
+      <div style="background: #1E293B; border-radius: 12px; padding: 2rem; min-width: 280px; flex: 1; border: 2px solid #F59E0B; position: relative; box-shadow: 0 4px 24px #F59E0B44;">
+        <div style="position: absolute; top: -1.5rem; left: 50%; transform: translateX(-50%); background: #F59E0B; color: #0F172A; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 700; font-size: 0.85rem;">BEST VALUE</div>
+        <h3 style="color: #F59E0B; font-size: 1.25rem;">TCTC Pro Bundle</h3>
+        <div style="font-size: 2.5rem; font-weight: 800; color: #F8FAFC; margin-bottom: 1rem;">$447 one-time<br><span style="font-size: 1rem; color: #94A3B8;">Save $47</span></div>
+        <ul style="text-align: left; color: #F8FAFC; margin-bottom: 1.5rem;">
+          <li>All 6 tools</li>
+          <li>AgencyHire included</li>
+          <li>Priority support</li>
+          <li>1-hour consulting call</li>
+        </ul>
+        <a href="#" style="background: #F59E0B; color: #0F172A; padding: 1rem 2rem; border-radius: 8px; font-weight: 700; text-decoration: none;">Get Pro Bundle</a>
+      </div>
+      <div style="background: #1E293B; border-radius: 12px; padding: 2rem; min-width: 280px; flex: 1;">
+        <h3 style="color: #F59E0B; font-size: 1.25rem;">AgencyHire Add-On</h3>
+        <div style="font-size: 2rem; font-weight: 800; color: #F8FAFC; margin-bottom: 1rem;">+$97<br><span style="font-size: 1rem; color: #94A3B8;">or included in Pro</span></div>
+        <ul style="text-align: left; color: #F8FAFC; margin-bottom: 1.5rem;">
+          <li>Digital underwriting for insurance agents</li>
+          <li>Interview analysis & scoring</li>
+          <li>For agencies hiring agents</li>
+        </ul>
+        <a href="#" style="background: #F59E0B; color: #0F172A; padding: 1rem 2rem; border-radius: 8px; font-weight: 700; text-decoration: none;">Add AgencyHire</a>
+      </div>
+    </div>
+    <p style="color: #94A3B8; font-size: 1rem; margin-top: 2rem;">30-day money-back guarantee. No questions asked.</p>
+  </section>
+
+  <!-- SECTION 6: WHO THIS IS FOR -->
+  <section style="background: #1E293B; color: #F8FAFC; padding: 4rem 2rem; text-align: center;">
+    <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 2rem;">Built For Business Owners Who Are Tired of Expensive SaaS</h2>
+    <ul style="list-style: none; padding: 0; margin-bottom: 2rem; color: #22C55E; font-size: 1.15rem;">
+      <li>✓ Consultants packaging their services</li>
+      <li>✓ Local service businesses building content</li>
+      <li>✓ Sales teams practicing objections</li>
+      <li>✓ Agencies creating client offers</li>
+      <li>✓ Solopreneurs wearing all hats</li>
+      <li>✓ Anyone tired of AI subscription fees</li>
+    </ul>
+    <blockquote style="color: #94A3B8; font-size: 1.1rem; margin-top: 2rem;">"I built these tools because I needed them. Then I realized everyone else did too."<br>— William Johnson, Founder</blockquote>
+  </section>
+
+  <!-- SECTION 7: FAQ -->
+  <section style="background: #0F172A; color: #F8FAFC; padding: 4rem 2rem; text-align: center;">
+    <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 2rem;">Frequently Asked Questions</h2>
+    <div style="max-width: 800px; margin: 0 auto; text-align: left;">
+      <div style="margin-bottom: 2rem;">
+        <h3 style="color: #F59E0B; font-size: 1.25rem; margin-bottom: 0.75rem;">Q: Do I need to be technical?</h3>
+        <p style="color: #F8FAFC; line-height: 1.7;">A: No. Setup takes 10 minutes. We provide step-by-step instructions for getting your API keys.</p>
+      </div>
+      <div style="margin-bottom: 2rem;">
+        <h3 style="color: #F59E0B; font-size: 1.25rem; margin-bottom: 0.75rem;">Q: What if I don't have API keys?</h3>
+        <p style="color: #F8FAFC; line-height: 1.7;">A: We show you exactly how to get them (free accounts available). Takes 5 minutes total.</p>
+      </div>
+      <div style="margin-bottom: 2rem;">
+        <h3 style="color: #F59E0B; font-size: 1.25rem; margin-bottom: 0.75rem;">Q: What are the ongoing costs?</h3>
+        <p style="color: #F8FAFC; line-height: 1.7;">A: Just your API usage. Most users spend $2-20/month depending on how much they use the tools.</p>
+      </div>
+      <div style="margin-bottom: 2rem;">
+        <h3 style="color: #F59E0B; font-size: 1.25rem; margin-bottom: 0.75rem;">Q: Do I own this forever?</h3>
+        <p style="color: #F8FAFC; line-height: 1.7;">A: Yes. One-time payment. Lifetime access. All future updates included.</p>
+      </div>
+      <div style="margin-bottom: 2rem;">
+        <h3 style="color: #F59E0B; font-size: 1.25rem; margin-bottom: 0.75rem;">Q: Can I get a refund?</h3>
+        <p style="color: #F8FAFC; line-height: 1.7;">A: Yes. 30 days, no questions asked.</p>
+      </div>
+      <div style="margin-bottom: 2rem;">
+        <h3 style="color: #F59E0B; font-size: 1.25rem; margin-bottom: 0.75rem;">Q: What if I need help?</h3>
+        <p style="color: #F8FAFC; line-height: 1.7;">A: Email will@tctcusa.com - I respond personally, usually within 24 hours.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 8: FINAL CTA -->
+  <section style="background: #1E293B; padding: 5rem 2rem; text-align: center;">
+    <div style="max-width: 800px; margin: 0 auto;">
+      <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem; color: #F8FAFC;">Ready to Stop Overpaying for AI Tools?</h2>
+      <p style="font-size: 1.1rem; color: #94A3B8; margin-bottom: 3rem;">Get TCTC Business Suite today and own your AI infrastructure.</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem;">
+        <a href="#pricing" style="display: inline-block; padding: 1rem 2rem; background: #F59E0B; color: #0F172A; text-decoration: none; border-radius: 8px; font-weight: 700;">Get Started - $297</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="display: inline-block; padding: 1rem 2rem; background: transparent; color: #F59E0B; border: 2px solid #F59E0B; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 1.1rem; margin-bottom: 2rem;">Watch Demo</a>
+      </div>
+      <p style="color: #94A3B8; font-size: 1rem;">Questions? Email <a href="mailto:will@tctcusa.com" style="color: #F59E0B; text-decoration: none;">will@tctcusa.com</a></p>
+    </div>
+  </section>
     <div class="text-center mb-4">
       <h2 class="shine-effect">Three Paths. One Transformation.</h2>
       <p class="text-muted">Choose the frequency that resonates with you</p>
