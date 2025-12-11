@@ -27,11 +27,6 @@
       container.classList.add('slide-in');
     }, 1000);
 
-    // Auto-open modal 1 second after page load
-    setTimeout(function() {
-      openModal();
-    }, 1000);
-
     // Open modal function
     function openModal() {
       modalBackdrop.style.display = 'flex';

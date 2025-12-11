@@ -21,7 +21,7 @@
     <p class="card-price">{{ product.price | currency }}</p>
   </div>
 
-  <div class="pre-sale-badge">Pre-Sale • Active Development</div>
+  <div class="pre-sale-badge">Live Tool • Ready to Use</div>
   
   {# Compressed Description - One Breath #}
   <p class="card-compressed">{{ product.compressed }}</p>
@@ -60,10 +60,10 @@
     </a>
     {% endif %}
     
-    {# Primary CTA - Pre-Sale or Contact #}
+    {# Primary CTA - Purchase or Contact #}
     {% if product.stripeUrl %}
-    <a href="{{ product.stripeUrl }}" class="cta-button gold-shimmer shine-effect">
-      Pre-Order – {{ product.price | currency }}
+    <a href="{{ product.stripeUrl }}" class="cta-button">
+      Get Now – {{ product.price | currency }}
     </a>
     {% else %}
     <a href="/contact/?product={{ product.name | urlencode }}" class="card-button-primary">

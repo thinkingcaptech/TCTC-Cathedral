@@ -1615,7 +1615,7 @@ button *,
     rgba(255, 255, 255, 0) 100%
   );
   transform: skewX(-25deg);
-  animation: fibonacci-shine 1.32s ease-in-out infinite;
+  animation: none; /* DISABLED - was causing buttons to move */
   pointer-events: none;
   z-index: 10;
   will-change: left, opacity;
