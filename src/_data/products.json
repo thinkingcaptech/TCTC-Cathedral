@@ -1,120 +1,126 @@
 [
   {
     "id": "local-seo-builder",
-    "name": "Local SEO Content Generator",
-    "price": 97,
-    "compressed": "Generate local content that ranks",
+    "name": "Blog Builder",
+    "price": 0,
+    "free": true,
+    "compressed": "100% FREE • Generate 1-200 SEO blog posts with multi-model AI",
     "liveUrl": "",
     "videoUrl": "https://youtu.be/2d6u_bFwIdA",
-    "stripeUrl": "https://buy.stripe.com/8x29AL32NgkkeT2ez0dAk07",
     "category": "software",
     "features": [
-      "Generate 10 blog posts in 10 minutes",
+      "Generate 1-200 blog posts in minutes",
+      "Multi-model AI (OpenAI, Claude, Gemini, Grok)",
       "Automatic local keyword optimization",
       "Built-in content calendar",
       "Export to markdown or HTML",
-      "You provide your own APIs (setup walkthrough included)"
+      "100% FREE • Bring Your Own API Keys"
     ]
   },
   {
     "id": "offer-architect",
-    "name": "The Offer Architect",
-    "price": 197,
-    "compressed": "AI-powered offer creation",
+    "name": "Offer Builder",
+    "price": 0,
+    "free": true,
+    "compressed": "100% FREE • AI-powered offer creation and pricing strategy",
     "liveUrl": "",
     "videoUrl": "https://youtu.be/vkh8puWMiYc",
-    "stripeUrl": "https://buy.stripe.com/28EaEP32N2tuaCM8aCdAk06",
     "category": "software",
     "features": [
       "Value proposition builder",
       "Pricing psychology calculator",
       "Guarantee generator",
       "Bundle formula creator",
-      "You provide your own APIs (setup walkthrough included)"
+      "Multi-model AI support",
+      "100% FREE • Bring Your Own API Keys"
     ]
   },
   {
     "id": "business-health",
-    "name": "AI-Powered Business Assessment Tool",
-    "price": 197,
-    "compressed": "Automate client intake with 4-pillar diagnostic system",
+    "name": "Business Diagnostic",
+    "price": 0,
+    "free": true,
+    "compressed": "100% FREE • AI-powered business health assessment with scored report",
     "liveUrl": "",
     "videoUrl": "https://youtu.be/67nFPAPfFYs",
-    "stripeUrl": "https://buy.stripe.com/8x200bdHr0lmaCM0IadAk08",
     "category": "software",
     "features": [
       "Multi-step questionnaire system",
-      "AI-generated recommendations via Gemini",
+      "AI-generated recommendations",
       "Automated scoring engine",
       "Professional results dashboard",
       "White-label ready",
-      "You provide your own APIs & Firebase (full setup walkthrough included)"
+      "100% FREE • Bring Your Own API Keys & Firebase"
     ]
   },
   {
     "id": "sales-practice-tool",
-    "name": "Sales Practice Tool",
-    "price": 97,
-    "compressed": "Lightweight CRM for tracking leads",
+    "name": "Sales Simulator",
+    "price": 0,
+    "free": true,
+    "compressed": "100% FREE • Practice sales calls against AI prospects with performance analysis",
     "liveUrl": "",
     "videoUrl": "https://youtu.be/4ooIqhoNKrY",
-    "stripeUrl": "https://buy.stripe.com/aFabITavfc443ak0IadAk0o",
     "category": "software",
     "features": [
-      "Simple pipeline tracking",
-      "AI lead scoring",
-      "Email integration",
-      "No complexity, just results",
-      "You provide your own APIs & Firebase (setup walkthrough included)"
+      "AI prospect simulations",
+      "Real-time objection handling practice",
+      "Performance scoring and feedback",
+      "Multiple difficulty levels",
+      "Call recording and replay",
+      "100% FREE • Bring Your Own API Keys & Firebase"
     ]
   },
   {
     "id": "sprint-dashboard",
     "name": "90-Day Sprint Dashboard",
-    "price": 147,
-    "compressed": "Visual project management for execution",
+    "price": 0,
+    "free": true,
+    "compressed": "100% FREE • Visual project management for execution and goal tracking",
     "liveUrl": "",
-    "stripeUrl": "https://buy.stripe.com/aFa00b0UF7NO5is9eGdAk0l",
     "category": "software",
     "features": [
       "Sprint planning tools",
       "Progress visualization",
       "Team collaboration features",
       "Turn goals into action",
-      "You provide your own Firebase (setup walkthrough included)"
+      "Milestone tracking",
+      "100% FREE • Bring Your Own Firebase"
     ]
   },
   {
     "id": "content-generator",
     "name": "Content Generator",
-    "price": 197,
-    "compressed": "Gamified influence training",
+    "price": 0,
+    "free": true,
+    "compressed": "100% FREE • Test marketing content against AI customer personas",
     "liveUrl": "",
     "videoUrl": "https://youtu.be/2d6u_bFwIdA",
-    "stripeUrl": "https://buy.stripe.com/eVq4gr8n7c448uEduWdAk0r",
     "category": "software",
     "features": [
       "AI customer avatar creation",
-      "Interactive learning modules",
-      "Progress tracking & achievements",
-      "Practical business exercises",
-      "You provide your own Firebase (setup walkthrough included)"
+      "Content testing against personas",
+      "Feedback and scoring",
+      "Multiple persona types",
+      "Messaging optimization",
+      "100% FREE • Bring Your Own API Keys"
     ]
   },
   {
     "id": "business-manuals",
     "name": "Business Operations Manual Collection",
-    "price": 297,
-    "compressed": "Complete system documentation PDFs",
+    "price": 0,
+    "free": true,
+    "compressed": "100% FREE • Complete system documentation templates",
     "liveUrl": "",
-    "stripeUrl": "https://buy.stripe.com/14AdR16eZb00dOYcqSdAk0q",
     "category": "software",
     "features": [
       "Complete business systems documentation",
       "Ready-to-implement processes",
       "Customizable templates",
       "PDF format for easy sharing",
-      "Covers all core operations"
+      "Covers all core operations",
+      "100% FREE Download"
     ]
   }
 ]

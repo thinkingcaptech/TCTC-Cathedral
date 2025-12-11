@@ -1,150 +1,355 @@
 ---
 layout: layout.njk
-title: "Pricing | TCTC Business Suite"
-description: "Simple pricing. Lifetime access. Six tools. One dashboard. Your API keys. No per-word pricing."
+title: "Custom AI Development Pricing | Will Johnson"
+description: "Transparent pricing for custom AI development. $4k-30k projects. 2-12 weeks delivery. Full source code ownership. 30-50% less than agencies."
 permalink: /packages/
 ---
 
-{# PRICING PAGE - TCTC Business Suite #}
+{# CUSTOM DEVELOPMENT PRICING PAGE #}
 
 <section class="hero">
   <div class="container">
     <div class="hero-content">
 
-      <h1>Pricing</h1>
+      <h1>Custom AI Development Pricing</h1>
 
       <p class="hero-subhead">
-        Simple pricing. Lifetime access. No recurring fees.
+        Transparent pricing. Fixed scopes. Full source code ownership.
       </p>
 
       <p>
-        Choose your plan and get instant access. All packages include lifetime updates and a 30-day money-back guarantee.
+        I build custom AI tools for businesses at 30-50% less than agencies. Solo developer means no overhead bloat—you get agency quality at freelancer prices.
       </p>
 
     </div>
   </div>
 </section>
 
-{# The Packages #}
+{# Pricing Tiers #}
 <section class="section section-primary">
   <div class="container">
 
     <div class="text-center mb-4">
-      <h2>Choose Your Package</h2>
-      <p class="text-muted">All packages include lifetime access and updates</p>
+      <h2>Choose Your Project Tier</h2>
+      <p class="text-muted">All projects include full source code ownership, BYOK architecture, and 30-day support</p>
     </div>
 
     <div class="grid grid-3" style="gap: var(--space-xl);">
 
-      {# Loop through all packages #}
-      {% for package in packages %}
-
-      <div class="product-card" {% if package.badge == 'BEST VALUE' %}style="border: 2px solid var(--primary); transform: scale(1.05);"{% endif %}>
-        {% if package.badge %}
-        <div style="background: {% if 'BEST VALUE' in package.badge %}var(--primary){% else %}var(--gold){% endif %}; color: white; padding: 0.25rem 0.75rem; border-radius: var(--radius-sm); font-size: 0.75rem; font-weight: 700; margin-bottom: 0.5rem; display: inline-block;">
-          {{ package.badge }}
-        </div>
-        {% endif %}
-
+      <!-- Simple AI Tool -->
+      <div class="product-card">
         <div class="card-header">
-          <h3 class="card-title">{{ package.name }}</h3>
-          <p class="card-price">{{ package.price | currency }}</p>
-          {% if package.monthlyPrice %}
+          <h3 class="card-title">Simple AI Tool</h3>
+          <p class="card-price">$4,000-$8,000</p>
           <p class="text-muted mb-0" style="font-size: 0.95rem;">
-            or {{ package.monthlyPrice | currency }}/month × {{ package.monthlyMonths }}
+            2-3 weeks delivery
           </p>
-          {% endif %}
         </div>
 
-        {% if package.savings %}
         <div style="background: var(--mission); padding: var(--space-sm); border-radius: var(--radius-md); margin: var(--space-md) 0;">
-          <p class="mb-0" style="color: var(--text-light); font-weight: 600;">
-            💰 Save {{ package.savings | currency }}
+          <p class="mb-0" style="color: var(--text-light); font-style: italic; font-size: 0.95rem;">
+            Perfect for single-purpose AI applications
           </p>
         </div>
-        {% endif %}
 
         <h4 style="font-size: 1.125rem; margin-bottom: var(--space-sm);">What's Included:</h4>
         <ul class="card-features">
-          {% for item in package.includes %}
-          <li>{{ item }}</li>
-          {% endfor %}
+          <li>Content generators</li>
+          <li>Form processors</li>
+          <li>Basic automation tools</li>
+          <li>One AI model integration</li>
+          <li>Clean, simple interface</li>
+          <li>Full source code</li>
+          <li>30-day support</li>
         </ul>
 
         <p style="font-style: italic; color: var(--text-muted); margin: var(--space-md) 0;">
-          <strong>Perfect for:</strong> {{ package.bestFor }}
+          <strong>Perfect for:</strong> Businesses that need a focused tool to solve one specific problem with AI
         </p>
 
         <div class="card-actions">
-          <a href="{{ package.stripeUrl }}" class="cta-button">
-            Get {{ package.name }}
+          <a href="/contact/" class="cta-button">
+            Discuss Your Project
           </a>
         </div>
       </div>
 
-      {% endfor %}
+      <!-- Standard Application -->
+      <div class="product-card" style="border: 2px solid var(--primary); transform: scale(1.05);">
+        <div style="background: var(--primary); color: white; padding: 0.25rem 0.75rem; border-radius: var(--radius-sm); font-size: 0.75rem; font-weight: 700; margin-bottom: 0.5rem; display: inline-block;">
+          MOST POPULAR
+        </div>
+
+        <div class="card-header">
+          <h3 class="card-title">Standard Application</h3>
+          <p class="card-price">$8,000-$15,000</p>
+          <p class="text-muted mb-0" style="font-size: 0.95rem;">
+            4-6 weeks delivery
+          </p>
+        </div>
+
+        <div style="background: var(--mission); padding: var(--space-sm); border-radius: var(--radius-md); margin: var(--space-md) 0;">
+          <p class="mb-0" style="color: var(--text-light); font-style: italic; font-size: 0.95rem;">
+            Multi-feature AI applications with user dashboards
+          </p>
+        </div>
+
+        <h4 style="font-size: 1.125rem; margin-bottom: var(--space-sm);">What's Included:</h4>
+        <ul class="card-features">
+          <li>Custom user dashboards</li>
+          <li>Multi-feature business tools</li>
+          <li>User authentication & roles</li>
+          <li>Database integration</li>
+          <li>Multiple AI models</li>
+          <li>Responsive design</li>
+          <li>Full source code</li>
+          <li>30-day support</li>
+        </ul>
+
+        <p style="font-style: italic; color: var(--text-muted); margin: var(--space-md) 0;">
+          <strong>Perfect for:</strong> Businesses building complete AI-powered workflows with user management and data storage
+        </p>
+
+        <div class="card-actions">
+          <a href="/contact/" class="cta-button">
+            Discuss Your Project
+          </a>
+        </div>
+      </div>
+
+      <!-- Complex System -->
+      <div class="product-card">
+        <div class="card-header">
+          <h3 class="card-title">Complex System</h3>
+          <p class="card-price">$15,000-$30,000</p>
+          <p class="text-muted mb-0" style="font-size: 0.95rem;">
+            8-12 weeks delivery
+          </p>
+        </div>
+
+        <div style="background: var(--mission); padding: var(--space-sm); border-radius: var(--radius-md); margin: var(--space-md) 0;">
+          <p class="mb-0" style="color: var(--text-light); font-style: italic; font-size: 0.95rem;">
+            Enterprise-grade multi-tenant platforms
+          </p>
+        </div>
+
+        <h4 style="font-size: 1.125rem; margin-bottom: var(--space-sm);">What's Included:</h4>
+        <ul class="card-features">
+          <li>Multi-tenant architecture</li>
+          <li>Advanced integrations (Stripe, APIs, etc.)</li>
+          <li>Analytics & reporting dashboards</li>
+          <li>Admin panels & controls</li>
+          <li>Scalable infrastructure</li>
+          <li>Advanced AI workflows</li>
+          <li>Full source code</li>
+          <li>60-day support</li>
+        </ul>
+
+        <p style="font-style: italic; color: var(--text-muted); margin: var(--space-md) 0;">
+          <strong>Perfect for:</strong> Companies building SaaS products or complex internal tools that serve multiple users/organizations
+        </p>
+
+        <div class="card-actions">
+          <a href="/contact/" class="cta-button">
+            Discuss Your Project
+          </a>
+        </div>
+      </div>
 
     </div>
 
   </div>
 </section>
 
-{# How It Works - BYOK #}
+{# Development Process #}
 <section class="section section-secondary">
   <div class="container">
 
     <div class="text-center mb-4">
-      <h2>How TCTC is Different: Bring Your Own Keys</h2>
-      <p class="text-muted">You own everything. You control the costs.</p>
+      <h2>How We Work Together</h2>
+      <p class="text-muted">Clear process. Regular updates. No surprises.</p>
     </div>
 
     <div class="grid grid-3">
 
       <div class="path-card">
-        <h3>✅ One-Time Payment</h3>
+        <h3>1️⃣ Discovery Call</h3>
         <p>
-          Pay once, own forever. No monthly SaaS fees.
-          All future updates included.
+          Free 30-minute consultation to discuss your needs, goals, and technical requirements.
+          We'll determine if we're a good fit.
         </p>
       </div>
 
       <div class="path-card">
-        <h3>✅ Your API Keys</h3>
+        <h3>2️⃣ Proposal & Timeline</h3>
         <p>
-          Use your own keys from OpenAI, Anthropic, Google, or xAI.
-          Pay only for what you use (~$2-20/month).
+          I send you a detailed proposal with scope, features, pricing, and timeline.
+          You review and approve before any work begins.
         </p>
       </div>
 
       <div class="path-card">
-        <h3>✅ No Limits</h3>
+        <h3>3️⃣ Development</h3>
         <p>
-          No word caps, no usage limits, no artificial restrictions.
-          Generate as much as you need.
+          I build your tool in weekly sprints. You get regular progress updates
+          and can request changes along the way.
         </p>
       </div>
 
       <div class="path-card">
-        <h3>✅ Full Privacy</h3>
+        <h3>4️⃣ Testing & Refinement</h3>
         <p>
-          Your data never touches our servers. Everything runs with
-          your own API keys and infrastructure.
+          You test the application. We fix bugs and refine features
+          until everything works perfectly.
         </p>
       </div>
 
       <div class="path-card">
-        <h3>✅ Lifetime Updates</h3>
+        <h3>5️⃣ Launch & Handoff</h3>
         <p>
-          When we improve the tools, you get the updates automatically.
-          No upgrade fees ever.
+          I deploy your application and hand over all source code,
+          documentation, and access credentials.
         </p>
       </div>
 
       <div class="path-card">
-        <h3>✅ 30-Day Guarantee</h3>
+        <h3>6️⃣ Support Period</h3>
         <p>
-          Not happy? Get a full refund within 30 days.
-          No questions asked.
+          30-60 days of included support for bug fixes and questions.
+          Optional ongoing maintenance available.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+{# Portfolio Examples #}
+<section class="section section-primary">
+  <div class="container">
+
+    <div class="text-center mb-4">
+      <h2>What I've Built</h2>
+      <p class="text-muted">Real projects for real clients</p>
+    </div>
+
+    <div class="grid grid-2">
+
+      <div class="path-card">
+        <h3 style="color: var(--primary);">AgencyHire</h3>
+        <p class="mb-2" style="font-style: italic; color: var(--text-muted);">Insurance Agency Tool | $12k | 5 weeks</p>
+        <p>
+          Digital underwriting system for screening new insurance agents.
+          Multi-step AI interviews with scoring algorithms, admin dashboard, and candidate management.
+        </p>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 1rem;">
+          <strong>Tech:</strong> React, Firebase, OpenAI, Authentication, Multi-tenant
+        </p>
+      </div>
+
+      <div class="path-card">
+        <h3 style="color: var(--primary);">The Citadel</h3>
+        <p class="mb-2" style="font-style: italic; color: var(--text-muted);">Learning Platform | $18k | 8 weeks</p>
+        <p>
+          Gamified business transformation platform with achievement system,
+          progress tracking, AI coaching, and interactive exercises.
+        </p>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 1rem;">
+          <strong>Tech:</strong> React, TypeScript, Firebase, Claude AI, Gamification
+        </p>
+      </div>
+
+      <div class="path-card">
+        <h3 style="color: var(--primary);">Lex-Architech</h3>
+        <p class="mb-2" style="font-style: italic; color: var(--text-muted);">Legal Practice Tool | $22k | 10 weeks</p>
+        <p>
+          Legal practice management with AI document analysis,
+          client communication automation, case tracking, and billing integration.
+        </p>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 1rem;">
+          <strong>Tech:</strong> React, Firebase, Multi-model AI, Document Processing
+        </p>
+      </div>
+
+      <div class="path-card">
+        <h3 style="color: var(--primary);">TrueHire</h3>
+        <p class="mb-2" style="font-style: italic; color: var(--text-muted);">HR Assessment Tool | $14k | 6 weeks</p>
+        <p>
+          Hiring platform with personality profiling, role-fit analysis,
+          automated interviews, and candidate scoring powered by multi-model AI.
+        </p>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 1rem;">
+          <strong>Tech:</strong> React, Firebase, Anthropic Claude, OpenAI, Analytics
+        </p>
+      </div>
+
+    </div>
+
+    <div class="text-center" style="margin-top: var(--space-xl);">
+      <p style="font-size: 1.1rem; color: var(--text-primary);">
+        <strong>Tech Stack:</strong> React • TypeScript • Firebase • OpenAI • Anthropic • Google Gemini • xAI Grok
+      </p>
+    </div>
+
+  </div>
+</section>
+
+{# Why Work With Me #}
+<section class="section section-secondary">
+  <div class="container">
+
+    <div class="text-center mb-4">
+      <h2>Why Work With Me</h2>
+    </div>
+
+    <div class="grid grid-3">
+
+      <div class="path-card">
+        <h3>💰 Lower Cost</h3>
+        <p>
+          30-50% less expensive than agencies. No account managers, no sales teams,
+          no office overhead. You pay for development, not bloat.
+        </p>
+      </div>
+
+      <div class="path-card">
+        <h3>⚡ Fast Delivery</h3>
+        <p>
+          2-12 weeks from start to finish. No committee meetings, no bureaucracy.
+          Direct communication with the person writing your code.
+        </p>
+      </div>
+
+      <div class="path-card">
+        <h3>🔑 Full Ownership</h3>
+        <p>
+          You own all source code. No licensing fees, no vendor lock-in, no restrictions.
+          Modify it, resell it, host it anywhere—it's yours.
+        </p>
+      </div>
+
+      <div class="path-card">
+        <h3>🎯 BYOK Architecture</h3>
+        <p>
+          All tools built with Bring Your Own Keys design. You control AI costs,
+          data privacy, and infrastructure directly.
+        </p>
+      </div>
+
+      <div class="path-card">
+        <h3>📞 Direct Communication</h3>
+        <p>
+          Email or call me directly. No project managers, no ticket systems.
+          Fast responses, clear answers, real collaboration.
+        </p>
+      </div>
+
+      <div class="path-card">
+        <h3>✅ Proven Track Record</h3>
+        <p>
+          Built 20+ AI applications for businesses. Real production software
+          serving real users, not portfolio projects.
         </p>
       </div>
 
@@ -164,42 +369,50 @@ permalink: /packages/
     <div style="max-width: 800px; margin: 0 auto;">
 
       <div class="path-card mb-3">
-        <h3>Do I need to be technical?</h3>
+        <h3>How do you estimate project costs?</h3>
         <p class="mb-0">
-          No. Setup takes 10 minutes with our step-by-step guide.
-          We show you exactly how to get API keys.
-        </p>
-      </div>
-
-      <div class="path-card mb-3">
-        <h3>What are the ongoing costs?</h3>
-        <p class="mb-0">
-          Just your API usage. Most users spend $2-20/month depending on usage.
-          Compare that to $50-200/month for traditional SaaS tools.
-        </p>
-      </div>
-
-      <div class="path-card mb-3">
-        <h3>Can I upgrade later?</h3>
-        <p class="mb-0">
-          Yes! Start with Business Suite and add AgencyHire anytime.
-          Or upgrade to Pro Bundle and we'll credit your previous purchase.
+          After our discovery call, I provide a detailed proposal with fixed pricing based on features, complexity, and timeline.
+          No hourly rates—you know the total cost upfront.
         </p>
       </div>
 
       <div class="path-card mb-3">
         <h3>Do you offer payment plans?</h3>
         <p class="mb-0">
-          Yes! Business Suite: $97/month × 3. Pro Bundle: $149/month × 3.
-          Or pay in full and save.
+          Yes. Typically 50% to start, 25% at midpoint, 25% at completion.
+          For larger projects, we can discuss custom payment schedules.
         </p>
       </div>
 
       <div class="path-card mb-3">
-        <h3>What if I need help?</h3>
+        <h3>What if my project needs change mid-development?</h3>
         <p class="mb-0">
-          Email will@tctcusa.com - I respond personally, usually within 24 hours.
-          Pro Bundle includes priority support.
+          Small adjustments are included. Major scope changes require a revised proposal
+          with adjusted pricing and timeline. You always approve before proceeding.
+        </p>
+      </div>
+
+      <div class="path-card mb-3">
+        <h3>Do you provide ongoing maintenance?</h3>
+        <p class="mb-0">
+          30-60 days of support included for bug fixes and questions.
+          Ongoing maintenance available at $500-2000/month depending on complexity.
+        </p>
+      </div>
+
+      <div class="path-card mb-3">
+        <h3>What technologies do you work with?</h3>
+        <p class="mb-0">
+          React, TypeScript, Firebase, Node.js for applications. OpenAI, Anthropic Claude,
+          Google Gemini, xAI Grok for AI integrations. Can adapt based on your needs.
+        </p>
+      </div>
+
+      <div class="path-card mb-3">
+        <h3>How involved do I need to be during development?</h3>
+        <p class="mb-0">
+          Weekly check-ins (15-30 minutes) to review progress and provide feedback.
+          More or less involvement available based on your preference.
         </p>
       </div>
 
@@ -212,15 +425,15 @@ permalink: /packages/
 <section class="section section-secondary">
   <div class="container text-center">
 
-    <h2 class="mb-3">Ready to Stop Overpaying for AI Tools?</h2>
+    <h2 class="mb-3">Ready to Discuss Your Project?</h2>
 
     <p class="hero-subhead mb-4">
-      Get TCTC Business Suite today and own your AI infrastructure
+      Schedule a free 30-minute consultation to explore what we can build together
     </p>
 
     <div class="hero-ctas">
-      <a href="mailto:will@tctcusa.com?subject=TCTC Business Suite Purchase" class="btn btn-primary btn-large">Get Started - $297</a>
-      <a href="/software/" class="btn btn-secondary btn-large">Browse Tools</a>
+      <a href="/contact/" class="btn btn-primary btn-large">Schedule Free Consultation</a>
+      <a href="/software/" class="btn btn-secondary btn-large">Try Free Tools First</a>
     </div>
 
     <p style="margin-top: var(--space-lg); color: var(--text-muted);">
