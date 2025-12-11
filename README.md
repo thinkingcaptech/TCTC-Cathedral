@@ -1,5 +1,18 @@
 # Modern AiChemy - Eleventy Website
 
+## Project Summary
+
+TCTC-Cathedral is a multi-disciplinary workspace built on Eleventy, combining business, creative, and technical resources. It features:
+
+- Markdown docs for business, creative, audit, and proof
+- EPUB books and reference materials
+- A static site in `_site/` with HTML, CSS, JS, and assets
+- Source templates and data in `src/` for site generation
+- Custom CSS/JS for widgets and analytics
+- Data files for books, packages, products, and site info
+
+The workspace supports business audits, creative projects, and software documentation, organized for easy navigation and extensibility.
+
 **Where AI Meets Alchemy** — A static website built on Eleventy following the principles of "The Architecture of Resonance."
 
 ## 🎯 Mission
