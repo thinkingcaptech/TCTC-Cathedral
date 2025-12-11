@@ -16,7 +16,8 @@
   
   {# The Frequencies - Load CSS #}
   <link rel="stylesheet" href="/css/style.css">
-  
+  <link rel="stylesheet" href="/css/portfolio-widget.css">
+
   {# Additional head content for specific pages #}
   {% block head %}{% endblock %}
 </head>
@@ -32,12 +33,18 @@
   
   {# FOOTER - The Ground #}
   {% include "footer.njk" %}
-  
+
+  {# Portfolio Widget - Floating Contact #}
+  {% include "portfolio-widget.njk" %}
+
   {# Audio Analytics Tracking #}
   <script src="/js/audio-analytics.js"></script>
-  
+
+  {# Portfolio Widget JavaScript #}
+  <script src="/js/portfolio-widget.js"></script>
+
   {# Additional scripts for specific pages #}
   {% block scripts %}{% endblock %}
-  
+
 </body>
 </html>

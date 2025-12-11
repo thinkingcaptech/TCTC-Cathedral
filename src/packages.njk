@@ -10,346 +10,222 @@ permalink: /packages/
 <section class="hero">
   <div class="container">
     <div class="hero-content">
-      
+
       <h1>Pricing</h1>
-      
+
       <p class="hero-subhead">
-        Simple pricing. Lifetime access. No recurring fees. 30-day money-back guarantee.
+        Simple pricing. Lifetime access. No recurring fees.
       </p>
-      
+
       <p>
-        Choose your plan and get instant access to your tools. Upgrade anytime. All future updates included.
+        Choose your plan and get instant access. All packages include lifetime updates and a 30-day money-back guarantee.
       </p>
-      
+
     </div>
   </div>
 </section>
 
-{# The Bundles #}
+{# The Packages #}
 <section class="section section-primary">
   <div class="container">
-    
+
     <div class="text-center mb-4">
-      <h2>Bundle Packages - Save Up To 68%</h2>
-      <p class="text-muted">Get more, pay less, transform faster</p>
+      <h2>Choose Your Package</h2>
+      <p class="text-muted">All packages include lifetime access and updates</p>
     </div>
-    
-    <div class="grid grid-2" style="gap: var(--space-xl);">
-      
+
+    <div class="grid grid-3" style="gap: var(--space-xl);">
+
       {# Loop through all packages #}
       {% for package in packages %}
-      
-      <div class="product-card">
+
+      <div class="product-card" {% if package.badge == 'BEST VALUE' %}style="border: 2px solid var(--primary); transform: scale(1.05);"{% endif %}>
         {% if package.badge %}
-        <div style="background: {% if 'VIP' in package.badge %}var(--mission){% elif 'POPULAR' in package.badge %}linear-gradient(135deg, var(--primary), var(--secondary)){% else %}var(--gold){% endif %}; color: {% if 'BEGINNERS' in package.badge %}var(--dark){% else %}white{% endif %}; padding: 0.25rem 0.75rem; border-radius: var(--radius-sm); font-size: 0.75rem; font-weight: 700; margin-bottom: 0.5rem; display: inline-block;">
+        <div style="background: {% if 'BEST VALUE' in package.badge %}var(--primary){% else %}var(--gold){% endif %}; color: white; padding: 0.25rem 0.75rem; border-radius: var(--radius-sm); font-size: 0.75rem; font-weight: 700; margin-bottom: 0.5rem; display: inline-block;">
           {{ package.badge }}
         </div>
         {% endif %}
-        
+
         <div class="card-header">
           <h3 class="card-title">{{ package.name }}</h3>
           <p class="card-price">{{ package.price | currency }}</p>
-          <p class="text-muted mb-0" style="text-decoration: line-through; font-size: 0.95rem;">
-            Value: {{ package.regularPrice | currency }}
+          {% if package.monthlyPrice %}
+          <p class="text-muted mb-0" style="font-size: 0.95rem;">
+            or {{ package.monthlyPrice | currency }}/month × {{ package.monthlyMonths }}
           </p>
+          {% endif %}
         </div>
-        
+
+        {% if package.savings %}
         <div style="background: var(--mission); padding: var(--space-sm); border-radius: var(--radius-md); margin: var(--space-md) 0;">
           <p class="mb-0" style="color: var(--text-light); font-weight: 600;">
-            💰 Save {{ package.savings | currency }} ({{ package.savingsPercent }}% off)
+            💰 Save {{ package.savings | currency }}
           </p>
         </div>
-        
+        {% endif %}
+
         <h4 style="font-size: 1.125rem; margin-bottom: var(--space-sm);">What's Included:</h4>
         <ul class="card-features">
           {% for item in package.includes %}
           <li>{{ item }}</li>
           {% endfor %}
         </ul>
-        
-        {% if package.pathA %}
-        <h4 style="font-size: 1.125rem; margin-top: var(--space-md); margin-bottom: var(--space-sm);">Choose Your Path:</h4>
-        <div style="background: var(--surface); padding: var(--space-sm); border-radius: var(--radius-md); margin-bottom: var(--space-sm);">
-          <p style="font-weight: 600; margin-bottom: 0.5rem;">PATH A: {{ package.pathA.name }}</p>
-          <ul class="card-features" style="font-size: 0.9rem;">
-            {% for item in package.pathA.includes %}
-            <li>{{ item }}</li>
-            {% endfor %}
-          </ul>
-        </div>
-        <div style="background: var(--surface); padding: var(--space-sm); border-radius: var(--radius-md); margin-bottom: var(--space-sm);">
-          <p style="font-weight: 600; margin-bottom: 0.5rem;">PATH B: {{ package.pathB.name }}</p>
-          <ul class="card-features" style="font-size: 0.9rem;">
-            {% for item in package.pathB.includes %}
-            <li>{{ item }}</li>
-            {% endfor %}
-          </ul>
-        </div>
-        <p style="font-weight: 600; margin-top: var(--space-sm);">BOTH PATHS INCLUDE:</p>
-        <ul class="card-features" style="font-size: 0.9rem; margin-bottom: var(--space-md);">
-          {% for item in package.bothInclude %}
-          <li>{{ item }}</li>
-          {% endfor %}
-        </ul>
-        {% endif %}
-        
-        {% if package.vipBenefits %}
-        <div style="background: var(--mission); padding: var(--space-md); border-radius: var(--radius-md); margin: var(--space-md) 0;">
-          <p style="font-weight: 600; margin-bottom: 0.5rem;">White-Glove Onboarding:</p>
-          <ul class="card-features" style="font-size: 0.9rem;">
-            {% for benefit in package.vipBenefits %}
-            <li>{{ benefit }}</li>
-            {% endfor %}
-          </ul>
-        </div>
-        {% endif %}
-        
+
         <p style="font-style: italic; color: var(--text-muted); margin: var(--space-md) 0;">
           <strong>Perfect for:</strong> {{ package.bestFor }}
         </p>
-        
+
         <div class="card-actions">
           <a href="{{ package.stripeUrl }}" class="cta-button gold-shimmer shine-effect ripple">
-            Get {{ package.name }} – {{ package.price | currency }}
+            Get {{ package.name }}
           </a>
-          <p style="margin-top: var(--space-sm); font-size: 0.875rem; color: var(--gold);">
-            Use code <strong>HOLIDAY25</strong> for extra 25% off!
-          </p>
         </div>
       </div>
-      
+
       {% endfor %}
-      
+
     </div>
-    
-    {# Promo Code Callout #}
-    <div style="background: var(--mission); padding: var(--space-lg); border-radius: var(--radius-lg); margin-top: var(--space-2xl); text-align: center; max-width: 600px; margin-left: auto; margin-right: auto;">
-      <h3 style="margin-bottom: var(--space-sm);">🎁 Limited Time Offer</h3>
-      <p style="font-size: 1.25rem; margin-bottom: var(--space-xs);">Use code: <strong style="color: var(--gold); font-size: 1.5rem;">HOLIDAY25</strong></p>
-      <p style="margin-bottom: 0;">Get an additional 25% off any bundle!</p>
-      <p style="font-size: 0.875rem; color: var(--text-muted); margin-top: var(--space-xs);">Expires: January 1st, 2026</p>
-    </div>
-    
+
   </div>
 </section>
 
-{# Build Your Own Bundle #}
+{# How It Works - BYOK #}
 <section class="section section-secondary">
   <div class="container">
-    
+
     <div class="text-center mb-4">
-      <h2>Or Build Your Own Bundle</h2>
-      <p class="text-muted">Mix and match individual tools for a custom solution</p>
+      <h2>How TCTC is Different: Bring Your Own Keys</h2>
+      <p class="text-muted">You own everything. You control the costs.</p>
     </div>
-    
+
     <div class="grid grid-3">
-      
-      {# Loop through all products #}
-      {% for product in products %}
-      
-      <div class="product-card">
-        <div class="card-header">
-          <h3 class="card-title" style="font-size: 1.25rem;">{{ product.name }}</h3>
-          <p class="card-price">{{ product.price | currency }}</p>
-        </div>
-        
-        <p class="card-compressed" style="font-size: 0.95rem;">{{ product.compressed }}</p>
-        
-        <div class="card-actions">
-          {% if product.stripeUrl %}
-          <a href="{{ product.stripeUrl }}" class="cta-button gold-shimmer shine-effect">
-            Pre-Order – {{ product.price | currency }}
-          </a>
-          {% else %}
-          <a href="/contact/?product={{ product.name | urlencode }}" class="glass-button shine-effect">
-            Learn More
-          </a>
-          {% endif %}
-        </div>
-      </div>
-      
-      {% endfor %}
-      
-    </div>
-    
-    <div class="text-center mt-4">
-      <p style="font-size: 1.125rem; color: var(--gold); font-weight: 600;">
-        💡 Pre-Sale: Best value when bundling tools and music.
-      </p>
-    </div>
-    
-  </div>
-</section>
 
-{# Why Bundle? - Value Proposition #}
-<section class="section section-primary">
-  <div class="container">
-    
-    <div class="text-center mb-4">
-      <h2>Why Bundle?</h2>
-      <p class="text-muted">Because transformation requires more than one tool</p>
-    </div>
-    
-    <div class="grid grid-3">
-      
       <div class="path-card">
-        <h3>💰 Massive Savings</h3>
+        <h3>✅ One-Time Payment</h3>
         <p>
-          Save up to $1,392 compared to buying individually. 
-          The more you bundle, the more you save.
+          Pay once, own forever. No monthly SaaS fees.
+          All future updates included.
         </p>
       </div>
-      
-      <div class="path-card">
-        <h3><img src="/assets/bolt.png" alt="Fast" style="width: 4rem; height: 4rem; vertical-align: middle; margin-right: 0.5rem;"> Faster Results</h3>
-        <p>
-          Tools work better together. Content + tracking + branding + music = 
-          complete business transformation.
-        </p>
-      </div>
-      
-      <div class="path-card">
-        <h3><img src="/assets/target.png" alt="Target" style="width: 4rem; height: 4rem; vertical-align: middle; margin-right: 0.5rem;"> Strategic Alignment</h3>
-        <p>
-          Bundles are designed for specific business stages. Choose the formula 
-          that matches where you are right now.
-        </p>
-      </div>
-      
-      <div class="path-card">
-        <h3><img src="/assets/check.png" alt="Check" style="width: 4rem; height: 4rem; vertical-align: middle; margin-right: 0.5rem;"> Everything You Need</h3>
-        <p>
-          No guessing. No gaps. Each bundle gives you a complete system, 
-          not just individual pieces.
-        </p>
-      </div>
-      
-      <div class="path-card">
-        <h3><img src="/assets/phone.png" alt="Phone" style="width: 4rem; height: 4rem; vertical-align: middle; margin-right: 0.5rem;"> Enhanced Support</h3>
-        <p>
-          Bigger bundles = more support. Priority email, strategy calls, 
-          direct access to me.
-        </p>
-      </div>
-      
-      <div class="path-card">
-        <h3><img src="/assets/ship.png" alt="Rocket" style="width: 4rem; height: 4rem; vertical-align: middle; margin-right: 0.5rem;"> Future-Proof</h3>
-        <p>
-          All bundles include lifetime updates. As the tools evolve, 
-          you get every improvement.
-        </p>
-      </div>
-      
-    </div>
-    
-  </div>
-</section>
 
-{# Custom Bundle Option #}
-<section class="section section-secondary">
-  <div class="container">
-    
-    <div class="path-card" style="max-width: 800px; margin: 0 auto;">
-      <h2 class="text-center mb-3">Need A Custom Formula?</h2>
-      
-      <p class="text-center" style="font-size: 1.125rem;">
-        These bundles cover most scenarios, but maybe you need something unique. 
-        Want 4 tools and 2 songs? Different combination? Let's talk.
-      </p>
-      
-      <div class="text-center mt-4">
-        <a href="/contact/?inquiry=custom-bundle" class="btn btn-primary btn-large">
-          Request Custom Bundle
-        </a>
+      <div class="path-card">
+        <h3>✅ Your API Keys</h3>
+        <p>
+          Use your own keys from OpenAI, Anthropic, Google, or xAI.
+          Pay only for what you use (~$2-20/month).
+        </p>
       </div>
-    </div>
-    
-  </div>
-</section>
 
-{# Trust Signals #}
-<section class="section section-primary">
-  <div class="container">
-    
-    <div class="text-center mb-4">
-      <h2>What You Get</h2>
-    </div>
-    
-    <div class="grid grid-2">
-      
+      <div class="path-card">
+        <h3>✅ No Limits</h3>
+        <p>
+          No word caps, no usage limits, no artificial restrictions.
+          Generate as much as you need.
+        </p>
+      </div>
+
+      <div class="path-card">
+        <h3>✅ Full Privacy</h3>
+        <p>
+          Your data never touches our servers. Everything runs with
+          your own API keys and infrastructure.
+        </p>
+      </div>
+
       <div class="path-card">
         <h3>✅ Lifetime Updates</h3>
         <p>
-          When tools improve, you get the updates automatically. 
-          No upgrade fees, no version gating.
+          When we improve the tools, you get the updates automatically.
+          No upgrade fees ever.
         </p>
       </div>
-      
+
       <div class="path-card">
-        <h3>✅ You Own Everything</h3>
+        <h3>✅ 30-Day Guarantee</h3>
         <p>
-          You provide your own APIs and infrastructure. 
-          Full setup walkthrough included.
+          Not happy? Get a full refund within 30 days.
+          No questions asked.
         </p>
       </div>
-      
-      <div class="path-card">
-        <h3>✅ Flexible Payment</h3>
-        <p>
-          Complete TCTC Suite available with payment plans.
-          Reach out to discuss options.
-        </p>
-      </div>
-      
-      <div class="path-card">
-        <h3>✅ Stackable Promo Code</h3>
-        <p>
-          HOLIDAY25 works on bundles too. 25% off already-discounted prices. 
-          Ends January 1st.
-        </p>
-      </div>
-      
+
     </div>
-    
-    <div class="text-center mt-4">
-      <p class="text-muted">
-        🏷️ Use code <strong>HOLIDAY25</strong> for 25% off all bundles • Expires January 1st, 2026
-      </p>
-    </div>
-    
+
   </div>
 </section>
 
-{# Can't Decide Section #}
-<section class="section section-secondary">
-  <div class="container text-center">
-    
-    <h2 class="mb-3">Can't Decide?</h2>
-    
-    <p class="hero-subhead mb-4">
-      Start with individual products and upgrade to a bundle later
-    </p>
-    
-    <div class="hero-ctas">
-      <a href="/software/" class="btn btn-secondary btn-large">Browse Software</a>
-      <a href="/music/" class="btn btn-secondary btn-large">Explore Music</a>
-      <a href="/contact/" class="btn btn-secondary btn-large">Ask Questions</a>
+{# FAQ Section #}
+<section class="section section-primary">
+  <div class="container">
+
+    <div class="text-center mb-4">
+      <h2>Frequently Asked Questions</h2>
     </div>
-    
+
+    <div style="max-width: 800px; margin: 0 auto;">
+
+      <div class="path-card mb-3">
+        <h3>Do I need to be technical?</h3>
+        <p class="mb-0">
+          No. Setup takes 10 minutes with our step-by-step guide.
+          We show you exactly how to get API keys.
+        </p>
+      </div>
+
+      <div class="path-card mb-3">
+        <h3>What are the ongoing costs?</h3>
+        <p class="mb-0">
+          Just your API usage. Most users spend $2-20/month depending on usage.
+          Compare that to $50-200/month for traditional SaaS tools.
+        </p>
+      </div>
+
+      <div class="path-card mb-3">
+        <h3>Can I upgrade later?</h3>
+        <p class="mb-0">
+          Yes! Start with Business Suite and add AgencyHire anytime.
+          Or upgrade to Pro Bundle and we'll credit your previous purchase.
+        </p>
+      </div>
+
+      <div class="path-card mb-3">
+        <h3>Do you offer payment plans?</h3>
+        <p class="mb-0">
+          Yes! Business Suite: $97/month × 3. Pro Bundle: $149/month × 3.
+          Or pay in full and save.
+        </p>
+      </div>
+
+      <div class="path-card mb-3">
+        <h3>What if I need help?</h3>
+        <p class="mb-0">
+          Email will@tctcusa.com - I respond personally, usually within 24 hours.
+          Pro Bundle includes priority support.
+        </p>
+      </div>
+
+    </div>
+
   </div>
 </section>
 
 {# Final CTA #}
-<section class="section section-primary">
+<section class="section section-secondary">
   <div class="container text-center">
-    
-    <h2 class="mb-3">Ready to Transform Completely?</h2>
-    
+
+    <h2 class="mb-3">Ready to Stop Overpaying for AI Tools?</h2>
+
     <p class="hero-subhead mb-4">
-      Choose your formula and start today
+      Get TCTC Business Suite today and own your AI infrastructure
     </p>
-    
-    <a href="/contact/" class="btn btn-primary btn-large">Let's Get Started</a>
-    
+
+    <div class="hero-ctas">
+      <a href="mailto:will@tctcusa.com?subject=TCTC Business Suite Purchase" class="btn btn-primary btn-large">Get Started - $297</a>
+      <a href="/software/" class="btn btn-secondary btn-large">Browse Tools</a>
+    </div>
+
+    <p style="margin-top: var(--space-lg); color: var(--text-muted);">
+      Questions? Email <a href="mailto:will@tctcusa.com" style="color: var(--primary);">will@tctcusa.com</a>
+    </p>
+
   </div>
 </section>

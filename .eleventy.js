@@ -13,6 +13,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/js");
+  eleventyConfig.addPassthroughCopy({"Widget-logo.svg": "Widget-logo.svg"});
 
   // Watch for CSS changes
   eleventyConfig.addWatchTarget("src/css/");

@@ -1,0 +1,60 @@
+{# Portfolio Widget - Floating Contact Button #}
+
+{# Floating Widget Button #}
+<div class="floating-head-container">
+  <button type="button" class="head-btn" title="Contact Me">
+    <div class="avatar-wrapper">
+      <img src="/Widget-logo.svg" alt="TCTC Logo" class="head-image">
+      <div class="shimmer-effect"></div>
+    </div>
+    {# Sparkle Effects #}
+    <div class="glitter-particle p1"></div>
+    <div class="glitter-particle p2"></div>
+    <div class="glitter-particle p3"></div>
+    <div class="status-dot"></div>
+  </button>
+  <div class="chat-tooltip">Who built this?</div>
+</div>
+
+{# Modal Popup #}
+<div class="modal-backdrop" style="display: none;">
+  <div class="modal-card">
+    <button class="modal-close" aria-label="Close">
+      &times;
+    </button>
+
+    <div class="modal-hero">
+      <div class="avatar-wrapper modal-avatar">
+        <img src="/Widget-logo.svg" alt="TCTC Logo" class="head-image">
+        <div class="shimmer-effect"></div>
+      </div>
+      <h3 style="margin: 0; font-size: 1.2rem; color: #fff;">William Johnson</h3>
+      <span class="availability-badge">Available for New Projects</span>
+    </div>
+
+    <div class="modal-content-box">
+      <p class="modal-headline">Custom Software & AI Business Tools</p>
+
+      <p class="modal-text layman">
+        <strong>The Approach:</strong> I build production-grade interfaces and AI-powered business tools. This widget demonstrates modern web development with clean CSS animations, vanilla JavaScript state management, and reusable component architecture.
+      </p>
+
+      <p class="modal-text tech">
+        <strong>The Stack:</strong> 11ty, Nunjucks, CSS Variables for theming, and keyframe animations for high-performance visual effects. No heavy frameworks required—just pure, performant code.
+      </p>
+
+      <p class="modal-text cta">
+        Ready to build something exceptional? Let's talk.
+      </p>
+
+      <div class="modal-actions">
+        <a href="mailto:{{ site.email }}" class="btn-action email">
+          Email: {{ site.email }}
+        </a>
+        <a href="/contact/" class="btn-action sms">
+          View Full Contact Page
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
