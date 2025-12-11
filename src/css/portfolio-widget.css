@@ -70,7 +70,7 @@
   width: 95%;
   height: 95%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center 20%;
   z-index: 2;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }
@@ -85,11 +85,12 @@
   background: linear-gradient(
     45deg,
     transparent 30%,
-    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.1) 50%,
     transparent 70%
   );
-  animation: shimmer 3s infinite;
+  animation: shimmer 4s infinite;
   pointer-events: none;
+  opacity: 0.5;
 }
 
 @keyframes shimmer {

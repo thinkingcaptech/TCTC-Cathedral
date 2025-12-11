@@ -27,12 +27,22 @@
       container.classList.add('slide-in');
     }, 1000);
 
-    // Open modal when clicking the floating head button
-    headBtn.addEventListener('click', function() {
+    // Auto-open modal 1 second after page load
+    setTimeout(function() {
+      openModal();
+    }, 1000);
+
+    // Open modal function
+    function openModal() {
       modalBackdrop.style.display = 'flex';
       // Trigger reflow to enable animation
       modalBackdrop.offsetHeight;
       modalBackdrop.classList.add('active');
+    }
+
+    // Open modal when clicking the floating head button
+    headBtn.addEventListener('click', function() {
+      openModal();
     });
 
     // Close modal when clicking the close button
