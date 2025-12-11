@@ -253,19 +253,8 @@ strong {
 }
 
 .logo-text {
-  background: linear-gradient(
-    90deg,
-    #667eea 0%,
-    #764ba2 25%,
-    #f6c042 50%,
-    #764ba2 75%,
-    #667eea 100%
-  );
-  background-size: 200% 100%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: logoGradientFlow 3s ease-in-out infinite;
+  color: var(--text-light);
+  font-weight: 800;
 }
 
 .logo-highlight {
@@ -1078,11 +1067,11 @@ audio::-internal-media-controls-download-button {
 .cta-button {
   background: linear-gradient(
     135deg,
-    #f6c042 0%,
-    #ffd666 25%,
-    #f6c042 50%,
+    #F97316 0%,
+    #FB923C 25%,
+    #F97316 50%,
     #e4a628 75%,
-    #f6c042 100%
+    #F97316 100%
   );
   background-size: 200% 200%;
   animation: shimmer 3s ease-in-out infinite;
@@ -1119,8 +1108,8 @@ audio::-internal-media-controls-download-button {
 .card-button-primary:hover,
 .nav-link-cta:hover,
 .email-submit:hover {
-  animation: shimmer 1.5s ease-in-out infinite;
-  box-shadow: 0 8px 32px rgba(246, 192, 66, 0.5);
+  background: var(--gold-dark);
+  box-shadow: 0 8px 32px rgba(249, 115, 22, 0.5);
 }
 
 /* Purple Glow - Tech Sections */
@@ -1169,7 +1158,7 @@ h1 {
     135deg,
     #667eea,
     #764ba2,
-    #f6c042,
+    #F97316,
     #667eea
   );
   background-size: 200% 200%;
@@ -1192,9 +1181,9 @@ h1 {
 .progress-fill {
   background: linear-gradient(
     90deg,
-    #f6c042 0%,
-    #ffd666 50%,
-    #f6c042 100%
+    #F97316 0%,
+    #FB923C 50%,
+    #F97316 100%
   );
   background-size: 200% 100%;
   animation: progressShine 2s linear infinite;
@@ -1269,7 +1258,7 @@ h1 {
     135deg,
     #667eea 0%,
     #764ba2 50%,
-    #f6c042 100%
+    #F97316 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1293,7 +1282,7 @@ h1 {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #764ba2, #f6c042);
+  background: linear-gradient(135deg, #764ba2, #F97316);
 }
 
 /* Scroll Reveal Effect */
@@ -1805,7 +1794,7 @@ h3.shine-effect::before {
 .stat-number {
   font-size: 5rem;
   font-weight: 900;
-  background: linear-gradient(135deg, #667eea, #f6c042);
+  background: linear-gradient(135deg, #667eea, #F97316);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1887,7 +1876,7 @@ h3.shine-effect::before {
 }
 
 .ownership-badge.full-rights {
-  background: linear-gradient(135deg, #f6c042, #ffd666);
+  background: linear-gradient(135deg, #F97316, #FB923C);
   color: #0a0e27;
 }
 
@@ -2007,8 +1996,7 @@ h3.shine-effect::before {
   
   /* Stop the flash in the header nav button */
   .main-nav .nav-link-cta {
-    background: linear-gradient(135deg, #f6c042 0%, #ffd666 50%, #f6c042 100%) !important;
-    background-size: 100% 100% !important;
+    background: var(--gold) !important;
   }
   
   /* Prevent overflow from causing layout shifts */
