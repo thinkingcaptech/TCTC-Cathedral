@@ -16,10 +16,10 @@
   --primary-darker: #000000;
   --primary-gradient: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
 
-  /* Accent Color - Gold */
-  --gold: #F59E0B;
-  --gold-dark: #D97706;
-  --gold-darker: #B45309;
+  /* Accent Color - Orange (Trust & Ambition) */
+  --gold: #F97316;
+  --gold-dark: #EA580C;
+  --gold-darker: #C2410C;
 
   /* Secondary - Lighter Navy */
   --mission: #1E293B;
@@ -64,7 +64,7 @@
   --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.15);
   --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.2);
   --shadow-xl: 0 12px 24px rgba(0, 0, 0, 0.25);
-  --shadow-gold: 0 4px 12px rgba(245, 158, 11, 0.4);
+  --shadow-gold: 0 4px 12px rgba(249, 115, 22, 0.4);
 }
 
 /* ============================================
@@ -104,10 +104,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: clamp(2rem, 5vw, 3.5rem);
-  background: var(--primary-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--text-light);
+  font-weight: 800;
 }
 
 h2 {
