@@ -18,7 +18,11 @@
   {# Card Header #}
   <div class="card-header">
     <h3 class="card-title">{{ product.name }}</h3>
+    {% if product.free %}
+    <p class="card-price" style="color: var(--primary); font-weight: 700;">100% FREE</p>
+    {% else %}
     <p class="card-price">{{ product.price | currency }}</p>
+    {% endif %}
   </div>
 
   <div class="pre-sale-badge">Live Tool • Ready to Use</div>
@@ -52,16 +56,15 @@
   
   {# CTAs - Transformation Points #}
   <div class="card-actions">
-    
-    {# Live Demo Link (if available) #}
-    {% if product.liveUrl %}
-    <a href="{{ product.liveUrl }}" target="_blank" rel="noopener noreferrer" class="card-button-secondary">
-      Try Live Demo →
+
+    {# Free Tools - Link to Dashboard #}
+    {% if product.free and product.category == "software" %}
+    <a href="https://modern-aichemy-dashboard-dec25.web.app/" target="_blank" rel="noopener noreferrer" class="cta-button">
+      Try It Free →
     </a>
-    {% endif %}
-    
-    {# Primary CTA - Purchase or Contact #}
-    {% if product.stripeUrl %}
+
+    {# Paid Products - Keep Original Flow #}
+    {% elif product.stripeUrl %}
     <a href="{{ product.stripeUrl }}" class="cta-button">
       Get Now – {{ product.price | currency }}
     </a>
@@ -70,7 +73,7 @@
       Get {{ product.name }}
     </a>
     {% endif %}
-    
+
   </div>
   
 </div>
