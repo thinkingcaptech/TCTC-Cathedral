@@ -1,79 +1,74 @@
 /**
- * MODERN AICHEMY - HARMONIC CSS SYSTEM
- * 
- * Formerly referenced 'Architecture of Resonance' – now simplified working CSS system.
- * Design Invisibility = 1 / Cognitive Friction
- * 
- * Color as Frequency - Three-Layer System:
- * - Primary (Purplish Blue): Low-frequency foundation
- * - Accent (Gold): High-arousal transformation
- * - Mission (Maroon): Low-arousal urgency
+ * TCTC CATHEDRAL - CSS SYSTEM
+ *
+ * Professional navy/gold color palette
+ * Clean, modern design system
  */
 
 /* ============================================
-   THE FREQUENCIES - CSS Variables
+   CSS Variables
    ============================================ */
 
 :root {
-  /* Primary Frequency - Purplish Blue (Low-Frequency Foundation) */
-  --primary: #667eea;
-  --primary-dark: #5568d3;
-  --primary-darker: #4457b8;
-  --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  /* Primary Colors - Navy/Gold Palette */
+  --primary: #0F172A;
+  --primary-dark: #020617;
+  --primary-darker: #000000;
+  --primary-gradient: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+
+  /* Accent Color - Gold */
+  --gold: #F59E0B;
+  --gold-dark: #D97706;
+  --gold-darker: #B45309;
+
+  /* Secondary - Lighter Navy */
+  --mission: #1E293B;
+  --mission-dark: #0F172A;
+
+  /* Backgrounds */
+  --bg-dark: #0F172A;
+  --bg-medium: #1E293B;
+  --bg-card: #1E293B;
+  --bg-light: #F8FAFC;
+
+  /* Text Colors */
+  --text-light: #F8FAFC;
+  --text-muted: #94A3B8;
+  --text-dark: #0F172A;
   
-  /* Accent Frequency - Gold (Transformation) */
-  --gold: #f6c042;
-  --gold-dark: #e4a628;
-  --gold-darker: #d09515;
-  
-  /* Mission Frequency - Maroon (Urgency) */
-  --mission: #8b1538;
-  --mission-dark: #6d1129;
-  
-  /* Background - The Silence */
-  --bg-dark: #0a0e27;
-  --bg-medium: #1a1f3a;
-  --bg-card: #242b4d;
-  --bg-light: #f8f9fa;
-  
-  /* Text - The Clarity */
-  --text-light: #f8f9fa;
-  --text-muted: #a0a0a0;
-  --text-dark: #2c3e50;
-  
-  /* Spacing - Sacred Geometry */
+  /* Spacing */
   --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 1.5rem;
   --space-lg: 2rem;
   --space-xl: 3rem;
   --space-xxl: 4rem;
-  
-  /* Typography - The Climate */
+
+  /* Typography */
   --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   --font-heading: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
-  /* Transitions - Smooth State Changes */
+
+  /* Transitions */
   --transition-fast: 0.2s ease;
   --transition-medium: 0.3s ease;
   --transition-slow: 0.5s ease;
-  
-  /* Border Radius - Smooth Edges */
+
+  /* Border Radius */
   --radius-sm: 4px;
   --radius-md: 8px;
   --radius-lg: 12px;
   --radius-xl: 16px;
-  
-  /* Shadows - Depth and Lift */
+
+  /* Shadows */
   --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.15);
   --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.2);
   --shadow-xl: 0 12px 24px rgba(0, 0, 0, 0.25);
-  --shadow-gold: 0 4px 12px rgba(246, 192, 66, 0.4);
+  --shadow-gold: 0 4px 12px rgba(245, 158, 11, 0.4);
 }
 
 /* ============================================
-   RESET & BASE - The Foundation
+   Base Styles
    ============================================ */
 
 * {
@@ -85,9 +80,6 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
-   MOBILE PERFORMANCE OPTIMIZATIONS
-   ============================================ */
-
 }
 
 body {
@@ -100,7 +92,7 @@ body {
 }
 
 /* ============================================
-   TYPOGRAPHY - Language as Climate
+   Typography
    ============================================ */
 
 h1, h2, h3, h4, h5, h6 {

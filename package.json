@@ -1,7 +1,7 @@
 {
-  "name": "modern-aichemy",
+  "name": "tctc-cathedral",
   "version": "1.0.0",
-  "description": "The Digital Alchemist's Laboratory - Where AI Meets Alchemy. A resonance-based static website built on Eleventy following the Architecture of Resonance principles.",
+  "description": "TCTC Business Suite - AI-powered tools and music services for small businesses. Built with Eleventy.",
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy",
@@ -13,10 +13,10 @@
     "static-site",
     "ai-business-tools",
     "custom-ai-music",
-    "digital-transformation",
-    "resonance-architecture"
+    "small-business-software",
+    "business-consulting"
   ],
-  "author": "William - Modern AiChemy",
+  "author": "William Johnson - TCTC",
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1"
