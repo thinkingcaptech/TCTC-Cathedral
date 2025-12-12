@@ -29,7 +29,7 @@ The AI Business Diagnostic walks you through a fast, structured intake so you ca
 Below is the production interface—configure your API key, work through the questionnaire, and the right column will populate with scores plus AI-authored recommendations in seconds.
 
 <div id="tool-interface" class="tool-interface diagnostic-app">
-  <div class="diagnostic-grid">
+  <div style="max-width: 900px; margin: 0 auto;">
     <div class="diagnostic-panel">
       <section class="byok-panel">
         <div>
@@ -282,10 +282,8 @@ Below is the production interface—configure your API key, work through the que
         </form>
         <div id="formToast" class="diagnostic-toast" role="status" aria-live="polite"></div>
       </section>
-    </div>
 
-    <div class="diagnostic-panel diagnostic-panel--results">
-      <section class="score-card result-block">
+      <section class="score-card result-block" style="margin-top: 3rem;">
         <p class="tool-hero__eyebrow">Business Health Diagnostic</p>
         <h1 id="scoreValue">--</h1>
         <p class="score-narrative" id="scoreNarrative">Complete the diagnostic to unlock your report.</p>
