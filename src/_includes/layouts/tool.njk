@@ -1,0 +1,178 @@
+---
+layout: layout.njk
+---
+{% set tool = collections.tools | selectattr('data.slug', 'equalto', page.fileSlug) | first %}
+
+{% block head %}
+  {% if seo %}
+    <title>{{ seo.title }}</title>
+    <meta name="description" content="{{ seo.description }}">
+    {% if seo.keywords %}
+      <meta name="keywords" content="{{ seo.keywords | join(', ') }}">
+    {% endif %}
+    <meta property="og:title" content="{{ seo.title }}">
+    <meta property="og:description" content="{{ seo.description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:image" content="{{ site.url }}/assets/tools/{{ slug or page.fileSlug }}.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+  {% endif %}
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <link rel="stylesheet" href="/css/tools-base.css">
+  {% if toolStyles %}
+    <link rel="stylesheet" href="{{ toolStyles }}">
+  {% endif %}
+{% endblock %}
+
+<section class="tool-hero">
+  <div class="container">
+    {% if eyebrow %}
+      <p class="tool-hero__eyebrow">{{ eyebrow }}</p>
+    {% endif %}
+    <h1>{{ title }}</h1>
+    {% if description %}
+      <p class="tool-hero__description">{{ description }}</p>
+    {% endif %}
+    <div class="tool-meta">
+      {% if category %}<span><strong>Category:</strong> {{ category }}</span>{% endif %}
+      {% if difficulty %}<span><strong>Difficulty:</strong> {{ difficulty }}</span>{% endif %}
+      {% if apiModels %}<span><strong>Models:</strong> {{ apiModels | join(', ') }}</span>{% endif %}
+    </div>
+    <div class="tool-hero__actions">
+      <a href="#tool-interface" class="button button--primary">Launch Tool</a>
+      <a href="/tools/" class="button button--ghost">Browse All Tools</a>
+    </div>
+  </div>
+</section>
+
+<section class="tool-body">
+  <div class="container">
+    <div class="tool-layout">
+      <article>
+        <h2>About this tool</h2>
+        <div class="tool-content">
+          {{ content | safe }}
+        </div>
+       {% if not inlineInterface %}
+       <div id="tool-interface" class="tool-interface"
+         {% if interfaceData %}
+           {% for key, value in interfaceData %}
+             data-{{ key }}="{{ value }}"
+           {% endfor %}
+         {% endif %}>
+          {% if byokPanel %}
+          <section class="byok-panel">
+            <p class="tool-hero__eyebrow">Bring Your Own Keys</p>
+            <h3>Connect your preferred AI provider</h3>
+            <p>Your API keys stay in this browser only. Configure Gemini, GPT, Claude, or Grok before launching the tool.</p>
+
+            <div class="byok-row">
+              <div class="byok-field">
+                <label for="globalProviderSelect">Provider</label>
+                <select id="globalProviderSelect">
+                  <option value="gemini">Google Gemini</option>
+                  <option value="openai">OpenAI GPT</option>
+                  <option value="anthropic">Anthropic Claude</option>
+                  <option value="grok">xAI Grok</option>
+                </select>
+              </div>
+              <div class="byok-field">
+                <label for="globalModelInput">Model (optional)</label>
+                <input id="globalModelInput" type="text" placeholder="Auto-selects best model" list="diagnosticModelOptions">
+              </div>
+            </div>
+
+            <div class="byok-field">
+              <label for="globalApiKeyInput">API Key</label>
+              <input id="globalApiKeyInput" type="password" placeholder="Paste your key here">
+            </div>
+
+            <div class="byok-actions">
+              <button type="button" class="button button--primary" id="globalSaveKeyBtn">Save Key</button>
+              <button type="button" class="button button--ghost" id="globalTestKeyBtn">Test Key</button>
+              <button type="button" class="button button--ghost" id="globalClearKeyBtn">Clear</button>
+            </div>
+            <p id="globalKeyStatus" class="byok-status"></p>
+          </section>
+          {% else %}
+          <div class="tool-placeholder">
+            <p>The interactive interface for this tool loads here.</p>
+            <p class="tool-placeholder__note">(Developers: mount your JS widget to #tool-interface.)</p>
+          </div>
+          {% endif %}
+        </div>
+        {% endif %}
+      </article>
+      <aside class="tool-sidebar">
+        {% if useCases %}
+        <div class="tool-card">
+          <h3>Best For</h3>
+          <ul>
+            {% for use in useCases %}
+              <li>{{ use }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+        {% if apiModels %}
+        <div class="tool-card">
+          <h3>BYOK Providers</h3>
+          <ul>
+            {% for model in apiModels %}
+              <li>{{ model }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+        {% include "tool-cta.njk" %}
+      </aside>
+    </div>
+  </div>
+</section>
+
+{% if faq %}
+<section class="tool-faq">
+  <div class="container">
+    <h2>Common questions</h2>
+    <div class="faq-grid">
+      {% for item in faq %}
+        <article class="faq-item">
+          <h3>{{ item.question }}</h3>
+          <p>{{ item.answer }}</p>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% block scripts %}
+  {% if schema %}
+    <script type="application/ld+json">
+      {{ schema | dump | safe }}
+    </script>
+  {% endif %}
+  {% if faq %}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {% for item in faq %}
+            {
+              "@type": "Question",
+              "name": "{{ item.question }}",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "{{ item.answer }}"
+              }
+            }{% if not loop.last %},{% endif %}
+          {% endfor %}
+        ]
+      }
+    </script>
+  {% endif %}
+  {% if toolJavascript %}
+    <script type="module" src="{{ toolJavascript }}"></script>
+  {% endif %}
+{% endblock %}

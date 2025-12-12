@@ -1,0 +1,174 @@
+{
+  "business-diagnostic": {
+    "name": "AI Business Diagnostic",
+    "slug": "business-diagnostic",
+    "url": "/tools/business-diagnostic/",
+    "icon": "📊",
+    "category": "Strategy",
+    "difficulty": "Intermediate",
+    "tagline": "Score your operations, marketing, sales, and finance in minutes.",
+    "description": "Answer a guided intake, then get a full-stack AI report with scores, bottlenecks, and recommended next moves.",
+    "useCases": [
+      "Quarterly business health reviews",
+      "Investor updates",
+      "Prioritizing roadmap initiatives"
+    ],
+    "apiModels": ["GPT-4o", "Claude 3.5", "Gemini 1.5", "Grok 2"],
+    "status": "available",
+    "ctaLabel": "Run Diagnostic",
+    "seo": {
+      "title": "Free AI Business Diagnostic Tool | TCTC",
+      "description": "Run a full AI-powered business health assessment covering operations, marketing, sales, finance, and team readiness.",
+      "keywords": ["ai business diagnostic", "business health assessment", "free business tool"]
+    },
+    "schema": {
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    "faq": [
+      {
+        "question": "Is the AI Business Diagnostic really free?",
+        "answer": "Yes. Bring your own API keys and the tool will only use your provider credits. There is no charge from TCTC."
+      },
+      {
+        "question": "What frameworks does the diagnostic analyze?",
+        "answer": "It evaluates five pillars: Operations, Marketing, Sales, Team, and Finance, with action items mapped to each pillar."
+      }
+    ]
+  },
+  "blog-builder": {
+    "name": "Local SEO Blog Builder",
+    "slug": "blog-builder",
+    "url": "/tools/blog-builder/",
+    "icon": "📝",
+    "category": "Content",
+    "difficulty": "Beginner",
+    "tagline": "Generate 1-200 geo-targeted SEO posts in a single pass.",
+    "description": "Batch content production with reusable prompts, keyword clusters, and city targeting. Export-ready Markdown and HTML.",
+    "useCases": [
+      "Service-area campaigns",
+      "Agency fulfillment",
+      "Niche directory launches"
+    ],
+    "apiModels": ["GPT-4o", "Claude 3.5 Sonnet", "Gemini 1.5 Pro"],
+    "status": "available",
+    "ctaLabel": "Generate Posts",
+    "seo": {
+      "title": "Free AI Blog Builder for Local SEO | TCTC",
+      "description": "Create dozens of geo-optimized blog posts with your own API keys. Perfect for agencies and local businesses.",
+      "keywords": ["ai blog builder", "local seo content", "bulk blog generator"]
+    },
+    "schema": {
+      "applicationCategory": "ContentCreation",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    "faq": [
+      {
+        "question": "How many posts can I generate at once?",
+        "answer": "You can create from 1 to 200 posts per run with throttled batches to stay within provider rate limits."
+      },
+      {
+        "question": "Do I need to store my prompts somewhere?",
+        "answer": "The builder saves prompt templates, outlines, and keyword lists locally in your browser so you can reuse them."
+      }
+    ]
+  },
+  "sales-simulator": {
+    "name": "AI Sales Simulator",
+    "slug": "sales-simulator",
+    "url": "/tools/sales-simulator/",
+    "icon": "💬",
+    "category": "Revenue",
+    "difficulty": "Intermediate",
+    "tagline": "Role-play live discovery calls with AI prospects and objections.",
+    "description": "Customize persona, objections, and tone. Receive transcripts, objection breakdowns, and coaching notes.",
+    "useCases": [
+      "Sales onboarding",
+      "Founder-led sales practice",
+      "Agency pitch rehearsal"
+    ],
+    "apiModels": ["GPT-4o", "Claude 3.5", "Grok"],
+    "status": "available",
+    "ctaLabel": "Start Simulation",
+    "seo": {
+      "title": "AI Sales Call Simulator | TCTC",
+      "description": "Practice discovery calls with adaptive AI buyers. Get instant transcripts, objection feedback, and coaching prompts.",
+      "keywords": ["sales simulator", "ai sales training", "practice discovery calls"]
+    },
+    "schema": {
+      "applicationCategory": "SalesApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    "faq": [
+      {
+        "question": "Can I upload my own scripts?",
+        "answer": "Yes. You can preload call frameworks, discovery questions, and custom objection libraries for the AI to use."
+      },
+      {
+        "question": "Does it store call recordings?",
+        "answer": "No data leaves your browser. Transcripts are generated locally and can be exported by you only."
+      }
+    ]
+  },
+  "aether-engine": {
+    "name": "Aether Campaign Engine",
+    "slug": "aether-engine",
+    "url": "/tools/aether-engine/",
+    "icon": "⚙️",
+    "category": "Automation",
+    "difficulty": "Advanced",
+    "tagline": "Spin up multi-channel campaigns powered by AI personas and automations.",
+    "description": "Plan offers, craft messaging, and auto-generate landing copy, emails, and ads with BYOK orchestration.",
+    "useCases": [
+      "Product launches",
+      "Lifecycle revamps",
+      "Agency playbooks"
+    ],
+    "apiModels": ["GPT-4o", "Claude 3.5", "Gemini 1.5"],
+    "status": "beta",
+    "ctaLabel": "Preview Engine",
+    "seo": {
+      "title": "Aether AI Campaign Engine | TCTC",
+      "description": "Design end-to-end marketing campaigns with reusable AI workflows and your own API keys.",
+      "keywords": ["ai campaign builder", "marketing workflow automation", "multi-channel campaign tool"]
+    },
+    "schema": {
+      "applicationCategory": "MarketingApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/PreOrder"
+      }
+    },
+    "faq": [
+      {
+        "question": "Is the Aether Engine production-ready?",
+        "answer": "It's currently in pilot with select clients. You can test the public workflow builder while we polish the beta."
+      },
+      {
+        "question": "Can it connect to Zapier or webhooks?",
+        "answer": "Yes. The engine exports campaign objects you can connect to Zapier, Make, or custom webhooks for deployment."
+      }
+    ]
+  }
+}

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Health Diagnostic – Questionnaire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="page-quiz">
+    <header class="site-header">
+        <div class="brand">
+            <img src="assets/images/logo.svg" alt="Business Health" class="brand-logo" />
+            <div>
+                <p class="eyebrow">Business Health Diagnostic</p>
+                <p class="tagline">Step 1 of 2 | Questionnaire</p>
+            </div>
+        </div>
+        <a href="index.html" class="btn btn-ghost">Back to overview</a>
+    </header>
+
+    <main class="quiz-shell">
+        <section class="progress">
+            <h1>Tell us about your business foundations</h1>
+            <div class="progress-bar">
+                <div class="progress-bar__fill" id="progressFill"></div>
+            </div>
+            <ul class="progress-steps" id="progressSteps">
+                <li class="active">Management & Operations</li>
+                <li>Marketing & Lead Generation</li>
+                <li>Sales & Conversion</li>
+                <li>Finances & Scalability</li>
+            </ul>
+        </section>
+
+        <form id="quizForm" novalidate>
+            <!-- Management & Operations -->
+            <fieldset class="form-step active-step" data-step="0">
+                <legend>Management & Operations</legend>
+                <p class="step-intro">Assess how well your leadership rhythm, systems, and documentation keep everyone aligned.</p>
+                <label class="question">
+                    <span>How mature are your documented processes?</span>
+                    <select name="management_process_maturity" required>
+                        <option value="" disabled selected>Select one</option>
+                        <option value="5">Fully documented and audited quarterly</option>
+                        <option value="4">Documented for most core workflows</option>
+                        <option value="3">Documented for a few key processes</option>
+                        <option value="2">Informal checklists live across tools</option>
+                        <option value="1">Nothing is documented</option>
+                    </select>
+                </label>
+                <label class="question">
+                    <span>How aligned and empowered is your leadership team?</span>
+                    <select name="management_team_alignment" required>
+                        <option value="" disabled selected>Select one</option>
+                        <option value="5">Roles, KPIs, and cadences are crystal clear</option>
+                        <option value="4">Mostly aligned but a few gaps remain</option>
+                        <option value="3">Mixed clarity and accountability</option>
+                        <option value="2">Frequent misalignment or conflict</option>
+                        <option value="1">No consistent leadership rhythm</option>
+                    </select>
+                </label>
+                <label class="question">
+                    <span>How frequently do you review KPIs and operating dashboards?</span>
+                    <select name="management_kpi_cadence" required>
+                        <option value="" disabled selected>Select one</option>
+                        <option value="5">Weekly leadership scorecard reviews</option>
+                        <option value="4">Bi-weekly cadence</option>
+                        <option value="3">Monthly at best</option>
+                        <option value="2">Quarterly or ad hoc</option>
+                        <option value="1">No centralized visibility</option>
+                    </select>
+                </label>
+                <label class="question optional">
+                    <span>Anything else we should know about your operations?</span>
+                    <textarea name="management_notes" rows="3" placeholder="Optional context"></textarea>
+                </label>
+                <div class="step-actions">
+                    <button type="button" class="btn next-btn">Next</button>
+                </div>
+            </fieldset>
+
+            <!-- Marketing & Lead Generation -->
+            <fieldset class="form-step" data-step="1">
+                <legend>Marketing & Lead Generation</legend>
+                <p class="step-intro">Reveal how predictably your demand engine attracts qualified leads.</p>
+                <label class="question">
+                    <span>How confident are you in your lead volume month over month?</span>
+                    <select name="marketing_lead_volume" required>
+                        <option value="" disabled selected>Select one</option>
+                        <option value="5">Pipeline consistently exceeds goals</option>
+                        <option value="4">Steady flow that usually meets targets</option>
+                        <option value="3">Unpredictable surges and dips</option>
+                        <option value="2">Chronic shortage of leads</option>
+                        <option value="1">No reliable volume data</option>
+                    </select>
+                </label>
+                <label class="question">
+                    <span>How diversified are your acquisition channels?</span>
+                    <select name="marketing_channel_mix" required>
+                        <option value="" disabled selected>Select one</option>
+                        <option value="5">3+ high-performing channels</option>
+                        <option value="4">Two strong channels</option>
+                        <option value="3">One dependable channel</option>
+                        <option value="2">One experimental or inconsistent channel</option>
+                        <option value="1">No defined channels</option>
+                    </select>
+                </label>
+                <label class="question">
+                    <span>How efficiently do you measure marketing ROI?</span>
+                    <select name="marketing_roi_tracking" required>
+                        <option value="" disabled selected>Select one</option>
+                        <option value="5">Real-time dashboards with CAC/LTV tracking</option>
+                        <option value="4">Monthly reports with solid attribution</option>
+                        <option value="3">Basic tracking in spreadsheets</option>
+                        <option value="2">Gut feel with sparse data</option>
+                        <option value="1">No measurement system</option>
+                    </select>
+                </label>
+                <label class="question optional">
+                    <span>Share context about your current marketing campaigns.</span>
+                    <textarea name="marketing_notes" rows="3" placeholder="Optional context"></textarea>
+                </label>
+                <div class="step-actions">
+                    <button type="button" class="btn btn-ghost prev-btn">Previous</button>
+                    <button type="button" class="btn next-btn">Next</button>
+                </div>
+            </fieldset>
+
+            <!-- Sales & Conversion -->
+            <fieldset class="form-step" data-step="2">
+                <legend>Sales & Conversion</legend>
+                <p class="step-intro">Evaluate how well your team converts qualified demand into revenue.</p>
+                <label class="question">
+                    <span>How disciplined is your sales pipeline management?</span>
+                    <select name="sales_pipeline_rigor" required>
+                        <option value="" disabled selected>Select one</option>
+                        <option value="5">Stages, probabilities, and SLAs are enforced</option>
+                        <option value="4">Pipeline updates weekly</option>
+                        <option value="3">Pipeline reviewed monthly</option>
+                        <option value="2">Pipeline is outdated</option>
+                        <option value="1">No shared pipeline</option>
+                    </select>
+                </label>
+                <label class="question">
+                    <span>How strong is your conversion enablement (scripts, assets, demos)?</span>
+                    <select name="sales_enablement_strength" required>
+                        <option value="" disabled selected>Select one</option>
+                        <option value="5">Battle-tested playbooks and assets</option>
+                        <option value="4">Core assets exist but need polish</option>
+                        <option value="3">Partial assets for a few stages</option>
+                        <option value="2">Basic pitch decks only</option>
+                        <option value="1">Nothing standardized</option>
+                    </select>
+                </label>
+                <label class="question">
+                    <span>What's your close rate on qualified opportunities?</span>
+                    <select name="sales_close_rate" required>
+                        <option value="" disabled selected>Select one</option>
+                        <option value="5">Above 40%</option>
+                        <option value="4">30-40%</option>
+                        <option value="3">20-30%</option>
+                        <option value="2">10-20%</option>
+                        <option value="1">Below 10% or unknown</option>
+                    </select>
+                </label>
+                <label class="question optional">
+                    <span>Where do most deals stall today?</span>
+                    <textarea name="sales_notes" rows="3" placeholder="Optional context"></textarea>
+                </label>
+                <div class="step-actions">
+                    <button type="button" class="btn btn-ghost prev-btn">Previous</button>
+                    <button type="button" class="btn next-btn">Next</button>
+                </div>
+            </fieldset>
+
+            <!-- Finances & Scalability -->
+            <fieldset class="form-step" data-step="3">
+                <legend>Finances & Scalability</legend>
+                <p class="step-intro">Understand how resilient your economics are as you scale.</p>
+                <label class="question">
+                    <span>How predictable is your cash flow?</span>
+                    <select name="finances_cashflow_visibility" required>
+                        <option value="" disabled selected>Select one</option>
+                        <option value="5">13-week rolling forecasts locked in</option>
+                        <option value="4">Monthly cash planning</option>
+                        <option value="3">Quarterly look-backs only</option>
+                        <option value="2">Occasional fire drills</option>
+                        <option value="1">No cash visibility</option>
+                    </select>
+                </label>
+                <label class="question">
+                    <span>What describes your margin health?</span>
+                    <select name="finances_margin_health" required>
+                        <option value="" disabled selected>Select one</option>
+                        <option value="5">Margins exceed industry benchmarks</option>
+                        <option value="4">Healthy but could improve</option>
+                        <option value="3">Average margins under watch</option>
+                        <option value="2">Margin pressure threatens growth</option>
+                        <option value="1">Margins unclear or negative</option>
+                    </select>
+                </label>
+                <label class="question">
+                    <span>How scalable are your systems for the next revenue milestone?</span>
+                    <select name="finances_scaling_readiness" required>
+                        <option value="" disabled selected>Select one</option>
+                        <option value="5">Next 2 growth stages are already modeled</option>
+                        <option value="4">Systems ready for the next stage</option>
+                        <option value="3">Some upgrades needed</option>
+                        <option value="2">Big investments required</option>
+                        <option value="1">No plan for scale</option>
+                    </select>
+                </label>
+                <label class="question optional">
+                    <span>Describe your growth targets for the next 12 months.</span>
+                    <textarea name="finances_notes" rows="3" placeholder="Optional context"></textarea>
+                </label>
+                <div class="step-actions">
+                    <button type="button" class="btn btn-ghost prev-btn">Previous</button>
+                    <button type="submit" class="btn">Generate My Report</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+    <div id="formToast" role="status" aria-live="polite"></div>
+
+    <!-- API Key Modal -->
+    <div id="apiKeyModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Setup Required</h2>
+                <p class="eyebrow">Bring Your Own Key (BYOK)</p>
+            </div>
+            <div class="modal-body">
+                <p>This diagnostic uses Google's Gemini AI to generate personalized recommendations. You'll need your own Gemini API key to proceed.</p>
+                
+                <div class="info-box">
+                    <h4>How to get your API key:</h4>
+                    <ol>
+                        <li>Visit <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener">Google AI Studio</a></li>
+                        <li>Click "Get API Key" or "Create API Key"</li>
+                        <li>Copy your API key</li>
+                        <li>Paste it below</li>
+                    </ol>
+                </div>
+
+                <form id="apiKeyForm">
+                    <label class="api-key-input">
+                        <span>Your Gemini API Key</span>
+                        <input 
+                            type="password" 
+                            id="apiKeyInput" 
+                            placeholder="AIza..." 
+                            required
+                            autocomplete="off"
+                        />
+                        <button type="button" class="toggle-visibility" id="toggleKeyVisibility" aria-label="Toggle password visibility">
+                            👁️
+                        </button>
+                    </label>
+                    <div id="apiKeyError" class="error-message"></div>
+                    <div class="api-key-actions">
+                        <button type="button" class="btn btn-ghost" id="testApiKey">Test Key</button>
+                        <button type="submit" class="btn">Save & Continue</button>
+                    </div>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="rememberKey" checked />
+                        <span>Remember my API key (stored locally in browser)</span>
+                    </label>
+                </form>
+
+                <div class="modal-footer">
+                    <p class="note">Your API key is stored locally in your browser and never sent to our servers. It's only used to communicate directly with Google's Gemini API.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/api-key-manager.js?v=3"></script>
+    <script src="assets/js/gemini-client.js?v=3"></script>
+    <script src="assets/js/app.js?v=3"></script>
+</body>
+</html>

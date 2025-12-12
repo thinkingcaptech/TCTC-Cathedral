@@ -1,0 +1,162 @@
+---
+layout: layout.njk
+title: "Free AI Business Tools Directory | TCTC"
+description: "Explore production-grade AI tools built by TCTC. BYOK architecture, zero logins, and new tools launching monthly."
+---
+
+{% block head %}
+  <link rel="stylesheet" href="/css/tools-base.css">
+  <style>
+    .tool-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .tool-card {
+      background: #101828;
+      border: 1px solid rgba(148, 163, 184, 0.15);
+      border-radius: 1.25rem;
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .tool-card__icon {
+      font-size: 2rem;
+    }
+    .tool-card__meta {
+      color: #94A3B8;
+      font-size: 0.95rem;
+    }
+    .tool-card__description {
+      color: #94A3B8;
+      flex: 1;
+    }
+    .tool-card__usecases {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      color: #94A3B8;
+      font-size: 0.9rem;
+    }
+    .tool-card__usecases li {
+      margin-bottom: 0.35rem;
+      padding-left: 1rem;
+      position: relative;
+    }
+    .tool-card__usecases li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #F97316;
+    }
+    .tool-card__footer {
+      margin-top: auto;
+    }
+    .tool-card__status {
+      text-align: center;
+      margin-top: 0.75rem;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: #94A3B8;
+    }
+    .tool-card__status.is-beta {
+      color: #F97316;
+    }
+    .hub-pill {
+      border: 1px solid rgba(148, 163, 184, 0.3);
+      padding: 0.85rem 1rem;
+      border-radius: 999px;
+      text-align: center;
+      color: #CBD5F5;
+      font-size: 0.95rem;
+    }
+    .tool-hub-cta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 2rem;
+      border-radius: 1.5rem;
+      border: 1px solid rgba(249, 115, 22, 0.2);
+      background: linear-gradient(135deg, rgba(249, 115, 22, 0.15), rgba(15, 23, 42, 0.8));
+      flex-wrap: wrap;
+    }
+  </style>
+{% endblock %}
+
+{% set toolList = tools | dictsort %}
+
+<section class="tool-hub-hero" style="background:#0F172A;padding:5rem 0;text-align:center;">
+  <div class="container">
+    <p style="text-transform:uppercase;letter-spacing:0.25em;color:#94A3B8;font-size:0.85rem;margin-bottom:1rem;">Free AI Library</p>
+    <h1 style="font-size:clamp(2.5rem,5vw,3.5rem);margin-bottom:1rem;">TCTC Tools</h1>
+    <p style="max-width:760px;margin:0 auto 2rem;color:#94A3B8;font-size:1.1rem;">Every tool runs in your browser, powered by your API keys. Use them to grow your business, or hire me to build your custom version.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;">
+      <a class="button button--primary" href="/contact/">Hire TCTC</a>
+      <a class="button button--ghost" href="#tool-grid">Browse tools ↓</a>
+    </div>
+  </div>
+</section>
+
+<section style="background:#101828;padding:4rem 0;">
+  <div class="container">
+    <div style="display:flex;flex-direction:column;gap:1.5rem;margin-bottom:2rem;">
+      <div>
+        <h2 style="margin-bottom:0.5rem;">Built-in advantages</h2>
+        <p style="color:#94A3B8;max-width:720px;">BYOK architecture keeps your data private, eliminates SaaS markups, and lets you scale usage for pennies. Every interface is production-ready.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;">
+        <div class="hub-pill">Bring your own OpenAI, Anthropic, Gemini, or Grok keys</div>
+        <div class="hub-pill">Local storage only—no external servers</div>
+        <div class="hub-pill">Schema + SEO ready landing pages</div>
+        <div class="hub-pill">Exportable outputs & reporting</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="tool-grid" style="background:#0F172A;padding:4rem 0;">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;margin-bottom:2rem;">
+      <div>
+        <h2 style="margin-bottom:0.25rem;">Live tools</h2>
+        <p style="color:#94A3B8;">{{ toolList | length }} free tools and counting.</p>
+      </div>
+      <a class="button button--ghost" href="/contact/">Need a tool built?</a>
+    </div>
+    <div class="tool-grid">
+      {% for key, tool in toolList %}
+        <article class="tool-card">
+          <div class="tool-card__icon">{{ tool.icon }}</div>
+          <h3>{{ tool.name }}</h3>
+          <p class="tool-card__meta">{{ tool.category }} • {{ tool.difficulty }}</p>
+          <p class="tool-card__description">{{ tool.description }}</p>
+          <ul class="tool-card__usecases">
+            {% for use in tool.useCases %}
+              <li>{{ use }}</li>
+            {% endfor %}
+          </ul>
+          <div class="tool-card__footer">
+            <a href="{{ tool.url }}" class="button button--primary" style="width:100%;">{{ tool.ctaLabel }}</a>
+            <p class="tool-card__status {% if tool.status == 'beta' %}is-beta{% endif %}">{{ tool.status | capitalize }}</p>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section style="background:#101828;padding:4rem 0;">
+  <div class="container">
+    <div class="tool-hub-cta">
+      <div>
+        <p class="tool-cta__eyebrow" style="color:#94A3B8;">Custom Builds</p>
+        <h2 style="margin-bottom:0.5rem;">Want a private version for your org?</h2>
+        <p style="color:#94A3B8;">I build bespoke AI systems with audit-ready security, team logins, and automation hooks.</p>
+      </div>
+      <a class="button button--primary" href="/custom-development/?utm_source=tools&utm_medium=cta">Discuss your build →</a>
+    </div>
+  </div>
+</section>

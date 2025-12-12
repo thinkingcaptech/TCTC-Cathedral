@@ -58,9 +58,13 @@
   <div class="card-actions">
 
     {# Free Tools - Link to Dashboard #}
-    {% if product.free and product.category == "software" %}
-    <a href="https://modern-aichemy-dashboard-dec25.web.app/" target="_blank" rel="noopener noreferrer" class="cta-button">
-      Try It Free →
+    {% if product.toolUrl %}
+    <a href="{{ product.toolUrl }}" class="cta-button">
+      Explore Tool →
+    </a>
+    {% elif product.free and product.category == "software" %}
+    <a href="/tools/" class="cta-button">
+      View Tools Hub →
     </a>
 
     {# Paid Products - Keep Original Flow #}

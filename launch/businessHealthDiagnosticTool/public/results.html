@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Health Diagnostic – Results</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="page-results">
+    <header class="site-header">
+        <div class="brand">
+            <img src="assets/images/logo.svg" alt="Business Health" class="brand-logo" />
+            <div>
+                <p class="eyebrow">Business Health Diagnostic</p>
+                <p class="tagline">Step 2 of 2 | Intelligence Report</p>
+            </div>
+        </div>
+        <a href="quiz.html" class="btn btn-ghost">Run another diagnostic</a>
+    </header>
+
+    <main class="results-shell">
+        <section class="score-card">
+            <div>
+                <p class="eyebrow">Business Health Score</p>
+                <h1 id="scoreValue">--</h1>
+                <p id="scoreNarrative">Fetching your score...</p>
+                <p class="report-id">Report ID: <span id="reportIdLabel">--</span></p>
+            </div>
+            <div class="cta-microcrm">
+                <p class="eyebrow">Recommended Next Step</p>
+                <h2>Sales Funnel Micro-CRM</h2>
+                <p>Plug your insights into our micro-CRM to operationalize follow ups, automate nurturing, and close more deals.</p>
+                <a class="btn" href="https://sales-funnel-micro-crm.example.com" target="_blank" rel="noopener">Claim Your CRM Trial</a>
+            </div>
+        </section>
+
+        <section class="breakdown">
+            <h2>Pillar Breakdown</h2>
+            <div class="breakdown-grid" id="breakdownGrid"></div>
+        </section>
+
+        <section class="ai-report">
+            <div class="ai-report__header">
+                <h2>AI-Powered Recommendations</h2>
+                <p>Gemini analyzed your answers to surface the most leverage-ready moves.</p>
+            </div>
+            <div id="aiRecommendations" class="ai-report__body loading">
+                <p>Generating recommendations...</p>
+            </div>
+        </section>
+
+        <section class="cta-panel" id="ctaPanel">
+            <div>
+                <p class="eyebrow">Double down on execution</p>
+                <h2>Most teams stall at the hand-off between insight and action.</h2>
+                <p>Deploy the Sales Funnel Micro-CRM to operationalize the very recommendations you just received.</p>
+            </div>
+            <a class="btn" href="https://sales-funnel-micro-crm.example.com" target="_blank" rel="noopener">Book My Demo</a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> Digital Alchemy Labs. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <!-- Firebase is now optional - only needed for server-side storage -->
+    <!-- Uncomment below if you want to use Firestore for storing reports -->
+    <!--
+    <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore-compat.js"></script>
+    <script src="assets/js/firebase-init.js"></script>
+    -->
+    <script src="assets/js/results.js"></script>
+</body>
+</html>

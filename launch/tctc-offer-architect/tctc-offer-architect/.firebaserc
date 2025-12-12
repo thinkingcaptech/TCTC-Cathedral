@@ -1,0 +1,18 @@
+{
+  "projects": {
+    "default": "book-learning-module"
+  },
+  "targets": {
+    "book-learning-module": {
+      "hosting": {
+        "architect": [
+          "tctc-offer-architect"
+        ],
+        "book": [
+          "book-learning-module"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

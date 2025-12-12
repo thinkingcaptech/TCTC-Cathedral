@@ -67,6 +67,14 @@ module.exports = function(eleventyConfig) {
     return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="live-demo-button">${text} →</a>`;
   });
   
+  // COLLECTION: Tools
+  eleventyConfig.addCollection("tools", function(collectionApi) {
+    return collectionApi.getFilteredByGlob([
+      "./src/tools/**/*.md",
+      "./src/tools/**/*.njk"
+    ]);
+  });
+  
   // Configuration
   return {
     dir: {
