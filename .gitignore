@@ -32,3 +32,6 @@ yarn-error.log*
 
 # Optional eslint cache
 .eslintcache
+
+# Separate projects in launch folder (not part of main site)
+launch/
