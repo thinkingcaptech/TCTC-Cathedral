@@ -1,9 +1,0 @@
-name,email,phone,company,source,notes,tags,value
-John Smith,john@acme.com,555-0123,Acme Corporation,LinkedIn,Interested in enterprise solution. Wants demo next week.,hot|enterprise|demo-scheduled,50000
-Jane Doe,jane@example.com,555-0124,Example Inc,Referral,Referred by Sarah. Looking for small business package.,warm|referral,15000
-Mike Johnson,mike@techstartup.io,555-0125,Tech Startup,Website,Downloaded whitepaper on automation. Follow up needed.,warm|website,25000
-Sarah Williams,sarah@bigcorp.com,555-0126,Big Corp Industries,Event,Met at Tech Conference 2024. Discussed Q1 needs.,hot|event|qualified,100000
-David Brown,david@smallbiz.com,555-0127,Small Business Co,Cold Call,Initial contact made. Expressed interest.,cold|follow-up,10000
-Emily Chen,emily@innovate.com,555-0128,Innovate Labs,LinkedIn,Connected on LinkedIn. Sent intro email.,warm|linkedin,30000
-Robert Taylor,robert@globalinc.com,555-0129,Global Inc,Referral,Referred by John Smith. High priority.,hot|referral|vip,75000
-Lisa Anderson,lisa@startup123.com,555-0130,Startup 123,Website,Filled out contact form. Needs pricing info.,warm|website,20000
