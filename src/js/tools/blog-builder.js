@@ -571,17 +571,216 @@ Our [CITY] criminal defense attorneys have successfully defended clients against
 Contact our [CITY] criminal defense lawyer immediately.`
 };
 
-const toolInterface = document.getElementById("tool-interface");
-const apiBase = toolInterface && toolInterface.dataset ? (toolInterface.dataset.apiBase || "").replace(/\/$/, "") : "";
-const buildEndpoint = (path) => apiBase ? `${apiBase}${path}` : path;
+const LENGTH_TARGETS = { short: 600, medium: 900, long: 1200 };
+const CUSTOM_TEMPLATES_KEY = "customTemplates";
+const HISTORY_KEY = "blog_builder_history";
+const STATUS_COLORS = {
+  info: "var(--tool-muted)",
+  success: "#34d399",
+  error: "#f87171",
+  warning: "#facc15"
+};
+
+const BlogBuilderKeys = (() => {
+  const KEY = "tctc_api_keys";
+
+  const read = () => {
+    try {
+      return JSON.parse(localStorage.getItem(KEY) || "{}");
+    } catch (err) {
+      console.warn("Invalid key storage payload", err);
+      return {};
+    }
+  };
+
+  const save = (provider, key) => {
+    const data = read();
+    data[provider] = key;
+    data[`${provider}_updated`] = new Date().toISOString();
+    localStorage.setItem(KEY, JSON.stringify(data));
+  };
+
+  const remove = (provider) => {
+    const data = read();
+    delete data[provider];
+    delete data[`${provider}_updated`];
+    localStorage.setItem(KEY, JSON.stringify(data));
+  };
+
+  const get = (provider) => read()[provider] || null;
+
+  const validate = (key, provider) => {
+    const cleaned = (key || "").trim();
+    if (!cleaned) return { valid: false, error: "API key required." };
+    if (cleaned.length < 15) return { valid: false, error: "API key looks too short." };
+    if (provider === "gemini" && !cleaned.startsWith("AIza")) {
+      return { valid: false, error: 'Gemini keys usually start with "AIza".' };
+    }
+    if (provider === "openai" && !cleaned.startsWith("sk-")) {
+      return { valid: false, error: 'OpenAI keys start with "sk-".' };
+    }
+    if (provider === "anthropic" && !cleaned.startsWith("sk-ant-")) {
+      return { valid: false, error: 'Claude keys start with "sk-ant-".' };
+    }
+    if (provider === "grok" && !cleaned.startsWith("xai-")) {
+      return { valid: false, error: 'Grok keys start with "xai-".' };
+    }
+    return { valid: true, value: cleaned };
+  };
+
+  const getPreferred = () => {
+    const data = read();
+    return ["gemini", "openai", "anthropic", "grok"].find((provider) => Boolean(data[provider])) || null;
+  };
+
+  return { save, remove, get, validate, getPreferred };
+})();
+
+const BlogBuilderAI = (() => {
+  const providers = {
+    gemini: {
+      name: "Google Gemini",
+      defaultModel: "gemini-2.5-flash",
+      endpoint: (key, model) =>
+        `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${key}`,
+      headers: () => ({ "Content-Type": "application/json" }),
+      buildBody: (prompt) => ({
+        contents: [{ parts: [{ text: prompt }] }],
+        generationConfig: { temperature: 0.72, topP: 0.9, maxOutputTokens: 2048 }
+      }),
+      extract: (json) => json?.candidates?.[0]?.content?.parts?.[0]?.text
+    },
+    openai: {
+      name: "OpenAI GPT",
+      defaultModel: "gpt-4o-mini",
+      endpoint: () => "https://api.openai.com/v1/chat/completions",
+      headers: (key) => ({ "Content-Type": "application/json", Authorization: `Bearer ${key}` }),
+      buildBody: (prompt, model) => ({
+        model,
+        messages: [{ role: "user", content: prompt }],
+        temperature: 0.75,
+        max_tokens: 1800
+      }),
+      extract: (json) => json?.choices?.[0]?.message?.content
+    },
+    anthropic: {
+      name: "Anthropic Claude",
+      defaultModel: "claude-3-5-sonnet-20241022",
+      endpoint: () => "https://api.anthropic.com/v1/messages",
+      headers: (key) => ({
+        "Content-Type": "application/json",
+        "x-api-key": key,
+        "anthropic-version": "2023-06-01",
+        "anthropic-dangerous-direct-browser-access": "true"
+      }),
+      buildBody: (prompt, model) => ({
+        model,
+        max_tokens: 2048,
+        messages: [{ role: "user", content: prompt }]
+      }),
+      extract: (json) => json?.content?.[0]?.text
+    },
+    grok: {
+      name: "xAI Grok",
+      defaultModel: "grok-4-fast",
+      endpoint: () => "https://api.x.ai/v1/chat/completions",
+      headers: (key) => ({ "Content-Type": "application/json", Authorization: `Bearer ${key}` }),
+      buildBody: (prompt, model) => ({
+        model,
+        messages: [{ role: "user", content: prompt }],
+        temperature: 0.8,
+        max_tokens: 2000
+      }),
+      extract: (json) => json?.choices?.[0]?.message?.content
+    }
+  };
+
+  const call = async ({ provider, apiKey, prompt, model }) => {
+    const config = providers[provider];
+    if (!config) throw new Error("Unsupported provider.");
+    const targetModel = model || config.defaultModel;
+    const response = await fetch(config.endpoint(apiKey, targetModel), {
+      method: "POST",
+      headers: config.headers(apiKey),
+      body: JSON.stringify(config.buildBody(prompt, targetModel))
+    });
+    if (!response.ok) {
+      const error = await response.json().catch(() => ({}));
+      throw new Error(error?.error?.message || `Request failed (${response.status}).`);
+    }
+    const data = await response.json();
+    const text = config.extract(data);
+    if (!text) throw new Error("No content returned from provider.");
+    return text.trim();
+  };
+
+  return { call, providers };
+})();
+
+const BlogBuilderPrompts = (() => {
+  const toneMap = {
+    neutral: "Balanced, factual copy that reads like a trusted editorial review.",
+    professional: "Authoritative tone referencing credentials, awards, and process.",
+    friendly: "Welcoming, conversational tone with community references."
+  };
+
+  const lengthMap = {
+    short: "Aim for roughly 600 words.",
+    medium: "Aim for roughly 900 words.",
+    long: "Aim for roughly 1,200+ words."
+  };
+
+  const build = ({ baseArticle, city, tone, length }) => {
+    return `You are an expert SEO marketer writing localized service pages.
+Customize the provided base article for ${city}. Replace any placeholders like [CITY], [SERVICE], [STATE], [COMPANY] with context that fits ${city}.
+
+Tone guidance: ${toneMap[tone] || toneMap.neutral}
+Length guidance: ${lengthMap[length] || lengthMap.medium}
+
+Rules:
+- Keep Markdown headings and structure clean.
+- Mention local neighborhoods or proof points if obvious.
+- Never hallucinate statistics; use qualitative statements instead.
+- Do not include closing boilerplate with contact info unless the template includes it.
+
+BASE ARTICLE TEMPLATE:
+"""
+${baseArticle}
+"""
+
+Write the final localized article now.`;
+  };
+
+  return { build };
+})();
+
+const BlogBuilderHistory = (() => {
+  const all = () => {
+    try {
+      const payload = JSON.parse(localStorage.getItem(HISTORY_KEY) || "[]");
+      return Array.isArray(payload) ? payload : [];
+    } catch (err) {
+      console.warn("Invalid history payload", err);
+      return [];
+    }
+  };
+
+  const save = (entry) => {
+    const history = all();
+    history.unshift(entry);
+    localStorage.setItem(HISTORY_KEY, JSON.stringify(history.slice(0, 10)));
+  };
+
+  const clear = () => localStorage.removeItem(HISTORY_KEY);
+
+  return { all, save, clear };
+})();
 
 const JSZIP_URL = "https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js";
 let jsZipPromise;
 
 function ensureJsZip() {
-  if (window.JSZip) {
-    return Promise.resolve(window.JSZip);
-  }
+  if (window.JSZip) return Promise.resolve(window.JSZip);
   if (!jsZipPromise) {
     jsZipPromise = new Promise((resolve, reject) => {
       const script = document.createElement("script");
@@ -594,417 +793,398 @@ function ensureJsZip() {
   return jsZipPromise;
 }
 
-// Custom templates stored in localStorage
-const CUSTOM_TEMPLATES_KEY = 'customTemplates';
+const state = {
+  posts: [],
+  lastRunId: null
+};
 
-// Check if localStorage is available
-function isLocalStorageAvailable() {
+const els = {
+  provider: document.getElementById("blogProvider"),
+  model: document.getElementById("blogModel"),
+  apiKey: document.getElementById("blogApiKey"),
+  keyStatus: document.getElementById("blogKeyStatus"),
+  templateSelect: document.getElementById("templateSelect"),
+  baseArticle: document.getElementById("baseArticle"),
+  cities: document.getElementById("cities"),
+  tone: document.getElementById("tone"),
+  length: document.getElementById("length"),
+  generateBtn: document.getElementById("generateBtn"),
+  downloadZipBtn: document.getElementById("downloadZipBtn"),
+  exportWPBtn: document.getElementById("exportWPBtn"),
+  copyAllBtn: document.getElementById("copyAllBtn"),
+  status: document.getElementById("status"),
+  results: document.getElementById("resultsContainer"),
+  history: document.getElementById("builderHistory"),
+  clearHistoryBtn: document.getElementById("clearBuilderHistoryBtn")
+};
+
+const setStatus = (message, type = "info") => {
+  if (!els.status) return;
+  els.status.textContent = message;
+  els.status.style.color = STATUS_COLORS[type] || STATUS_COLORS.info;
+};
+
+const isLocalStorageAvailable = () => {
   try {
-    const test = '__localStorage_test__';
-    localStorage.setItem(test, test);
-    localStorage.removeItem(test);
+    const testKey = "__localStorage_test__";
+    localStorage.setItem(testKey, testKey);
+    localStorage.removeItem(testKey);
     return true;
-  } catch (e) {
+  } catch (err) {
     return false;
   }
-}
+};
 
-function getCustomTemplates() {
-  if (!isLocalStorageAvailable()) {
-    console.warn('localStorage not available');
+const getCustomTemplates = () => {
+  if (!isLocalStorageAvailable()) return {};
+  try {
+    return JSON.parse(localStorage.getItem(CUSTOM_TEMPLATES_KEY) || "{}");
+  } catch (err) {
+    console.warn("Unable to read custom templates", err);
     return {};
   }
-  try {
-    const stored = localStorage.getItem(CUSTOM_TEMPLATES_KEY);
-    return stored ? JSON.parse(stored) : {};
-  } catch (e) {
-    console.error('Error reading custom templates:', e);
-    return {};
-  }
-}
+};
 
-function saveCustomTemplate(name, content) {
+const saveCustomTemplate = (name, content) => {
   if (!isLocalStorageAvailable()) {
-    alert('⚠️ Custom templates cannot be saved on this device. localStorage is disabled or blocked. Try enabling cookies/site data in your browser settings.');
+    alert("localStorage is disabled. Enable site data to save templates.");
     return false;
   }
-  try {
-    const custom = getCustomTemplates();
-    custom[name] = content;
-    localStorage.setItem(CUSTOM_TEMPLATES_KEY, JSON.stringify(custom));
-    return true;
-  } catch (e) {
-    console.error('Error saving template:', e);
-    alert('⚠️ Error saving template. Your browser may have storage restrictions. Error: ' + e.message);
-    return false;
-  }
-}
+  const payload = getCustomTemplates();
+  payload[name] = content;
+  localStorage.setItem(CUSTOM_TEMPLATES_KEY, JSON.stringify(payload));
+  return true;
+};
 
-function deleteCustomTemplate(name) {
-  if (!isLocalStorageAvailable()) {
-    return false;
-  }
-  try {
-    const custom = getCustomTemplates();
-    delete custom[name];
-    localStorage.setItem(CUSTOM_TEMPLATES_KEY, JSON.stringify(custom));
-    return true;
-  } catch (e) {
-    console.error('Error deleting template:', e);
-    return false;
-  }
-}
+const deleteCustomTemplate = (name) => {
+  if (!isLocalStorageAvailable()) return false;
+  const payload = getCustomTemplates();
+  delete payload[name];
+  localStorage.setItem(CUSTOM_TEMPLATES_KEY, JSON.stringify(payload));
+  return true;
+};
 
-// Global state
-let generatedPosts = [];
-
-// DOM elements
-const baseArticleEl = document.getElementById("baseArticle");
-const citiesEl = document.getElementById("cities");
-const toneEl = document.getElementById("tone");
-const lengthEl = document.getElementById("length");
-const statusEl = document.getElementById("status");
-const resultsContainer = document.getElementById("resultsContainer");
-const generateBtn = document.getElementById("generateBtn");
-const downloadZipBtn = document.getElementById("downloadZipBtn");
-const exportWPBtn = document.getElementById("exportWPBtn");
-const copyAllBtn = document.getElementById("copyAllBtn");
-const templateSelect = document.getElementById("templateSelect");
-
-if (templateSelect && templates.plumber && baseArticleEl) {
-  templateSelect.value = "plumber";
-  baseArticleEl.value = templates.plumber;
-}
-
-// Event listeners
-generateBtn.addEventListener("click", handleGenerate);
-downloadZipBtn.addEventListener("click", handleDownloadZip);
-exportWPBtn.addEventListener("click", handleExportWordPress);
-copyAllBtn.addEventListener("click", handleCopyAll);
-templateSelect.addEventListener("change", handleTemplateChange);
-document.getElementById('saveTemplateBtn').addEventListener('click', handleSaveTemplate);
-document.getElementById('manageTemplatesBtn').addEventListener('click', handleManageTemplates);
-
-// Load custom templates on page load
-loadCustomTemplatesIntoDropdown();
-
-// Template selection handler
-function handleTemplateChange(e) {
-  const selectedTemplate = e.target.value;
-  const customTemplates = getCustomTemplates();
-  
-  if (selectedTemplate && templates[selectedTemplate]) {
-    baseArticleEl.value = templates[selectedTemplate];
-    statusEl.textContent = "Template loaded. Customize as needed.";
-    statusEl.style.color = "#facc15";
-  } else if (selectedTemplate && customTemplates[selectedTemplate]) {
-    baseArticleEl.value = customTemplates[selectedTemplate];
-    statusEl.textContent = "Custom template loaded.";
-    statusEl.style.color = "#facc15";
-  }
-  
-  setTimeout(() => {
-    statusEl.style.color = "";
-  }, 3000);
-}
-
-// Load custom templates into dropdown
-function loadCustomTemplatesIntoDropdown() {
-  const customGroup = document.getElementById('customTemplatesGroup');
-  if (!customGroup) return;
-  
-  // Clear existing custom options
-  customGroup.innerHTML = '';
-  
-  if (!isLocalStorageAvailable()) {
-    customGroup.style.display = 'none';
+const loadCustomTemplatesIntoDropdown = () => {
+  const group = document.getElementById("customTemplatesGroup");
+  if (!group) return;
+  group.innerHTML = "";
+  const templates = getCustomTemplates();
+  const names = Object.keys(templates);
+  if (!names.length) {
+    group.style.display = "none";
     return;
   }
-  
-  const customTemplates = getCustomTemplates();
-  
-  if (Object.keys(customTemplates).length > 0) {
-    customGroup.style.display = '';
-    Object.keys(customTemplates).forEach(name => {
-      const option = document.createElement('option');
-      option.value = name;
-      option.textContent = name;
-      customGroup.appendChild(option);
-    });
-  } else {
-    customGroup.style.display = 'none';
-  }
-}
+  group.style.display = "";
+  names.forEach((name) => {
+    const option = document.createElement("option");
+    option.value = name;
+    option.textContent = name;
+    group.appendChild(option);
+  });
+};
 
-// Save template handler
-function handleSaveTemplate() {
-  // Check localStorage availability first
+const handleTemplateChange = (event) => {
+  const value = event.target.value;
+  const customTemplates = getCustomTemplates();
+  if (value && templates[value]) {
+    els.baseArticle.value = templates[value];
+    setStatus("Template loaded. Customize as needed.", "warning");
+  } else if (value && customTemplates[value]) {
+    els.baseArticle.value = customTemplates[value];
+    setStatus("Custom template loaded.", "warning");
+  }
+};
+
+const handleSaveTemplate = () => {
   if (!isLocalStorageAvailable()) {
-    alert('⚠️ Custom templates are not available on this device.\n\n' +
-          'Reason: localStorage is disabled or blocked.\n\n' +
-          'Solution: Enable cookies and site data in your browser settings:\n' +
-          '• Chrome: Settings > Privacy > Cookies > Allow all cookies\n' +
-          '• Chromebook: Check if "Block third-party cookies" is enabled\n\n' +
-          'Note: This feature works on other devices where localStorage is enabled.');
+    alert("Enable cookies/storage to save templates on this device.");
     return;
   }
-
-  const content = baseArticleEl.value.trim();
+  const content = els.baseArticle.value.trim();
   if (!content) {
-    alert('Please enter article content before saving as a template.');
+    alert("Add content before saving as a template.");
     return;
   }
-  
-  const name = prompt('Enter a name for this custom template:');
+  const name = prompt("Name this template:");
   if (!name) return;
-  
-  // Sanitize name
-  const sanitizedName = name.trim().replace(/[^a-zA-Z0-9\s-]/g, '');
-  if (!sanitizedName) {
-    alert('Please enter a valid template name.');
+  const sanitized = name.trim().replace(/[^a-zA-Z0-9\s-]/g, "");
+  if (!sanitized) {
+    alert("Please enter a valid template name.");
     return;
   }
-  
-  if (saveCustomTemplate(sanitizedName, content)) {
-    loadCustomTemplatesIntoDropdown();
-    statusEl.textContent = `✓ Template "${sanitizedName}" saved successfully!`;
-    statusEl.style.color = "#22c55e";
-    setTimeout(() => {
-      statusEl.style.color = "";
-      statusEl.textContent = "";
-    }, 3000);
-  }
-}
+  saveCustomTemplate(sanitized, content);
+  loadCustomTemplatesIntoDropdown();
+  setStatus(`Template "${sanitized}" saved locally.`, "success");
+};
 
-// Manage templates handler
-function handleManageTemplates() {
-  const customTemplates = getCustomTemplates();
-  const templateNames = Object.keys(customTemplates);
-  
-  if (templateNames.length === 0) {
-    alert('No custom templates saved yet. Save your first template using the "Save as Custom Template" button.');
+const handleManageTemplates = () => {
+  const custom = getCustomTemplates();
+  const names = Object.keys(custom);
+  if (!names.length) {
+    alert("No custom templates saved yet.");
     return;
   }
-  
-  const message = 'Your Custom Templates:\n\n' + templateNames.map((name, i) => `${i + 1}. ${name}`).join('\n') + 
-    '\n\nEnter the number of the template to DELETE, or click Cancel to close.';
-  
+  const message =
+    "Custom templates:\n\n" +
+    names.map((name, index) => `${index + 1}. ${name}`).join("\n") +
+    "\n\nEnter the number to delete, or Cancel to exit.";
   const response = prompt(message);
   if (!response) return;
-  
-  const index = parseInt(response) - 1;
-  if (index >= 0 && index < templateNames.length) {
-    const templateName = templateNames[index];
+  const index = parseInt(response, 10) - 1;
+  if (index >= 0 && index < names.length) {
+    const templateName = names[index];
     if (confirm(`Delete template "${templateName}"?`)) {
       deleteCustomTemplate(templateName);
       loadCustomTemplatesIntoDropdown();
-      statusEl.textContent = `✓ Template "${templateName}" deleted.`;
-      statusEl.style.color = "#22c55e";
-      setTimeout(() => {
-        statusEl.style.color = "";
-        statusEl.textContent = "";
-      }, 3000);
+      setStatus(`Template "${templateName}" deleted.`, "success");
     }
   } else {
-    alert('Invalid selection.');
+    alert("Invalid selection.");
   }
-}
+};
 
-// Main generation handler
-async function handleGenerate() {
-  const baseArticle = baseArticleEl.value.trim();
-  const citiesRaw = citiesEl.value.trim();
+const updateKeyStatus = () => {
+  if (!els.keyStatus) return;
+  const provider = els.provider.value;
+  const key = BlogBuilderKeys.get(provider);
+  if (key) {
+    els.keyStatus.textContent = `${BlogBuilderAI.providers[provider].name} key detected.`;
+    els.keyStatus.style.color = STATUS_COLORS.success;
+  } else {
+    els.keyStatus.textContent = "No API key saved for this provider.";
+    els.keyStatus.style.color = STATUS_COLORS.info;
+  }
+};
 
-  if (!baseArticle || !citiesRaw) {
-    statusEl.textContent = "Please provide both a base article and a list of cities.";
-    statusEl.style.color = "#ef4444";
+const requireCredentials = () => {
+  const provider = els.provider.value;
+  const saved = BlogBuilderKeys.get(provider);
+  if (saved) return { provider, key: saved };
+  const validation = BlogBuilderKeys.validate(els.apiKey.value, provider);
+  if (!validation.valid) {
+    els.keyStatus.textContent = validation.error;
+    els.keyStatus.style.color = STATUS_COLORS.error;
+    return null;
+  }
+  return { provider, key: validation.value };
+};
+
+const handleSaveKey = () => {
+  const provider = els.provider.value;
+  const validation = BlogBuilderKeys.validate(els.apiKey.value, provider);
+  if (!validation.valid) {
+    els.keyStatus.textContent = validation.error;
+    els.keyStatus.style.color = STATUS_COLORS.error;
     return;
   }
+  BlogBuilderKeys.save(provider, validation.value);
+  els.apiKey.value = "";
+  updateKeyStatus();
+};
 
-  const cities = citiesRaw.split("\n").map(c => c.trim()).filter(Boolean);
+const handleClearKey = () => {
+  BlogBuilderKeys.remove(els.provider.value);
+  updateKeyStatus();
+};
 
-  if (cities.length === 0) {
-    statusEl.textContent = "Please enter at least one city.";
-    statusEl.style.color = "#ef4444";
-    return;
-  }
-
-  // Cost estimation and warning
-  const estimatedInputTokens = baseArticle.length * 0.25 * cities.length; // ~0.25 tokens per char
-  const estimatedOutputTokens = 2000 * cities.length; // ~2000 tokens per article
-  const estimatedCost = (estimatedInputTokens / 1000000 * 0.01875) + (estimatedOutputTokens / 1000000 * 0.075);
-  
-  if (cities.length > 20 || estimatedCost > 0.05) {
-    const costFormatted = estimatedCost.toFixed(4);
-    const confirmMsg = `⚠️ Cost Warning\n\nGenerating ${cities.length} articles will cost approximately $${costFormatted}.\n\nInput tokens: ~${Math.round(estimatedInputTokens).toLocaleString()}\nOutput tokens: ~${Math.round(estimatedOutputTokens).toLocaleString()}\n\nContinue with generation?`;
-    
-    if (!confirm(confirmMsg)) {
-      statusEl.textContent = "Generation cancelled by user.";
-      statusEl.style.color = "#facc15";
-      return;
-    }
-  }
-
-  statusEl.textContent = `Generating ${cities.length} localized posts. This may take a moment...`;
-  statusEl.style.color = "#facc15";
-  generateBtn.disabled = true;
-  downloadZipBtn.disabled = true;
-  exportWPBtn.disabled = true;
-  copyAllBtn.disabled = true;
-  resultsContainer.innerHTML = '<p class="builder-status">Processing...</p>';
-
+const handleTestKey = async () => {
+  const creds = requireCredentials();
+  if (!creds) return;
+  els.keyStatus.textContent = "Testing key…";
+  els.keyStatus.style.color = STATUS_COLORS.warning;
   try {
-    const res = await fetch(buildEndpoint("/api/generateLocalPosts"), {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        baseArticle,
-        cities,
-        tone: toneEl.value,
-        length: lengthEl.value
-      })
+    await BlogBuilderAI.call({
+      provider: creds.provider,
+      apiKey: creds.key,
+      prompt: "Respond with OK to confirm connectivity."
     });
-
-    if (!res.ok) {
-      const errorData = await res.json();
-      throw new Error(errorData.error || "Request failed");
-    }
-
-    const data = await res.json();
-    generatedPosts = data.posts || [];
-
-    renderResults(generatedPosts);
-
-    statusEl.textContent = `✓ Generated ${generatedPosts.length} localized posts successfully.`;
-    statusEl.style.color = "#22c55e";
-    downloadZipBtn.disabled = generatedPosts.length === 0;
-    exportWPBtn.disabled = generatedPosts.length === 0;
-    copyAllBtn.disabled = generatedPosts.length === 0;
-
-    // Save project to Firestore
-    await saveProject({
-      baseArticle,
-      cities,
-      tone: toneEl.value,
-      length: lengthEl.value,
-      posts: generatedPosts
-    });
-
+    els.keyStatus.textContent = `${BlogBuilderAI.providers[creds.provider].name} responded successfully.`;
+    els.keyStatus.style.color = STATUS_COLORS.success;
   } catch (err) {
-    console.error(err);
-    statusEl.textContent = `Error: ${err.message}`;
-    statusEl.style.color = "#ef4444";
-    resultsContainer.innerHTML = `<p class="text-red-400 text-xs">Failed to generate posts. Please check your configuration and try again.</p>`;
-  } finally {
-    generateBtn.disabled = false;
+    els.keyStatus.textContent = err.message || "Key test failed.";
+    els.keyStatus.style.color = STATUS_COLORS.error;
   }
-}
+};
 
-// Save project to Firestore
-async function saveProject({ baseArticle, cities, tone, length, posts }) {
-  try {
-    await fetch(buildEndpoint("/api/saveProject"), {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        baseArticle,
-        cities,
-        tone,
-        length,
-        posts,
-        createdAt: new Date().toISOString()
-      })
-    });
-  } catch (err) {
-    console.error("Failed to save project:", err);
-  }
-}
+const parseCities = (raw) =>
+  raw
+    .split("\n")
+    .map((city) => city.trim())
+    .filter(Boolean);
 
-// Render results
-function renderResults(posts) {
-  resultsContainer.innerHTML = "";
-
+const renderResults = (posts) => {
+  if (!els.results) return;
+  els.results.innerHTML = "";
   if (!posts.length) {
-    resultsContainer.innerHTML = "<p class='builder-status'>No posts generated yet.</p>";
+    els.results.innerHTML = "<p class='builder-status'>No posts generated yet.</p>";
     return;
   }
-
-  posts.forEach((post, idx) => {
-    const card = document.createElement("div");
+  posts.forEach((post, index) => {
+    const card = document.createElement("article");
     card.className = "result-card";
-
     const header = document.createElement("div");
     header.className = "result-card__header";
-
     const title = document.createElement("h3");
     title.className = "result-card__title";
-    title.textContent = `${idx + 1}. ${post.city}`;
-
-    const copyBtn = document.createElement("button");
-    copyBtn.className = "copy-chip";
-    copyBtn.textContent = "Copy";
-    copyBtn.addEventListener("click", () => {
-      navigator.clipboard.writeText(post.content);
-      copyBtn.textContent = "Copied!";
-      setTimeout(() => { copyBtn.textContent = "Copy"; }, 2000);
+    title.textContent = `${index + 1}. ${post.city}`;
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "copy-chip";
+    button.textContent = "Copy";
+    button.addEventListener("click", async () => {
+      await navigator.clipboard.writeText(post.content);
+      button.textContent = "Copied!";
+      setTimeout(() => (button.textContent = "Copy"), 2000);
     });
-
     header.appendChild(title);
-    header.appendChild(copyBtn);
-
+    header.appendChild(button);
     const body = document.createElement("pre");
     body.className = "result-card__body";
     body.textContent = post.content;
-
     card.appendChild(header);
     card.appendChild(body);
-
-    resultsContainer.appendChild(card);
+    els.results.appendChild(card);
   });
-}
+};
 
-// Download as ZIP
-async function handleDownloadZip() {
-  if (!generatedPosts.length) return;
+const toggleExportButtons = (enabled) => {
+  els.downloadZipBtn.disabled = !enabled;
+  els.exportWPBtn.disabled = !enabled;
+  els.copyAllBtn.disabled = !enabled;
+};
 
-  statusEl.textContent = "Creating ZIP file...";
-  statusEl.style.color = "#facc15";
+const saveHistoryEntry = (payload) => {
+  BlogBuilderHistory.save(payload);
+  renderHistory();
+};
 
+const renderHistory = () => {
+  if (!els.history) return;
+  const history = BlogBuilderHistory.all();
+  if (!history.length) {
+    els.history.innerHTML = '<p class="history-empty">Your last 10 runs live here once you generate content.</p>';
+    return;
+  }
+  els.history.innerHTML = "";
+  history.forEach((entry) => {
+    const row = document.createElement("article");
+    row.className = "history-item";
+    const info = document.createElement("div");
+    const formattedDate = new Date(entry.createdAt).toLocaleString([], {
+      dateStyle: "short",
+      timeStyle: "short"
+    });
+    info.innerHTML = `<strong>${entry.title || "Local SEO Campaign"}</strong><br><small>${entry.cities.length} cities • ${formattedDate}</small>`;
+    const button = document.createElement("button");
+    button.type = "button";
+    button.textContent = "Load Run";
+    button.addEventListener("click", () => {
+      state.posts = entry.posts || [];
+      renderResults(state.posts);
+      toggleExportButtons(Boolean(state.posts.length));
+      setStatus("Loaded previous run.", "success");
+    });
+    row.appendChild(info);
+    row.appendChild(button);
+    els.history.appendChild(row);
+  });
+};
+
+const clearHistory = () => {
+  if (!confirm("Clear all saved blog builder runs?")) return;
+  BlogBuilderHistory.clear();
+  renderHistory();
+  setStatus("History cleared.", "success");
+};
+
+const handleGenerate = async () => {
+  const baseArticle = els.baseArticle.value.trim();
+  const cities = parseCities(els.cities.value);
+  if (!baseArticle || !cities.length) {
+    setStatus("Please provide both a base article and a list of cities.", "error");
+    return;
+  }
+  const creds = requireCredentials();
+  if (!creds) {
+    setStatus("Save an API key before generating.", "error");
+    return;
+  }
+  const modelOverride = (els.model.value || "").trim() || null;
+  state.posts = [];
+  renderResults(state.posts);
+  toggleExportButtons(false);
+  els.generateBtn.disabled = true;
+
+  try {
+    for (let i = 0; i < cities.length; i++) {
+      const city = cities[i];
+      setStatus(`Generating ${i + 1}/${cities.length}: ${city}`, "warning");
+      const prompt = BlogBuilderPrompts.build({
+        baseArticle,
+        city,
+        tone: els.tone.value,
+        length: els.length.value
+      });
+      const content = await BlogBuilderAI.call({
+        provider: creds.provider,
+        apiKey: creds.key,
+        prompt,
+        model: modelOverride
+      });
+      state.posts.push({ city, content });
+      renderResults(state.posts);
+    }
+    setStatus(`Generated ${state.posts.length} localized posts.`, "success");
+    toggleExportButtons(Boolean(state.posts.length));
+    saveHistoryEntry({
+      id: `blog_${Date.now().toString(36)}`,
+      title: baseArticle.split("\n")[0].replace(/[#*]/g, "").trim(),
+      createdAt: new Date().toISOString(),
+      baseArticle,
+      tone: els.tone.value,
+      length: els.length.value,
+      cities,
+      posts: state.posts,
+      aiProvider: creds.provider,
+      modelOverride
+    });
+  } catch (err) {
+    console.error(err);
+    setStatus(err.message || "Failed to generate posts.", "error");
+  } finally {
+    els.generateBtn.disabled = false;
+  }
+};
+
+const handleDownloadZip = async () => {
+  if (!state.posts.length) return;
+  setStatus("Creating ZIP file…", "warning");
   try {
     const JSZipLib = await ensureJsZip();
     const zip = new JSZipLib();
-
-    generatedPosts.forEach(post => {
-      const fileName = post.city.replace(/[^\w\-]+/g, "_") + ".txt";
+    state.posts.forEach((post) => {
+      const fileName = post.city.replace(/[^\w\-]+/g, "_") + ".md";
       zip.file(fileName, post.content);
     });
-
     const blob = await zip.generateAsync({ type: "blob" });
     const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "localized_posts.zip";
-    a.click();
+    const anchor = document.createElement("a");
+    anchor.href = url;
+    anchor.download = "localized_posts.zip";
+    anchor.click();
     URL.revokeObjectURL(url);
-
-    statusEl.textContent = "✓ ZIP file downloaded successfully.";
-    statusEl.style.color = "#22c55e";
+    setStatus("ZIP downloaded.", "success");
   } catch (err) {
     console.error(err);
-    statusEl.textContent = "Failed to create ZIP file.";
-    statusEl.style.color = "#ef4444";
+    setStatus("Failed to create ZIP file.", "error");
   }
-}
+};
 
-// Export to WordPress XML
-async function handleExportWordPress() {
-  if (!generatedPosts.length) return;
-
-  statusEl.textContent = "Creating WordPress XML...";
-  statusEl.style.color = "#facc15";
-
+const handleExportWordPress = async () => {
+  if (!state.posts.length) return;
+  setStatus("Building WordPress XML…", "warning");
   try {
-    let xml = `<?xml version="1.0" encoding="UTF-8" ?>
+    let xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"
   xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
   xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -1013,16 +1193,12 @@ async function handleExportWordPress() {
   xmlns:wp="http://wordpress.org/export/1.2/">
 <channel>
   <title>Localized Blog Posts</title>
-  <description>Generated by Local Keyword Blog Builder</description>
-`;
+  <description>Generated by TCTC Blog Builder</description>`;
 
-    generatedPosts.forEach(post => {
-      const safeTitle = post.city.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-      const safeContent = post.content.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-      
+    state.posts.forEach((post) => {
       xml += `
   <item>
-    <title>${safeTitle}</title>
+    <title>${post.city.replace(/&/g, "&amp;")}</title>
     <content:encoded><![CDATA[${post.content}]]></content:encoded>
     <wp:post_type>post</wp:post_type>
     <wp:status>draft</wp:status>
@@ -1035,36 +1211,59 @@ async function handleExportWordPress() {
 
     const blob = new Blob([xml], { type: "application/xml" });
     const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "wordpress_posts.xml";
-    a.click();
+    const anchor = document.createElement("a");
+    anchor.href = url;
+    anchor.download = "wordpress_posts.xml";
+    anchor.click();
     URL.revokeObjectURL(url);
-
-    statusEl.textContent = "✓ WordPress XML exported successfully.";
-    statusEl.style.color = "#22c55e";
+    setStatus("WordPress XML exported.", "success");
   } catch (err) {
     console.error(err);
-    statusEl.textContent = "Failed to export WordPress XML.";
-    statusEl.style.color = "#ef4444";
+    setStatus("Failed to export WordPress XML.", "error");
   }
-}
+};
 
-// Copy all to clipboard
-async function handleCopyAll() {
-  if (!generatedPosts.length) return;
-
+const handleCopyAll = async () => {
+  if (!state.posts.length) return;
   try {
-    const allText = generatedPosts
-      .map(p => `### ${p.city}\n\n${p.content}`)
+    const text = state.posts
+      .map((post) => `### ${post.city}\n\n${post.content}`)
       .join("\n\n---\n\n");
-
-    await navigator.clipboard.writeText(allText);
-    statusEl.textContent = "✓ All posts copied to clipboard.";
-    statusEl.style.color = "#22c55e";
+    await navigator.clipboard.writeText(text);
+    setStatus("All posts copied to clipboard.", "success");
   } catch (err) {
     console.error(err);
-    statusEl.textContent = "Failed to copy to clipboard.";
-    statusEl.style.color = "#ef4444";
+    setStatus("Clipboard blocked. Try downloading instead.", "error");
   }
-}
+};
+
+const init = () => {
+  if (els.templateSelect && templates.plumber) {
+    els.templateSelect.value = "plumber";
+    els.baseArticle.value = templates.plumber;
+  }
+  loadCustomTemplatesIntoDropdown();
+  renderHistory();
+  toggleExportButtons(false);
+
+  const preferred = BlogBuilderKeys.getPreferred();
+  if (preferred) {
+    els.provider.value = preferred;
+  }
+  updateKeyStatus();
+
+  els.templateSelect.addEventListener("change", handleTemplateChange);
+  document.getElementById("saveTemplateBtn")?.addEventListener("click", handleSaveTemplate);
+  document.getElementById("manageTemplatesBtn")?.addEventListener("click", handleManageTemplates);
+  els.generateBtn.addEventListener("click", handleGenerate);
+  els.downloadZipBtn.addEventListener("click", handleDownloadZip);
+  els.exportWPBtn.addEventListener("click", handleExportWordPress);
+  els.copyAllBtn.addEventListener("click", handleCopyAll);
+  els.provider.addEventListener("change", updateKeyStatus);
+  document.getElementById("blogSaveKeyBtn")?.addEventListener("click", handleSaveKey);
+  document.getElementById("blogClearKeyBtn")?.addEventListener("click", handleClearKey);
+  document.getElementById("blogTestKeyBtn")?.addEventListener("click", handleTestKey);
+  els.clearHistoryBtn?.addEventListener("click", clearHistory);
+};
+
+document.addEventListener("DOMContentLoaded", init);

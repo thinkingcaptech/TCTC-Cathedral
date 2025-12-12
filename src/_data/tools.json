@@ -56,7 +56,7 @@
       "Agency fulfillment",
       "Niche directory launches"
     ],
-    "apiModels": ["GPT-4o", "Claude 3.5 Sonnet", "Gemini 1.5 Pro"],
+    "apiModels": ["Gemini 2.5 Flash", "GPT-4o", "GPT-5 mini", "Claude Sonnet 4.5", "Grok 4 Fast"],
     "status": "available",
     "ctaLabel": "Generate Posts",
     "seo": {
@@ -128,46 +128,47 @@
       }
     ]
   },
-  "aether-engine": {
-    "name": "Aether Campaign Engine",
-    "slug": "aether-engine",
-    "url": "/tools/aether-engine/",
-    "icon": "⚙️",
-    "category": "Automation",
-    "difficulty": "Advanced",
-    "tagline": "Spin up multi-channel campaigns powered by AI personas and automations.",
-    "description": "Plan offers, craft messaging, and auto-generate landing copy, emails, and ads with BYOK orchestration.",
+  "offer-architect": {
+    "name": "Offer Architect",
+    "slug": "offer-architect",
+    "url": "/tools/offer-architect/",
+    "icon": "🧱",
+    "category": "Product Strategy",
+    "difficulty": "Intermediate",
+    "tagline": "Turn research into a packaged offer, value stack, and launch plan.",
+    "description": "Map your audience, pains, deliverables, pricing, and proof into a polished pitch deck with GTM recommendations.",
     "useCases": [
-      "Product launches",
-      "Lifecycle revamps",
-      "Agency playbooks"
+      "Packaging new service lines",
+      "Prepping for cohort or group programs",
+      "Agency productization",
+      "Investor or partner decks"
     ],
-    "apiModels": ["GPT-4o", "Claude 3.5", "Gemini 1.5"],
-    "status": "beta",
-    "ctaLabel": "Preview Engine",
+    "apiModels": ["Gemini 2.5 Flash", "GPT-4o", "GPT-5 mini", "Claude Sonnet 4.5", "Grok 4 Fast"],
+    "status": "available",
+    "ctaLabel": "Architect Offer",
     "seo": {
-      "title": "Aether AI Campaign Engine | TCTC",
-      "description": "Design end-to-end marketing campaigns with reusable AI workflows and your own API keys.",
-      "keywords": ["ai campaign builder", "marketing workflow automation", "multi-channel campaign tool"]
+      "title": "Offer Architect Tool | TCTC",
+      "description": "Generate a complete AI offer blueprint with positioning, value stack, pricing, and GTM plan using your own API keys.",
+      "keywords": ["offer builder", "offer architect", "ai offer generator", "productized service tool"]
     },
     "schema": {
-      "applicationCategory": "MarketingApplication",
+      "applicationCategory": "BusinessApplication",
       "operatingSystem": "Web",
       "offers": {
         "@type": "Offer",
         "price": "0",
         "priceCurrency": "USD",
-        "availability": "https://schema.org/PreOrder"
+        "availability": "https://schema.org/InStock"
       }
     },
     "faq": [
       {
-        "question": "Is the Aether Engine production-ready?",
-        "answer": "It's currently in pilot with select clients. You can test the public workflow builder while we polish the beta."
+        "question": "Does the Offer Architect store my research?",
+        "answer": "No. Everything lives in your browser. Inputs, history, and API keys stay in localStorage."
       },
       {
-        "question": "Can it connect to Zapier or webhooks?",
-        "answer": "Yes. The engine exports campaign objects you can connect to Zapier, Make, or custom webhooks for deployment."
+        "question": "Can I edit the blueprint after generating it?",
+        "answer": "Yes. You can rerun the intake with tweaks, load previous blueprints, and export Markdown or JSON for further editing."
       }
     ]
   }
