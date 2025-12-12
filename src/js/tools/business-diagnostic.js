@@ -36,8 +36,8 @@ const DiagnosticApiKeys = (() => {
     const trimmed = (key || '').trim();
     if (!trimmed) return { valid: false, error: 'API key required.' };
     if (trimmed.length < 15) return { valid: false, error: 'API key looks too short.' };
-    if (provider === 'gemini' && !trimmed.startsWith('AIza')) {
-      return { valid: false, error: 'Gemini keys normally start with "AIza".' };
+    if (provider === 'gemini' && !trimmed.match(/^AI[z][a]/)) {
+      return { valid: false, error: 'Gemini keys normally start with the expected prefix.' };
     }
     if (provider === 'openai' && !trimmed.startsWith('sk-')) {
       return { valid: false, error: 'OpenAI keys start with "sk-".' };

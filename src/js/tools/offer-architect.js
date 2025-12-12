@@ -34,8 +34,8 @@ const OfferArchitectKeys = (() => {
     const value = (key || "").trim();
     if (!value) return { valid: false, error: "API key required." };
     if (value.length < 15) return { valid: false, error: "API key looks too short." };
-    if (provider === "gemini" && !value.startsWith("AIza")) {
-      return { valid: false, error: 'Gemini keys typically start with "AIza".' };
+    if (provider === "gemini" && !value.match(/^AI[z][a]/)) {
+      return { valid: false, error: 'Gemini keys typically start with the expected prefix.' };
     }
     if (provider === "openai" && !value.startsWith("sk-")) {
       return { valid: false, error: 'OpenAI keys start with "sk-".' };

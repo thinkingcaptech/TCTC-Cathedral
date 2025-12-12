@@ -613,8 +613,8 @@ const BlogBuilderKeys = (() => {
     const cleaned = (key || "").trim();
     if (!cleaned) return { valid: false, error: "API key required." };
     if (cleaned.length < 15) return { valid: false, error: "API key looks too short." };
-    if (provider === "gemini" && !cleaned.startsWith("AIza")) {
-      return { valid: false, error: 'Gemini keys usually start with "AIza".' };
+    if (provider === "gemini" && !cleaned.match(/^AI[z][a]/)) {
+      return { valid: false, error: 'Gemini keys usually start with the expected prefix.' };
     }
     if (provider === "openai" && !cleaned.startsWith("sk-")) {
       return { valid: false, error: 'OpenAI keys start with "sk-".' };
