@@ -49,10 +49,11 @@ permalink: /contact/
     const needEl = root.querySelector('#qc-need');
       const previewEl = root.querySelector('#qc-preview');
     const prepareBtn = root.querySelector('#qc-prepare');
-    const actionsCard = root.querySelector('#qc-actions-card');
-    const actions = root.querySelector('#qc-actions');
-    const smsBtn = root.querySelector('#qc-sms');
-    const mailBtn = root.querySelector('#qc-mail');
+    const modal = root.querySelector('#qc-modal');
+    const modalPreview = root.querySelector('#qc-modal-preview');
+    const smsBtn = root.querySelector('#qc-modal-sms');
+    const mailBtn = root.querySelector('#qc-modal-mail');
+    const closeBtn = root.querySelector('#qc-close');
 
     const updatePreview = () => {
       const body = buildBody();
@@ -76,7 +77,19 @@ permalink: /contact/
       const mailHref = `mailto:will@tctcusa.com?subject=Project%20Inquiry&body=${body}`;
       smsBtn.setAttribute('href', smsHref);
       mailBtn.setAttribute('href', mailHref);
-      actionsCard.style.display = 'block';
+      modalPreview.textContent = buildBody();
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    });
+
+    const closeModal = () => {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    };
+
+    closeBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeModal();
     });
   })();
 </script>
@@ -152,29 +165,37 @@ Project Context / Needs:
           <button id="qc-prepare" type="button" class="w-full rounded-lg bg-emerald-500 px-4 py-2 text-center text-base font-semibold text-slate-900 transition hover:bg-emerald-400">
             Prepare Message
           </button>
-          <div id="qc-actions-card" class="rounded-lg border border-slate-700 bg-slate-950/85 p-3 text-base text-emerald-200" style="display:none;">
-            <p class="font-semibold text-emerald-300 mb-2">Send Options</p>
-            <div class="rounded border border-slate-700 bg-slate-950 p-3">
-              <p class="text-sm text-emerald-200 font-semibold">Your Message</p>
-              <pre id="qc-preview-secondary" class="mt-2 whitespace-pre-wrap text-emerald-100 text-sm"></pre>
-            </div>
-            <div id="qc-actions" class="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2">
-              <a id="qc-sms" href="#" class="inline-flex items-center justify-center gap-2 rounded-lg bg-emerald-500 px-4 py-2 text-base font-semibold text-slate-900 transition hover:bg-emerald-400">
-                ✉️ Send via Text
-              </a>
-              <a id="qc-mail" href="#" class="inline-flex items-center justify-center gap-2 rounded-lg border border-emerald-400 px-4 py-2 text-base font-semibold text-emerald-200 transition hover:border-emerald-300 hover:text-emerald-100">
-                📧 Send via Email
-              </a>
-            </div>
+        </div>
+      </div>
+      </div>
+
+      {# Modal for send options #}
+      <div id="qc-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70 px-4">
+        <div class="w-full max-w-xl rounded-xl border border-slate-700 bg-slate-900/95 p-5 shadow-2xl relative">
+          <button id="qc-close" type="button" class="absolute right-3 top-3 text-slate-300 hover:text-white text-lg font-bold">×</button>
+          <p class="text-xs uppercase tracking-[0.2em] text-emerald-300">Send Options</p>
+          <h3 class="text-lg font-semibold text-white mb-3">Review &amp; Send</h3>
+          <div class="rounded border border-slate-700 bg-slate-950 p-3">
+            <p class="text-sm text-emerald-200 font-semibold">Your Message</p>
+            <pre id="qc-modal-preview" class="mt-2 whitespace-pre-wrap text-emerald-100 text-sm"></pre>
+          </div>
+          <div class="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2">
+            <a id="qc-modal-sms" href="#" class="inline-flex items-center justify-center gap-2 rounded-lg bg-emerald-500 px-4 py-2 text-base font-semibold text-slate-900 transition hover:bg-emerald-400">
+              ✉️ Send via Text
+            </a>
+            <a id="qc-modal-mail" href="#" class="inline-flex items-center justify-center gap-2 rounded-lg border border-emerald-400 px-4 py-2 text-base font-semibold text-emerald-200 transition hover:border-emerald-300 hover:text-emerald-100">
+              📧 Send via Email
+            </a>
           </div>
         </div>
       </div>
-        </div>
-        <p class="text-muted mt-3" style="font-size: 0.875rem;">
-          Your information stays private. BYOK means you own the data that touches your AI providers.
-        </p>
-      </div>
-      
+
+    </div>
+      <p class="text-muted mt-3" style="font-size: 0.875rem;">
+        Your information stays private. BYOK means you own the data that touches your AI providers.
+      </p>
+    </div>
+    
     </div>
     
   </div>
