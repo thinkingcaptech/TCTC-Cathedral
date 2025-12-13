@@ -38,63 +38,6 @@ permalink: /contact/
   </div>
 </section>
 
-{% block scripts %}
-<script>
-  (() => {
-    const root = document.getElementById('contact-form-root');
-    if (!root) return;
-    const nameEl = root.querySelector('#qc-name');
-    const emailEl = root.querySelector('#qc-email');
-    const phoneEl = root.querySelector('#qc-phone');
-    const needEl = root.querySelector('#qc-need');
-      const previewEl = root.querySelector('#qc-preview');
-    const prepareBtn = root.querySelector('#qc-prepare');
-    const modal = root.querySelector('#qc-modal');
-    const modalPreview = root.querySelector('#qc-modal-preview');
-    const smsBtn = root.querySelector('#qc-modal-sms');
-    const mailBtn = root.querySelector('#qc-modal-mail');
-    const closeBtn = root.querySelector('#qc-close');
-
-    const updatePreview = () => {
-      const body = buildBody();
-      previewEl.textContent = body;
-    };
-
-    const buildBody = () => {
-      const header = `Hi Will, this is ${nameEl.value || "[Your Name]"}.`;
-      const contactLine = `Email: ${emailEl.value || "[your email]"} | Phone: ${phoneEl.value || "[your phone]"}`;
-      const context = `Project Context / Needs:\n${needEl.value || "[Briefly describe your project, goals, and timeline]"}`;
-      return `${header}\n${contactLine}\n${context}`;
-    };
-
-    [nameEl, emailEl, phoneEl, needEl].forEach((el) => {
-      el.addEventListener('input', updatePreview);
-    });
-
-    prepareBtn.addEventListener('click', () => {
-      const body = encodeURIComponent(buildBody());
-      const smsHref = `sms:+18592678383?body=${body}`;
-      const mailHref = `mailto:will@tctcusa.com?subject=Project%20Inquiry&body=${body}`;
-      smsBtn.setAttribute('href', smsHref);
-      mailBtn.setAttribute('href', mailHref);
-      modalPreview.textContent = buildBody();
-      modal.classList.remove('hidden');
-      modal.classList.add('flex');
-    });
-
-    const closeModal = () => {
-      modal.classList.add('hidden');
-      modal.classList.remove('flex');
-    };
-
-    closeBtn.addEventListener('click', closeModal);
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) closeModal();
-    });
-  })();
-</script>
-{% endblock %}
-
 {# Contact Methods #}
 <section class="section section-primary">
   <div class="container">
@@ -323,3 +266,60 @@ Project Context / Needs:
     
   </div>
 </section>
+
+{% block scripts %}
+<script>
+  (() => {
+    const root = document.getElementById('contact-form-root');
+    if (!root) return;
+    const nameEl = root.querySelector('#qc-name');
+    const emailEl = root.querySelector('#qc-email');
+    const phoneEl = root.querySelector('#qc-phone');
+    const needEl = root.querySelector('#qc-need');
+    const previewEl = root.querySelector('#qc-preview');
+    const prepareBtn = root.querySelector('#qc-prepare');
+    const modal = root.querySelector('#qc-modal');
+    const modalPreview = root.querySelector('#qc-modal-preview');
+    const smsBtn = root.querySelector('#qc-modal-sms');
+    const mailBtn = root.querySelector('#qc-modal-mail');
+    const closeBtn = root.querySelector('#qc-close');
+
+    const buildBody = () => {
+      const header = `Hi Will, this is ${nameEl.value || "[Your Name]"}.`;
+      const contactLine = `Email: ${emailEl.value || "[your email]"} | Phone: ${phoneEl.value || "[your phone]"}`;
+      const context = `Project Context / Needs:\n${needEl.value || "[Briefly describe your project, goals, and timeline]"}`;
+      return `${header}\n${contactLine}\n${context}`;
+    };
+
+    const updatePreview = () => {
+      previewEl.textContent = buildBody();
+    };
+
+    [nameEl, emailEl, phoneEl, needEl].forEach((el) => {
+      el.addEventListener('input', updatePreview);
+    });
+
+    const closeModal = () => {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    };
+
+    prepareBtn.addEventListener('click', () => {
+      const bodyRaw = buildBody();
+      const body = encodeURIComponent(bodyRaw);
+      const smsHref = `sms:+18592678383?body=${body}`;
+      const mailHref = `mailto:will@tctcusa.com?subject=Project%20Inquiry&body=${body}`;
+      smsBtn.setAttribute('href', smsHref);
+      mailBtn.setAttribute('href', mailHref);
+      modalPreview.textContent = bodyRaw;
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    });
+
+    closeBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeModal();
+    });
+  })();
+</script>
+{% endblock %}
