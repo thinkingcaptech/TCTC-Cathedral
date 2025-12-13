@@ -143,9 +143,9 @@ All packages include discovery, development, testing, deployment, and 60 days of
 
 ### 💡 Simple AI Tool
 
-**Founder Rate: $4,000-8,000**  
-~~Market Rate: $12,000-18,000~~  
-**You Save: $8,000-10,000**
+**Founder Rate: $3,999-7,999**  
+~~Market Rate: $11,999-17,999~~  
+**You Save: $7,999-9,999**
 
 **Timeline:** 2-3 weeks  
 **Perfect for:** Single-purpose tools, internal automation, proof-of-concept builds
@@ -165,9 +165,9 @@ All packages include discovery, development, testing, deployment, and 60 days of
 
 ### ⚡ Standard Application ⭐ MOST POPULAR
 
-**Founder Rate: $8,000-15,000**  
-~~Market Rate: $28,000-50,000~~  
-**You Save: $20,000-35,000**
+**Founder Rate: $7,999-14,999**  
+~~Market Rate: $27,999-49,999~~  
+**You Save: $19,999-34,999**
 
 **Timeline:** 4-6 weeks  
 **Perfect for:** Customer-facing tools, SaaS MVPs, internal platforms
@@ -190,9 +190,9 @@ All packages include discovery, development, testing, deployment, and 60 days of
 
 ### 🚀 Complex System
 
-**Founder Rate: $15,000-30,000**  
-~~Market Rate: $55,000-90,000~~  
-**You Save: $40,000-60,000**
+**Founder Rate: $14,999-29,999**  
+~~Market Rate: $54,999-89,999~~  
+**You Save: $39,999-59,999**
 
 **Timeline:** 8-12 weeks  
 **Perfect for:** Multi-tenant SaaS, marketplace platforms, enterprise tools
@@ -242,11 +242,11 @@ You connect your own AI API keys directly. No 20-30% markup on costs like agenci
 ## Why These Prices?
 
 **Traditional Agency Math:**  
-- Senior Developer: $175/hr × 200 hours = $35,000  
-- Designer: $150/hr × 40 hours = $6,000  
-- Project Manager: $125/hr × 60 hours = $7,500  
-- Overhead (20%): $9,700  
-- **Total: $58,200+**
+- Senior Developer: $175/hr × 200 hours = $34,999  
+- Designer: $150/hr × 40 hours = $5,999  
+- Project Manager: $125/hr × 60 hours = $7,499  
+- Overhead (20%): $9,699  
+- **Total: $58,199+**
 
 **My Math:**  
 - Solo architect (me): No handoffs = faster  
@@ -254,7 +254,7 @@ You connect your own AI API keys directly. No 20-30% markup on costs like agenci
 - Modern AI stack: Accelerated development  
 - Fixed scope: No scope creep billing  
 - **Founder pricing: Building client base**  
-- **Your Price: $9,500 (84% savings)**
+- **Your Price: $9,499 (84% savings)**
 
 ---
 
@@ -263,14 +263,14 @@ You connect your own AI API keys directly. No 20-30% markup on costs like agenci
 **Yes.** Here's the honest timeline:
 
 **Right Now (0-10 clients):**
-- Simple: $4k-8k
-- Standard: $8k-15k
-- Complex: $15k-30k
+- Simple: $3,999-7,999
+- Standard: $7,999-14,999
+- Complex: $14,999-29,999
 
 **After First 10 Clients (6-12 months):**
-- Simple: $8k-12k (+50%)
-- Standard: $15k-25k (+67%)
-- Complex: $30k-50k (+67%)
+- Simple: $5,999-11,999 (+50%)
+- Standard: $14,999-24,999 (+67%)
+- Complex: $29,999-49,999 (+67%)
 
 **Why the increase?** Demand will outstrip capacity, client testimonials reduce risk perception, and I won't need aggressive pricing to attract clients.
 
@@ -282,7 +282,7 @@ You connect your own AI API keys directly. No 20-30% markup on costs like agenci
 
 | Feature | Traditional Agency | Freelance Marketplace | **TCTC** |
 |---------|-------------------|----------------------|----------|
-| **Cost** | $150-$450/hr, $50k-$200k | $35-$100/hr, unpredictable | **Fixed: $4k-30k** |
+| **Cost** | $149-$449/hr, $49,999-$199,999 | $34-$99/hr, unpredictable | **Fixed: $3,999-$29,999** |
 | **Timeline** | 3-6 months (often longer) | 8-12 weeks (if they finish) | **2-12 weeks, proven** |
 | **IP Ownership** | Retained or licensed | Usually yours | **100% yours, guaranteed** |
 | **AI Cost Markup** | 20-30% markup forever | Varies, often hidden | **Zero markup (BYOK)** |
