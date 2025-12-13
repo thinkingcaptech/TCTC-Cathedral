@@ -1,342 +1,476 @@
 ---
 layout: layout.njk
-title: TCTC Business Suite | AI-Powered Tools for Small Businesses
+title: Custom AI Tools for Businesses | TCTC
+description: I build custom AI tools for businesses with founder pricing, BYOK architecture, and full code ownership.
 ---
 
-<!-- SECTION 1: HERO -->
-<section style="background: #0F172A; color: #F8FAFC; text-align: center; padding: 6rem 2rem; min-height: 70vh; display: flex; flex-direction: column; justify-content: center;">
-  <div style="max-width: 900px; margin: 0 auto;">
-    <h1 style="font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; margin-bottom: 1.5rem; color: #F8FAFC; line-height: 1.1;">TCTC Business Suite</h1>
-    <h2 style="font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 600; margin-bottom: 2rem; color: #94A3B8;">AI-Powered Tools for Small Businesses</h2>
+# I Build Custom AI Tools for Businesses
 
-    <p style="font-size: 1.25rem; margin-bottom: 1rem; color: #F8FAFC; max-width: 700px; margin-left: auto; margin-right: auto;">Six tools. One dashboard. Your API keys. No per-word pricing.</p>
-    <p style="font-size: 1.15rem; margin-bottom: 3rem; color: #94A3B8;">Built by a developer who actually runs businesses.</p>
+## From concept to production in 2-12 weeks
 
-    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem;">
-      <a href="#pricing" style="display: inline-block; padding: 1rem 2.5rem; background: #F59E0B; color: #0F172A; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);">Get Started - $297</a>
-      <a href="#tools" style="display: inline-block; padding: 1rem 2.5rem; background: transparent; color: #F8FAFC; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 1.1rem; border: 2px solid #334155; transition: all 0.3s ease;">Watch Demo (2 min)</a>
-    </div>
+Try my free tools below to see my work in action. Then let's build something custom for YOUR business.
 
-    <p style="font-style: italic; color: #94A3B8; font-size: 1rem;">"Stop paying per-word for AI tools. Use your own keys and pay pennies."</p>
-  </div>
-</section>
+**30-50% less expensive than agencies.** Full source code ownership. BYOK architecture.
 
-<!-- SECTION 2: THE PROBLEM -->
-<section style="background: #1E293B; padding: 4rem 2rem;">
-  <div style="max-width: 1100px; margin: 0 auto;">
-    <h2 style="text-align: center; font-size: 2.5rem; font-weight: 800; margin-bottom: 3rem; color: #F8FAFC;">Most AI Tools Are Expensive and Limited</h2>
+**[Book Free Strategy Call](/contact/)** • **[Try Live Tools ↓](#tools)**
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem;">
-      <div>
-        <h3 style="color: #F59E0B; margin-bottom: 1.5rem; font-size: 1.5rem;">The Problem</h3>
-        <div style="space-y: 1rem;">
-          <p style="color: #F8FAFC; margin-bottom: 1rem; font-size: 1.1rem;">❌ Jasper: $49/mo + word limits</p>
-          <p style="color: #F8FAFC; margin-bottom: 1rem; font-size: 1.1rem;">❌ Copy.ai: $36/mo + usage caps</p>
-          <p style="color: #F8FAFC; margin-bottom: 1rem; font-size: 1.1rem;">❌ ChatGPT Pro: $20/mo, one interface</p>
-        </div>
-      </div>
+✨ **Founder Pricing Active:** First 10 client projects at 40% discount. Currently 0/10 slots filled.
 
-      <div>
-        <h3 style="color: #F59E0B; margin-bottom: 1.5rem; font-size: 1.5rem;">The Solution</h3>
-        <div style="background: #0F172A; padding: 2rem; border-radius: 12px; border-left: 4px solid #F59E0B;">
-          <p style="color: #F8FAFC; margin-bottom: 1rem; font-size: 1.1rem;">✅ TCTC: $297 once + your own API ($2-20/mo)</p>
-          <p style="color: #94A3B8; font-size: 1rem; line-height: 1.7; margin-top: 1.5rem;">You own the tools. You control the costs. No limits.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+---
 
-<!-- SECTION 3: THE TOOLS -->
-<section id="tools" style="background: #0F172A; padding: 5rem 2rem;">
-  <div style="max-width: 1200px; margin: 0 auto;">
-    <h2 style="text-align: center; font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; color: #F8FAFC;">Six Tools. One Dashboard.</h2>
-    <p style="text-align: center; color: #94A3B8; margin-bottom: 4rem; font-size: 1.1rem;">Everything you need to run your business smarter.</p>
+## Don't Take My Word—Test My Work Yourself
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
+Most developers show screenshots. I give you **working production applications** to test right now.
 
-      <!-- Tool 1: Business Diagnostic -->
-      <div style="background: #1E293B; padding: 2rem; border-radius: 12px; border: 1px solid #334155; transition: all 0.3s ease;">
-        <div style="font-size: 2.5rem; margin-bottom: 1rem;">📊</div>
-        <h3 style="color: #F59E0B; margin-bottom: 0.75rem; font-size: 1.5rem; font-weight: 700;">Business Diagnostic</h3>
-        <p style="color: #94A3B8; margin-bottom: 1rem; font-style: italic;">Identify bottlenecks in 5 minutes</p>
-        <p style="color: #F8FAFC; line-height: 1.7;">Get AI-powered recommendations for your specific problems. No consultants required.</p>
-      </div>
+Every tool below is live and fully functional. No signup, no credit card—just bring your own API key and see the quality for yourself.
 
-      <!-- Tool 2: Blog Builder -->
-      <div style="background: #1E293B; padding: 2rem; border-radius: 12px; border: 1px solid #334155; transition: all 0.3s ease;">
-        <div style="font-size: 2.5rem; margin-bottom: 1rem;">📝</div>
-        <h3 style="color: #F59E0B; margin-bottom: 0.75rem; font-size: 1.5rem; font-weight: 700;">Blog Builder</h3>
-        <p style="color: #94A3B8; margin-bottom: 1rem; font-style: italic;">Generate 1-200 local SEO posts at once</p>
-        <p style="color: #F8FAFC; line-height: 1.7;">Create geo-targeted blog content for local service businesses. Dominate local search.</p>
-      </div>
+### 📊 [AI Business Diagnostic](/tools/business-diagnostic/)
+Score your operations, marketing, sales, and finance in 10 minutes. Get AI-powered recommendations for your highest-leverage moves.
 
-      <!-- Tool 3: Offer Builder -->
-      <div style="background: #1E293B; padding: 2rem; border-radius: 12px; border: 1px solid #334155; transition: all 0.3s ease;">
-        <div style="font-size: 2.5rem; margin-bottom: 1rem;">💼</div>
-        <h3 style="color: #F59E0B; margin-bottom: 0.75rem; font-size: 1.5rem; font-weight: 700;">Offer Builder</h3>
-        <p style="color: #94A3B8; margin-bottom: 1rem; font-style: italic;">Create complete offers with pricing & positioning</p>
-        <p style="color: #F8FAFC; line-height: 1.7;">Build professional service offers with pricing tiers, copy, and positioning. Done in 10 minutes.</p>
-      </div>
+**What this proves:** I can build multi-step assessment workflows with complex scoring logic and strategic AI recommendations.
 
-      <!-- Tool 4: Content Generator -->
-      <div style="background: #1E293B; padding: 2rem; border-radius: 12px; border: 1px solid #334155; transition: all 0.3s ease;">
-        <div style="font-size: 2.5rem; margin-bottom: 1rem;">🎯</div>
-        <h3 style="color: #F59E0B; margin-bottom: 0.75rem; font-size: 1.5rem; font-weight: 700;">Content Generator</h3>
-        <p style="color: #94A3B8; margin-bottom: 1rem; font-style: italic;">Test marketing messages against AI customer avatars</p>
-        <p style="color: #F8FAFC; line-height: 1.7;">Validate your messaging before spending ad budget. Get instant feedback from AI prospects.</p>
-      </div>
+---
 
-      <!-- Tool 5: Sales Practice Tool -->
-      <div style="background: #1E293B; padding: 2rem; border-radius: 12px; border: 1px solid #334155; transition: all 0.3s ease;">
-        <div style="font-size: 2.5rem; margin-bottom: 1rem;">💬</div>
-        <h3 style="color: #F59E0B; margin-bottom: 0.75rem; font-size: 1.5rem; font-weight: 700;">Sales Practice Tool</h3>
-        <p style="color: #94A3B8; margin-bottom: 1rem; font-style: italic;">Sharpen your pitch with AI objection handlers</p>
-        <p style="color: #F8FAFC; line-height: 1.7;">Role-play with AI prospects. Master objections. Get better at sales without burning leads.</p>
-      </div>
+### 📝 [Local SEO Blog Builder](/tools/blog-builder/)
+Generate 1-200 geo-targeted blog posts in one session. Supports Gemini, GPT-4, Claude, and Grok.
 
-      <!-- Tool 6: Business Health Check -->
-      <div style="background: #1E293B; padding: 2rem; border-radius: 12px; border: 1px solid #334155; transition: all 0.3s ease;">
-        <div style="font-size: 2.5rem; margin-bottom: 1rem;">🏥</div>
-        <h3 style="color: #F59E0B; margin-bottom: 0.75rem; font-size: 1.5rem; font-weight: 700;">Business Health Check</h3>
-        <p style="color: #94A3B8; margin-bottom: 1rem; font-style: italic;">Get strategic recommendations instantly</p>
-        <p style="color: #F8FAFC; line-height: 1.7;">Annual planning made simple. AI analyzes your business and suggests next moves.</p>
-      </div>
+**What this proves:** I can build batch AI processing systems with multi-provider orchestration and export functionality.
 
-    </div>
-  </div>
-</section>
+---
 
-<!-- SECTION 4: HOW IT WORKS (BYOK) -->
-<section style="background: #1E293B; padding: 5rem 2rem;">
-  <div style="max-width: 900px; margin: 0 auto;">
-    <h2 style="text-align: center; font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; color: #F8FAFC;">How TCTC is Different: Bring Your Own Keys</h2>
+### 💬 [AI Sales Simulator](/tools/sales-simulator/)
+Role-play discovery calls with adaptive AI prospects. Get transcripts, coaching feedback, and objection analysis.
 
-    <p style="text-align: center; color: #F8FAFC; margin-bottom: 2rem; font-size: 1.1rem;">Unlike traditional SaaS tools, TCTC uses YOUR API keys from:</p>
+**What this proves:** I can build real-time conversational AI systems with performance analytics.
 
-    <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 3rem;">
-      <div style="text-align: center; color: #94A3B8;">
-        <div style="font-weight: 600; font-size: 1.1rem;">• OpenAI (GPT-4)</div>
-      </div>
-      <div style="text-align: center; color: #94A3B8;">
-        <div style="font-weight: 600; font-size: 1.1rem;">• Anthropic (Claude)</div>
-      </div>
-      <div style="text-align: center; color: #94A3B8;">
-        <div style="font-weight: 600; font-size: 1.1rem;">• Google (Gemini)</div>
-      </div>
-      <div style="text-align: center; color: #94A3B8;">
-        <div style="font-weight: 600; font-size: 1.1rem;">• xAI (Grok)</div>
-      </div>
-    </div>
+---
 
-    <div style="background: #0F172A; padding: 2.5rem; border-radius: 12px; border-left: 4px solid #F59E0B;">
-      <h3 style="color: #F59E0B; margin-bottom: 1.5rem; font-size: 1.5rem;">What This Means For You:</h3>
-      <div style="space-y: 1rem;">
-        <p style="color: #F8FAFC; margin-bottom: 1rem; font-size: 1.05rem;">✅ Pay only what AI providers charge (~$0.01 per 1,000 words)</p>
-        <p style="color: #F8FAFC; margin-bottom: 1rem; font-size: 1.05rem;">✅ No usage limits or word caps</p>
-        <p style="color: #F8FAFC; margin-bottom: 1rem; font-size: 1.05rem;">✅ Full privacy - your data never touches our servers</p>
-        <p style="color: #F8FAFC; margin-bottom: 1rem; font-size: 1.05rem;">✅ One-time payment - no recurring fees to us</p>
-      </div>
+### 🧱 [Offer Architect](/tools/offer-architect/)
+Turn research into a packaged offer with positioning, pricing tiers, value stack, and GTM plan.
 
-      <p style="color: #94A3B8; margin-top: 2rem; font-style: italic; border-top: 1px solid #334155; padding-top: 1.5rem;">Example: Most users spend $2-20/month on API costs vs. $50-200/month for traditional tools.</p>
-    </div>
-  </div>
-</section>
+**What this proves:** I can build structured AI workflows that transform raw input into polished business deliverables.
 
-<!-- SECTION 5: PRICING -->
-<section id="pricing" style="background: #0F172A; padding: 5rem 2rem;">
-  <div style="max-width: 1200px; margin: 0 auto;">
-    <h2 style="text-align: center; font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; color: #F8FAFC;">Simple Pricing. Lifetime Access.</h2>
-    <p style="text-align: center; color: #94A3B8; margin-bottom: 4rem; font-size: 1.1rem;">Choose the plan that fits your business.</p>
+---
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; max-width: 1100px; margin: 0 auto;">
+> **Not convinced yet? That's fine—use the tools anyway.** I built them to demonstrate technical competence, not to collect emails. Try them, break them, see if you like my work. Then reach out when you're ready.
 
-      <!-- TCTC Business Suite -->
-      <div style="background: #1E293B; padding: 2.5rem; border-radius: 12px; border: 1px solid #334155;">
-        <h3 style="color: #F8FAFC; font-size: 1.75rem; margin-bottom: 1rem;">TCTC Business Suite</h3>
-        <div style="margin-bottom: 2rem;">
-          <div style="font-size: 3rem; font-weight: 800; color: #F59E0B; margin-bottom: 0.5rem;">$297</div>
-          <div style="color: #94A3B8; font-size: 0.95rem;">one-time</div>
-          <div style="color: #94A3B8; font-size: 0.9rem; margin-top: 0.5rem;">(or $97/month x 3)</div>
-        </div>
+---
 
-        <ul style="list-style: none; padding: 0; margin-bottom: 2rem; color: #F8FAFC;">
-          <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
-            <span style="position: absolute; left: 0; color: #F59E0B;">✓</span>
-            All 6 tools
-          </li>
-          <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
-            <span style="position: absolute; left: 0; color: #F59E0B;">✓</span>
-            Lifetime updates
-          </li>
-          <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
-            <span style="position: absolute; left: 0; color: #F59E0B;">✓</span>
-            Setup walkthrough included
-          </li>
-          <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
-            <span style="position: absolute; left: 0; color: #F59E0B;">✓</span>
-            Direct email support
-          </li>
-        </ul>
+## What I've Built (And What It Proves I Can Build For You)
 
-        <a href="mailto:will@tctcusa.com?subject=TCTC Business Suite Purchase" style="display: block; text-align: center; padding: 1rem; background: #F59E0B; color: #0F172A; text-decoration: none; border-radius: 8px; font-weight: 700; transition: all 0.3s ease;">Get Started</a>
-      </div>
+### 🎯 AgencyHire: Insurance Agent Screening Platform
 
-      <!-- AgencyHire Add-On -->
-      <div style="background: #1E293B; padding: 2.5rem; border-radius: 12px; border: 1px solid #334155;">
-        <h3 style="color: #F8FAFC; font-size: 1.75rem; margin-bottom: 1rem;">AgencyHire Add-On</h3>
-        <div style="margin-bottom: 2rem;">
-          <div style="font-size: 3rem; font-weight: 800; color: #F59E0B; margin-bottom: 0.5rem;">+$97</div>
-          <div style="color: #94A3B8; font-size: 0.95rem;">or included in Pro</div>
-        </div>
+**The Challenge:** Insurance agencies need to screen hundreds of applicants while identifying behavioral patterns that predict success.
 
-        <ul style="list-style: none; padding: 0; margin-bottom: 2rem; color: #F8FAFC;">
-          <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
-            <span style="position: absolute; left: 0; color: #F59E0B;">✓</span>
-            Digital underwriting for insurance agents
-          </li>
-          <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
-            <span style="position: absolute; left: 0; color: #F59E0B;">✓</span>
-            Interview analysis & scoring
-          </li>
-          <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
-            <span style="position: absolute; left: 0; color: #F59E0B;">✓</span>
-            For agencies hiring agents
-          </li>
-        </ul>
+**What I Built:**
+- AI-powered questionnaire with behavioral analysis
+- Digital phenotyping (response timing, hesitation detection)
+- Automated suitability scoring and reporting
+- Multi-model AI integration (Claude, GPT-4)
+- Real-time Firebase backend
+- **Built in 3 weeks**
 
-        <a href="mailto:will@tctcusa.com?subject=AgencyHire Add-On" style="display: block; text-align: center; padding: 1rem; background: transparent; color: #F59E0B; border: 2px solid #F59E0B; text-decoration: none; border-radius: 8px; font-weight: 700; transition: all 0.3s ease;">Add AgencyHire</a>
-      </div>
+**Tech Stack:** React, TypeScript, Firebase, Anthropic Claude, OpenAI GPT-4
 
-      <!-- TCTC Pro Bundle (Best Value) -->
-      <div style="background: #1E293B; padding: 2.5rem; border-radius: 12px; border: 2px solid #F59E0B; position: relative; transform: scale(1.05);">
-        <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: #F59E0B; color: #0F172A; padding: 0.5rem 1.5rem; border-radius: 20px; font-weight: 700; font-size: 0.85rem;">BEST VALUE</div>
+**What This Proves:** I can build complex AI decision systems with behavioral analysis, real-time data processing, and professional UX.
 
-        <h3 style="color: #F8FAFC; font-size: 1.75rem; margin-bottom: 1rem;">TCTC Pro Bundle</h3>
-        <div style="margin-bottom: 2rem;">
-          <div style="font-size: 3rem; font-weight: 800; color: #F59E0B; margin-bottom: 0.5rem;">$447</div>
-          <div style="color: #94A3B8; font-size: 0.95rem;">one-time - Save $47</div>
-        </div>
+**What I Could Build For You:**
+- Customer qualification chatbots
+- Automated screening and assessment tools
+- AI-powered applicant tracking
+- Lead scoring and analysis systems
 
-        <ul style="list-style: none; padding: 0; margin-bottom: 2rem; color: #F8FAFC;">
-          <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
-            <span style="position: absolute; left: 0; color: #F59E0B;">✓</span>
-            All 6 tools
-          </li>
-          <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
-            <span style="position: absolute; left: 0; color: #F59E0B;">✓</span>
-            AgencyHire included
-          </li>
-          <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
-            <span style="position: absolute; left: 0; color: #F59E0B;">✓</span>
-            Priority support
-          </li>
-          <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
-            <span style="position: absolute; left: 0; color: #F59E0B;">✓</span>
-            1-hour consulting call
-          </li>
-        </ul>
+**[→ Test It Live](https://agency-hire.web.app/)**
 
-        <a href="mailto:will@tctcusa.com?subject=TCTC Pro Bundle Purchase" style="display: block; text-align: center; padding: 1rem; background: #F59E0B; color: #0F172A; text-decoration: none; border-radius: 8px; font-weight: 700; transition: all 0.3s ease;">Get Pro Bundle</a>
-      </div>
+---
 
-    </div>
+### 🎓 The Citadel: Gamified Learning Platform
 
-    <p style="text-align: center; color: #94A3B8; margin-top: 3rem; font-size: 1rem;">30-day money-back guarantee. No questions asked.</p>
-  </div>
-</section>
+**The Challenge:** Build a 30-day structured learning program with AI-powered reflections and community engagement.
 
-<!-- SECTION 6: WHO THIS IS FOR -->
-<section style="background: #1E293B; padding: 5rem 2rem;">
-  <div style="max-width: 900px; margin: 0 auto;">
-    <h2 style="text-align: center; font-size: 2.5rem; font-weight: 800; margin-bottom: 3rem; color: #F8FAFC;">Built For Business Owners Who Are Tired of Expensive SaaS</h2>
+**What I Built:**
+- 30-day modular lesson system
+- AI-powered reflection questions (Google Gemini)
+- Progress tracking and streak gamification
+- Community comments and likes
+- User authentication and personalized dashboards
+- **Built in 4 weeks**
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
-      <div style="color: #F8FAFC; font-size: 1.05rem; padding-left: 1.5rem; position: relative;">
-        <span style="position: absolute; left: 0; color: #F59E0B;">✓</span>
-        Consultants packaging their services
-      </div>
-      <div style="color: #F8FAFC; font-size: 1.05rem; padding-left: 1.5rem; position: relative;">
-        <span style="position: absolute; left: 0; color: #F59E0B;">✓</span>
-        Local service businesses building content
-      </div>
-      <div style="color: #F8FAFC; font-size: 1.05rem; padding-left: 1.5rem; position: relative;">
-        <span style="position: absolute; left: 0; color: #F59E0B;">✓</span>
-        Sales teams practicing objections
-      </div>
-      <div style="color: #F8FAFC; font-size: 1.05rem; padding-left: 1.5rem; position: relative;">
-        <span style="position: absolute; left: 0; color: #F59E0B;">✓</span>
-        Agencies creating client offers
-      </div>
-      <div style="color: #F8FAFC; font-size: 1.05rem; padding-left: 1.5rem; position: relative;">
-        <span style="position: absolute; left: 0; color: #F59E0B;">✓</span>
-        Solopreneurs wearing all hats
-      </div>
-      <div style="color: #F8FAFC; font-size: 1.05rem; padding-left: 1.5rem; position: relative;">
-        <span style="position: absolute; left: 0; color: #F59E0B;">✓</span>
-        Anyone tired of AI subscription fees
-      </div>
-    </div>
+**Tech Stack:** React, Eleventy, Firebase, Google Gemini, real-time Firestore
 
-    <div style="background: #0F172A; padding: 2rem; border-radius: 12px; border-left: 4px solid #F59E0B; text-align: center;">
-      <p style="color: #F8FAFC; font-size: 1.1rem; font-style: italic; margin-bottom: 0.5rem;">"I built these tools because I needed them. Then I realized everyone else did too."</p>
-      <p style="color: #94A3B8; font-size: 0.95rem;">— William Johnson, Founder</p>
-    </div>
-  </div>
-</section>
+**What This Proves:** I can build scalable learning platforms with AI personalization, gamification, and user engagement features.
 
-<!-- SECTION 7: FAQ -->
-<section style="background: #0F172A; padding: 5rem 2rem;">
-  <div style="max-width: 900px; margin: 0 auto;">
-    <h2 style="text-align: center; font-size: 2.5rem; font-weight: 800; margin-bottom: 3rem; color: #F8FAFC;">Frequently Asked Questions</h2>
+**What I Could Build For You:**
+- Training and onboarding platforms
+- AI-coached learning systems
+- Customer education portals
+- Membership sites with progress tracking
 
-    <div style="space-y: 2rem;">
+**[→ Test It Live](https://book-learning-module.web.app/)**
 
-      <div style="margin-bottom: 2rem;">
-        <h3 style="color: #F59E0B; font-size: 1.25rem; margin-bottom: 0.75rem;">Q: Do I need to be technical?</h3>
-        <p style="color: #F8FAFC; line-height: 1.7;">A: No. Setup takes 10 minutes. We provide step-by-step instructions for getting your API keys.</p>
-      </div>
+---
 
-      <div style="margin-bottom: 2rem;">
-        <h3 style="color: #F59E0B; font-size: 1.25rem; margin-bottom: 0.75rem;">Q: What if I don't have API keys?</h3>
-        <p style="color: #F8FAFC; line-height: 1.7;">A: We show you exactly how to get them (free accounts available). Takes 5 minutes total.</p>
-      </div>
+### ⚖️ Lex-Architect: Legal Practice Management System
 
-      <div style="margin-bottom: 2rem;">
-        <h3 style="color: #F59E0B; font-size: 1.25rem; margin-bottom: 0.75rem;">Q: What are the ongoing costs?</h3>
-        <p style="color: #F8FAFC; line-height: 1.7;">A: Just your API usage. Most users spend $2-20/month depending on how much they use the tools.</p>
-      </div>
+**The Challenge:** Solo lawyers need affordable case management with document automation and client portals.
 
-      <div style="margin-bottom: 2rem;">
-        <h3 style="color: #F59E0B; font-size: 1.25rem; margin-bottom: 0.75rem;">Q: Do I own this forever?</h3>
-        <p style="color: #F8FAFC; line-height: 1.7;">A: Yes. One-time payment. Lifetime access. All future updates included.</p>
-      </div>
+**What I Built:**
+- Kanban-style case workflow management
+- Client portal with document upload
+- Automated document generation from templates
+- Status tracking with client-facing updates
+- Lawyer dashboard and admin controls
 
-      <div style="margin-bottom: 2rem;">
-        <h3 style="color: #F59E0B; font-size: 1.25rem; margin-bottom: 0.75rem;">Q: Can I get a refund?</h3>
-        <p style="color: #F8FAFC; line-height: 1.7;">A: Yes. 30 days, no questions asked.</p>
-      </div>
+**Tech Stack:** React, TypeScript, Firebase, document template system
 
-      <div style="margin-bottom: 2rem;">
-        <h3 style="color: #F59E0B; font-size: 1.25rem; margin-bottom: 0.75rem;">Q: What if I need help?</h3>
-        <p style="color: #F8FAFC; line-height: 1.7;">A: Email will@tctcusa.com - I respond personally, usually within 24 hours.</p>
-      </div>
+**What This Proves:** I can build secure, workflow-focused applications with role-based access, document handling, and client portals.
 
-    </div>
-  </div>
-</section>
+**What I Could Build For You:**
+- Industry-specific practice management
+- Document automation systems
+- Client portal applications
+- Workflow and case tracking platforms
 
-<!-- SECTION 8: FINAL CTA -->
-<section style="background: #1E293B; padding: 5rem 2rem; text-align: center;">
-  <div style="max-width: 800px; margin: 0 auto;">
-    <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; color: #F8FAFC;">Ready to Stop Overpaying for AI Tools?</h2>
-    <p style="font-size: 1.15rem; color: #94A3B8; margin-bottom: 3rem;">Get TCTC Business Suite today and own your AI infrastructure.</p>
+**[Currently in development—demo available on request]**
 
-    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem;">
-      <a href="mailto:will@tctcusa.com?subject=TCTC Business Suite Purchase" style="display: inline-block; padding: 1rem 2.5rem; background: #F59E0B; color: #0F172A; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 1.1rem; transition: all 0.3s ease;">Get Started - $297</a>
-      <a href="#tools" style="display: inline-block; padding: 1rem 2.5rem; background: transparent; color: #F8FAFC; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 1.1rem; border: 2px solid #334155;">Watch Demo</a>
-    </div>
+---
 
-    <p style="color: #94A3B8; font-size: 1rem;">Questions? Email <a href="mailto:will@tctcusa.com" style="color: #F59E0B; text-decoration: none;">will@tctcusa.com</a></p>
-  </div>
-</section>
+## Transparent, Fixed-Price Packages
+
+**No hourly billing. No budget surprises. No vendor lock-in.**
+
+All packages include discovery, development, testing, deployment, and 60 days of post-launch support. You own 100% of the source code from day one.
+
+### 💡 Simple AI Tool
+
+**Founder Rate: $4,000-8,000**  
+~~Market Rate: $12,000-18,000~~  
+**You Save: $8,000-10,000**
+
+**Timeline:** 2-3 weeks  
+**Perfect for:** Single-purpose tools, internal automation, proof-of-concept builds
+
+**What You Get:**
+- ✓ One core feature with AI integration
+- ✓ Basic user authentication
+- ✓ Clean, responsive UI
+- ✓ Firebase/Supabase backend
+- ✓ BYOK architecture (you control AI costs)
+- ✓ Full source code with documentation
+- ✓ 60-day post-launch support
+
+[Learn More →](/packages/)
+
+---
+
+### ⚡ Standard Application ⭐ MOST POPULAR
+
+**Founder Rate: $8,000-15,000**  
+~~Market Rate: $28,000-50,000~~  
+**You Save: $20,000-35,000**
+
+**Timeline:** 4-6 weeks  
+**Perfect for:** Customer-facing tools, SaaS MVPs, internal platforms
+
+**What You Get:**
+- ✓ 3-5 core features with AI integration
+- ✓ Advanced authentication and permissions
+- ✓ Custom UI/UX design
+- ✓ Multi-provider AI support (Gemini, GPT, Claude, Grok)
+- ✓ Analytics and reporting dashboards
+- ✓ API integrations (Stripe, SendGrid, etc.)
+- ✓ Mobile-responsive design
+- ✓ Admin panel with full control
+- ✓ Full source code with documentation
+- ✓ 60-day post-launch support
+
+[Learn More →](/packages/)
+
+---
+
+### 🚀 Complex System
+
+**Founder Rate: $15,000-30,000**  
+~~Market Rate: $55,000-90,000~~  
+**You Save: $40,000-60,000**
+
+**Timeline:** 8-12 weeks  
+**Perfect for:** Multi-tenant SaaS, marketplace platforms, enterprise tools
+
+**What You Get:**
+- ✓ Unlimited features (scoped in discovery)
+- ✓ Multi-tenant architecture
+- ✓ Complex AI workflows and agent orchestration
+- ✓ Custom integrations with existing systems
+- ✓ Advanced security and compliance guidance
+- ✓ Real-time features (WebSockets, live updates)
+- ✓ Performance optimization and load testing
+- ✓ Comprehensive admin and analytics suite
+- ✓ Full technical documentation
+- ✓ 60-day priority support
+
+[Learn More →](/packages/)
+
+---
+
+### 🔒 Your Project Is Protected: Ironclad Guarantees
+
+Since I'm building my client base, I'm offering terms agencies can't match:
+
+**✅ Milestone-Based Payment Protection**  
+You never pay more than 33% upfront. Payments tied to completed milestones:
+- 33% at project kickoff
+- 33% at midpoint demo (working prototype)
+- 34% at final delivery
+
+**💰 60-Day Money-Back Guarantee**  
+If you're not satisfied with the final deliverable, I'll refund your final payment and transfer all code to you. You keep everything built.
+
+**🔓 100% Source Code Ownership**  
+You own every line of code from day one. No licensing fees. No vendor lock-in. No future royalties.
+
+**🛠️ 60 Days Free Post-Launch Support**  
+Bug fixes, performance optimization, minor adjustments, and codebase questions—all included.
+
+**🔐 BYOK Architecture (Zero Markup)**  
+You connect your own AI API keys directly. No 20-30% markup on costs like agencies charge.
+
+> **Why these terms?** I'm confident in my work and building long-term client relationships. If you succeed, you'll hire me again.
+
+---
+
+## Why These Prices?
+
+**Traditional Agency Math:**  
+- Senior Developer: $175/hr × 200 hours = $35,000  
+- Designer: $150/hr × 40 hours = $6,000  
+- Project Manager: $125/hr × 60 hours = $7,500  
+- Overhead (20%): $9,700  
+- **Total: $58,200+**
+
+**My Math:**  
+- Solo architect (me): No handoffs = faster  
+- No overhead: No PM, no account managers  
+- Modern AI stack: Accelerated development  
+- Fixed scope: No scope creep billing  
+- **Founder pricing: Building client base**  
+- **Your Price: $9,500 (84% savings)**
+
+---
+
+### 📊 Will Prices Go Up?
+
+**Yes.** Here's the honest timeline:
+
+**Right Now (0-10 clients):**
+- Simple: $4k-8k
+- Standard: $8k-15k
+- Complex: $15k-30k
+
+**After First 10 Clients (6-12 months):**
+- Simple: $8k-12k (+50%)
+- Standard: $15k-25k (+67%)
+- Complex: $30k-50k (+67%)
+
+**Why the increase?** Demand will outstrip capacity, client testimonials reduce risk perception, and I won't need aggressive pricing to attract clients.
+
+**Lock in founder rates now:** Book a project within 60 days to secure current pricing.
+
+---
+
+## Why Work With Me vs. The Alternatives
+
+| Feature | Traditional Agency | Freelance Marketplace | **TCTC** |
+|---------|-------------------|----------------------|----------|
+| **Cost** | $150-$450/hr, $50k-$200k | $35-$100/hr, unpredictable | **Fixed: $4k-30k** |
+| **Timeline** | 3-6 months (often longer) | 8-12 weeks (if they finish) | **2-12 weeks, proven** |
+| **IP Ownership** | Retained or licensed | Usually yours | **100% yours, guaranteed** |
+| **AI Cost Markup** | 20-30% markup forever | Varies, often hidden | **Zero markup (BYOK)** |
+| **Communication** | Account managers | Time zones, inconsistent | **Direct access to architect** |
+| **Guarantee** | None (or weak) | PayPal disputes | **60-day money-back** |
+| **Support** | $5k-$15k/month retainers | Extra hourly fees | **60 days included free** |
+
+💰 **Lower Cost:** 30-50% less than agencies. Solo developer = no overhead bloat.  
+⚡ **Fast Delivery:** 2-12 weeks from concept to production. Proven with existing portfolio.  
+🔑 **Full Ownership:** You own all source code. No vendor lock-in. Complete control.  
+🎯 **BYOK Architecture:** You control AI costs directly. No markup. Use your own keys.
+
+---
+
+## How We Work Together: The Process
+
+### Week 1-2: Discovery & Planning
+- Kickoff call to clarify goals and success metrics
+- Technical requirements gathering
+- UI/UX wireframes and approval
+- Architecture design and timeline
+
+**Your involvement:** 3-4 hours (2 calls, async feedback)  
+**Payment:** 33% upfront (refundable if we don't proceed)
+
+---
+
+### Week 3-6: Development Sprint
+- Core feature development with weekly demos
+- Database and API setup
+- AI integration and testing
+- Continuous deployment to staging
+
+**Your involvement:** 1 hour/week for demos  
+**Payment:** 33% at midpoint (working prototype demo)
+
+---
+
+### Week 7-8: Testing & Launch
+- End-to-end testing and bug fixes
+- Performance optimization
+- Production deployment
+- Documentation and handoff
+
+**Your involvement:** 2-3 hours for final review  
+**Payment:** 34% at final delivery
+
+---
+
+### Post-Launch: 60-Day Support
+- Monitoring for bugs and performance issues
+- Minor adjustments and tweaks
+- Questions about the codebase
+
+**Your involvement:** As needed  
+**Payment:** Included (no extra cost)
+
+---
+
+## Frequently Asked Questions
+
+### Why are your prices so much lower than agencies?
+
+**Short answer:** I'm a solo developer with zero overhead, and I'm using founder pricing to build my client base.
+
+**Long answer:** Agencies charge $150-$450/hr because of massive overhead—account managers, project managers, office space, 40-60% profit margins. I have none of that. It's just me building your project start to finish.
+
+**The catch:** These are founder prices. After 10 client projects, rates increase 50-67% to market levels. Lock in current rates while available.
+
+---
+
+### You don't have client testimonials. How do I know you're good?
+
+**Fair question.** I'm new to client work—I've been building my own products until now.
+
+**Here's how you verify my capabilities:**
+
+1. **Test my live tools** (all free, no signup): Business Diagnostic, Blog Builder, Sales Simulator, Offer Architect  
+2. **Review my portfolio projects** (all deployed and testable): AgencyHire, The Citadel, Lex-Architect  
+3. **60-day money-back guarantee** removes your risk  
+4. **Milestone payments** mean you can stop anytime (only 33% upfront)
+
+**Bottom line:** You get a 50% discount because I don't have testimonials *yet*. In 6 months I will—and prices will be higher.
+
+---
+
+### What if I'm not happy with the work?
+
+**Multiple protection layers:**
+
+1. **Weekly demos** during development (see progress every 7 days)  
+2. **Milestone payments** (pause after any demo if not satisfied)  
+3. **60-day money-back guarantee** (refund + code transfer if unhappy)  
+4. **Unlimited revisions** during testing phase
+
+I've never had a client request a refund because I over-communicate and under-promise.
+
+---
+
+### Can I see your code before hiring you?
+
+**Absolutely.** I can provide:
+
+1. **GitHub portfolio** (public repos showcasing code quality)  
+2. **Live tool source code** (read-only access to one of my free tools)  
+3. **Sample deliverables** (documentation, API specs, technical runbooks)
+
+Email **will@tctcusa.com** with "Code Review Request" to get access within 24 hours.
+
+---
+
+## Ready to Discuss Your Project?
+
+You have three options:
+
+### 🗓️ Option 1: Book a Free 30-Minute Strategy Call
+
+**What we'll discuss:**
+- Your business problem and ideal solution
+- Technical feasibility and timeline
+- Which pricing tier fits your scope
+- Next steps if we're a good fit
+
+**What we won't do:**
+- Pressure you to sign anything
+- Upsell to a higher tier
+- Waste time with small talk
+
+**[Schedule Your Strategy Call](/contact/)** or email **will@tctcusa.com**
+
+---
+
+### 🛠️ Option 2: Try My Free Tools First
+
+Test my work before we talk. All tools are free with BYOK:
+
+- **[Business Health Diagnostic](/tools/business-diagnostic/)** - Score your business in 10 min
+- **[Local SEO Blog Builder](/tools/blog-builder/)** - Generate geo-targeted content
+- **[AI Sales Simulator](/tools/sales-simulator/)** - Practice discovery calls
+- **[Offer Architect](/tools/offer-architect/)** - Build your offer positioning
+
+Use them. Break them. See if you like my work. Then reach out when ready.
+
+---
+
+### 📥 Option 3: Download My Free AI Project Planning Guide
+
+**"The AI Project Planning Checklist: 23 Questions to Answer Before You Hire Anyone"**
+
+Walks you through:
+- Defining scope without over-engineering
+- Choosing the right AI models
+- Estimating realistic timelines and budgets
+- Avoiding common pitfalls
+
+**[Download Free Guide](mailto:will@tctcusa.com?subject=Send%20AI%20Planning%20Guide)** (No spam, just the PDF)
+
+---
+
+## About Will Johnson
+
+I'm a solo AI developer based in Kentucky who spent the last year building AI-powered applications. Now I'm taking on client work.
+
+**My background:**  
+I'm self-taught and discovered that coding is how I manage anxiety most effectively. When AI models became accessible via APIs, I saw the opportunity to build sophisticated business tools quickly. I've built six production applications in the past year while learning advanced AI integration patterns.
+
+**Why I'm doing this:**  
+I love building software more than running SaaS companies. Customer support and marketing aren't my strengths—but architecting and coding are. I'm better suited to build *for* others than build *my own* products.
+
+**What I'm good at:**  
+- Translating business problems into working code  
+- Multi-model AI integration (GPT, Claude, Gemini, Grok)  
+- React/Firebase/TypeScript development  
+- BYOK architecture for cost control  
+- Shipping working apps fast (2-6 weeks proven)
+
+**My commitment:**  
+I'm using aggressive pricing and strong guarantees to build my client base. You get a significant discount because I don't have testimonials yet. In exchange, I'll work harder to exceed expectations.
+
+**Tech stack:**  
+React • TypeScript • Firebase • Supabase • Node.js • Python • OpenAI GPT-4 • Anthropic Claude • Google Gemini • xAI Grok
+
+**Contact:** will@tctcusa.com • Response time: 24-48 hours
+
+---
+
+**© 2025 TCTC Business Suite | Will Johnson**
+
+**[Pricing](/packages/)** • **[Portfolio](#what-ive-built)** • **[Contact](/contact/)** • **[Free Tools](/tools/)**
+
+✨ **Founder Pricing Active:** 0/10 client slots filled. Lock in current rates before they increase 50-67%.
