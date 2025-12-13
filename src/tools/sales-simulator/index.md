@@ -16,7 +16,7 @@ The AI Sales Simulator is your pressure-free reps practice room. Build custom bu
 ### How it works
 
 1. Enter the scenario: persona, product pitch, pricing, competitive edges.
-2. Choose your model (GPT-4o, Claude 3.5, or Grok 2) and difficulty level.
+2. Choose your model (Gemini 2.5 Flash, GPT-5.1, Claude Sonnet 4.5, or Grok 4 Fast) and difficulty level.
 3. Run the call in-browser with audio or text, pausing or restarting whenever you want.
 4. Review the transcript, spotting dropped objections and suggested follow-ups.
 

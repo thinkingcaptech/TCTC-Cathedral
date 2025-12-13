@@ -21,7 +21,7 @@ The AI Business Diagnostic walks you through a fast, structured intake so you ca
 
 ### How to use
 
-1. Connect your preferred model (GPT-4o, Claude 3.5, Gemini 1.5, or Grok 2) with your own API key.
+1. Connect your preferred model (Gemini 2.5 Flash, GPT-5.1, Claude Sonnet 4.5, or Grok 4 Fast) with your own API key.
 2. Work through the four-step intake covering operations, marketing, sales, and finances.
 3. Press “Generate Report” and let the tool produce scores, red/yellow/green flags, and recommended playbooks.
 4. Export the results, share them with stakeholders, or jump into a custom engagement with TCTC.
@@ -35,7 +35,7 @@ Below is the production interface—configure your API key, work through the que
         <div>
           <p class="tool-hero__eyebrow">Bring Your Own Keys</p>
           <h3>Connect your preferred AI provider</h3>
-          <p>Your key only lives in this browser. Use Gemini, GPT-4o, Claude, or Grok.</p>
+          <p>Your key only lives in this browser. Use Gemini 2.5, GPT-5.1, Claude 4.5, or Grok 4.</p>
         </div>
         <div class="byok-row">
           <div class="byok-field">

@@ -13,7 +13,7 @@
       "Investor updates",
       "Prioritizing roadmap initiatives"
     ],
-    "apiModels": ["GPT-4o", "Claude 3.5", "Gemini 1.5", "Grok 2"],
+    "apiModels": ["Gemini 2.5 Flash", "GPT-5.1", "Claude Sonnet 4.5", "Grok 4 Fast"],
     "status": "available",
     "ctaLabel": "Run Diagnostic",
     "seo": {
@@ -99,7 +99,7 @@
       "Founder-led sales practice",
       "Agency pitch rehearsal"
     ],
-    "apiModels": ["GPT-4o", "Claude 3.5", "Grok"],
+    "apiModels": ["Gemini 2.5 Flash", "GPT-5.1", "Claude Sonnet 4.5", "Grok 4 Fast"],
     "status": "available",
     "ctaLabel": "Start Simulation",
     "seo": {
