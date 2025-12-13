@@ -166,7 +166,7 @@ title: Pricing | TCTC Business Suite
 
     </div>
 
-    <p style="text-align: center; color: #94A3B8; margin-top: 3rem; font-size: 1rem;">30-day money-back guarantee. No questions asked.</p>
+    <p style="text-align: center; color: #94A3B8; margin-top: 3rem; font-size: 1rem;">30-day support included. No questions asked.</p>
   </div>
 </section>
 
@@ -255,8 +255,8 @@ title: Pricing | TCTC Business Suite
       </div>
 
       <div style="margin-bottom: 2rem;">
-        <h3 style="color: #F59E0B; font-size: 1.25rem; margin-bottom: 0.75rem;">Q: What's your refund policy?</h3>
-        <p style="color: #F8FAFC; line-height: 1.7;">A: 30-day money-back guarantee. If you're not happy, email within 30 days for a full refund. No questions asked.</p>
+        <h3 style="color: #F59E0B; font-size: 1.25rem; margin-bottom: 0.75rem;">Q: What's your support policy?</h3>
+        <p style="color: #F8FAFC; line-height: 1.7;">A: 30-day support included. I fix bugs, handle regressions, and resolve deployment issues at no additional cost during this period.</p>
       </div>
     </div>
   </div>

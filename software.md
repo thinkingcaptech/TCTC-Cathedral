@@ -218,8 +218,8 @@ title: Business Tools | TCTC Business Suite
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
       <div style="background: #1E293B; padding: 2rem; border-radius: 12px; text-align: center;">
         <div style="font-size: 3rem; margin-bottom: 1rem;">✅</div>
-        <h3 style="color: #F59E0B; margin-bottom: 0.75rem;">30-Day Money-Back</h3>
-        <p style="color: #F8FAFC; margin: 0;">Not happy? Full refund, no questions</p>
+        <h3 style="color: #F59E0B; margin-bottom: 0.75rem;">30-Day Support</h3>
+        <p style="color: #F8FAFC; margin: 0;">Free bug fixes and support included</p>
       </div>
 
       <div style="background: #1E293B; padding: 2rem; border-radius: 12px; text-align: center;">

@@ -223,7 +223,7 @@ You never pay more than 33% upfront. Payments tied to completed milestones:
 - 33% at midpoint demo (working prototype)
 - 34% at final delivery
 
-**🛠️ 60-Day Bug Support & Assistance**  
+**🛠️ 60-Day Support**
 For 60 days after launch, I fix bugs, handle regressions, and resolve deployment issues at no additional cost. Minor performance tweaks and adjustments are included so you can launch confidently.
 
 **🔓 100% Source Code Ownership**  
@@ -287,7 +287,7 @@ You connect your own AI API keys directly. No 20-30% markup on costs like agenci
 | **IP Ownership** | Retained or licensed | Usually yours | **100% yours, guaranteed** |
 | **AI Cost Markup** | 20-30% markup forever | Varies, often hidden | **Zero markup (BYOK)** |
 | **Communication** | Account managers | Time zones, inconsistent | **Direct access to architect** |
-| **Guarantee** | None (or weak) | PayPal disputes | **60-day bug support & assistance** |
+| **Guarantee** | None (or weak) | PayPal disputes | **60-day support** |
 | **Support** | $5k-$15k/month retainers | Extra hourly fees | **60 days included free** |
 
 💰 **Lower Cost:** 30-50% less than agencies. Solo developer = no overhead bloat.  
@@ -362,7 +362,7 @@ You connect your own AI API keys directly. No 20-30% markup on costs like agenci
 
 1. **Test my live tools** (all free, no signup): Business Diagnostic, Blog Builder, Sales Simulator, Offer Architect  
 2. **Review my portfolio projects** (all deployed and testable): AgencyHire, The Citadel, Lex-Architect  
-3. **60-day bug support & assistance** removes launch risk  
+3. **60-day support** removes launch risk
 4. **Milestone payments** mean you can stop anytime (only 33% upfront)
 
 **Bottom line:** You get a 50% discount because I don't have testimonials *yet*. In 6 months I will—and prices will be higher.
@@ -375,7 +375,7 @@ You connect your own AI API keys directly. No 20-30% markup on costs like agenci
 
 1. **Weekly demos** during development (see progress every 7 days)  
 2. **Milestone payments** (pause after any demo if not satisfied)  
-3. **60-day bug support & assistance** (free fixes + you keep the code)  
+3. **60-day support** (free fixes + you keep the code)
 4. **Unlimited revisions** during testing phase
 
 I've never had a client need more than the built-in support because I over-communicate and under-promise.

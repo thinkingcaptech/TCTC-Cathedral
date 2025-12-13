@@ -49,7 +49,7 @@ You need custom AI tooling. But every option feels like a compromise:
 | **AI Operational Costs** | 20-30% markup on API fees | Varies, often hidden | **Zero markup (BYOK)** |
 | **Communication** | Account managers, layers | Time zones, inconsistent availability | **Direct access to architect** |
 | **Code Quality** | Good but expensive | Hit or miss | **Production-grade, tested, documented** |
-| **Guarantee** | None (or weak) | PayPal disputes at best | **60-day bug support & assistance** |
+| **Guarantee** | None (or weak) | PayPal disputes at best | **60-day support** |
 | **Post-Launch Support** | $5k-$15k/month retainers | Extra hourly fees | **60 days included free** |
 
 **The bottom line:** You get agency-quality work at a fraction of the cost, delivered faster, with better terms.
@@ -321,7 +321,7 @@ If I don't hit a milestone, you don't pay for it. No questions asked.
 
 ---
 
-### 🛠️ 60-Day Bug Support & Assistance
+### 🛠️ 60-Day Support
 For 60 days after launch, I fix bugs, address regressions, and handle deployment issues at no additional cost. Performance tweaks and minor adjustments are included so you launch with confidence.
 
 ---
@@ -473,7 +473,7 @@ I have none of that. It's just me, building your project from start to finish. N
    - AgencyHire, The Citadel, Lex-Architech, TrueHire
    - If I can build those, I can build yours
 
-3. **My 60-day bug support & assistance** removes launch risk:
+3. **My 60-day support** removes launch risk:
    - If you hit bugs or regressions, I fix them fast and for free
    - I ship production-ready code and respond within 24-48 hours
 
@@ -493,7 +493,7 @@ You have multiple protection layers:
 
 2. **Milestone payments** mean you can pause the project after any demo if you're not satisfied. You don't pay the next installment until you approve the current milestone.
 
-3. **60-day bug support & assistance** means if the final deliverable has issues, I fix them fast—no extra cost, you keep the code.
+3. **60-day support** means if the final deliverable has issues, I fix them fast—no extra cost, you keep the code.
 
 4. **Unlimited revisions** during the testing phase (Week 7-8). I don't consider the project "done" until you're happy.
 
