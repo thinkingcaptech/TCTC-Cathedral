@@ -171,6 +171,8 @@
   padding: 20px;
   animation: fadeIn 0.3s ease;
   font-family: 'Inter', sans-serif;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 @keyframes fadeIn {
@@ -190,6 +192,10 @@
     inset 0 0 30px rgba(249, 115, 22, 0.05);
   position: relative;
   animation: slideUp 0.4s ease;
+  max-height: 90vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: auto;
 }
 
 @keyframes slideUp {
@@ -344,13 +350,28 @@
     height: 70px;
   }
 
+  .modal-backdrop {
+    padding: 10px;
+    align-items: flex-start;
+  }
+
   .modal-card {
     padding: 30px 20px;
-    margin: 10px;
+    margin: 10px auto;
+    max-height: calc(100vh - 20px);
+    overflow-y: auto;
   }
 
   .modal-avatar {
     width: 100px;
     height: 100px;
+  }
+
+  .modal-headline {
+    font-size: 1rem;
+  }
+
+  .modal-text {
+    font-size: 0.85rem;
   }
 }
