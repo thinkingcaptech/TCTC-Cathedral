@@ -141,13 +141,13 @@ Turn research into a packaged offer with positioning, pricing tiers, value stack
 
 All packages include discovery, development, testing, deployment, and 60 days of post-launch support. You own 100% of the source code from day one.
 
-### 💡 Simple AI Tool
+### 💡 MVP Package
 
-**Founder Rate: $3,999-7,999**  
-~~Market Rate: $11,999-17,999~~  
-**You Save: $7,999-9,999**
+**Founder Rate: $4,599**  
+~~Agency Rate: $11,999-$14,999~~  
+**You Save: $7,399-$10,399**
 
-**Timeline:** 2-3 weeks  
+**Timeline:** 2-4 weeks  
 **Perfect for:** Single-purpose tools, internal automation, proof-of-concept builds
 
 **What You Get:**
@@ -163,13 +163,13 @@ All packages include discovery, development, testing, deployment, and 60 days of
 
 ---
 
-### ⚡ Standard Application ⭐ MOST POPULAR
+### ⚡ Standard Package ⭐ MOST POPULAR
 
-**Founder Rate: $7,999-14,999**  
-~~Market Rate: $27,999-49,999~~  
-**You Save: $19,999-34,999**
+**Founder Rate: $9,999**  
+~~Agency Rate: $27,999-$44,999~~  
+**You Save: $17,999-$34,999**
 
-**Timeline:** 4-6 weeks  
+**Timeline:** 6-8 weeks  
 **Perfect for:** Customer-facing tools, SaaS MVPs, internal platforms
 
 **What You Get:**
@@ -188,13 +188,13 @@ All packages include discovery, development, testing, deployment, and 60 days of
 
 ---
 
-### 🚀 Complex System
+### 🚀 Complex Package
 
-**Founder Rate: $14,999-29,999**  
-~~Market Rate: $54,999-89,999~~  
-**You Save: $39,999-59,999**
+**Founder Rate: $18,999+**  
+~~Agency Rate: $54,999-$84,999~~  
+**You Save: $35,999-$65,999**
 
-**Timeline:** 8-12 weeks  
+**Timeline:** 10-12 weeks  
 **Perfect for:** Multi-tenant SaaS, marketplace platforms, enterprise tools
 
 **What You Get:**
@@ -223,8 +223,8 @@ You never pay more than 33% upfront. Payments tied to completed milestones:
 - 33% at midpoint demo (working prototype)
 - 34% at final delivery
 
-**💰 60-Day Money-Back Guarantee**  
-If you're not satisfied with the final deliverable, I'll refund your final payment and transfer all code to you. You keep everything built.
+**🛠️ 60-Day Bug Support & Assistance**  
+For 60 days after launch, I fix bugs, handle regressions, and resolve deployment issues at no additional cost. Minor performance tweaks and adjustments are included so you can launch confidently.
 
 **🔓 100% Source Code Ownership**  
 You own every line of code from day one. No licensing fees. No vendor lock-in. No future royalties.
@@ -254,7 +254,7 @@ You connect your own AI API keys directly. No 20-30% markup on costs like agenci
 - Modern AI stack: Accelerated development  
 - Fixed scope: No scope creep billing  
 - **Founder pricing: Building client base**  
-- **Your Price: $9,499 (84% savings)**
+- **Your Price: $9,999 (83% savings)**
 
 ---
 
@@ -263,14 +263,14 @@ You connect your own AI API keys directly. No 20-30% markup on costs like agenci
 **Yes.** Here's the honest timeline:
 
 **Right Now (0-10 clients):**
-- Simple: $3,999-7,999
-- Standard: $7,999-14,999
-- Complex: $14,999-29,999
+- MVP: $4,599
+- Standard: $9,999
+- Complex: $18,999+
 
 **After First 10 Clients (6-12 months):**
-- Simple: $5,999-11,999 (+50%)
-- Standard: $14,999-24,999 (+67%)
-- Complex: $29,999-49,999 (+67%)
+- MVP: $7,499
+- Standard: $14,999
+- Complex: $29,999+
 
 **Why the increase?** Demand will outstrip capacity, client testimonials reduce risk perception, and I won't need aggressive pricing to attract clients.
 
@@ -282,12 +282,12 @@ You connect your own AI API keys directly. No 20-30% markup on costs like agenci
 
 | Feature | Traditional Agency | Freelance Marketplace | **TCTC** |
 |---------|-------------------|----------------------|----------|
-| **Cost** | $149-$449/hr, $49,999-$199,999 | $34-$99/hr, unpredictable | **Fixed: $3,999-$29,999** |
+| **Cost** | $149-$449/hr, $49,999-$199,999 | $34-$99/hr, unpredictable | **Fixed: $4,599-$18,999+** |
 | **Timeline** | 3-6 months (often longer) | 8-12 weeks (if they finish) | **2-12 weeks, proven** |
 | **IP Ownership** | Retained or licensed | Usually yours | **100% yours, guaranteed** |
 | **AI Cost Markup** | 20-30% markup forever | Varies, often hidden | **Zero markup (BYOK)** |
 | **Communication** | Account managers | Time zones, inconsistent | **Direct access to architect** |
-| **Guarantee** | None (or weak) | PayPal disputes | **60-day money-back** |
+| **Guarantee** | None (or weak) | PayPal disputes | **60-day bug support & assistance** |
 | **Support** | $5k-$15k/month retainers | Extra hourly fees | **60 days included free** |
 
 💰 **Lower Cost:** 30-50% less than agencies. Solo developer = no overhead bloat.  
@@ -362,7 +362,7 @@ You connect your own AI API keys directly. No 20-30% markup on costs like agenci
 
 1. **Test my live tools** (all free, no signup): Business Diagnostic, Blog Builder, Sales Simulator, Offer Architect  
 2. **Review my portfolio projects** (all deployed and testable): AgencyHire, The Citadel, Lex-Architect  
-3. **60-day money-back guarantee** removes your risk  
+3. **60-day bug support & assistance** removes launch risk  
 4. **Milestone payments** mean you can stop anytime (only 33% upfront)
 
 **Bottom line:** You get a 50% discount because I don't have testimonials *yet*. In 6 months I will—and prices will be higher.
@@ -375,10 +375,10 @@ You connect your own AI API keys directly. No 20-30% markup on costs like agenci
 
 1. **Weekly demos** during development (see progress every 7 days)  
 2. **Milestone payments** (pause after any demo if not satisfied)  
-3. **60-day money-back guarantee** (refund + code transfer if unhappy)  
+3. **60-day bug support & assistance** (free fixes + you keep the code)  
 4. **Unlimited revisions** during testing phase
 
-I've never had a client request a refund because I over-communicate and under-promise.
+I've never had a client need more than the built-in support because I over-communicate and under-promise.
 
 ---
 
