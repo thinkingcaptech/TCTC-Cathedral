@@ -270,19 +270,23 @@ Project Context / Needs:
 {% block scripts %}
 <script>
   (() => {
-    const root = document.getElementById('contact-form-root');
-    if (!root) return;
-    const nameEl = root.querySelector('#qc-name');
-    const emailEl = root.querySelector('#qc-email');
-    const phoneEl = root.querySelector('#qc-phone');
-    const needEl = root.querySelector('#qc-need');
-    const previewEl = root.querySelector('#qc-preview');
-    const prepareBtn = root.querySelector('#qc-prepare');
-    const modal = root.querySelector('#qc-modal');
-    const modalPreview = root.querySelector('#qc-modal-preview');
-    const smsBtn = root.querySelector('#qc-modal-sms');
-    const mailBtn = root.querySelector('#qc-modal-mail');
-    const closeBtn = root.querySelector('#qc-close');
+    // Select elements globally so modal outside root still works
+    const nameEl = document.getElementById('qc-name');
+    const emailEl = document.getElementById('qc-email');
+    const phoneEl = document.getElementById('qc-phone');
+    const needEl = document.getElementById('qc-need');
+    const previewEl = document.getElementById('qc-preview');
+    const prepareBtn = document.getElementById('qc-prepare');
+    const modal = document.getElementById('qc-modal');
+    const modalPreview = document.getElementById('qc-modal-preview');
+    const smsBtn = document.getElementById('qc-modal-sms');
+    const mailBtn = document.getElementById('qc-modal-mail');
+    const closeBtn = document.getElementById('qc-close');
+
+    // If any critical element is missing, abort to avoid runtime errors
+    if (!nameEl || !emailEl || !phoneEl || !needEl || !previewEl || !prepareBtn || !modal || !modalPreview || !smsBtn || !mailBtn || !closeBtn) {
+      return;
+    }
 
     const buildBody = () => {
       const header = `Hi Will, this is ${nameEl.value || "[Your Name]"}.`;
