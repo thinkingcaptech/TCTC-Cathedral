@@ -4,6 +4,9 @@ title: "Let's Connect | TCTC"
 description: "Ready to transform your business? Questions about TCTC Business Suite? Let's talk. Direct access to William."
 permalink: /contact/
 ---
+{% block head %}
+<script src="https://cdn.tailwindcss.com"></script>
+{% endblock %}
 
 {# CONTACT PAGE - Connection Frequency #}
 
@@ -38,83 +41,76 @@ permalink: /contact/
 {% block scripts %}
 <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
 <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-<script src="https://unpkg.com/zod@3.23.8/lib/index.umd.js"></script>
-<script src="https://unpkg.com/@hookform/resolvers@3.3.4/dist/resolvers.umd.js"></script>
-<script src="https://unpkg.com/react-hook-form@7.51.3/dist/index.umd.js"></script>
 <script>
   (() => {
     const root = document.getElementById('contact-form-root');
     if (!root || !window.React || !window.ReactDOM) return;
-    const { useState } = React;
-    const { useForm } = window.ReactHookForm;
-    const { z } = window.zod;
-    const { zodResolver } = window['@hookform/resolvers'].zod;
+    const { useState, useMemo } = React;
 
-    const schema = z.object({
-      name: z.string().min(2, 'Name is required'),
-      email: z.string().email('Valid email required'),
-      interest: z.string().min(1, 'Choose an interest'),
-      message: z.string().min(10, 'Please add at least 10 characters')
-    });
+    const Input = ({ label, ...props }) =>
+      React.createElement('div', { className: 'space-y-1' },
+        React.createElement('label', { className: 'block text-sm font-semibold text-emerald-200' }, label),
+        React.createElement('input', { className: 'w-full rounded-lg border border-emerald-500/50 bg-slate-950 px-3 py-2 text-slate-100 outline-none focus:border-emerald-300 focus:ring-2 focus:ring-emerald-300/30', ...props })
+      );
 
-    function Form() {
-      const [submitted, setSubmitted] = useState(false);
-      const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm({
-        resolver: zodResolver(schema),
-        defaultValues: { interest: 'software' }
-      });
+    const TextArea = ({ label, ...props }) =>
+      React.createElement('div', { className: 'space-y-1' },
+        React.createElement('label', { className: 'block text-sm font-semibold text-emerald-200' }, label),
+        React.createElement('textarea', { className: 'min-h-[140px] w-full rounded-lg border border-emerald-500/50 bg-slate-950 px-3 py-2 text-slate-100 outline-none focus:border-emerald-300 focus:ring-2 focus:ring-emerald-300/30', ...props })
+      );
 
-      const onSubmit = async (data) => {
-        // placeholder submission; replace with your backend endpoint
-        console.log('Contact submission', data);
-        setSubmitted(true);
-      };
+    function ClientSideContactForm() {
+      const [showActions, setShowActions] = useState(false);
+      const [name, setName] = useState('');
+      const [company, setCompany] = useState('');
+      const [message, setMessage] = useState('');
 
-      if (submitted) {
-        return React.createElement('div', { className: 'success-card', style: { background:'#0F172A', padding:'1rem', border:'1px solid #334155', borderRadius:'12px', color:'#F8FAFC' } },
-          React.createElement('p', { style:{ margin:0, fontWeight:700 } }, 'Thanks — I’ll review your architecture needs and reply within 24 hours.')
-        );
-      }
+      const bodyTemplate = useMemo(() => {
+        const header = `Hi Will, this is ${name || "[Your Name]"} from ${company || "[Company]"}.`;
+        const context = `Project Context: ${message || "[Briefly describe your project]"}`;
+        return `${header}\n${context}`;
+      }, [name, company, message]);
 
-      return React.createElement('form', { onSubmit: handleSubmit(onSubmit), style:{ display:'flex', flexDirection:'column', gap:'0.75rem' } },
-        React.createElement('div', null,
-          React.createElement('label', { htmlFor:'name', style:{ display:'block', marginBottom:'0.25rem', fontWeight:600 } }, 'Your Name'),
-          React.createElement('input', { id:'name', type:'text', ...register('name'), style: inputStyle }),
-          errors.name && React.createElement('p', { style:errorStyle }, errors.name.message)
-        ),
-        React.createElement('div', null,
-          React.createElement('label', { htmlFor:'email', style:{ display:'block', marginBottom:'0.25rem', fontWeight:600 } }, 'Your Email'),
-          React.createElement('input', { id:'email', type:'email', ...register('email'), style: inputStyle }),
-          errors.email && React.createElement('p', { style:errorStyle }, errors.email.message)
-        ),
-        React.createElement('div', null,
-          React.createElement('label', { htmlFor:'interest', style:{ display:'block', marginBottom:'0.25rem', fontWeight:600 } }, "I'm Interested In"),
-          React.createElement('select', { id:'interest', ...register('interest'), style: inputStyle },
-            React.createElement('option', { value:'software' }, 'Software Tools'),
-            React.createElement('option', { value:'security' }, 'Code Security Review'),
-            React.createElement('option', { value:'audit' }, 'AI Feasibility Audit'),
-            React.createElement('option', { value:'custom' }, 'Custom Solution'),
-            React.createElement('option', { value:'question' }, 'General Question')
+      const encoded = encodeURIComponent(bodyTemplate);
+      const smsHref = `sms:+18592678383?body=${encoded}`;
+      const mailHref = `mailto:will@tctcusa.com?body=${encoded}`;
+
+      return React.createElement('div', { className: 'w-full max-w-xl rounded-xl border border-slate-700 bg-slate-900/80 p-5 shadow-2xl' },
+        React.createElement('div', { className: 'mb-3 flex items-center justify-between' },
+          React.createElement('div', null,
+            React.createElement('p', { className: 'text-xs uppercase tracking-[0.2em] text-emerald-300' }, 'Client-Side Draft'),
+            React.createElement('h3', { className: 'text-lg font-semibold text-white' }, 'Command Center')
           ),
-          errors.interest && React.createElement('p', { style:errorStyle }, errors.interest.message)
+          React.createElement('span', { className: 'rounded-md bg-slate-800 px-3 py-1 text-[11px] font-semibold text-amber-300' }, 'Builder-Consultant')
         ),
-        React.createElement('div', null,
-          React.createElement('label', { htmlFor:'message', style:{ display:'block', marginBottom:'0.25rem', fontWeight:600 } }, 'Your Message'),
-          React.createElement('textarea', { id:'message', rows:6, ...register('message'), style:{ ...inputStyle, minHeight:'140px', resize:'vertical' } }),
-          errors.message && React.createElement('p', { style:errorStyle }, errors.message.message)
-        ),
-        React.createElement('button', { type:'submit', className:'btn btn-primary', disabled:isSubmitting, style:{ alignSelf:'flex-start' } },
-          isSubmitting ? 'Sending...' : 'Send Message'
+        React.createElement('div', { className: 'space-y-4' },
+          React.createElement(Input, { label: 'Name', placeholder: 'Your name', value: name, onChange: e => setName(e.target.value) }),
+          React.createElement(Input, { label: 'Company', placeholder: 'Your company', value: company, onChange: e => setCompany(e.target.value) }),
+          React.createElement(TextArea, { label: 'Message', placeholder: 'Project context: goals, timeline, constraints', value: message, onChange: e => setMessage(e.target.value) }),
+          React.createElement('div', { className: 'rounded-lg border border-slate-700 bg-slate-950/80 p-3 text-sm text-emerald-200' },
+            React.createElement('p', { className: 'font-semibold text-emerald-300' }, 'Preview'),
+            React.createElement('pre', { className: 'mt-2 whitespace-pre-wrap text-emerald-100' }, bodyTemplate)
+          ),
+          React.createElement('button', {
+            type: 'button',
+            onClick: () => setShowActions(true),
+            className: 'w-full rounded-lg bg-emerald-500 px-4 py-2 text-center text-sm font-semibold text-slate-900 transition hover:bg-emerald-400'
+          }, 'Prepare Message'),
+          showActions && React.createElement('div', { className: 'grid grid-cols-1 gap-3 sm:grid-cols-2' },
+            React.createElement('a', {
+              href: smsHref,
+              className: 'inline-flex items-center justify-center gap-2 rounded-lg bg-emerald-500 px-4 py-2 text-sm font-semibold text-slate-900 transition hover:bg-emerald-400'
+            }, React.createElement('span', { role: 'img', 'aria-label': 'sms' }, '✉️'), 'Send via Text'),
+            React.createElement('a', {
+              href: mailHref,
+              className: 'inline-flex items-center justify-center gap-2 rounded-lg border border-emerald-400 px-4 py-2 text-sm font-semibold text-emerald-200 transition hover:border-emerald-300 hover:text-emerald-100'
+            }, React.createElement('span', { role: 'img', 'aria-label': 'mail' }, '📧'), 'Send via Email')
+          )
         )
       );
     }
 
-    const inputStyle = {
-      width:'100%', padding:'0.75rem', border:'2px solid var(--primary)', borderRadius:'10px',
-      background:'var(--bg-dark)', color:'var(--text-light)', fontSize:'1rem'
-    };
-    const errorStyle = { color:'#F97316', margin:'0.25rem 0 0', fontSize:'0.9rem' };
-    ReactDOM.createRoot(root).render(React.createElement(Form));
+    ReactDOM.createRoot(root).render(React.createElement(ClientSideContactForm));
   })();
 </script>
 {% endblock %}
