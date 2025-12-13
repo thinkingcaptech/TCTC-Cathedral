@@ -39,81 +39,44 @@ permalink: /contact/
 </section>
 
 {% block scripts %}
-<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
-<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 <script>
   (() => {
     const root = document.getElementById('contact-form-root');
-    if (!root || !window.React || !window.ReactDOM) return;
-    const { useState, useMemo } = React;
+    if (!root) return;
+    const nameEl = root.querySelector('#qc-name');
+    const emailEl = root.querySelector('#qc-email');
+    const phoneEl = root.querySelector('#qc-phone');
+    const needEl = root.querySelector('#qc-need');
+    const previewEl = root.querySelector('#qc-preview');
+    const prepareBtn = root.querySelector('#qc-prepare');
+    const actions = root.querySelector('#qc-actions');
+    const smsBtn = root.querySelector('#qc-sms');
+    const mailBtn = root.querySelector('#qc-mail');
 
-    const Input = ({ label, ...props }) =>
-      React.createElement('div', { className: 'space-y-1' },
-        React.createElement('label', { className: 'block text-sm font-semibold text-emerald-200' }, label),
-        React.createElement('input', { className: 'w-full rounded-lg border border-emerald-500/50 bg-slate-950 px-3 py-2 text-slate-100 outline-none focus:border-emerald-300 focus:ring-2 focus:ring-emerald-300/30', ...props })
-      );
+    const updatePreview = () => {
+      const body = buildBody();
+      previewEl.textContent = body;
+    };
 
-    const TextArea = ({ label, ...props }) =>
-      React.createElement('div', { className: 'space-y-1' },
-        React.createElement('label', { className: 'block text-sm font-semibold text-emerald-200' }, label),
-        React.createElement('textarea', { className: 'min-h-[140px] w-full rounded-lg border border-emerald-500/50 bg-slate-950 px-3 py-2 text-slate-100 outline-none focus:border-emerald-300 focus:ring-2 focus:ring-emerald-300/30', ...props })
-      );
+    const buildBody = () => {
+      const header = `Hi Will, this is ${nameEl.value || "[Your Name]"}.`;
+      const contactLine = `Email: ${emailEl.value || "[your email]"} | Phone: ${phoneEl.value || "[your phone]"}`;
+      const context = `Project Context / Needs:\n${needEl.value || "[Briefly describe your project, goals, and timeline]"}`;
+      return `${header}\n${contactLine}\n${context}`;
+    };
 
-    function ClientSideContactForm() {
-      const [showActions, setShowActions] = useState(false);
-      const [name, setName] = useState('');
-      const [email, setEmail] = useState('');
-      const [phone, setPhone] = useState('');
-      const [need, setNeed] = useState('');
+    [nameEl, emailEl, phoneEl, needEl].forEach((el) => {
+      el.addEventListener('input', updatePreview);
+    });
 
-      const bodyTemplate = useMemo(() => {
-        const header = `Hi Will, this is ${name || "[Your Name]"}.`;
-        const contactLine = `Email: ${email || "[your email]"} | Phone: ${phone || "[your phone]"}`;
-        const context = `Project Context / Needs:\n${need || "[Briefly describe your project, goals, and timeline]"}`;
-        return `${header}\n${contactLine}\n${context}`;
-      }, [name, email, phone, need]);
-
-      const encoded = encodeURIComponent(bodyTemplate);
-      const smsHref = `sms:+18592678383?body=${encoded}`;
-      const mailHref = `mailto:will@tctcusa.com?subject=Project%20Inquiry&body=${encoded}`;
-
-      return React.createElement('div', { className: 'w-full max-w-xl rounded-xl border border-slate-700 bg-slate-900/80 p-5 shadow-2xl' },
-        React.createElement('div', { className: 'mb-3 flex items-center justify-between' },
-          React.createElement('div', null,
-            React.createElement('p', { className: 'text-xs uppercase tracking-[0.2em] text-emerald-300' }, 'Client-Side Draft'),
-            React.createElement('h3', { className: 'text-lg font-semibold text-white' }, 'Command Center')
-          ),
-          React.createElement('span', { className: 'rounded-md bg-slate-800 px-3 py-1 text-[11px] font-semibold text-amber-300' }, 'Builder-Consultant')
-        ),
-        React.createElement('div', { className: 'space-y-4' },
-          React.createElement(Input, { label: 'Name', placeholder: 'Your name', value: name, onChange: e => setName(e.target.value) }),
-          React.createElement(Input, { label: 'Email', placeholder: 'you@example.com', value: email, onChange: e => setEmail(e.target.value) }),
-          React.createElement(Input, { label: 'Phone', placeholder: '(555) 123-4567', value: phone, onChange: e => setPhone(e.target.value) }),
-          React.createElement(TextArea, { label: 'What do you need help with?', placeholder: 'Project context, goals, timeline, constraints', value: need, onChange: e => setNeed(e.target.value) }),
-          React.createElement('div', { className: 'rounded-lg border border-slate-700 bg-slate-950/80 p-3 text-sm text-emerald-200' },
-            React.createElement('p', { className: 'font-semibold text-emerald-300' }, 'Preview'),
-            React.createElement('pre', { className: 'mt-2 whitespace-pre-wrap text-emerald-100' }, bodyTemplate)
-          ),
-          React.createElement('button', {
-            type: 'button',
-            onClick: () => setShowActions(true),
-            className: 'w-full rounded-lg bg-emerald-500 px-4 py-2 text-center text-sm font-semibold text-slate-900 transition hover:bg-emerald-400'
-          }, 'Prepare Message'),
-          showActions && React.createElement('div', { className: 'grid grid-cols-1 gap-3 sm:grid-cols-2' },
-            React.createElement('a', {
-              href: smsHref,
-              className: 'inline-flex items-center justify-center gap-2 rounded-lg bg-emerald-500 px-4 py-2 text-sm font-semibold text-slate-900 transition hover:bg-emerald-400'
-            }, React.createElement('span', { role: 'img', 'aria-label': 'sms' }, '✉️'), 'Send via Text'),
-            React.createElement('a', {
-              href: mailHref,
-              className: 'inline-flex items-center justify-center gap-2 rounded-lg border border-emerald-400 px-4 py-2 text-sm font-semibold text-emerald-200 transition hover:border-emerald-300 hover:text-emerald-100'
-            }, React.createElement('span', { role: 'img', 'aria-label': 'mail' }, '📧'), 'Send via Email')
-          )
-        )
-      );
-    }
-
-    ReactDOM.createRoot(root).render(React.createElement(ClientSideContactForm));
+    prepareBtn.addEventListener('click', () => {
+      const body = encodeURIComponent(buildBody());
+      const smsHref = `sms:+18592678383?body=${body}`;
+      const mailHref = `mailto:will@tctcusa.com?subject=Project%20Inquiry&body=${body}`;
+      smsBtn.setAttribute('href', smsHref);
+      mailBtn.setAttribute('href', mailHref);
+      actions.style.display = 'grid';
+    });
   })();
 </script>
 {% endblock %}
@@ -152,7 +115,53 @@ permalink: /contact/
       <div class="path-card">
         <h2>📝 Quick Contact Form</h2>
         <p>Prefer a form? Submit here and I'll review your architecture needs and reply within 24 hours.</p>
-        <div id="contact-form-root"></div>
+        <div id="contact-form-root">
+          <div class="w-full max-w-xl rounded-xl border border-slate-700 bg-slate-900/80 p-5 shadow-2xl">
+            <div class="mb-3 flex items-center justify-between">
+              <div>
+                <p class="text-xs uppercase tracking-[0.2em] text-emerald-300">Client-Side Draft</p>
+                <h3 class="text-lg font-semibold text-white">Command Center</h3>
+              </div>
+              <span class="rounded-md bg-slate-800 px-3 py-1 text-[11px] font-semibold text-amber-300">Builder-Consultant</span>
+            </div>
+            <div class="space-y-4">
+              <div class="space-y-1">
+                <label class="block text-base font-semibold text-emerald-200" for="qc-name">Name</label>
+                <input id="qc-name" type="text" class="w-full rounded-lg border border-emerald-500/50 bg-slate-950 px-3 py-2 text-base text-slate-100 outline-none focus:border-emerald-300 focus:ring-2 focus:ring-emerald-300/30" placeholder="Your name">
+              </div>
+              <div class="space-y-1">
+                <label class="block text-base font-semibold text-emerald-200" for="qc-email">Email</label>
+                <input id="qc-email" type="email" class="w-full rounded-lg border border-emerald-500/50 bg-slate-950 px-3 py-2 text-base text-slate-100 outline-none focus:border-emerald-300 focus:ring-2 focus:ring-emerald-300/30" placeholder="you@example.com">
+              </div>
+              <div class="space-y-1">
+                <label class="block text-base font-semibold text-emerald-200" for="qc-phone">Phone</label>
+                <input id="qc-phone" type="tel" class="w-full rounded-lg border border-emerald-500/50 bg-slate-950 px-3 py-2 text-base text-slate-100 outline-none focus:border-emerald-300 focus:ring-2 focus:ring-emerald-300/30" placeholder="(859) 267-8383">
+              </div>
+              <div class="space-y-1">
+                <label class="block text-base font-semibold text-emerald-200" for="qc-need">What do you need help with?</label>
+                <textarea id="qc-need" class="min-h-[140px] w-full rounded-lg border border-emerald-500/50 bg-slate-950 px-3 py-2 text-base text-slate-100 outline-none focus:border-emerald-300 focus:ring-2 focus:ring-emerald-300/30" placeholder="Project context, goals, timeline, constraints"></textarea>
+              </div>
+              <div class="rounded-lg border border-slate-700 bg-slate-950/80 p-3 text-base text-emerald-200">
+                <p class="font-semibold text-emerald-300">Preview</p>
+                <pre id="qc-preview" class="mt-2 whitespace-pre-wrap text-emerald-100">Hi Will, this is [Your Name].
+Email: [your email] | Phone: [your phone]
+Project Context / Needs:
+[Briefly describe your project, goals, and timeline]</pre>
+              </div>
+              <button id="qc-prepare" type="button" class="w-full rounded-lg bg-emerald-500 px-4 py-2 text-center text-base font-semibold text-slate-900 transition hover:bg-emerald-400">
+                Prepare Message
+              </button>
+              <div id="qc-actions" class="grid grid-cols-1 gap-3 sm:grid-cols-2" style="display:none;">
+                <a id="qc-sms" href="#" class="inline-flex items-center justify-center gap-2 rounded-lg bg-emerald-500 px-4 py-2 text-base font-semibold text-slate-900 transition hover:bg-emerald-400">
+                  ✉️ Send via Text
+                </a>
+                <a id="qc-mail" href="#" class="inline-flex items-center justify-center gap-2 rounded-lg border border-emerald-400 px-4 py-2 text-base font-semibold text-emerald-200 transition hover:border-emerald-300 hover:text-emerald-100">
+                  📧 Send via Email
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
         <p class="text-muted mt-3" style="font-size: 0.875rem;">
           Your information stays private. BYOK means you own the data that touches your AI providers.
         </p>
