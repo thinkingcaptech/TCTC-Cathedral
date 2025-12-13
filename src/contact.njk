@@ -62,18 +62,20 @@ permalink: /contact/
     function ClientSideContactForm() {
       const [showActions, setShowActions] = useState(false);
       const [name, setName] = useState('');
-      const [company, setCompany] = useState('');
-      const [message, setMessage] = useState('');
+      const [email, setEmail] = useState('');
+      const [phone, setPhone] = useState('');
+      const [need, setNeed] = useState('');
 
       const bodyTemplate = useMemo(() => {
-        const header = `Hi Will, this is ${name || "[Your Name]"} from ${company || "[Company]"}.`;
-        const context = `Project Context: ${message || "[Briefly describe your project]"}`;
-        return `${header}\n${context}`;
-      }, [name, company, message]);
+        const header = `Hi Will, this is ${name || "[Your Name]"}.`;
+        const contactLine = `Email: ${email || "[your email]"} | Phone: ${phone || "[your phone]"}`;
+        const context = `Project Context / Needs:\n${need || "[Briefly describe your project, goals, and timeline]"}`;
+        return `${header}\n${contactLine}\n${context}`;
+      }, [name, email, phone, need]);
 
       const encoded = encodeURIComponent(bodyTemplate);
       const smsHref = `sms:+18592678383?body=${encoded}`;
-      const mailHref = `mailto:will@tctcusa.com?body=${encoded}`;
+      const mailHref = `mailto:will@tctcusa.com?subject=Project%20Inquiry&body=${encoded}`;
 
       return React.createElement('div', { className: 'w-full max-w-xl rounded-xl border border-slate-700 bg-slate-900/80 p-5 shadow-2xl' },
         React.createElement('div', { className: 'mb-3 flex items-center justify-between' },
@@ -85,8 +87,9 @@ permalink: /contact/
         ),
         React.createElement('div', { className: 'space-y-4' },
           React.createElement(Input, { label: 'Name', placeholder: 'Your name', value: name, onChange: e => setName(e.target.value) }),
-          React.createElement(Input, { label: 'Company', placeholder: 'Your company', value: company, onChange: e => setCompany(e.target.value) }),
-          React.createElement(TextArea, { label: 'Message', placeholder: 'Project context: goals, timeline, constraints', value: message, onChange: e => setMessage(e.target.value) }),
+          React.createElement(Input, { label: 'Email', placeholder: 'you@example.com', value: email, onChange: e => setEmail(e.target.value) }),
+          React.createElement(Input, { label: 'Phone', placeholder: '(555) 123-4567', value: phone, onChange: e => setPhone(e.target.value) }),
+          React.createElement(TextArea, { label: 'What do you need help with?', placeholder: 'Project context, goals, timeline, constraints', value: need, onChange: e => setNeed(e.target.value) }),
           React.createElement('div', { className: 'rounded-lg border border-slate-700 bg-slate-950/80 p-3 text-sm text-emerald-200' },
             React.createElement('p', { className: 'font-semibold text-emerald-300' }, 'Preview'),
             React.createElement('pre', { className: 'mt-2 whitespace-pre-wrap text-emerald-100' }, bodyTemplate)
