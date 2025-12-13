@@ -14,7 +14,8 @@
       "genre": "Heartfelt Americana",
       "purpose": "Oklahoma Thanksgiving tribute",
       "turnaround": "48 hours",
-      "file": "/assets/music/tulsa-grateful.mp3",
+      "file": null,
+      "availableOnRequest": true,
       "public": true
     },
     {
@@ -24,7 +25,8 @@
       "genre": "Upbeat Commercial",
       "purpose": "Brand identity and atmosphere",
       "turnaround": "72 hours",
-      "file": "/assets/music/fat-cats-pizzeria.mp3",
+      "file": null,
+      "availableOnRequest": true,
       "public": true
     },
     {

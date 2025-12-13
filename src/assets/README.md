@@ -18,37 +18,26 @@ This folder contains all media files for the Modern AiChemy website.
 
 ### Music Tracks
 
-All music files should be placed in `/assets/music/`:
+To keep the repository lightweight for hosts like Netlify, audio masters are now stored off-repo. If you want to reintroduce local audio files:
 
-1. **tulsa-grateful.mp3**
-   - Genre: Heartfelt Americana
-   - Commissioned Thanksgiving song
+1. Create `/src/assets/music/`
+2. Add MP3s such as:
+   - `tulsa-grateful.mp3`
+   - `modern-aichemy.mp3`
+   - `buzz.mp3`
+   - `highs-and-lows.mp3`
+3. Update any templates to point at those files (or keep them hosted externally and link to streaming URLs).
 
-2. **modern-aichemy.mp3**
-   - Genre: Brand Anthem
-   - Brand identity track
-
-3. **buzz.mp3**
-   - Genre: K-pop / Pop
-   - High-energy female vocals
-
-4. **highs-and-lows.mp3**
-   - Genre: Country Rock / Grunge
-   - Raw emotional depth
-
-**Audio Specs:**
-- Format: MP3
-- Bitrate: 192kbps or higher recommended
-- Length: 2-4 minutes typical
+**Recommendation:** Prefer external hosting/CDN links for audio to avoid LFS and large git history.
 
 ## Placeholder Files
 
-Until you add the actual files, the site will function but audio players won't load and images won't display. This is normal during development.
+Until you add new media, the site will fall back to text placeholders in the UI. This is normal after removing large binaries from the repo.
 
 ## Adding Your Files
 
 1. Place `logo.svg` in: `src/assets/`
 2. Place `profile.jpg` in: `src/assets/`
-3. Place all MP3 files in: `src/assets/music/`
+3. If you must host audio in the repo, place MP3 files in: `src/assets/music/`
 
 The site will automatically detect and use them once placed in the correct locations.

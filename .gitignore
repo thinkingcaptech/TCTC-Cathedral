@@ -35,3 +35,12 @@ yarn-error.log*
 
 # Separate projects in launch folder (not part of main site)
 launch/
+
+# Large media kept out of git
+*.mp3
+*.wav
+*.flac
+*.m4a
+*.epub
+assets/music/
+src/assets/music/
