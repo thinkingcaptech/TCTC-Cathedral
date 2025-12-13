@@ -31,6 +31,13 @@
     {{ content | safe }}
   </main>
   
+  {# Cookie consent banner #}
+  <div id="cookie-consent" style="display:none; position: fixed; bottom: 1rem; left: 1rem; right: 1rem; max-width: 900px; margin: 0 auto; background: #0F172A; color: #F8FAFC; padding: 1rem 1.25rem; border: 1px solid #334155; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.35); z-index: 9999;">
+    <p style="margin:0 0 0.5rem; font-weight: 600;">Cookies & Usage</p>
+    <p style="margin:0 0 0.75rem; color: #CBD5E1; font-size: 0.95rem;">We use cookies for basic analytics and to improve your experience. BYOK means your API data stays with you.</p>
+    <button id="cookie-accept" style="background:#F97316;color:#0F172A;border:none;border-radius:8px;padding:0.5rem 1rem;font-weight:700;cursor:pointer;">Accept</button>
+  </div>
+  
   {# FOOTER - The Ground #}
   {% include "footer.njk" %}
 
@@ -42,6 +49,22 @@
 
   {# Portfolio Widget JavaScript #}
   <script src="/js/portfolio-widget.js"></script>
+
+  <script>
+    (function() {
+      const banner = document.getElementById('cookie-consent');
+      const accept = document.getElementById('cookie-accept');
+      if (!banner || !accept) return;
+      const key = 'tctc-cookie-consent';
+      if (!localStorage.getItem(key)) {
+        banner.style.display = 'block';
+      }
+      accept.addEventListener('click', () => {
+        localStorage.setItem(key, 'accepted');
+        banner.style.display = 'none';
+      });
+    })();
+  </script>
 
   {# Additional scripts for specific pages #}
   {% block scripts %}{% endblock %}

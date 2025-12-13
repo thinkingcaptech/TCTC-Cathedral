@@ -21,6 +21,9 @@ permalink: /contact/
         I respond personally to every message, usually within 24 hours. 
         No chatbots. No ticket systems. Just direct communication.
       </p>
+      <p style="margin-top: var(--space-md); color: var(--text-muted);">
+        Phone: <a href="tel:+18592678383">(859) 267-8383</a> • Mailing: PO Box 476, Richmond, KY 40476
+      </p>
       
       <div style="background: var(--gold-gradient); padding: var(--space-md); border-radius: var(--radius-lg); margin-top: var(--space-lg);">
         <p style="margin: 0; font-weight: 600; font-size: 1.125rem;">
@@ -31,6 +34,90 @@ permalink: /contact/
     </div>
   </div>
 </section>
+
+{% block scripts %}
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/zod@3.23.8/lib/index.umd.js"></script>
+<script src="https://unpkg.com/@hookform/resolvers@3.3.4/dist/resolvers.umd.js"></script>
+<script src="https://unpkg.com/react-hook-form@7.51.3/dist/index.umd.js"></script>
+<script>
+  (() => {
+    const root = document.getElementById('contact-form-root');
+    if (!root || !window.React || !window.ReactDOM) return;
+    const { useState } = React;
+    const { useForm } = window.ReactHookForm;
+    const { z } = window.zod;
+    const { zodResolver } = window['@hookform/resolvers'].zod;
+
+    const schema = z.object({
+      name: z.string().min(2, 'Name is required'),
+      email: z.string().email('Valid email required'),
+      interest: z.string().min(1, 'Choose an interest'),
+      message: z.string().min(10, 'Please add at least 10 characters')
+    });
+
+    function Form() {
+      const [submitted, setSubmitted] = useState(false);
+      const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm({
+        resolver: zodResolver(schema),
+        defaultValues: { interest: 'software' }
+      });
+
+      const onSubmit = async (data) => {
+        // placeholder submission; replace with your backend endpoint
+        console.log('Contact submission', data);
+        setSubmitted(true);
+      };
+
+      if (submitted) {
+        return React.createElement('div', { className: 'success-card', style: { background:'#0F172A', padding:'1rem', border:'1px solid #334155', borderRadius:'12px', color:'#F8FAFC' } },
+          React.createElement('p', { style:{ margin:0, fontWeight:700 } }, 'Thanks — I’ll review your architecture needs and reply within 24 hours.')
+        );
+      }
+
+      return React.createElement('form', { onSubmit: handleSubmit(onSubmit), style:{ display:'flex', flexDirection:'column', gap:'0.75rem' } },
+        React.createElement('div', null,
+          React.createElement('label', { htmlFor:'name', style:{ display:'block', marginBottom:'0.25rem', fontWeight:600 } }, 'Your Name'),
+          React.createElement('input', { id:'name', type:'text', ...register('name'), style: inputStyle }),
+          errors.name && React.createElement('p', { style:errorStyle }, errors.name.message)
+        ),
+        React.createElement('div', null,
+          React.createElement('label', { htmlFor:'email', style:{ display:'block', marginBottom:'0.25rem', fontWeight:600 } }, 'Your Email'),
+          React.createElement('input', { id:'email', type:'email', ...register('email'), style: inputStyle }),
+          errors.email && React.createElement('p', { style:errorStyle }, errors.email.message)
+        ),
+        React.createElement('div', null,
+          React.createElement('label', { htmlFor:'interest', style:{ display:'block', marginBottom:'0.25rem', fontWeight:600 } }, "I'm Interested In"),
+          React.createElement('select', { id:'interest', ...register('interest'), style: inputStyle },
+            React.createElement('option', { value:'software' }, 'Software Tools'),
+            React.createElement('option', { value:'security' }, 'Code Security Review'),
+            React.createElement('option', { value:'audit' }, 'AI Feasibility Audit'),
+            React.createElement('option', { value:'custom' }, 'Custom Solution'),
+            React.createElement('option', { value:'question' }, 'General Question')
+          ),
+          errors.interest && React.createElement('p', { style:errorStyle }, errors.interest.message)
+        ),
+        React.createElement('div', null,
+          React.createElement('label', { htmlFor:'message', style:{ display:'block', marginBottom:'0.25rem', fontWeight:600 } }, 'Your Message'),
+          React.createElement('textarea', { id:'message', rows:6, ...register('message'), style:{ ...inputStyle, minHeight:'140px', resize:'vertical' } }),
+          errors.message && React.createElement('p', { style:errorStyle }, errors.message.message)
+        ),
+        React.createElement('button', { type:'submit', className:'btn btn-primary', disabled:isSubmitting, style:{ alignSelf:'flex-start' } },
+          isSubmitting ? 'Sending...' : 'Send Message'
+        )
+      );
+    }
+
+    const inputStyle = {
+      width:'100%', padding:'0.75rem', border:'2px solid var(--primary)', borderRadius:'10px',
+      background:'var(--bg-dark)', color:'var(--text-light)', fontSize:'1rem'
+    };
+    const errorStyle = { color:'#F97316', margin:'0.25rem 0 0', fontSize:'0.9rem' };
+    ReactDOM.createRoot(root).render(React.createElement(Form));
+  })();
+</script>
+{% endblock %}
 
 {# Contact Methods #}
 <section class="section section-primary">
@@ -65,51 +152,10 @@ permalink: /contact/
       {# Quick Form - Alternative #}
       <div class="path-card">
         <h2>📝 Quick Contact Form</h2>
-        
-        <p>
-          Prefer a form? Fill this out and I'll get back to you by email.
-        </p>
-        
-        <form action="#" method="post" style="display: flex; flex-direction: column; gap: var(--space-md);">
-          
-          <div>
-            <label for="name" style="display: block; margin-bottom: var(--space-xs); font-weight: 600;">Your Name</label>
-            <input type="text" id="name" name="name" required 
-                   style="width: 100%; padding: var(--space-sm); border: 2px solid var(--primary); border-radius: var(--radius-md); background: var(--bg-dark); color: var(--text-light); font-size: 1rem;">
-          </div>
-          
-          <div>
-            <label for="email" style="display: block; margin-bottom: var(--space-xs); font-weight: 600;">Your Email</label>
-            <input type="email" id="email" name="email" required 
-                   style="width: 100%; padding: var(--space-sm); border: 2px solid var(--primary); border-radius: var(--radius-md); background: var(--bg-dark); color: var(--text-light); font-size: 1rem;">
-          </div>
-          
-          <div>
-            <label for="interest" style="display: block; margin-bottom: var(--space-xs); font-weight: 600;">I'm Interested In</label>
-            <select id="interest" name="interest" 
-                    style="width: 100%; padding: var(--space-sm); border: 2px solid var(--primary); border-radius: var(--radius-md); background: var(--bg-dark); color: var(--text-light); font-size: 1rem;">
-              <option value="software">Software Tools</option>
-              <option value="music">Custom Music</option>
-              <option value="bundle">Bundle Package</option>
-              <option value="custom">Custom Solution</option>
-              <option value="question">General Question</option>
-            </select>
-          </div>
-          
-          <div>
-            <label for="message" style="display: block; margin-bottom: var(--space-xs); font-weight: 600;">Your Message</label>
-            <textarea id="message" name="message" rows="6" required 
-                      style="width: 100%; padding: var(--space-sm); border: 2px solid var(--primary); border-radius: var(--radius-md); background: var(--bg-dark); color: var(--text-light); font-size: 1rem; font-family: inherit; resize: vertical;"></textarea>
-          </div>
-          
-          <button type="submit" class="btn btn-primary" style="align-self: flex-start;">
-            Send Message
-          </button>
-          
-        </form>
-        
+        <p>Prefer a form? Submit here and I'll review your architecture needs and reply within 24 hours.</p>
+        <div id="contact-form-root"></div>
         <p class="text-muted mt-3" style="font-size: 0.875rem;">
-          Your information stays private. I never share or sell contact data.
+          Your information stays private. BYOK means you own the data that touches your AI providers.
         </p>
       </div>
       
