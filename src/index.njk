@@ -1,243 +1,234 @@
 ---
 layout: layout.njk
-title: "Custom AI Development | Will Johnson | TCTC"
-description: "I build custom AI tools for businesses. Try my free portfolio tools, then let's build something for yours. 30-50% less than agencies."
+title: "Custom AI Tools for Businesses | TCTC"
+description: "Custom AI tools built in 2-12 weeks. Founder pricing, BYOK architecture, full code ownership."
 ---
 
-<!-- HERO -->
-<section style="background: #0F172A; color: #F8FAFC; text-align: center; padding: 6rem 2rem; min-height: 70vh; display: flex; flex-direction: column; justify-content: center;">
-  <div style="max-width: 900px; margin: 0 auto;">
-    <h1 style="font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; margin-bottom: 1.5rem; color: #F8FAFC; line-height: 1.1;">I Build Custom AI Tools for Businesses</h1>
-    <h2 style="font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 600; margin-bottom: 2rem; color: #94A3B8;">From concept to production in 2-12 weeks</h2>
-
-    <p style="font-size: 1.25rem; margin-bottom: 1rem; color: #F8FAFC; max-width: 700px; margin-left: auto; margin-right: auto;">Try my free tools below, then let's build something for YOUR business.</p>
-    <p style="font-size: 1.15rem; margin-bottom: 3rem; color: #94A3B8;">30-50% less expensive than agencies. Full source code ownership included.</p>
-
-    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem;">
-      <a href="/contact/" style="display: inline-block; padding: 1rem 2.5rem; background: #F97316; color: #0F172A; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);">Discuss Your Project</a>
-      <a href="#tools" style="display: inline-block; padding: 1rem 2.5rem; background: transparent; color: #F8FAFC; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 1.1rem; border: 2px solid #334155; transition: all 0.3s ease;">View Free Tools ↓</a>
+<section style="background:#0F172A;color:#F8FAFC;text-align:center;padding:6rem 2rem;min-height:70vh;display:flex;flex-direction:column;justify-content:center;">
+  <div style="max-width:900px;margin:0 auto;">
+    <h1 style="font-size:clamp(2.5rem,5vw,4rem);font-weight:800;margin-bottom:1.5rem;color:#F8FAFC;line-height:1.1;">I Build Custom AI Tools for Businesses</h1>
+    <h2 style="font-size:clamp(1.5rem,3vw,2rem);font-weight:600;margin-bottom:2rem;color:#94A3B8;">From concept to production in 2-12 weeks</h2>
+    <p style="font-size:1.15rem;margin-bottom:1rem;color:#F8FAFC;">30-50% less expensive than agencies. Full source code ownership. BYOK architecture.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin:2rem 0 1rem;">
+      <a href="/contact/" style="display:inline-block;padding:1rem 2.5rem;background:#F97316;color:#0F172A;text-decoration:none;border-radius:8px;font-weight:700;font-size:1.1rem;">Book Free Strategy Call</a>
+      <a href="#tools" style="display:inline-block;padding:1rem 2.5rem;background:transparent;color:#F8FAFC;text-decoration:none;border-radius:8px;font-weight:600;font-size:1.1rem;border:2px solid #334155;">Try Live Tools ↓</a>
     </div>
-
-    <p style="font-style: italic; color: #94A3B8; font-size: 1rem;">Solo developer. Fast turnaround. Agency quality at freelancer prices.</p>
+    <p style="font-style:italic;color:#F97316;font-weight:700;">Founder Pricing Active: 0/10 slots filled at 40% off.</p>
   </div>
 </section>
 
-<!-- FREE TOOLS PORTFOLIO -->
-<section id="tools" style="background: #1E293B; padding: 5rem 2rem;">
-  <div style="max-width: 1100px; margin: 0 auto;">
-    <h2 style="text-align: center; font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; color: #F8FAFC;">Try My Free Tools (100% Free, No Signup)</h2>
-    <p style="text-align: center; color: #94A3B8; margin-bottom: 3rem; font-size: 1.1rem;">These production apps demonstrate what I can build. Use them with your own API keys—completely free, forever.</p>
-
-    {% set featuredTools = ['business-diagnostic', 'blog-builder', 'sales-simulator', 'offer-architect'] %}
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
-      {% for slug in featuredTools %}
-        {% set tool = tools[slug] %}
-        <div style="background: #0F172A; padding: 2rem; border-radius: 12px; border-left: 4px solid #F97316;">
-          <div style="font-size: 2.5rem; margin-bottom: 1rem;">{{ tool.icon }}</div>
-          <h3 style="color: #F97316; margin-bottom: 0.75rem; font-size: 1.5rem;">{{ tool.name }}</h3>
-          <p style="color: #94A3B8; margin-bottom: 1rem;">{{ tool.tagline }}</p>
-          <a href="{{ tool.url }}" style="color: #F97316; text-decoration: none; font-weight: 600;">{{ tool.ctaLabel }} →</a>
-        </div>
-      {% endfor %}
-    </div>
-
-    <div style="background: #0F172A; padding: 2rem; border-radius: 12px; text-align: center;">
-      <p style="color: #F8FAFC; font-size: 1.1rem; margin-bottom: 0.5rem;">🎁 100% free forever. Bring your own API keys (OpenAI, Claude, Gemini, Grok).</p>
-      <p style="color: #94A3B8; font-size: 1rem;">No usage limits. No subscriptions. You own the infrastructure.</p>
-    </div>
-  </div>
-</section>
-
-<!-- CUSTOM DEVELOPMENT PRICING -->
-<section id="custom" style="background: #0F172A; padding: 5rem 2rem;">
-  <div style="max-width: 1200px; margin: 0 auto;">
-    <h2 style="text-align: center; font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; color: #F8FAFC;">Need Something Built for Your Business?</h2>
-    <p style="text-align: center; color: #94A3B8; margin-bottom: 4rem; font-size: 1.1rem;">Custom AI development at transparent pricing</p>
-
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1100px; margin: 0 auto;">
-
-      <!-- Simple Tools -->
-      <div style="background: #1E293B; padding: 2.5rem; border-radius: 12px; border: 1px solid #334155;">
-        <h3 style="color: #F8FAFC; font-size: 1.75rem; margin-bottom: 1rem;">Simple AI Tool</h3>
-        <div style="margin-bottom: 2rem;">
-          <div style="font-size: 3rem; font-weight: 800; color: #F97316; margin-bottom: 0.5rem;">$4k-8k</div>
-          <div style="color: #94A3B8; font-size: 0.95rem;">2-3 weeks</div>
-        </div>
-
-        <p style="color: #94A3B8; margin-bottom: 1.5rem; font-style: italic;">Perfect for single-purpose AI applications</p>
-
-        <ul style="list-style: none; padding: 0; margin-bottom: 2rem; color: #F8FAFC;">
-          <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
-            <span style="position: absolute; left: 0; color: #F97316;">✓</span>
-            Content generators
-          </li>
-          <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
-            <span style="position: absolute; left: 0; color: #F97316;">✓</span>
-            Form processors
-          </li>
-          <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
-            <span style="position: absolute; left: 0; color: #F97316;">✓</span>
-            Basic automation tools
-          </li>
-          <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
-            <span style="position: absolute; left: 0; color: #F97316;">✓</span>
-            One AI integration
-          </li>
-        </ul>
-
-        <a href="/packages/" style="display: block; text-align: center; padding: 1rem; background: transparent; color: #F97316; border: 2px solid #F97316; text-decoration: none; border-radius: 8px; font-weight: 700; transition: all 0.3s ease;">Learn More</a>
+<section id="tools" style="background:#1E293B;padding:4rem 2rem;">
+  <div style="max-width:1100px;margin:0 auto;">
+    <h2 style="text-align:center;font-size:2.25rem;font-weight:800;margin-bottom:0.5rem;color:#F8FAFC;">Don't Take My Word—Test My Work</h2>
+    <p style="text-align:center;color:#94A3B8;margin-bottom:3rem;">Live, production tools. No signup. Bring your own API key and see the quality.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;">
+      <div style="background:#0F172A;padding:1.5rem;border-radius:12px;border-left:4px solid #F97316;">
+        <h3 style="color:#F97316;margin:0 0 0.5rem;font-size:1.25rem;">📊 AI Business Diagnostic</h3>
+        <p style="color:#94A3B8;margin:0 0 0.5rem;">Score operations, marketing, sales, and finance in 10 minutes.</p>
+        <p style="color:#F8FAFC;font-size:0.95rem;">Proves: multi-step workflows with complex scoring + recommendations.</p>
+        <a href="/tools/business-diagnostic/" style="color:#F97316;font-weight:600;text-decoration:none;">Try it →</a>
       </div>
-
-      <!-- Standard App -->
-      <div style="background: #1E293B; padding: 2.5rem; border-radius: 12px; border: 2px solid #F97316; transform: scale(1.05); position: relative;">
-        <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: #F97316; color: #0F172A; padding: 0.5rem 1.5rem; border-radius: 20px; font-weight: 700; font-size: 0.85rem;">POPULAR</div>
-
-        <h3 style="color: #F8FAFC; font-size: 1.75rem; margin-bottom: 1rem;">Standard Application</h3>
-        <div style="margin-bottom: 2rem;">
-          <div style="font-size: 3rem; font-weight: 800; color: #F97316; margin-bottom: 0.5rem;">$8k-15k</div>
-          <div style="color: #94A3B8; font-size: 0.95rem;">4-6 weeks</div>
-        </div>
-
-        <p style="color: #94A3B8; margin-bottom: 1.5rem; font-style: italic;">Multi-feature AI applications</p>
-
-        <ul style="list-style: none; padding: 0; margin-bottom: 2rem; color: #F8FAFC;">
-          <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
-            <span style="position: absolute; left: 0; color: #F97316;">✓</span>
-            User dashboards
-          </li>
-          <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
-            <span style="position: absolute; left: 0; color: #F97316;">✓</span>
-            Custom business tools
-          </li>
-          <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
-            <span style="position: absolute; left: 0; color: #F97316;">✓</span>
-            User authentication
-          </li>
-          <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
-            <span style="position: absolute; left: 0; color: #F97316;">✓</span>
-            Database integration
-          </li>
-        </ul>
-
-        <a href="/packages/" style="display: block; text-align: center; padding: 1rem; background: #F97316; color: #0F172A; text-decoration: none; border-radius: 8px; font-weight: 700; transition: all 0.3s ease;">Learn More</a>
+      <div style="background:#0F172A;padding:1.5rem;border-radius:12px;border-left:4px solid #F97316;">
+        <h3 style="color:#F97316;margin:0 0 0.5rem;font-size:1.25rem;">📝 Local SEO Blog Builder</h3>
+        <p style="color:#94A3B8;margin:0 0 0.5rem;">Generate 1-200 geo-targeted posts in one session.</p>
+        <p style="color:#F8FAFC;font-size:0.95rem;">Proves: batch AI processing with multi-provider orchestration.</p>
+        <a href="/tools/blog-builder/" style="color:#F97316;font-weight:600;text-decoration:none;">Try it →</a>
       </div>
-
-      <!-- Complex Systems -->
-      <div style="background: #1E293B; padding: 2.5rem; border-radius: 12px; border: 1px solid #334155;">
-        <h3 style="color: #F8FAFC; font-size: 1.75rem; margin-bottom: 1rem;">Complex System</h3>
-        <div style="margin-bottom: 2rem;">
-          <div style="font-size: 3rem; font-weight: 800; color: #F97316; margin-bottom: 0.5rem;">$15k-30k</div>
-          <div style="color: #94A3B8; font-size: 0.95rem;">8-12 weeks</div>
-        </div>
-
-        <p style="color: #94A3B8; margin-bottom: 1.5rem; font-style: italic;">Enterprise-grade applications</p>
-
-        <ul style="list-style: none; padding: 0; margin-bottom: 2rem; color: #F8FAFC;">
-          <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
-            <span style="position: absolute; left: 0; color: #F97316;">✓</span>
-            Multi-tenant platforms
-          </li>
-          <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
-            <span style="position: absolute; left: 0; color: #F97316;">✓</span>
-            Advanced integrations
-          </li>
-          <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
-            <span style="position: absolute; left: 0; color: #F97316;">✓</span>
-            Analytics & reporting
-          </li>
-          <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
-            <span style="position: absolute; left: 0; color: #F97316;">✓</span>
-            Scalable architecture
-          </li>
-        </ul>
-
-        <a href="/packages/" style="display: block; text-align: center; padding: 1rem; background: transparent; color: #F97316; border: 2px solid #F97316; text-decoration: none; border-radius: 8px; font-weight: 700; transition: all 0.3s ease;">Learn More</a>
+      <div style="background:#0F172A;padding:1.5rem;border-radius:12px;border-left:4px solid #F97316;">
+        <h3 style="color:#F97316;margin:0 0 0.5rem;font-size:1.25rem;">💬 AI Sales Simulator</h3>
+        <p style="color:#94A3B8;margin:0 0 0.5rem;">Role-play discovery calls with adaptive AI prospects.</p>
+        <p style="color:#F8FAFC;font-size:0.95rem;">Proves: real-time conversational AI with analytics.</p>
+        <a href="/tools/sales-simulator/" style="color:#F97316;font-weight:600;text-decoration:none;">Try it →</a>
       </div>
-
-    </div>
-
-    <p style="text-align: center; color: #94A3B8; margin-top: 3rem; font-size: 1rem;">All projects include full source code ownership, BYOK architecture, and 30-day support</p>
-  </div>
-</section>
-
-<!-- PORTFOLIO/PROOF -->
-<section style="background: #1E293B; padding: 5rem 2rem;">
-  <div style="max-width: 900px; margin: 0 auto;">
-    <h2 style="text-align: center; font-size: 2.5rem; font-weight: 800; margin-bottom: 3rem; color: #F8FAFC;">What I've Built</h2>
-
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
-      <div style="background: #0F172A; padding: 2rem; border-radius: 12px;">
-        <h3 style="color: #F97316; margin-bottom: 0.75rem; font-size: 1.25rem;">AgencyHire</h3>
-        <p style="color: #94A3B8; line-height: 1.7;">Digital underwriting system for insurance agencies screening new agents. Multi-step interviews with AI scoring.</p>
-      </div>
-
-      <div style="background: #0F172A; padding: 2rem; border-radius: 12px;">
-        <h3 style="color: #F97316; margin-bottom: 0.75rem; font-size: 1.25rem;">The Citadel</h3>
-        <p style="color: #94A3B8; line-height: 1.7;">Gamified learning platform for business transformation with achievements, progress tracking, and AI coaching.</p>
-      </div>
-
-      <div style="background: #0F172A; padding: 2rem; border-radius: 12px;">
-        <h3 style="color: #F97316; margin-bottom: 0.75rem; font-size: 1.25rem;">Lex-Architech</h3>
-        <p style="color: #94A3B8; line-height: 1.7;">Legal practice management system with AI document analysis and client communication automation.</p>
-      </div>
-
-      <div style="background: #0F172A; padding: 2rem; border-radius: 12px;">
-        <h3 style="color: #F97316; margin-bottom: 0.75rem; font-size: 1.25rem;">TrueHire</h3>
-        <p style="color: #94A3B8; line-height: 1.7;">Hiring assessment platform with personality profiling and role-fit analysis powered by multi-model AI.</p>
-      </div>
-    </div>
-
-    <div style="text-align: center;">
-      <p style="color: #F8FAFC; font-size: 1.1rem; margin-bottom: 1rem;"><strong>Tech Stack:</strong></p>
-      <p style="color: #94A3B8;">React • TypeScript • Firebase • OpenAI • Anthropic • Google Gemini • xAI Grok</p>
-    </div>
-  </div>
-</section>
-
-<!-- WHY WORK WITH ME -->
-<section style="background: #0F172A; padding: 5rem 2rem;">
-  <div style="max-width: 900px; margin: 0 auto;">
-    <h2 style="text-align: center; font-size: 2.5rem; font-weight: 800; margin-bottom: 3rem; color: #F8FAFC;">Why Work With Me</h2>
-
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
-      <div style="text-align: center;">
-        <div style="font-size: 3rem; margin-bottom: 1rem;">💰</div>
-        <h3 style="color: #F97316; margin-bottom: 0.75rem; font-size: 1.25rem;">Lower Cost</h3>
-        <p style="color: #94A3B8; line-height: 1.7;">30-50% less than agencies. Solo developer means no overhead bloat.</p>
-      </div>
-
-      <div style="text-align: center;">
-        <div style="font-size: 3rem; margin-bottom: 1rem;">⚡</div>
-        <h3 style="color: #F97316; margin-bottom: 0.75rem; font-size: 1.25rem;">Fast Delivery</h3>
-        <p style="color: #94A3B8; line-height: 1.7;">2-12 weeks from concept to production. No committee meetings.</p>
-      </div>
-
-      <div style="text-align: center;">
-        <div style="font-size: 3rem; margin-bottom: 1rem;">🔑</div>
-        <h3 style="color: #F97316; margin-bottom: 0.75rem; font-size: 1.25rem;">Full Ownership</h3>
-        <p style="color: #94A3B8; line-height: 1.7;">You own all source code. No vendor lock-in. Complete control.</p>
-      </div>
-
-      <div style="text-align: center;">
-        <div style="font-size: 3rem; margin-bottom: 1rem;">🎯</div>
-        <h3 style="color: #F97316; margin-bottom: 0.75rem; font-size: 1.25rem;">BYOK Architecture</h3>
-        <p style="color: #94A3B8; line-height: 1.7;">You control AI costs directly. No markup. Use your own keys.</p>
+      <div style="background:#0F172A;padding:1.5rem;border-radius:12px;border-left:4px solid #F97316;">
+        <h3 style="color:#F97316;margin:0 0 0.5rem;font-size:1.25rem;">🧱 Offer Architect</h3>
+        <p style="color:#94A3B8;margin:0 0 0.5rem;">Turn research into a packaged offer, value stack, GTM.</p>
+        <p style="color:#F8FAFC;font-size:0.95rem;">Proves: structured AI workflows that ship polished deliverables.</p>
+        <a href="/tools/offer-architect/" style="color:#F97316;font-weight:600;text-decoration:none;">Try it →</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FINAL CTA -->
-<section style="background: #1E293B; padding: 5rem 2rem; text-align: center;">
-  <div style="max-width: 800px; margin: 0 auto;">
-    <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; color: #F8FAFC;">Ready to Discuss Your Project?</h2>
-    <p style="font-size: 1.15rem; color: #94A3B8; margin-bottom: 3rem;">Let's build something great together</p>
-
-    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem;">
-      <a href="/contact/" style="display: inline-block; padding: 1rem 2.5rem; background: #F97316; color: #0F172A; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 1.1rem; transition: all 0.3s ease;">Schedule Free Consultation</a>
-      <a href="/software/" style="display: inline-block; padding: 1rem 2.5rem; background: transparent; color: #F8FAFC; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 1.1rem; border: 2px solid #334155;">Try Free Tools</a>
+<section style="background:#0F172A;padding:4rem 2rem;">
+  <div style="max-width:900px;margin:0 auto;">
+    <h2 style="text-align:center;font-size:2.25rem;font-weight:800;margin-bottom:2rem;color:#F8FAFC;">What I've Built (Proof & What It Proves)</h2>
+    <div style="display:grid;grid-template-columns:1fr;gap:1.5rem;">
+      <div style="background:#1E293B;padding:1.5rem;border-radius:12px;border:1px solid #334155;">
+        <h3 style="color:#F97316;margin:0 0 0.5rem;font-size:1.25rem;">🎯 AgencyHire</h3>
+        <p style="color:#94A3B8;margin:0 0 0.5rem;">Insurance agent screening: AI interviews, behavioral signals, suitability scoring. Built in 3 weeks.</p>
+        <p style="color:#F8FAFC;font-size:0.95rem;margin:0 0 0.5rem;">Proves: complex AI decision systems with real-time analysis + dashboards.</p>
+        <a href="https://agency-hire.web.app/" style="color:#F97316;font-weight:600;text-decoration:none;">Test it live →</a>
+      </div>
+      <div style="background:#1E293B;padding:1.5rem;border-radius:12px;border:1px solid #334155;">
+        <h3 style="color:#F97316;margin:0 0 0.5rem;font-size:1.25rem;">🎓 The Citadel</h3>
+        <p style="color:#94A3B8;margin:0 0 0.5rem;">30-day gamified learning with AI reflections, progress tracking, community. Built in 4 weeks.</p>
+        <p style="color:#F8FAFC;font-size:0.95rem;margin:0 0 0.5rem;">Proves: scalable learning platforms with AI personalization + engagement.</p>
+        <a href="https://book-learning-module.web.app/" style="color:#F97316;font-weight:600;text-decoration:none;">Test it live →</a>
+      </div>
+      <div style="background:#1E293B;padding:1.5rem;border-radius:12px;border:1px solid #334155;">
+        <h3 style="color:#F97316;margin:0 0 0.5rem;font-size:1.25rem;">⚖️ Lex-Architect</h3>
+        <p style="color:#94A3B8;margin:0 0 0.5rem;">Legal practice management with AI doc analysis, portals, and case workflows.</p>
+        <p style="color:#F8FAFC;font-size:0.95rem;margin:0 0 0.5rem;">Proves: secure workflow apps with document processing + role-based access.</p>
+        <span style="color:#94A3B8;font-size:0.95rem;">Demo available on request.</span>
+      </div>
     </div>
+  </div>
+</section>
 
-    <p style="color: #94A3B8; font-size: 1rem;">Questions? Email <a href="mailto:will@tctcusa.com" style="color: #F97316; text-decoration: none;">will@tctcusa.com</a></p>
+<section style="background:#1E293B;padding:4rem 2rem;">
+  <div style="max-width:1200px;margin:0 auto;">
+    <h2 style="text-align:center;font-size:2.25rem;font-weight:800;margin-bottom:1rem;color:#F8FAFC;">Transparent, Fixed-Price Packages</h2>
+    <p style="text-align:center;color:#94A3B8;margin-bottom:3rem;">No hourly billing. No surprises. All packages include 60 days of bug support & assistance.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem;max-width:1100px;margin:0 auto;">
+      <div style="background:#0F172A;padding:2rem;border-radius:12px;border:1px solid #334155;">
+        <h3 style="color:#F8FAFC;font-size:1.6rem;margin-bottom:0.5rem;">MVP Package</h3>
+        <div style="font-size:2.5rem;font-weight:800;color:#F97316;margin-bottom:0.25rem;">$4,599</div>
+        <p style="color:#94A3B8;margin:0 0 0.75rem;">Timeline: 2-4 weeks</p>
+        <p style="color:#94A3B8;margin:0 0 1rem;">Perfect for single-feature tools, internal automation, proof-of-concept builds.</p>
+        <p style="color:#94A3B8;margin:0 0 0.5rem;"><strong style="color:#F8FAFC;">You Save:</strong> $7,399-$10,399 vs. agency rates ($11,999-$14,999)</p>
+        <a href="/packages/" style="display:inline-block;margin-top:0.5rem;color:#F97316;font-weight:700;text-decoration:none;">Learn More →</a>
+      </div>
+      <div style="background:#0F172A;padding:2rem;border-radius:12px;border:2px solid #F97316;position:relative;">
+        <div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:#F97316;color:#0F172A;padding:0.35rem 1.25rem;border-radius:999px;font-weight:700;font-size:0.85rem;">MOST POPULAR</div>
+        <h3 style="color:#F8FAFC;font-size:1.6rem;margin-bottom:0.5rem;">Standard Package</h3>
+        <div style="font-size:2.5rem;font-weight:800;color:#F97316;margin-bottom:0.25rem;">$9,999</div>
+        <p style="color:#94A3B8;margin:0 0 0.75rem;">Timeline: 6-8 weeks</p>
+        <p style="color:#94A3B8;margin:0 0 1rem;">Customer-facing tools, SaaS MVPs, multi-workflow internal platforms.</p>
+        <p style="color:#94A3B8;margin:0 0 0.5rem;"><strong style="color:#F8FAFC;">You Save:</strong> $17,999-$34,999 vs. agency rates ($27,999-$44,999)</p>
+        <a href="/packages/" style="display:inline-block;margin-top:0.5rem;color:#F97316;font-weight:700;text-decoration:none;">Learn More →</a>
+      </div>
+      <div style="background:#0F172A;padding:2rem;border-radius:12px;border:1px solid #334155;">
+        <h3 style="color:#F8FAFC;font-size:1.6rem;margin-bottom:0.5rem;">Complex Package</h3>
+        <div style="font-size:2.5rem;font-weight:800;color:#F97316;margin-bottom:0.25rem;">$18,999+</div>
+        <p style="color:#94A3B8;margin:0 0 0.75rem;">Timeline: 10-12 weeks</p>
+        <p style="color:#94A3B8;margin:0 0 1rem;">Multi-tenant SaaS, marketplaces, enterprise internal tools.</p>
+        <p style="color:#94A3B8;margin:0 0 0.5rem;"><strong style="color:#F8FAFC;">You Save:</strong> $35,999-$65,999 vs. agency rates ($54,999-$84,999)</p>
+        <a href="/packages/" style="display:inline-block;margin-top:0.5rem;color:#F97316;font-weight:700;text-decoration:none;">Learn More →</a>
+      </div>
+    </div>
+    <p style="text-align:center;color:#94A3B8;margin-top:2rem;font-size:0.95rem;">100% source code ownership. BYOK architecture. 60-day bug support & assistance.</p>
+  </div>
+</section>
+
+<section style="background:#0F172A;padding:4rem 2rem;">
+  <div style="max-width:1000px;margin:0 auto;">
+    <h2 style="text-align:center;font-size:2.25rem;font-weight:800;margin-bottom:1.5rem;color:#F8FAFC;">Why Work With Me vs. Alternatives</h2>
+    <div style="overflow-x:auto;">
+      <table style="width:100%;border-collapse:collapse;color:#F8FAFC;">
+        <thead>
+          <tr>
+            <th style="text-align:left;padding:0.75rem;border-bottom:1px solid #334155;">Feature</th>
+            <th style="text-align:left;padding:0.75rem;border-bottom:1px solid #334155;">Traditional Agency</th>
+            <th style="text-align:left;padding:0.75rem;border-bottom:1px solid #334155;">Freelance Marketplace</th>
+            <th style="text-align:left;padding:0.75rem;border-bottom:1px solid #334155;">TCTC</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding:0.6rem;color:#94A3B8;">Cost</td>
+            <td style="padding:0.6rem;color:#94A3B8;">$149-$449/hr, $49,999-$199,999</td>
+            <td style="padding:0.6rem;color:#94A3B8;">$34-$99/hr, unpredictable</td>
+            <td style="padding:0.6rem;color:#F97316;font-weight:700;">Fixed: $4,599-$18,999+</td>
+          </tr>
+          <tr>
+            <td style="padding:0.6rem;color:#94A3B8;">Timeline</td>
+            <td style="padding:0.6rem;color:#94A3B8;">3-6 months</td>
+            <td style="padding:0.6rem;color:#94A3B8;">8-12 weeks</td>
+            <td style="padding:0.6rem;color:#F8FAFC;">2-12 weeks</td>
+          </tr>
+          <tr>
+            <td style="padding:0.6rem;color:#94A3B8;">IP Ownership</td>
+            <td style="padding:0.6rem;color:#94A3B8;">Retained/licensed</td>
+            <td style="padding:0.6rem;color:#94A3B8;">Usually yours</td>
+            <td style="padding:0.6rem;color:#F8FAFC;">100% yours</td>
+          </tr>
+          <tr>
+            <td style="padding:0.6rem;color:#94A3B8;">AI Cost Markup</td>
+            <td style="padding:0.6rem;color:#94A3B8;">20-30% forever</td>
+            <td style="padding:0.6rem;color:#94A3B8;">Varies</td>
+            <td style="padding:0.6rem;color:#F8FAFC;">Zero (BYOK)</td>
+          </tr>
+          <tr>
+            <td style="padding:0.6rem;color:#94A3B8;">Guarantee</td>
+            <td style="padding:0.6rem;color:#94A3B8;">None/weak</td>
+            <td style="padding:0.6rem;color:#94A3B8;">Disputes at best</td>
+            <td style="padding:0.6rem;color:#F8FAFC;">60-day bug support & assistance</td>
+          </tr>
+          <tr>
+            <td style="padding:0.6rem;color:#94A3B8;">Support</td>
+            <td style="padding:0.6rem;color:#94A3B8;">$5k-$15k/mo retainers</td>
+            <td style="padding:0.6rem;color:#94A3B8;">Extra hourly</td>
+            <td style="padding:0.6rem;color:#F8FAFC;">Included 60 days</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section style="background:#1E293B;padding:4rem 2rem;">
+  <div style="max-width:900px;margin:0 auto;">
+    <h2 style="text-align:center;font-size:2.25rem;font-weight:800;margin-bottom:1.5rem;color:#F8FAFC;">Why These Prices?</h2>
+    <p style="color:#94A3B8;">Traditional agency math: Senior dev $34,999 + designer $5,999 + PM $7,499 + overhead $9,699 = <strong style="color:#F8FAFC;">$58,199+</strong>.</p>
+    <p style="color:#94A3B8;">My math: solo architect, no overhead, modern AI stack, fixed scope. <strong style="color:#F8FAFC;">Your price: $9,999 (~83% savings).</strong></p>
+  </div>
+</section>
+
+<section style="background:#0F172A;padding:4rem 2rem;">
+  <div style="max-width:900px;margin:0 auto;">
+    <h2 style="text-align:center;font-size:2.25rem;font-weight:800;margin-bottom:1.5rem;color:#F8FAFC;">How We Work Together</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;">
+      <div style="background:#1E293B;padding:1.5rem;border-radius:12px;">
+        <h3 style="color:#F97316;margin:0 0 0.5rem;">Week 1-2: Discovery & Planning</h3>
+        <p style="color:#94A3B8;margin:0;">Goals, requirements, wireframes, architecture. Your time: ~3-4 hours. Payment: 33% (refundable if we don't proceed).</p>
+      </div>
+      <div style="background:#1E293B;padding:1.5rem;border-radius:12px;">
+        <h3 style="color:#F97316;margin:0 0 0.5rem;">Week 3-6: Development Sprint</h3>
+        <p style="color:#94A3B8;margin:0;">Core features, integrations, weekly demos. Your time: ~1 hour/week. Payment: 33% at midpoint prototype.</p>
+      </div>
+      <div style="background:#1E293B;padding:1.5rem;border-radius:12px;">
+        <h3 style="color:#F97316;margin:0 0 0.5rem;">Week 7-8: Testing & Launch</h3>
+        <p style="color:#94A3B8;margin:0;">QA, performance, production deploy, docs. Payment: 34% at final delivery.</p>
+      </div>
+    </div>
+    <p style="color:#94A3B8;margin-top:1.5rem;">Post-launch: 60-day bug support & assistance (free fixes, deployment help, minor tweaks).</p>
+  </div>
+</section>
+
+<section style="background:#1E293B;padding:4rem 2rem;">
+  <div style="max-width:900px;margin:0 auto;">
+    <h2 style="text-align:center;font-size:2.25rem;font-weight:800;margin-bottom:1.5rem;color:#F8FAFC;">FAQ</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;">
+      <div style="background:#0F172A;padding:1rem;border-radius:12px;">
+        <h3 style="color:#F97316;margin:0 0 0.5rem;font-size:1.1rem;">Why are prices lower than agencies?</h3>
+        <p style="color:#94A3B8;margin:0;">Solo builder, no overhead, founder pricing for first 10 clients.</p>
+      </div>
+      <div style="background:#0F172A;padding:1rem;border-radius:12px;">
+        <h3 style="color:#F97316;margin:0 0 0.5rem;font-size:1.1rem;">No testimonials—how to trust?</h3>
+        <p style="color:#94A3B8;margin:0;">Use the live tools, test the deployed projects, and rely on milestone billing + 60-day bug support.</p>
+      </div>
+      <div style="background:#0F172A;padding:1rem;border-radius:12px;">
+        <h3 style="color:#F97316;margin:0 0 0.5rem;font-size:1.1rem;">What if I'm not happy?</h3>
+        <p style="color:#94A3B8;margin:0;">Weekly demos, milestone pauses, and 60-day bug support to fix issues fast—you keep the code.</p>
+      </div>
+      <div style="background:#0F172A;padding:1rem;border-radius:12px;">
+        <h3 style="color:#F97316;margin:0 0 0.5rem;font-size:1.1rem;">Can I see code?</h3>
+        <p style="color:#94A3B8;margin:0;">I can share GitHub samples and read-only access to a live tool repo on request.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:#0F172A;padding:4rem 2rem;text-align:center;">
+  <div style="max-width:800px;margin:0 auto;">
+    <h2 style="font-size:2.25rem;font-weight:800;margin-bottom:1rem;color:#F8FAFC;">Ready to Discuss Your Project?</h2>
+    <p style="font-size:1.05rem;color:#94A3B8;margin-bottom:2rem;">Pick your path: schedule a call, test the free tools, or request the AI project planning guide.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+      <a href="/contact/" style="display:inline-block;padding:1rem 2.25rem;background:#F97316;color:#0F172A;text-decoration:none;border-radius:8px;font-weight:700;">Book Strategy Call</a>
+      <a href="#tools" style="display:inline-block;padding:1rem 2.25rem;background:transparent;color:#F8FAFC;text-decoration:none;border-radius:8px;font-weight:600;border:2px solid #334155;">Try Free Tools</a>
+      <a href="mailto:will@tctcusa.com?subject=Send%20AI%20Planning%20Guide" style="display:inline-block;padding:1rem 2.25rem;background:transparent;color:#F97316;text-decoration:none;border-radius:8px;font-weight:700;border:2px solid #F97316;">Get Planning Guide</a>
+    </div>
+    <p style="color:#94A3B8;margin-top:1.5rem;">will@tctcusa.com • Response in 24-48 hours</p>
   </div>
 </section>
