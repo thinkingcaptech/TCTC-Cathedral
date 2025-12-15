@@ -27,53 +27,5 @@
       "30-day support included"
     ],
     "bestFor": "Consultants, local service businesses, solopreneurs"
-  },
-  {
-    "id": "agencyhire-addon",
-    "name": "AgencyHire Add-On",
-    "price": 97,
-    "compressed": "Digital underwriting for insurance agencies",
-    "category": "addon",
-    "stripeUrl": "mailto:will@tctcusa.com?subject=AgencyHire Add-On",
-    "includes": [
-      "Digital underwriting system",
-      "Interview analysis & scoring",
-      "Built for agencies hiring agents",
-      "Integrates with Business Suite"
-    ],
-    "features": [
-      "Add to any package",
-      "Lifetime access",
-      "Specialized for insurance agencies"
-    ],
-    "bestFor": "Insurance agencies hiring new agents"
-  },
-  {
-    "id": "pro-bundle",
-    "name": "TCTC Pro Bundle",
-    "price": 447,
-    "monthlyPrice": 149,
-    "monthlyMonths": 3,
-    "regularPrice": 494,
-    "compressed": "Everything + AgencyHire + extras",
-    "category": "bundle",
-    "stripeUrl": "mailto:will@tctcusa.com?subject=TCTC Pro Bundle Purchase",
-    "badge": "BEST VALUE",
-    "includes": [
-      "All 6 Business Suite tools",
-      "AgencyHire included",
-      "Priority support",
-      "1-hour consulting call",
-      "Setup assistance",
-      "Lifetime updates"
-    ],
-    "savings": 47,
-    "features": [
-      "Save $47 vs buying separately",
-      "Everything included",
-      "White-glove onboarding",
-      "Direct access to William"
-    ],
-    "bestFor": "Agencies and serious business owners"
   }
 ]
