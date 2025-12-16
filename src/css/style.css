@@ -2028,9 +2028,15 @@ h3.shine-effect::before {
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
   align-items: center;
-  max-width: 1200px;
+  width: min(1200px, 100% - 3rem);
   margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 6rem 2rem 4rem;
+  min-height: 70vh;
+}
+
+.hero-content {
+  max-width: 540px;
+  text-align: left;
 }
 
 .hero-content h1 {
@@ -2060,7 +2066,7 @@ h3.shine-effect::before {
 .image-container {
   position: relative;
   width: 100%;
-  max-width: 600px;
+  max-width: 520px;
 }
 
 .image-container img {
@@ -2099,6 +2105,7 @@ h3.shine-effect::before {
 
   .hero-content {
     order: 2;
+    margin: 0 auto;
   }
 
   .hero-visual {
