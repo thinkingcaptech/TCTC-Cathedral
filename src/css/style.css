@@ -2021,3 +2021,97 @@ h3.shine-effect::before {
     contain: layout style paint;
   }
 }
+
+/* --- HERO SPLIT LAYOUT --- */
+.hero-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  color: var(--text-light);
+}
+
+.text-highlight {
+  color: var(--gold);
+}
+
+.hero-subtext {
+  font-size: 1.25rem;
+  color: #e0e0e0;
+  margin-bottom: 2rem;
+  max-width: 50ch;
+}
+
+.hero-visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 2;
+  position: relative;
+}
+
+.glow-effect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  background: radial-gradient(circle, rgba(249, 115, 22, 0.3) 0%, rgba(0, 0, 0, 0) 70%);
+  z-index: 1;
+  filter: blur(40px);
+}
+
+.hero-trust-badges {
+  margin-top: 0.5rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 900px) {
+  .hero-split {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+  .hero-content {
+    order: 2;
+  }
+
+  .hero-visual {
+    order: 1;
+    margin-bottom: 2rem;
+  }
+
+  .cta-group {
+    justify-content: center;
+  }
+
+  .hero-subtext {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
